@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
-URL: https://github.com/SunnyTseng/bbsTaiwan
+URL: https://sunnytseng.github.io/bbsTaiwan/, https://github.com/SunnyTseng/bbsTaiwan
 BugReports: https://github.com/SunnyTseng/bbsTaiwan/issues
 Suggests: 
     knitr,
