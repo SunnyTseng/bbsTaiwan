@@ -16,5 +16,5 @@ A character of the bird species' name in English
 Find species' English common name or scientific name
 }
 \examples{
-bbs_translate(species = "烏頭翁")
+bbs_translate(species = "abc")
 }

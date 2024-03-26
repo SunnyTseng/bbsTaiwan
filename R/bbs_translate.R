@@ -6,7 +6,7 @@
 #' @export
 #'
 #' @examples
-#' bbs_translate(species = "烏頭翁")
+#' bbs_translate(species = "abc")
 bbs_translate <- function(species) {
   print(species)
 }
