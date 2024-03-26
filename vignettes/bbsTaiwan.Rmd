@@ -1,0 +1,21 @@
+---
+title: "bbsTaiwan"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{bbsTaiwan}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(bbsTaiwan)
+```
+
+This is the vignettes page created by usethis::use_vignette("package_name"). It is the part we can write an article about the package!
