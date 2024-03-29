@@ -9,4 +9,5 @@
 #' bbs_translate(species = "abc")
 bbs_translate <- function(species) {
   print(species)
+  blabla
 }
