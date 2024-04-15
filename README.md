@@ -33,11 +33,7 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
     After visiting the site, use **Download** \> **Source archive**
     option while downloading.
 
-![](images/clipboard-3932456549.png)
-
 ## Workflow
-
-![](images/bbsTaiwan%20-%20ROpenSci%20package%20workflow.jpg)
 
 ## How to use
 

@@ -34,11 +34,7 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 
 2.  Data download: you can retrieve Taiwan Breeding Birds Survey data from this [GBIF dataset](https://www.gbif.org/zh-tw/dataset/f170f056-3f8a-4ef3-ac9f-4503cc854ce0). After visiting the site, use **Download** \> **Source archive** option while downloading.
 
-![](images/clipboard-3932456549.png)
-
 ## Workflow
-
-![](images/bbsTaiwan - ROpenSci package workflow.jpg)
 
 ## How to use
 
