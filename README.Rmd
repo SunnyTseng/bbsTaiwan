@@ -38,6 +38,8 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 
 ## Workflow
 
+![](images/bbsTaiwan - ROpenSci package workflow.jpg)
+
 ## How to use
 
 This is a basic example which shows you how to use the package:
