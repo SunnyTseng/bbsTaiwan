@@ -22,7 +22,7 @@
     <a href="#main" class="visually-hidden-focusable">Ir al contenido</a>
     
 
-    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light"><div class="container">
+    <nav class="navbar fixed-top navbar-light navbar-expand-lg bg-light" data-bs-theme="light"><div class="container">
     
     <a class="navbar-brand me-2" href="index.html">bbsTaiwan</a>
 
@@ -65,36 +65,45 @@
 </h1></div>
 <!-- badges: start -->
 
+<!-- badges: end -->
 <p>The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling, using TRIM (TRends and Indices for Monitoring data). Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.</p>
 <div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+<h2 id="set-up">Set up<a class="anchor" aria-label="anchor" href="#set-up"></a>
 </h2>
-<p>You can install the development version of bbsTaiwan from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<ol style="list-style-type: decimal">
+<li>Package installation: you can install the development version of bbsTaiwan from <a href="https://github.com/" class="external-link">GitHub</a> with:</li>
+</ol>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SunnyTseng/bbsTaiwan"</span><span class="op">)</span></span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
+<li>Data download: you can retrieve Taiwan Breeding Birds Survey data from this <a href="https://www.gbif.org/zh-tw/dataset/f170f056-3f8a-4ef3-ac9f-4503cc854ce0" class="external-link">GBIF dataset</a>. After visiting the site, use <strong>Download</strong> &gt; <strong>Source archive</strong> option while downloading.</li>
+</ol>
+<p><img src="images/clipboard-3932456549.png"></p>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="workflow">Workflow<a class="anchor" aria-label="anchor" href="#workflow"></a>
 </h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+</div>
+<div class="section level2">
+<h2 id="how-to-use">How to use<a class="anchor" aria-label="anchor" href="#how-to-use"></a>
+</h2>
+<p>This is a basic example which shows you how to use the package:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://sunnytseng.github.io/bbsTaiwan/">bbsTaiwan</a></span><span class="op">)</span></span>
-<span><span class="co">## basic example code</span></span></code></pre></div>
-<p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">cars</span><span class="op">)</span></span>
-<span><span class="co">#&gt;      speed           dist       </span></span>
-<span><span class="co">#&gt;  Min.   : 4.0   Min.   :  2.00  </span></span>
-<span><span class="co">#&gt;  1st Qu.:12.0   1st Qu.: 26.00  </span></span>
-<span><span class="co">#&gt;  Median :15.0   Median : 36.00  </span></span>
-<span><span class="co">#&gt;  Mean   :15.4   Mean   : 42.98  </span></span>
-<span><span class="co">#&gt;  3rd Qu.:19.0   3rd Qu.: 56.00  </span></span>
-<span><span class="co">#&gt;  Max.   :25.0   Max.   :120.00</span></span></code></pre></div>
-<p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date. <code>devtools::build_readme()</code> is handy for this.</p>
-<p>You can also embed plots, for example:</p>
-<p><img src="reference/figures/README-pressure-1.png" width="100%"></p>
-<p>In that case, don’t forget to commit and push the resulting figure files, so they display on GitHub and CRAN.</p>
+<span></span>
+<span><span class="co"># looked up the species of interest </span></span>
+<span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="st">"山紅頭"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="st">"金翼白眉"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># subset the GBIF data to the species of interest</span></span>
+<span><span class="va">bird_data</span> <span class="op">&lt;-</span> <span class="fu">bbs_subset</span><span class="op">(</span>folder <span class="op">=</span> <span class="st">"PATH_TO_GBIF_FOLDER"</span>,</span>
+<span>                        from <span class="op">=</span> <span class="fl">2009</span>,</span>
+<span>                        to <span class="op">=</span> <span class="fl">2015</span>,</span>
+<span>                        species_list <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># visualize the species distribution </span></span>
+<span><span class="va">bird_map</span> <span class="op">&lt;-</span> <span class="fu">bbs_visualization</span><span class="op">(</span>data <span class="op">=</span> <span class="va">bird_data</span><span class="op">)</span></span></code></pre></div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="enlaces">
@@ -114,8 +123,8 @@
 </div>
 
 
-<div class="citation">
-<h2 data-toc-skip>Citation</h2>
+<div class="cita">
+<h2 data-toc-skip>Cita</h2>
 <ul class="list-unstyled">
 <li><a href="authors.html#citation">Cómo citar bbsTaiwan</a></li>
 </ul>
@@ -146,7 +155,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
+<p>Sitio creado con <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.8.</p>
 </div>
 
     </footer>
