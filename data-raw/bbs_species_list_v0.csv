@@ -1,0 +1,1301 @@
+id,species_ori,vernacularName,scientificName,taxonRank,type,source_latest_only,species_code_ntu,species_nr,statusTW
+1,無法調查,無法調查,No survey,nonAves,,,NOSURVEY,853,NA
+2,沒有鳥,NN,NA,nonAves,,,NA,855,NA
+3,NN,NN,NA,nonAves,,,NA,855,NA
+4,M_山羌,山羌,Muntiacus reevesi micrurus,nonAves,,,NA,838,NA
+5,M_台灣野兔,臺灣野兔,Lepus sinensis formosus,nonAves,,,NA,840,NA
+6,M_台灣獼猴,臺灣獼猴,Macaca cyclopis,nonAves,,,NA,841,NA
+7,M_赤腹松鼠,赤腹松鼠,Callosciurus erythraeus thaiwanensis,nonAves,,,NA,842,NA
+8,M_黃喉貂,黃喉貂,Martes flavigula chrysospila,nonAves,,,NA,847,NA
+9,M_長吻松鼠,長吻松鼠,Dremomys pernyi owstoni,nonAves,,,NA,843,NA
+10,蝙蝠,翼手目,Chiroptera sp.,nonAves,,,NA,848,NA
+11,台灣野兔,臺灣野兔,Lepus sinensis formosus,nonAves,,,NA,840,NA
+12,黃喉貂,黃喉貂,Martes flavigula chrysospila,nonAves,,,NA,847,NA
+13,XX,鳥綱,Aves sp.,class,,,NA,749,NA
+14,XX八哥,八哥科,Sturnidae,family,,,NA,650,NA
+15,XX文鳥,梅花雀科,Estrildidae,family,,,NA,739,NA
+16,XX白鷺,鷺科,Ardeidae,family,,,NA,101,NA
+17,XX伯勞,伯勞科,Laniidae,family,,,NA,405,NA
+18,XX卷尾,卷尾科,Dicruridae,family,,,NA,418,NA
+19,XX林鴝,林鴝屬,Tarsiger sp.,genus,,,NA,763,NA
+20,XX雨燕,雨燕科,Apodidae,family,,,NA,354,NA
+21,XX柳鶯,柳鶯科,Phylloscopidae,family,,,NA,495,NA
+22,XX扇尾鶯科,扇尾鶯科,Cisticolidae,family,,,NA,541,NA
+23,XX秧雞,秧雞科,Rallidae,family,,,NA,161,NA
+24,XX針尾雨燕,針尾雨燕屬,Hirundapus sp.,genus,,,NA,766,NA
+25,XX隼,隼科,Falconidae,family,,,NA,385,NA
+26,XX啄木,啄木鳥科,Picidae,family,,,NA,380,NA
+27,XX啄花,啄花科,Dicaeidae,family,,,NA,665,NA
+28,XX猛禽,日行性猛禽,Accipitriformes/Falconiformes sp.,class,,,NA,748,NA
+29,XX雀鷹,雀鷹屬,Accipiter sp.,genus,,,NA,768,NA
+30,XX雀鷹屬,雀鷹屬,Accipiter sp.,genus,,,NA,768,NA
+31,XX椋鳥,八哥科,Sturnidae,family,,,NA,650,NA
+32,XX畫眉,畫眉科,Timaliidae,family,,,NA,560,NA
+33,XX蛙,無尾目,Anura sp.,nonAves,,,NA,849,NA
+34,XX雁鴨,雁鴨科,Anatidae,family,,,NA,1,NA
+35,XX雲雀,百靈科,Alaudidae,family,,,NA,441,NA
+36,XX鳩,鳩鴿科,Columbidae,family,,,NA,305,NA
+37,XX鳩鴿,鳩鴿科,Columbidae,family,,,NA,305,NA
+38,XX翠鳥,翠鳥科,Alcedinidae,family,,,NA,361,NA
+39,XX蝗鶯屬,蝗鶯屬,Locustella sp.,genus,,,NA,772,NA
+40,XX鴉,鴉科,Corvidae,family,,,NA,428,NA
+41,XX燕,燕科,Hirundinidae,family,,,NA,446,NA
+42,XX鴨,雁鴨科,Anatidae,family,,,NA,1,NA
+43,XX環頸鴴,小型鴴類,Charadrius sp.,genus,,,NA,758,NA
+44,XX鴴,鴴科,Charadriidae,family,,,NA,189,NA
+45,XX鵐,鵐科,Emberizidae,family,,,NA,699,NA
+46,XX鵯,鵯科,Pycnonotidae,family,,,NA,475,NA
+47,XX鶇,鶇科,Turdidae,family,,,NA,633,NA
+48,XX鶯,鶯科,Sylviidae,family,,,NA,547,NA
+49,XX鶺鴒,鶺鴒科,Motacillidae,family,,,NA,675,NA
+50,XX鷚,鷚屬,Anthus sp.,genus,,,NA,778,NA
+51,XX鷦鶯,扇尾鶯科,Cisticolidae,family,,,NA,541,NA
+52,XX鷲鷹,鷹科,Accipitridae,family,,,NA,133,NA
+53,XX鷲鷹科,鷹科,Accipitridae,family,,,NA,133,NA
+54,XX鷸,鷸科,Scolopacidae,family,,,NA,205,NA
+55,XX鷹,鷹科,Accipitridae,family,,,NA,133,NA
+56,XX鷺,鷺科,Ardeidae,family,,,NA,101,NA
+57,XX鸚鵡,鸚形目,Psittaciformes sp.,order,,,NA,747,introduced
+58,九官鳥,九官鳥,Gracula religiosa,species,,,B0494,837,introduced
+59,八色鳥,八色鳥,Pitta nympha,species,,,B0320,393,breed
+60,八哥,八哥,Acridotheres cristatellus,species,,,B0481,664,breed
+61,三趾鷸,三趾濱鷸,Calidris alba,species,,,B0199,236,nonbreeding
+62,叉尾雨燕,叉尾雨燕,Apus pacificus,species,,,B0305,359,breed
+63,大白鷺,大白鷺,Ardea alba,species,,,B0045,109,breed
+64,大杓鷸,大杓鷸,Numenius arquata,species,,,B0210,221,nonbreeding
+65,大杜鵑,大杜鵑,Cuculus canorus,species,,,B0281,334,nonbreeding
+66,大赤啄木,大赤啄木,Dendrocopos leucotos,species,,,B0317,383,breed
+67,大卷尾,大卷尾,Dicrurus macrocercus,species,,,B0335,419,breed
+68,大花鷚,大花鷚,Anthus richardi,species,,,B0465,683,nonbreeding
+69,大冠鷲,大冠鷲,Spilornis cheela,species,,,B0132,138,breed
+70,大紅鸛,大紅鸛,Phoenicopterus roseus,species,,,NA,781,introduced
+71,大陸畫眉,大陸畫眉,Garrulax canorus,speciesComplex,,,B0574,569,introduced
+72,大陸畫眉X台灣畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+73,大陸藍鵲,紅嘴藍鵲,Urocissa erythroryncha,species,,,B0601,803,introduced
+74,大麻鷺,大麻鷺,Botaurus stellaris,species,,,B0041,102,nonbreeding
+75,大濱鷸,大濱鷸,Calidris tenuirostris,species,,,B0198,225,nonbreeding
+76,大彎嘴,大彎嘴,Megapomatorhinus erythrocnemis,species,,,B0373,563,breed
+77,小水鴨,小水鴨,Anas crecca,species,,,B0071,28,nonbreeding
+78,小白鷺,小白鷺,Egretta garzetta,species,,,B0047,113,breed
+79,小杜鵑,小杜鵑,Cuculus poliocephalus,species,,,B0285,332,nonbreeding
+80,小卷尾,小卷尾,Dicrurus aeneus,species,,,B0333,422,breed
+81,小卷尾/松雀鷹,鳥綱,Aves sp.,class,,,NA,749,NA
+82,小虎鶇,小虎鶇,Zoothera dauma dauma,species,,,B0676,783,breed
+83,小雨燕,小雨燕,Apus nipalensis,species,,,B0304,360,breed
+84,小青足鷸,小青足鷸,Tringa stagnatilis,species,,,B0225,215,nonbreeding
+85,小桑鳲,小桑鳲,Eophona migratoria,species,,,B0513,732,nonbreeding
+86,小剪尾,小剪尾,Enicurus scouleri,species,,,B0389,604,breed
+87,小啄木,小啄木,Yungipicus canicapillus,species,,,B0316,382,breed
+88,小雲雀,小雲雀,Alauda gulgula,species,,,B0321,445,breed
+89,小黑背鷗,小黑背鷗,Larus fuscus,species,,,B0624,284,nonbreeding
+90,小燕鷗,小燕鷗,Sternula albifrons,species,,,B0251,292,breed
+91,小濱鷸,小濱鷸,Calidris minuta,species,,,B0232,238,nonbreeding
+92,小環頸鴴,小環頸鴴,Charadrius dubius,species,,,B0180,199,breed
+93,小翼鶇,小翼鶇,Brachypteryx goodfellowi,species,,,B0387,596,breed
+94,小鵐,小鵐,Emberiza pusilla,species,,,B0528,708,nonbreeding
+95,小辮鴴,小辮鴴,Vanellus vanellus,species,,,B0188,192,nonbreeding
+96,小鶯,小鶯,Horornis fortipes,species,,,B0427,493,breed
+97,小彎嘴,小彎嘴,Pomatorhinus musicus,species,,,B0374,562,breed
+98,小鷦眉,臺灣鷦眉,Pnoepyga formosana,species,,,B0372,487,breed
+99,小鸊鷉,小鸊鷉,Tachybaptus ruficollis,species,,,B0007,58,breed
+100,山羌,山羌,Muntiacus reevesi micrurus,nonAves,,,NA,838,NA
+101,山紅頭,山紅頭,Cyanoderma ruficeps,species,,,B0375,561,breed
+102,山麻雀,山麻雀,Passer cinnamomeus,species,,,B0538,737,breed
+103,山鷸,山鷸,Scolopax rusticola,species,,,B0216,250,nonbreeding
+104,中白鷺,中白鷺,Ardea intermedia,species,,,B0048,110,breed
+105,中地鷸,中地鷸,Gallinago megala,species,,,B0203,248,nonbreeding
+106,中杓鷸,中杓鷸,Numenius phaeopus,species,,,B0213,219,nonbreeding
+107,中杜鵑,北方中杜鵑,Cuculus optatus,species,,,B0286,335,breed
+108,丹氏濱鷸,丹氏濱鷸,Calidris temminckii,species,,,B0197,232,nonbreeding
+109,五色鳥,五色鳥,Psilopogon nuchalis,species,,,B0315,379,breed
+110,反嘴鴴,反嘴鴴,Recurvirostra avosetta,species,,,B0235,186,nonbreeding
+111,反嘴鷸,反嘴鷸,Xenus cinereus,species,,,B0228,206,nonbreeding
+112,太平洋金斑鴴,太平洋金斑鴴,Pluvialis fulva,species,,,B0186,191,nonbreeding
+113,日本松雀鷹,日本松雀鷹,Accipiter gularis,species,,,B0134,150,nonbreeding
+114,日本樹鶯,短翅樹鶯複合種,Horornis diphone/canturians,speciesComplex,,,B0426,815,nonbreeding
+115,毛腳燕,東方毛腳燕,Delichon dasypus,species,,,B0322,454,breed
+116,水雉,水雉,Hydrophasianus chirurgus,species,,,B0175,204,breed
+117,火冠戴菊鳥,火冠戴菊鳥,Regulus goodfellowi,species,,,B0443,485,breed
+118,爪哇雀,爪哇雀,Lonchura oryzivora,species,,,B0504,786,introduced
+119,牛背鷺,黃頭鷺,Bubulcus ibis,species,,,B0042,116,breed
+120,北方中杜鵑,北方中杜鵑,Cuculus optatus,species,,,B0286,335,breed
+121,北雀鷹,北雀鷹,Accipiter nisus,species,,,B0110,152,nonbreeding
+122,台灣山鷓鴣,臺灣山鷓鴣,Arborophila crudigularis,species,,,B0146,46,breed
+123,台灣水鹿,臺灣水鹿,Rusa unicolor swinhoei,nonAves,,,NA,839,NA
+124,台灣白喉噪眉,臺灣白喉噪眉,Ianthocincla ruficeps,species,,,B0366,571,breed
+125,台灣朱雀,臺灣朱雀,Carpodacus formosanus,species,,,B0511,726,breed
+126,台灣竹雞,臺灣竹雞,Bambusicola sonorivox,species,,,B0147,47,breed
+127,台灣夜鷹,南亞夜鷹,Caprimulgus affinis,species,,,B0302,353,breed
+128,台灣松雀鷹,松雀鷹,Accipiter virgatus,species,,,B0111,151,breed
+129,台灣畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+130,台灣畫眉/大陸畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+131,台灣紫嘯鶇,臺灣紫嘯鶇,Myophonus insularis,species,,,B0396,602,breed
+132,台灣噪眉,臺灣噪眉,Trochalopteron morrisonianum,species,,,B0368,574,breed
+133,台灣叢樹鶯,臺灣叢樹鶯,Locustella alishanensis,species,,,B0424,540,breed
+134,台灣藍鵲,臺灣藍鵲,Urocissa caerulea,species,,,B0351,431,breed
+135,台灣獼猴,臺灣獼猴,Macaca cyclopis,nonAves,,,NA,841,NA
+136,台灣鷦眉,臺灣鷦眉,Pnoepyga formosana,species,,,B0372,487,breed
+137,四聲杜鵑,四聲杜鵑,Cuculus micropterus,species,,,B0284,333,nonbreeding
+138,巨嘴鴉,巨嘴鴉,Corvus macrorhynchos,species,,,B0343,439,breed
+139,未做調查,未做調查,No survey,nonAves,,,NOSURVEY,852,NA
+140,田鵐,田鵐,Emberiza rustica,species,,,B0529,709,nonbreeding
+141,田鷸,田鷸,Gallinago gallinago,species,,,B0201,246,nonbreeding
+142,白氏地鶇,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+143,白氏地鶇/虎斑地鶇,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+144,白耳畫眉,白耳畫眉,Heterophasia auricularis,species,,,B0370,575,breed
+145,白尾八哥,白尾八哥,Acridotheres javanicus,species,,,B0492,663,introduced
+146,白尾鴝,白尾鴝,Myiomela leucura,species,,,B0397,606,breed
+147,白冠雞,白冠雞,Fulica atra,species,,,B0160,176,nonbreeding
+148,白眉林鴝,臺灣白眉林鴝,Tarsiger formosanus,species,,,B0404,608,breed
+149,白眉黃鶺鴒,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+150,白眉鴨,白眉鴨,Spatula querquedula,species,,,B0078,26,nonbreeding
+151,白眉鵐,白眉鵐,Emberiza tristrami,species,,,B0534,705,nonbreeding
+152,白眉鶇,白眉鶇,Turdus obscurus,species,,,B0412,642,nonbreeding
+153,白背鷚,白背鷚,Anthus gustavi,species,,,B0463,689,nonbreeding
+154,白面白鶺鴒,白鶺鴒,Motacilla alba,species,,,B0468,681,breed
+155,白翅黑燕鷗,白翅黑燕鷗,Chlidonias leucopterus,species,,,B0258,296,nonbreeding
+156,白喉文鳥,白喉文鳥,Euodice malabarica,species,,,B0585,741,introduced
+157,白喉笑鶇,臺灣白喉噪眉,Ianthocincla ruficeps,species,,,B0366,571,breed
+158,白喉針尾雨燕,白喉針尾雨燕,Hirundapus caudacutus,species,,,B0649,355,nonbreeding
+159,白喉噪眉,臺灣白喉噪眉,Ianthocincla ruficeps,species,,,B0366,571,breed
+160,白琵鷺,白琵鷺,Platalea leucorodia,species,,,B0063,129,nonbreeding
+161,白腰文鳥,白腰文鳥,Lonchura striata,species,,,B0503,742,breed
+162,白腰雨燕,叉尾雨燕,Apus pacificus,species,,,B0305,359,breed
+163,白腰草鷸,白腰草鷸,Tringa ochropus,species,,,B0224,208,nonbreeding
+164,白腰鵲鴝,白腰鵲鴝,Copsychus malabaricus,species,,,B0573,586,introduced
+165,白腹海鵰,白腹海鵰,Haliaeetus leucogaster,species,,,B0126,156,nonbreeding
+166,白腹秧雞,白腹秧雞,Amaurornis phoenicurus,species,,,B0159,166,breed
+167,白腹鶇,白腹鶇,Turdus pallidus,species,,,B0413,643,nonbreeding
+168,白頭翁,白頭翁,Pycnonotus sinensis,species,,,B0381,478,breed
+169,白頭鶇,白頭鶇,Turdus niveiceps,species,,,B0414,641,breed
+170,白頰噪眉,白頰噪眉,Ianthocincla sannio,species,,,B0576,792,introduced
+171,白環鸚嘴鵯,白環鸚嘴鵯,Spizixos semitorques,species,,,B0383,476,breed
+172,白鶺鴒,白鶺鴒,Motacilla alba,species,,,B0468,681,breed
+173,尖尾鴨,尖尾鴨,Anas acuta,species,,,B0069,25,nonbreeding
+174,尖尾濱鷸,尖尾濱鷸,Calidris acuminata,species,,,B0190,229,nonbreeding
+175,朱鸝,朱鸝,Oriolus traillii,species,,,B0338,417,breed
+176,池鷺,池鷺,Ardeola bacchus,species,,,B0040,117,nonbreeding
+177,灰山椒鳥,灰山椒鳥,Pericrocotus divaricatus,species,,,B0331,399,nonbreeding
+178,灰沙燕,灰沙燕,Riparia riparia,species,,,B0327,448,nonbreeding
+179,灰卷尾,灰卷尾,Dicrurus leucophaeus,species,,,B0334,420,nonbreeding
+180,灰林銀鷗,小黑背鷗,Larus fuscus,species,,,B0624,284,nonbreeding
+181,灰林鴞,東方灰林鴞,Strix nivicolum,species,,,B0300,347,breed
+182,灰林鴿,灰林鴿,Columba pulchricollis,species,,,B0270,307,breed
+183,灰背椋鳥,灰背椋鳥,Sturnia sinensis,species,,,B0487,657,nonbreeding
+184,灰面鵟鷹,灰面鵟鷹,Butastur indicus,species,,,B0118,144,nonbreeding
+185,灰胸秧雞,灰胸秧雞,Lewinia striata,species,,,B0169,164,breed
+186,灰喉山椒鳥,灰喉山椒鳥,Pericrocotus solaris,species,,,B0332,396,breed
+187,灰喉針尾雨燕,灰喉針尾雨燕,Hirundapus cochinchinensis,species,,,B0306,356,breed
+188,灰喜鵲,灰喜鵲,Cyanopica cyanus,species,,,B0602,430,introduced
+189,灰斑鴴,灰斑鴴,Pluvialis squatarola,species,,,B0187,190,nonbreeding
+190,灰斑鶲,灰斑鶲,Muscicapa griseisticta,species,,,B0455,579,nonbreeding
+191,灰椋鳥,灰椋鳥,Spodiopsar cineraceus,species,,,B0485,660,breed
+192,灰腳秧雞,灰腳秧雞,Rallina eurizonoides,species,,,B0166,163,breed
+193,灰樹鵲,樹鵲,Dendrocitta formosae,species,,,B0347,432,breed
+194,灰頭花翼,褐頭花翼,Fulvetta formosana,species,,,B0364,551,breed
+195,灰頭椋鳥,灰頭椋鳥,Sturnia malabarica,species,,,B0714,658,introduced
+196,灰頭鷦鶯,灰頭鷦鶯,Prinia flaviventris,species,,,B0441,545,breed
+197,灰鶺鴒,灰鶺鴒,Motacilla cinerea,species,,,B0469,680,nonbreeding
+198,灰鷽,灰鷽,Pyrrhula erythaca,species,,,B0516,723,breed
+199,竹鳥,棕噪眉,Ianthocincla poecilorhyncha,species,,,B0369,573,breed
+200,竹雞,臺灣竹雞,Bambusicola sonorivox,species,,,B0147,47,breed
+201,低地繡眼,低地繡眼,Zosterops meyeni,species,,,B0618,559,breed
+202,佛法僧,佛法僧,Eurystomus orientalis,species,,,B0313,375,nonbreeding
+203,豆雁,寒林/凍原豆雁,Anser fabalis/serrirostris,speciesComplex,,,B0084MIX,810,nonbreeding
+204,赤足鷸,赤足鷸,Tringa totanus,species,,,B0226,217,nonbreeding
+205,赤喉鷚,赤喉鷚,Anthus cervinus,species,,,B0462,690,nonbreeding
+206,赤腰燕,赤腰燕,Cecropis striolata,species,,,B0324,452,breed
+207,赤腹山雀,赤腹山雀,Sittiparus castaneoventris,species,,,B0360,461,breed
+208,赤腹松鼠,赤腹松鼠,Callosciurus erythraeus thaiwanensis,nonAves,,,NA,842,NA
+209,赤腹鶇,赤腹鶇,Turdus chrysolaus,species,,,B0407,644,nonbreeding
+210,赤腹鷹,赤腹鷹,Accipiter soloensis,species,,,B0112,149,nonbreeding
+211,赤翡翠,赤翡翠,Halcyon coromanda,species,,,B0308,364,nonbreeding
+212,赤膀鴨,赤膀鴨,Mareca strepera,species,,,B0079,17,nonbreeding
+213,赤頸鴨,赤頸鴨,Mareca penelope,species,,,B0075,19,nonbreeding
+214,卷羽鵜鶘,卷羽鵜鶘,Pelecanus crispus,species,,,B0026,100,nonbreeding
+215,夜鷺,夜鷺,Nycticorax nycticorax,species,,,B0058,120,breed
+216,岩鷚,岩鷚,Prunella collaris,species,,,B0461,673,breed
+217,岩鷺,岩鷺,Egretta sacra,species,,,B0050,114,breed
+218,東方大葦鶯,東方大葦鶯,Acrocephalus orientalis,species,,,B0422,532,nonbreeding
+219,東方毛腳燕,東方毛腳燕,Delichon dasypus,species,,,B0322,454,breed
+220,東方黃鶺鴒,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+221,東方蜂鷹,東方蜂鷹,Pernis ptilorhynchus,species,,,B0131,135,breed
+222,東方澤鵟,東方澤鵟,Circus spilonotus,species,,,B0122,145,nonbreeding
+223,東方環頸鴴,東方環頸鴴,Charadrius alexandrinus,species,,,B0178,196,breed
+224,東方鵟,東方鵟,Buteo japonicus,species,,,B0119,159,nonbreeding
+225,松雀鷹,松雀鷹,Accipiter virgatus,species,,,B0111,151,breed
+226,松鴉,松鴉,Garrulus glandarius,species,,,B0348,429,breed
+227,林八哥,林八哥,Acridotheres fuscus,species,,,B0493,662,introduced
+228,林鵰,林鵰,Ictinaetus malaiensis,species,,,B0129,140,breed
+229,河烏,河烏,Cinclus pallasii,species,,,B0385,474,breed
+230,花翅山椒鳥,花翅山椒鳥,Coracina macei,species,,,B0330,402,breed
+231,花雀,花雀,Fringilla montifringilla,species,,,B0515,721,nonbreeding
+232,花嘴鴨,花嘴鴨,Anas zonorhyncha,species,,,B0077,22,breed
+233,虎斑地鶇（小虎鶇）,小虎鶇,Zoothera dauma dauma,species,,,B0676,783,breed
+234,虎鶇,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+235,虎鶇（並未區分白氏或虎斑）,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+236,金背鳩,金背鳩,Streptopelia orientalis,species,,,B0274,309,breed
+237,金翅雀,金翅雀,Chloris sinica,species,,,B0508,728,nonbreeding
+238,金斑鴴,太平洋金斑鴴,Pluvialis fulva,species,,,B0186,191,nonbreeding
+239,金腰燕,金腰燕,Cecropis daurica,species,,,B0328,451,nonbreeding
+240,金翼白眉,臺灣噪眉,Trochalopteron morrisonianum,species,,,B0368,574,breed
+241,長吻松鼠,長吻松鼠,Dremomys pernyi owstoni,nonAves,,,NA,843,NA
+242,長尾鳩,長尾鳩,Macropygia tenuirostris,species,,,B0271,314,breedLY
+243,長趾濱鷸,長趾濱鷸,Calidris subminuta,species,,,B0196,233,nonbreeding
+244,長鬃山羊,長鬃山羊,Capricornis swinhoei,nonAves,,,NA,844,NA
+245,青足鷸,青足鷸,Tringa nebularia,species,,,B0223,212,nonbreeding
+246,青背山雀,青背山雀,Parus monticolus,species,,,B0359,463,breed
+247,冠羽柳鶯,冠羽柳鶯,Phylloscopus coronatus,species,,,B0435,515,nonbreeding
+248,冠羽畫眉,冠羽畫眉,Yuhina brunneiceps,species,,,B0376,556,breed
+249,帝雉,黑長尾雉,Syrmaticus mikado,species,,,B0152,48,breed
+250,星鴉,星鴉,Nucifraga caryocatactes,species,,,B0349,434,breed
+251,洋燕,洋燕,Hirundo tahitica,species,,,B0325,450,breed
+252,流蘇鷸,流蘇鷸,Calidris pugnax,species,,,B0215,227,nonbreeding
+253,疣鼻棲鴨,疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+254,疣鼻棲鴨(馴化) ,疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+255,紅山椒鳥,灰喉山椒鳥,Pericrocotus solaris,species,,,B0332,396,breed
+256,紅尾伯勞,紅尾伯勞,Lanius cristatus,species,,,B0476,409,nonbreeding
+257,紅尾鶲,紅尾鶲,Muscicapa ferruginea,species,,,B0454,582,breed
+258,紅冠水雞,紅冠水雞,Gallinula chloropus,species,,,B0162,175,breed
+259,紅胸啄花,紅胸啄花,Dicaeum ignipectus,species,,,B0498,667,breed
+260,紅胸濱鷸,紅胸濱鷸,Calidris ruficollis,species,,,B0195,235,nonbreeding
+261,紅胸鶲,紅胸鶲,Ficedula parva,species,,,B0451,618,nonbreeding
+262,紅隼,紅隼,Falco tinnunculus,species,,,B0141,386,nonbreeding
+263,紅腹濱鷸,紅腹濱鷸,Calidris canutus,species,,,B0192,226,nonbreeding
+264,紅鳩,紅鳩,Streptopelia tranquebarica,species,,,B0275,311,breed
+265,紅領綠鸚鵡,紅領綠鸚鵡,Psittacula krameri,species,,,B0539,802,introduced
+266,紅嘴黑鵯,紅嘴黑鵯,Hypsipetes leucocephalus,species,,,B0380,480,breed
+267,紅嘴藍鵲,紅嘴藍鵲,Urocissa erythroryncha,species,,,B0601,803,introduced
+268,紅嘴鷗,紅嘴鷗,Chroicocephalus ridibundus,species,,,B0248,274,nonbreeding
+269,紅燕鷗,紅燕鷗,Sterna dougallii,species,,,B0254,298,breed
+270,紅頭山雀,紅頭山雀,Aegithalos concinnus,species,,,B0355,468,breed
+271,紅頭伯勞,紅頭伯勞,Lanius bucephalus,species,,,B0475,407,nonbreeding
+272,紅頭綠鳩,紅頭綠鳩,Treron formosae,species,,,B0277,319,breed
+273,美洲鴛鴦,林鴛鴦(馴化),Aix sponsa (Domestic type),species,,,NA,795,domestic
+274,唐白鷺,唐白鷺,Egretta eulophotes,species,,,B0046,112,nonbreeding
+275,埃及聖鹮,埃及聖䴉,Threskiornis aethiopicus,species,,,B0066,126,introduced
+276,埃及聖䴉,埃及聖䴉,Threskiornis aethiopicus,species,,,B0066,126,introduced
+277,家八哥,家八哥,Acridotheres tristis,species,,,B0482,661,introduced
+278,家燕,家燕,Hirundo rustica,species,,,B0323,449,breed
+279,家鵝,家鵝(馴化),Anser sp. (Domestic type),genus,,,NA,779,domestic
+280,家鵝(馴化),家鵝(馴化),Anser sp. (Domestic type),genus,,,NA,779,domestic
+281,栗小鷺,栗小鷺,Ixobrychus cinnamomeus,species,,,B0054,105,breed
+282,栗尾椋鳥,灰頭椋鳥,Sturnia malabarica,species,,,B0714,658,introduced
+283,栗背林鴝,栗背林鴝,Tarsiger johnstoniae,species,,,B0405,609,breed
+284,泰國八哥,大八哥(叢八哥),Acridotheres grandis,species,,,B0600,780,introduced
+285,烏頭翁,烏頭翁,Pycnonotus taivanus,species,,,B0382,477,breed
+286,珠頸斑鳩,珠頸斑鳩,Streptopelia chinensis,species,,,B0273,312,breed
+287,珠頸鳩,珠頸斑鳩,Streptopelia chinensis,species,,,B0273,312,breed
+288,粉紅鸚嘴,粉紅鸚嘴,Sinosuthora webbiana,species,,,B0353,552,breed
+289,紋翼畫眉,紋翼畫眉,Actinodura morrisoniana,species,,,B0362,577,breed
+290,茶腹鳾,茶腹鳾,Sitta europaea,species,,,B0361,470,breed
+291,草鵐,草鵐,Emberiza cioides,species,,,B0523,702,nonbreeding
+292,貢德氏赤蛙,貢德氏赤蛙,Hylarana guentheri,nonAves,,,NA,850,NA
+293,酒紅朱雀,臺灣朱雀,Carpodacus formosanus,species,,,B0511,726,breed
+294,針尾雨燕,針尾雨燕屬,Hirundapus sp.,genus,,,NA,766,NA
+295,高蹺鴴,高蹺鴴,Himantopus himantopus,species,,,B0234,185,breed
+296,彩鹮,彩䴉,Plegadis falcinellus,species,,,B0065,125,nonbreeding
+297,彩鷸,彩鷸,Rostratula benghalensis,species,,,B0176,202,breed
+298,彩鸛,NA,NA,NA,mis-identified,,NA,807,NA
+299,條紋松鼠,條紋松鼠,Tamiops maritimus formosanus,nonAves,,,NA,845,NA
+300,深山竹雞,臺灣山鷓鴣,Arborophila crudigularis,species,,,B0146,46,breed
+301,深山鶯,深山鶯,Horornis acanthizoides,species,,,B0425,494,breed
+302,眼紋灰背白鶺鴒,白鶺鴒,Motacilla alba,species,,,B0468,681,breed
+303,野鴝,野鴝,Calliope calliope,species,,,B0393,605,nonbreeding
+304,野鴿,野鴿,Columba livia,species,,,B0269,306,introduced
+305,野鵐,野鵐,Emberiza sulphurata,species,,,B0533,715,nonbreeding
+306,魚鷹,魚鷹,Pandion haliaetus,species,,,B0135,132,nonbreeding
+307,麻雀,麻雀,Passer montanus,species,,,B0537,738,breed
+308,喜鵲,喜鵲,Pica serica,species,,,B0350,433,breedKM
+309,斑文鳥,斑文鳥,Lonchura punctulata,species,,,B0502,743,breed
+310,斑尾鷸,斑尾鷸,Limosa lapponica,species,,,B0207,223,nonbreeding
+311,斑紋鷦鶯,斑紋鷦鶯,Prinia crinigera,species,,,B0440,544,breed
+312,斑頸鳩,珠頸斑鳩,Streptopelia chinensis,species,,,B0273,312,breed
+313,斑點鶇,斑點鶇,Turdus eunomus,species,,,B0411,647,nonbreeding
+314,斯文豪氏遊蛇,斯文豪氏遊蛇,Rhabdophis swinhonis,nonAves,,,NA,851,NA
+315,棕三趾鶉,棕三趾鶉,Turnix suscitator,species,,,B0153,256,breed
+316,棕耳鵯,棕耳鵯,Hypsipetes amaurotis,species,,,B0379,481,breed
+317,棕沙燕,棕沙燕,Riparia chinensis,species,,,B0326,447,breed
+318,棕背伯勞,棕背伯勞,Lanius schach,species,,,B0478,411,breed
+319,棕面鶯,棕面鶯,Abroscopus albogularis,species,,,B0421,490,breed
+320,棕扇尾鶯,棕扇尾鶯,Cisticola juncidis,species,,,B0430,542,breed
+321,棕噪眉,棕噪眉,Ianthocincla poecilorhyncha,species,,,B0369,573,breed
+322,棕簑貓,食蟹獴,Herpestes urva formosanus,nonAves,,,NA,846,NA
+323,琵嘴鴨,琵嘴鴨,Spatula clypeata,species,,,B0070,24,nonbreeding
+324,番鴨,疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+325,番鵑,番鵑,Centropus bengalensis,species,,,B0279,323,breed
+326,畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+327,短尾鶯,短尾鶯,Urosphena squameiceps,species,,,B0428,489,nonbreeding
+328,短翅樹鶯,短翅樹鶯複合種,Horornis diphone/canturians,speciesComplex,,,B0426,815,nonbreeding
+329,短翅樹鶯複合種,短翅樹鶯複合種,Horornis diphone/canturians,speciesComplex,,,B0426,815,nonbreeding
+330,筒鳥,北方中杜鵑,Cuculus optatus,species,,,B0286,335,breed
+331,紫壽帶,紫綬帶,Terpsiphone atrocaudata,species,,,B0459,426,breedLY
+332,紫綬帶,紫綬帶,Terpsiphone atrocaudata,species,,,B0459,426,breedLY
+333,紫嘯鶇,臺灣紫嘯鶇,Myophonus insularis,species,,,B0396,602,breed
+334,紫鷺,紫鷺,Ardea purpurea,species,,,B0039,108,breed
+335,絲光椋鳥,絲光椋鳥,Spodiopsar sericeus,species,,,B0488,659,nonbreeding
+336,菜鴨,綠頭鴨(馴化),Anas platyrhynchos (Domestic type),species,,,B0076_domestic,825,domestic
+337,雲雀鷸,長趾濱鷸,Calidris subminuta,species,,,B0196,233,nonbreeding
+338,黃小鷺,黃小鷺,Ixobrychus sinensis,species,,,B0056,103,breed
+339,黃山雀,黃山雀,Machlolophus holsti,species,,,B0357,464,breed
+340,黃羽鸚嘴,黃羽鸚嘴,Suthora verreauxi,species,,,B0352,553,breed
+341,黃尾鴝,黃尾鴝,Phoenicurus auroreus,species,,,B0399,623,nonbreeding
+342,黃足鷸,黃足鷸,Tringa brevipes,species,,,B0217,209,nonbreeding
+343,黃眉柳鶯,黃眉柳鶯,Phylloscopus inornatus,species,,,B0437,506,nonbreeding
+344,黃眉黃鶲指名亞種,黃眉黃鶲,Ficedula narcissina,species,,,B0450,612,nonbreeding
+345,黃眉黃鶺鴒,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+346,黃胸青鶲,黃胸青鶲,Ficedula hyperythra,species,,,B0448,615,breed
+347,黃胸藪眉,黃胸藪眉,Liocichla steerii,species,,,B0371,576,breed
+348,黃雀,黃雀,Spinus spinus,species,,,B0509,730,nonbreeding
+349,黃腰柳鶯,黃腰柳鶯,Phylloscopus proregulus,species,,,B0438,504,nonbreeding
+350,黃腹琉璃,黃腹琉璃,Niltava vivida,species,,,B0458,591,breed
+351,黃腹鷚,黃腹鷚,Anthus rubescens,species,,,B0466,692,nonbreeding
+352,黃嘴角鴞,黃嘴角鴞,Otus spilocephalus,species,,,B0299,339,breed
+353,黃頭扇尾鶯,黃頭扇尾鶯,Cisticola exilis,species,,,B0429,543,breed
+354,黃頭鶺鴒,黃頭鶺鴒,Motacilla citreola,species,,,B0470,679,nonbreeding
+355,黃頭鷺,黃頭鷺,Bubulcus ibis,species,,,B0042,116,breed
+356,黃鶺鴒,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+357,黃鸝,黃鸝,Oriolus chinensis,species,,,B0337,416,breed
+358,黑天鵝,黑天鵝(馴化),Cygnus melancoryphus (Domestic type),species,,,NA,820,domestic
+359,黑天鵝(馴化),黑天鵝(馴化),Cygnus melancoryphus (Domestic type),species,,,NA,820,domestic
+360,黑尾鷗,黑尾鷗,Larus crassirostris,species,,,B0245,281,nonbreeding
+361,黑尾鷸,黑尾鷸,Limosa limosa,species,,,B0208,222,nonbreeding
+362,黑枕藍鶲,黑枕藍鶲,Hypothymis azurea,species,,,B0453,425,breed
+363,黑長尾雉,黑長尾雉,Syrmaticus mikado,species,,,B0152,48,breed
+364,黑冠麻鷺,黑冠麻鷺,Gorsachius melanolophus,species,,,B0053,123,breed
+365,黑面琵鷺,黑面琵鷺,Platalea minor,species,,,B0064,130,nonbreeding
+366,黑翅山椒鳥,黑翅山椒鳥,Lalage melaschistos,species,,,B0329,404,nonbreeding
+367,黑翅鳶,黑翅鳶,Elanus caeruleus,species,,,B0607,134,breed
+368,黑喉噪眉,黑喉噪眉,Ianthocincla chinensis,species,,,B0610,572,introduced
+369,黑喉鴝,黑喉鴝,Saxicola maurus,species,,,B0402,626,nonbreeding
+370,黑腹燕鷗,黑腹燕鷗,Chlidonias hybrida,species,,,B0257,297,nonbreeding
+371,黑腹濱鷸,黑腹濱鷸,Calidris alpina,species,,,B0191,237,nonbreeding
+372,黑領椋鳥,黑領椋鳥,Gracupica nigricollis,species,,,B0484,656,breedKM
+373,黑鳶,黑鳶,Milvus migrans,species,,,B0130,154,breed
+374,黑嘴鷗,黑嘴鷗,Saundersilarus saundersi,species,,,B0249,271,nonbreeding
+375,黑頭文鳥,黑頭文鳥,Lonchura atricapilla,species,,,B0501,744,breed
+376,黑臉鵐,灰頭黑臉鵐,Emberiza spodocephala,species,,,B0532,716,nonbreeding
+377,極北柳鶯,極北柳鶯複合種,Phylloscopus borealis/xanthodryas/examinandus,speciesComplex,,eBird 2018,B0434,822,nonbreeding
+378,極北柳鶯複合群,極北柳鶯複合種,Phylloscopus borealis/xanthodryas/examinandus,speciesComplex,,eBird 2018,B0434,822,nonbreeding
+379,極北柳鶯複合種,極北柳鶯複合種,Phylloscopus borealis/xanthodryas/examinandus,speciesComplex,,eBird 2018,B0434,822,nonbreeding
+380,煤山雀,煤山雀,Periparus ater,species,,,B0356,458,breed
+381,葡萄胸椋鳥,葡萄胸椋鳥,Acridotheres burmannicus,species,,,B0599,823,introduced
+382,葵花鳳頭鸚鵡,葵花鳳頭鸚鵡,Cacatua galerita,species,,,B0557,824,introduced
+383,蜂鷹,東方蜂鷹,Pernis ptilorhynchus,species,,,B0131,135,breed
+384,裏海銀鷗,銀鷗,Larus argentatus,species,,,B0243,283,nonbreeding
+385,裏海燕鷗,裏海燕鷗,Hydroprogne caspia,species,,,B0261,294,nonbreeding
+386,跳鴴,跳鴴,Vanellus cinereus,species,,,B0185,193,nonbreeding
+387,遊隼,遊隼,Falco peregrinus,species,,,B0138,390,breed
+388,鉛色水鶇,鉛色水鶇,Phoenicurus fuliginosus,species,,,B0400,620,breed
+389,熊鷹,熊鷹,Nisaetus nipalensis,species,,,B0133,139,breed
+390,綠啄木,綠啄木,Picus canus,species,,,B0319,384,breed
+391,綠啄花,綠啄花,Dicaeum minullum,species,,,B0497,666,breed
+392,綠畫眉,綠畫眉,Erpornis zantholeuca,species,,,B0377,414,breed
+393,綠鳩,綠鳩,Treron sieboldii,species,,,B0278,318,breed
+394,綠簑鷺,綠簑鷺,Butorides striata,species,,,B0043,119,breed
+395,綠頭鴨,綠頭鴨,Anas platyrhynchos,species,,,B0076,21,nonbreeding
+396,綠頭鴨（畜養）,綠頭鴨(馴化),Anas platyrhynchos (Domestic type),species,,,B0076_domestic,825,domestic
+397,綠頭鴨(馴化),綠頭鴨(馴化),Anas platyrhynchos (Domestic type),species,,,B0076_domestic,825,domestic
+398,綠繡眼,斯氏繡眼,Zosterops simplex,species,,,B0499,558,breed
+399,緋秧雞,緋秧雞,Zapornia fusca,species,,,B0164,169,breed
+400,翠鳥,翠鳥,Alcedo atthis,species,,,B0307,362,breed
+401,翠翼鳩,翠翼鳩,Chalcophaps indica,species,,,B0267,315,breed
+402,臺灣獼猴,臺灣獼猴,Macaca cyclopis,nonAves,,,NA,841,NA
+403,蒙古鴴,蒙古鴴,Charadrius mongolus,species,,,B0183,194,nonbreeding
+404,蒼眉蝗鶯,蒼眉蝗鶯,Locustella fasciolata,species,,,B0431,534,nonbreeding
+405,蒼燕鷗,蒼燕鷗,Sterna sumatrana,species,,,B0260,299,breed
+406,蒼鷹,蒼鷹,Accipiter gentilis,species,,,B0109,153,nonbreeding
+407,蒼鷺,蒼鷺,Ardea cinerea,species,,,B0038,107,nonbreeding
+408,遠東樹鶯,短翅樹鶯複合種,Horornis diphone/canturians,speciesComplex,,,B0426,815,nonbreeding
+409,銀鷗,銀鷗,Larus argentatus,species,,,B0243,283,nonbreeding
+410,領角鴞,領角鴞,Otus lettia,species,,,B0296,340,breed
+411,鳳頭蒼鷹,鳳頭蒼鷹,Accipiter trivirgatus,species,,,B0113,148,breed
+412,鳳頭潛鴨,鳳頭潛鴨,Aythya fuligula,species,,,B0087,34,nonbreeding
+413,鳳頭燕鷗,鳳頭燕鷗,Thalasseus bergii,species,,,B0253,301,breed
+414,寬嘴鶲,寬嘴鶲,Muscicapa dauurica,species,,,B0456,583,nonbreeding
+415,寬嘴鷸,寬嘴鷸,Calidris falcinellus,species,,,B0205,228,nonbreeding
+416,樣點刪除,樣點刪除,No survey,NA,,,NOSURVEY,854,NA
+417,歐亞雲雀,歐亞雲雀,Alauda arvensis,species,,,B0654,444,nonbreeding
+418,歐洲椋鳥,歐洲椋鳥,Sturnus vulgaris,species,,,B0490,652,nonbreeding
+419,褐色柳鶯,褐色柳鶯,Phylloscopus fuscatus,species,,,B0436,499,nonbreeding
+420,褐林鴞,褐林鴞,Strix leptogrammica,species,,,B0301,346,breed
+421,褐頭花翼,褐頭花翼,Fulvetta formosana,species,,,B0364,551,breed
+422,褐頭鷦鶯,褐頭鷦鶯,Prinia inornata,species,,,B0442,546,breed
+423,褐鷹鴞,褐鷹鴞,Ninox japonica,species,,,B0295,350,breed
+424,褐鷽,褐鷽,Pyrrhula nipalensis,species,,,B0517,722,breed
+425,輝椋鳥,亞洲輝椋鳥,Aplonis panayensis,species,,,B0483,651,introduced
+426,銹鵐,鏽鵐,Emberiza rutila,species,,,B0530,712,nonbreeding
+427,噪犀鳥,噪犀鳥,Bycanistes bucinator,species,,,NA,831,introduced
+428,噪鵑,噪鵑,Eudynamys scolopaceus,species,,,B0288,324,breed
+429,樹鵲,樹鵲,Dendrocitta formosae,species,,,B0347,432,breed
+430,樹鷚,樹鷚,Anthus hodgsoni,species,,,B0464,688,nonbreeding
+431,橙頰梅花雀,橙頰梅花雀,Estrilda melpoda,species,,,B0584,740,introduced
+432,橫斑梅花雀,橫斑梅花雀,Estrilda astrild,species,,,B0507,832,introduced
+433,燕鴴,燕鴴,Glareola maldivarum,species,,,B0238,258,breed
+434,燕鷗,燕鷗,Sterna hirundo,species,,,B0256,300,nonbreeding
+435,蕃鴨,疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+436,頭烏線,頭烏線,Schoeniparus brunneus,species,,,B0363,565,breed
+437,鴛鴦,鴛鴦,Aix galericulata,species,,,B0068,16,breed
+438,鴛鴦(馴化),鴛鴦(馴化),Aix galericulata (Domestic type),species,,,NA,834,domestic
+439,戴勝,戴勝,Upupa epops,species,,,B0314,377,nonbreeding
+440,環頸雉,環頸雉,Phasianus colchicus,species,,,B0151,49,breed
+441,環頸鴴,環頸鴴,Charadrius hiaticula,species,,,B0181,197,nonbreeding
+442,磯鷸,磯鷸,Actitis hypoleucos,species,,,B0221,207,nonbreeding
+443,鴻雁,鴻雁,Anser cygnoides,species,,,B0082,3,nonbreeding
+444,鵂鶹,鵂鶹,Glaucidium brodiei,species,,,B0293,344,breed
+445,繡眼畫眉,繡眼畫眉,Alcippe morrisonia,species,,,B0365,567,breed
+446,翻石鷸,翻石鷸,Arenaria interpres,species,,,B0189,224,nonbreeding
+447,藍尾鴝,藍尾鴝,Tarsiger cyanurus,species,,,B0403,607,nonbreeding
+448,藍腹鷴,藍腹鷴,Lophura swinhoii,species,,,B0150,50,breed
+449,藍磯鶇,藍磯鶇,Monticola solitarius,species,,,B0394,625,breed
+450,雜頭翁,雜頭翁,Pycnonotus taivanus x sinensis,speciesHybrid,,,B0382_hybrid,835,breed
+451,雞,雞,Gallus gallus (Domestic type),species,,,NA,833,domestic
+452,雞(圈養),雞,Gallus gallus (Domestic type),species,,,NA,833,domestic
+453,鵝,家鵝(馴化),Anser sp. (Domestic type),genus,,,NA,779,domestic
+454,鵟,東方鵟,Buteo japonicus,species,,,B0119,159,nonbreeding
+455,藪鳥,黃胸藪眉,Liocichla steerii,species,,,B0371,576,breed
+456,鵲鴝,鵲鴝,Copsychus saularis,species,,,B0388,585,breedKM
+457,蘭嶼角鴞,蘭嶼角鴞,Otus elegans,species,,,B0298,341,breedLY
+458,鐵嘴鴴,鐵嘴鴴,Charadrius leschenaultii,species,,,B0182,195,nonbreeding
+459,鶴鷸,鶴鷸,Tringa erythropus,species,,,B0218,211,nonbreeding
+460,彎嘴濱鷸,彎嘴濱鷸,Calidris ferruginea,species,,,B0193,231,nonbreeding
+461,鱗胸鷦鷯,臺灣鷦眉,Pnoepyga formosana,species,,,B0372,487,breed
+462,鷦鷯,鷦鷯,Troglodytes troglodytes,species,,,B0386,472,breed
+463,鷹斑鷸,鷹斑鷸,Tringa glareola,species,,,B0219,216,nonbreeding
+464,鷹鵑,鷹鵑,Hierococcyx sparverioides,species,,,B0287,329,breed
+465,鸕鷀,鸕鷀,Phalacrocorax carbo,species,,,B0032,97,nonbreeding
+466,朱頸斑鳩,珠頸斑鳩,Streptopelia chinensis,species,key_in_error,名錄對照_大肚溪.xlsx(20170927),B0273,312,breed
+467,錦鸲,棕扇尾鶯,Cisticola juncidis,species,,名錄對照_大肚溪.xlsx(20170928),B0430,542,breed
+468,斑鳩,鳩鴿科,Columbidae,family,,名錄對照_大肚溪.xlsx(20170929),NA,305,NA
+469,白赤黑燕鷗,白翅黑燕鷗,Chlidonias leucopterus,species,,名錄對照_大肚溪.xlsx(20170930),B0258,296,nonbreeding
+470,禾犀鷸,紅胸濱鷸,Calidris ruficollis,species,,名錄對照_大肚溪.xlsx(20170931),B0195,235,nonbreeding
+471,濱鷸,黑腹濱鷸,Calidris alpina,species,,名錄對照_大肚溪.xlsx(20170932),B0191,237,nonbreeding
+472,滸鷸,彎嘴濱鷸,Calidris ferruginea,species,,名錄對照_大肚溪.xlsx(20170933),B0193,231,nonbreeding
+473,鳩珠頸,珠頸斑鳩,Streptopelia chinensis,species,,名錄對照_大肚溪.xlsx(20170934),B0273,312,breed
+474,小鸊鷈,小鸊鷉,Tachybaptus ruficollis,species,,名錄對照_大肚溪.xlsx(20170935),B0007,58,breed
+475,丹氏禾犀鷸,丹氏濱鷸,Calidris temminckii,species,,名錄對照_大肚溪.xlsx(20170936),B0197,232,nonbreeding
+476,黦鷸,黦鷸,Numenius madagascariensis,species,,名錄對照_大肚溪.xlsx(20170937),B0211,220,nonbreeding
+477,魚狗(翠鳥),翠鳥,Alcedo atthis,species,,名錄對照_大肚溪.xlsx(20170938),B0307,362,breed
+478,南洋八哥,八哥屬(黑八哥類),Acridotheres sp. (black myna sp.),genus,unknown common name,名錄對照_大肚溪.xlsx(20170939),NA,756,NA
+479,尖尾鷸,尖尾濱鷸,Calidris acuminata,species,,名錄對照_大肚溪.xlsx(20170940),B0190,229,nonbreeding
+480,諸曼氏青足鷸,諾氏鷸,Tringa guttifer,species,,名錄對照_大肚溪.xlsx(20170941),B0220,213,nonbreeding
+481,小杓鷸,小杓鷸,Numenius minutus,species,,名錄對照_大肚溪.xlsx(20170942),B0212,218,nonbreeding
+482,灰面鳩,灰面鵟鷹,Butastur indicus,species,,名錄對照_大肚溪.xlsx(20170943),B0118,144,nonbreeding
+483,朱頸斑鳩(鳩珠頸),珠頸斑鳩,Streptopelia chinensis,species,,名錄對照_大肚溪.xlsx(20170944),B0273,312,breed
+484,埃及聖鹮(神聖朱鷺),埃及聖䴉,Threskiornis aethiopicus,species,,名錄對照_大肚溪.xlsx(20170945),B0066,126,introduced
+485,紅領瓣足鷸,紅領瓣足鷸,Phalaropus lobatus,species,,名錄對照_大肚溪.xlsx(20170946),B0237,251,nonbreeding
+486,黃頭鷺(牛背鷺),黃頭鷺,Bubulcus ibis,species,,名錄對照_大肚溪.xlsx(20170947),B0042,116,breed
+487,樹鹨,樹鷚,Anthus hodgsoni,species,,名錄對照_大肚溪.xlsx(20170949),B0464,688,nonbreeding
+488,雲雀,百靈科,Alaudidae,family,,名錄對照_大肚溪.xlsx(20170950),NA,441,NA
+489,老鷹,黑鳶,Milvus migrans,species,,名錄對照_大肚溪.xlsx(20170951),B0130,154,breed
+490,灰澤鵟,灰澤鵟,Circus cyaneus,species,,名錄對照_大肚溪.xlsx(20170952),B0123,146,nonbreeding
+491,褐頭鷦,褐頭鷦鶯,Prinia inornata,species,,名錄對照_大肚溪.xlsx(20170953),B0442,546,breed
+492,赤頸鳧,赤頸鴨,Mareca penelope,species,,名錄對照_大肚溪.xlsx(20170954),B0075,19,nonbreeding
+493,鈴鴨,斑背潛鴨,Aythya marila,species,,名錄對照_大肚溪.xlsx(20170955),B0088,35,nonbreeding
+494,裡海燕鷗,裏海燕鷗,Hydroprogne caspia,species,,名錄對照_大肚溪.xlsx(20170956),B0261,294,nonbreeding
+495,蒙古鐵嘴鴴,蒙古/鐵嘴鴴,Charadrius mongolus/leschenaultii,speciesComplex,,名錄對照_大肚溪.xlsx(20170957),NA,826,nonbreeding
+496,澤鳧,鳳頭潛鴨,Aythya fuligula,species,,名錄對照_大肚溪.xlsx(20170958),B0087,34,nonbreeding
+497,三趾鹬,三趾濱鷸,Calidris alba,species,,名錄對照_大肚溪.xlsx(20170959),B0199,236,nonbreeding
+498,黑脊鷗,銀鷗,Larus argentatus,species,,名錄對照_大肚溪.xlsx(20170960),B0243,283,nonbreeding
+499,巴鴨,巴鴨,Sibirionetta formosa,species,,名錄對照_大肚溪.xlsx(20170961),B0073,27,nonbreeding
+500,灰瓣足鹬,灰瓣足鷸,Phalaropus fulicarius,species,,名錄對照_大肚溪.xlsx(20170962),B0236,252,nonbreeding
+501,赤喉鹨,赤喉鷚,Anthus cervinus,species,,名錄對照_大肚溪.xlsx(20170963),B0462,690,nonbreeding
+502,小水鹨,黃腹鷚,Anthus rubescens,species,species split,名錄對照_大肚溪.xlsx(20170964),B0466,692,nonbreeding
+503,花鳬,花鳧,Tadorna tadorna,species,,名錄對照_大肚溪.xlsx(20170965),B0107,14,nonbreeding
+504,澤鵟,東方澤鵟,Circus spilonotus,species,,名錄對照_大肚溪.xlsx(20170966),B0122,145,nonbreeding
+505,大花鹨,大花鷚,Anthus richardi,species,,名錄對照_大肚溪.xlsx(20170967),B0465,683,nonbreeding
+506,大黑脊鷗,灰背鷗,Larus schistisagus,species,,名錄對照_大肚溪.xlsx(20170968),B0250,285,nonbreeding
+507,大葦鶯,東方大葦鶯,Acrocephalus orientalis,species,,名錄對照_大肚溪.xlsx(20170969),B0422,532,nonbreeding
+508,綠長尾鸚鵡,鸚鵡科,Psittacidae sp.,family,,名錄對照_大肚溪.xlsx(20170970),NA,755,introduced
+509,赤頸鳧(鴨),赤頸鴨,Mareca penelope,species,,名錄對照_大肚溪.xlsx(20170971),B0075,19,nonbreeding
+510,姥鷸,大濱鷸,Calidris tenuirostris,species,,名錄對照_大肚溪.xlsx(20170972),B0198,225,nonbreeding
+511,漂鷸,紅腹濱鷸,Calidris canutus,species,,名錄對照_大肚溪.xlsx(20170973),B0192,226,nonbreeding
+512,沼鷺(池鷺),池鷺,Ardeola bacchus,species,,名錄對照_大肚溪.xlsx(20170974),B0040,117,nonbreeding
+513,半蹼鷸,半蹼鷸,Limnodromus semipalmatus,species,,名錄對照_大肚溪.xlsx(20170975),B0206,243,nonbreeding
+514,冠水雞,紅冠水雞,Gallinula chloropus,species,,名錄對照_大肚溪.xlsx(20170976),B0162,175,breed
+515,野鸲,野鴝,Calliope calliope,species,,名錄對照_大肚溪.xlsx(20170977),B0393,605,nonbreeding
+516,董雞,董雞,Gallicrex cinerea,species,,名錄對照_大肚溪.xlsx(20170978),B0161,173,breed
+517,灰領瓣足鹬,灰瓣足鷸,Phalaropus fulicarius,species,,名錄對照_大肚溪.xlsx(20170979),B0236,252,nonbreeding
+518,秧雞,東亞秧雞,Rallus indicus,species,,名錄對照_大肚溪.xlsx(20170980),B0168,165,nonbreeding
+519,埃及聖鹮(神聖朱鷺、埃及朱鷺),埃及聖䴉,Threskiornis aethiopicus,species,,名錄對照_大肚溪.xlsx(20170982),B0066,126,introduced
+520,白頭錦鸲,黃頭扇尾鶯,Cisticola exilis,species,,名錄對照_大肚溪.xlsx(20170983),B0429,543,breed
+521,鷗嘴燕鷗,鷗嘴燕鷗,Gelochelidon nilotica,species,,名錄對照_大肚溪.xlsx(20170984),B0259,293,nonbreeding
+522,"磯鷸
+
+黃足鷸",鷸科,Scolopacidae,family,,名錄對照_大肚溪.xlsx(20170985),NA,205,NA
+523,黑頭(栗腹)文鳥,黑頭文鳥,Lonchura atricapilla,species,,名錄對照_大肚溪.xlsx(20170986),B0501,744,breed
+524,朱頂雀,普通朱頂雀,Acanthis flammea,species,,名錄對照_大肚溪.xlsx(20170987),B0521,729,nonbreeding
+525,小辫鴴,小辮鴴,Vanellus vanellus,species,,名錄對照_大肚溪.xlsx(20170988),B0188,192,nonbreeding
+526,翠鳥(魚狗),翠鳥,Alcedo atthis,species,,名錄對照_大肚溪.xlsx(20170990),B0307,362,breed
+527,埃及白環,埃及聖䴉,Threskiornis aethiopicus,species,,名錄對照_大肚溪.xlsx(20170991),B0066,126,introduced
+528,東方鴴,東方環頸鴴,Charadrius alexandrinus,species,,名錄對照_大肚溪.xlsx(20170992),B0178,196,breed
+529,諾氏鷸(諸曼氏青足鷸),諾氏鷸,Tringa guttifer,species,,名錄對照_大肚溪.xlsx(20170993),B0220,213,nonbreeding
+530,小型鷸鴴科,鴴形目,Charadriiformes sp.,order,,名錄對照_大肚溪.xlsx(20171031),NA,746,NA
+531,褐頭(台灣)鷦鶯,褐頭鷦鶯,Prinia inornata,species,,名錄對照_大肚溪.xlsx(20171034),B0442,546,breed
+532,水鴨,雁鴨科,Anatidae,family,,名錄對照_大肚溪.xlsx(20171036),NA,1,NA
+533,磯雁,紅頭潛鴨,Aythya ferina,species,,名錄對照_大肚溪.xlsx(20171054),B0086,31,nonbreeding
+534,埃及朱鷺(聖環),埃及聖䴉,Threskiornis aethiopicus,species,,名錄對照_大肚溪.xlsx(20171061),B0066,126,introduced
+535,金鵐,金鵐,Emberiza aureola,species,,名錄對照_大肚溪.xlsx(20171066),B0522,711,nonbreeding
+536,黑喉鸲,黑喉鴝,Saxicola maurus,species,,名錄對照_大肚溪.xlsx(20171068),B0402,626,nonbreeding
+537,埃及白環(埃及朱鷺),埃及聖䴉,Threskiornis aethiopicus,species,,名錄對照_大肚溪.xlsx(20171070),B0066,126,introduced
+538,樹麻雀,麻雀,Passer montanus,species,,名錄對照_大肚溪.xlsx(20171085),B0537,738,breed
+539,蘆鵐,蘆鵐,Emberiza schoeniclus,species,,名錄對照_大肚溪.xlsx(20171089),B0531,719,nonbreeding
+540,文鳥,梅花雀科,Estrildidae,family,,名錄對照_大肚溪.xlsx(20171090),NA,739,NA
+541,黃眉鵐,黃眉鵐,Emberiza chrysophrys,species,,名錄對照_大肚溪.xlsx(20171092),B0524,707,nonbreeding
+542,黃尾鸲,黃尾鴝,Phoenicurus auroreus,species,,名錄對照_大肚溪.xlsx(20171095),B0399,623,nonbreeding
+543,池鷺(沼鷺),池鷺,Ardeola bacchus,species,,名錄對照_大肚溪.xlsx(20171096),B0040,117,nonbreeding
+544,小鷸,小鷸,Lymnocryptes minimus,species,,名錄對照_大肚溪.xlsx(20171098),B0209,244,nonbreeding
+545,紅胸鴴,東方紅胸鴴,Charadrius veredus,species,,名錄對照_大肚溪.xlsx(20171101),B0179,200,nonbreeding
+546,噪林鳥,灰背椋鳥,Sturnia sinensis,species,,名錄對照_大肚溪.xlsx(20171102),B0487,657,nonbreeding
+547,紅鳩、朱頸斑鳩(鳩珠頸、斑鳩),鳩鴿科,Columbidae,family,,名錄對照_大肚溪.xlsx(20171105),NA,305,NA
+548,針尾鷸,針尾鷸,Gallinago stenura,species,,名錄對照_大肚溪.xlsx(20171108),B0204,247,nonbreeding
+549,小秧雞,小秧雞,Zapornia pusilla,species,,名錄對照_大肚溪.xlsx(20171109),B0165,172,nonbreeding
+550,家(眼鏡)八哥,家八哥,Acridotheres tristis,species,,名錄對照_大肚溪.xlsx(20171110),B0482,661,introduced
+551,黑頭翡翠,黑頭翡翠,Halcyon pileata,species,,名錄對照_大肚溪.xlsx(20171111),B0309,366,nonbreeding
+552,磯雁(紅頭潛鴨),紅頭潛鴨,Aythya ferina,species,,名錄對照_大肚溪.xlsx(20171112),B0086,31,nonbreeding
+553,黑頸鸊鷉,黑頸鸊鷉,Podiceps nigricollis,species,,名錄對照_大肚溪.xlsx(20171113),B0006,62,nonbreeding
+554,錦鸲(棕扇尾鶯),棕扇尾鶯,Cisticola juncidis,species,,名錄對照_大肚溪.xlsx(20171114),B0430,542,breed
+555,小鵪鶉,小鵪鶉,Synoicus chinensis,species,,名錄對照_大肚溪.xlsx(20171115),B0148,44,breed
+556,鵪鶉,鵪鶉,Coturnix japonica,species,,名錄對照_大肚溪.xlsx(20171116),B0149,45,nonbreeding
+557,鴨子,雁鴨科,Anatidae,family,,名錄對照_大肚溪.xlsx(20171117),NA,1,NA
+558,鵐,鵐科,Emberizidae,family,,名錄對照_大肚溪.xlsx(20171118),NA,699,NA
+559,鹬鴴,鴴形目,Charadriiformes sp.,order,,名錄對照_大肚溪.xlsx(20171119),NA,746,NA
+560,椋鳥,八哥科,Sturnidae,family,,名錄對照_大肚溪.xlsx(20171120),NA,650,NA
+561,鷸鴴,鴴形目,Charadriiformes sp.,order,,名錄對照_大肚溪.xlsx(20171121),NA,746,NA
+562,楔尾伯勞,楔尾伯勞,Lanius sphenocercus,species,,名錄對照_大肚溪.xlsx(20171122),B0479,412,nonbreeding
+563,白尾熱帶鳥,白尾熱帶鳥,Phaethon lepturus,species,,名錄對照_大肚溪.xlsx(20171123),B0024,82,nonbreeding
+564,短耳鴞,短耳鴞,Asio flammeus,species,,名錄對照_大肚溪.xlsx(20171124),B0291,349,nonbreeding
+565,白鸚鵡,鳳頭鸚鵡科,Cacatuidae sp.,family,,名錄對照_大肚溪.xlsx(20171125),NA,752,introduced
+566,白鸚鵡(雪衣娘),鳳頭鸚鵡科,Cacatuidae sp.,family,,名錄對照_大肚溪.xlsx(20171126),NA,752,introduced
+567,海鷗,歐亞海鷗,Larus canus,species,,名錄對照_大肚溪.xlsx(20171127),B0244,282,nonbreeding
+568,白頭(黑領、鳥領)椋鳥,黑領椋鳥,Gracupica nigricollis,species,,名錄對照_大肚溪.xlsx(20171128),B0484,656,breedKM
+569,綠鸚鵡,鸚鵡科,Psittacidae sp.,family,,名錄對照_大肚溪.xlsx(20171129),NA,755,introduced
+570,椋鳥(黃眼圈),家八哥,Acridotheres tristis,species,,名錄對照_大肚溪.xlsx(20171130),B0482,661,introduced
+571,似灰椋鳥,八哥科,Sturnidae,family,,名錄對照_大肚溪.xlsx(20171131),NA,650,NA
+572,野鴨,雁鴨科,Anatidae,family,,名錄對照_大肚溪.xlsx(20171132),NA,1,NA
+573,雀鹰(松雀鷹),松雀鷹,Accipiter virgatus,species,,名錄對照_大肚溪.xlsx(20171133),B0111,151,breed
+574,隼,遊隼,Falco peregrinus,species,,名錄對照_大肚溪.xlsx(20171134),B0138,390,breed
+575,眼綠繡,斯氏繡眼,Zosterops simplex,species,,名錄對照_大肚溪.xlsx(20171135),B0499,558,breed
+576,諾氏鷸(諾曼氏青足鷸),諾氏鷸,Tringa guttifer,species,,名錄對照_大肚溪.xlsx(20171136),B0220,213,nonbreeding
+577,黃足鹬,黃足鷸,Tringa brevipes,species,,名錄對照_大肚溪.xlsx(20171137),B0217,209,nonbreeding
+578,番石鷸,翻石鷸,Arenaria interpres,species,,名錄對照_大肚溪.xlsx(20171138),B0189,224,nonbreeding
+579,禾犀鷗,紅胸濱鷸,Calidris ruficollis,species,,名錄對照_大肚溪.xlsx(20171139),B0195,235,nonbreeding
+580,白脊鴒,白鶺鴒,Motacilla alba,species,,名錄對照_大肚溪.xlsx(20171140),B0468,681,breed
+581,灰脊鴒,灰鶺鴒,Motacilla cinerea,species,,名錄對照_大肚溪.xlsx(20171141),B0469,680,nonbreeding
+582,鐵嘴鷸,鐵嘴鴴,Charadrius leschenaultii,species,,名錄對照_大肚溪.xlsx(20171142),B0182,195,nonbreeding
+583,錦鴝,棕扇尾鶯,Cisticola juncidis,species,,名錄對照_大肚溪.xlsx(20171143),B0430,542,breed
+584,大黑鶺鷗,灰背鷗,Larus schistisagus,species,,名錄對照_大肚溪.xlsx(20171144),B0250,285,nonbreeding
+585,白頭錦鴝,黃頭扇尾鶯,Cisticola exilis,species,,名錄對照_大肚溪.xlsx(20171146),B0429,543,breed
+586,金班鴴,太平洋金斑鴴,Pluvialis fulva,species,,名錄對照_大肚溪.xlsx(20171147),B0186,191,nonbreeding
+587,朱頸斑鳩(珠頸鳩、斑鳩),珠頸斑鳩,Streptopelia chinensis,species,,名錄對照_大肚溪.xlsx(20171148),B0273,312,breed
+588,一群鷸,鷸科,Scolopacidae,family,,名錄對照_大肚溪.xlsx(20171149),NA,205,NA
+589,"黃鶺鴒
+
+灰鶺鴒",鶺鴒科,Motacillidae,family,,名錄對照_大肚溪.xlsx(20171150),NA,675,NA
+590,大雁,雁屬,Anser sp.,genus,,名錄對照_大肚溪.xlsx(20171151),NA,769,NA
+591,一群鴨,雁鴨科,Anatidae,family,,名錄對照_大肚溪.xlsx(20171153),NA,1,NA
+592,一群鷸鴴,鴴形目,Charadriiformes sp.,order,,名錄對照_大肚溪.xlsx(20171154),NA,746,NA
+593,藍歌鴝,藍歌鴝,Larvivora cyane,species,,名錄對照_大肚溪.xlsx(20171155),B0416,600,nonbreeding
+594,諾氏鷸,諾氏鷸,Tringa guttifer,species,,名錄對照_大肚溪.xlsx(20171156),B0220,213,nonbreeding
+595,泰八哥,大八哥(叢八哥),Acridotheres grandis,species,,名錄對照_大肚溪.xlsx(20171157),B0600,780,introduced
+596,歐洲八哥,歐洲椋鳥,Sturnus vulgaris,species,,名錄對照_大肚溪.xlsx(20171158),B0490,652,nonbreeding
+597,白喉海燕,海燕科,Hydrobatidae,family,,名錄對照_大肚溪.xlsx(20171159),NA,77,NA
+598,黑眼線白鶺鴒,白鶺鴒,Motacilla alba,species,,名錄對照_大肚溪.xlsx(20171160),B0468,681,breed
+599,柚黑椋鳥,八哥屬(黑八哥類),Acridotheres sp. (black myna sp.),genus,,名錄對照_大肚溪.xlsx(20171161),NA,756,NA
+600,大捲尾,大卷尾,Dicrurus macrocercus,species,,名錄對照_大肚溪.xlsx(20171162),B0335,419,breed
+601,粉紅鹦嘴,粉紅鸚嘴,Sinosuthora webbiana,species,,名錄對照_大肚溪.xlsx(20171163),B0353,552,breed
+602,眼鏡八哥,家八哥,Acridotheres tristis,species,,名錄對照_大肚溪.xlsx(20171164),B0482,661,introduced
+603,翡翠,翠鳥,Alcedo atthis,species,,名錄對照_大肚溪.xlsx(20171165),B0307,362,breed
+604,諾氏鷸(諾氏青足鷸),諾氏鷸,Tringa guttifer,species,,名錄對照_大肚溪.xlsx(20171166),B0220,213,nonbreeding
+605,翠鳥(魚狗、翡翠),翠鳥,Alcedo atthis,species,,名錄對照_大肚溪.xlsx(20171167),B0307,362,breed
+606,鮮卑鷸(東方寬嘴鷸),寬嘴鷸,Calidris falcinellus,species,,名錄對照_大肚溪.xlsx(20171168),B0205,228,nonbreeding
+607,鹰斑鷸,鷹斑鷸,Tringa glareola,species,,名錄對照_大肚溪.xlsx(20171169),B0219,216,nonbreeding
+608,粉紅鶯嘴,粉紅鸚嘴,Sinosuthora webbiana,species,,名錄對照_大肚溪.xlsx(20171170),B0353,552,breed
+609,赤腹鹰,赤腹鷹,Accipiter soloensis,species,,名錄對照_大肚溪.xlsx(20171171),B0112,149,nonbreeding
+610,小椋鳥,小椋鳥,Agropsar philippensis,species,,名錄對照_大肚溪.xlsx(20171172),B0486,655,nonbreeding
+611,過眼線灰背白鶺鴒,白鶺鴒,Motacilla alba,species,,,B0468,681,breed
+612,藍鵲,臺灣藍鵲,Urocissa caerulea,species,,,B0351,431,breed
+613,黃鶺鴒複合種,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+614,東方白鸛,東方白鸛,Ciconia boyciana,species,,,NA,87,nonbreeding
+615,烏鶲,烏鶲,Muscicapa sibirica,species,,,NA,580,nonbreeding
+616,黑鸛,黑鸛,Ciconia nigra,species,,,NA,86,nonbreeding
+617,長耳鴞,長耳鴞,Asio otus,species,,,NA,348,nonbreeding
+618,白腹琉璃,白腹琉璃,Cyanoptila cyanomelana,species,,,NA,592,nonbreeding
+619,黑頭白䴉,黑頭白䴉,Threskiornis melanocephalus,species,,,NA,127,nonbreeding
+620,戴菊鳥,戴菊鳥,Regulus regulus,species,,,NA,484,nonbreeding
+621,穴鳥,穴鳥,Bulweria bulwerii,species,,,NA,70,nonbreeding
+622,日本歌鴝,日本歌鴝,Larvivora akahige,species,,,NA,598,nonbreeding
+623,紅胸秋沙,紅胸秋沙,Mergus serrator,species,,,NA,41,nonbreeding
+624,紅尾鶇,紅尾鶇,Turdus naumanni,species,,,NA,648,nonbreeding
+625,麻鷺,麻鷺,Gorsachius goisagi,species,,,NA,122,nonbreeding
+626,唐秋沙,唐秋沙,Mergus squamatus,species,,,NA,42,nonbreeding
+627,秋小鷺,秋小鷺,Ixobrychus eurhythmus,species,,,NA,104,nonbreeding
+628,白斑軍艦鳥,白斑軍艦鳥,Fregata ariel,species,,,NA,90,nonbreeding
+629,黃頸黑鷺,黃頸黑鷺,Ixobrychus flavicollis,species,,,NA,106,nonbreeding
+630,花澤鵟,花澤鵟,Circus melanoleucos,species,,,NA,147,nonbreeding
+631,毛足鵟,毛足鵟,Buteo lagopus,species,,,NA,158,nonbreeding
+632,短尾信天翁,短尾信天翁,Phoebastria albatrus,species,,,NA,66,nonbreeding
+633,雙眉葦鶯,雙眉葦鶯,Acrocephalus bistrigiceps,species,,,NA,527,nonbreeding
+634,林三趾鶉,林三趾鶉,Turnix sylvaticus,species,,,NA,254,breed
+635,黃魚鴞,黃魚鴞,Ketupa flavipes,species,,,NA,343,breed
+636,金/赤腰燕,金/赤腰燕,Cecropis daurica/striolata,speciesComplex,,,NA,797,breed
+637,青頭潛鴨,青頭潛鴨,Aythya baeri,species,,,NA,33,nonbreeding
+638,東方角鴞,東方角鴞,Otus sunia,species,,,NA,342,nonbreeding
+639,花鵰,花鵰,Clanga clanga,species,,,NA,141,nonbreeding
+640,大地鷸,大地鷸,Gallinago hardwickii,species,,,NA,245,nonbreeding
+641,羅文鴨,羅文鴨,Mareca falcata,species,,,NA,18,nonbreeding
+642,樹鴨,樹鴨,Dendrocygna javanica,species,,,NA,2,nonbreeding
+643,草鴞,草鴞,Tyto longimembris,species,,,NA,337,breed
+644,黑叉尾海燕,黑叉尾海燕,Oceanodroma monorhis,species,,,NA,79,nonbreeding
+645,白肩鵰,白肩鵰,Aquila heliaca,species,,,NA,142,nonbreeding
+646,長嘴半蹼鷸,長嘴半蹼鷸,Limnodromus scolopaceus,species,,,NA,242,nonbreeding
+647,庫頁島柳鶯,庫頁島柳鶯,Phylloscopus borealoides,species,,,NA,514,nonbreeding
+648,虎斑地鶇,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+649,栗鳶,栗鳶,Haliastur indus,species,,,NA,155,nonbreeding
+650,斑椋鳥,斑椋鳥,Gracupica contra,species,,,NA,812,introduced
+651,北椋鳥,北椋鳥,Agropsar sturninus,species,,,NA,654,nonbreeding
+652,飯島柳鶯,飯島柳鶯,Phylloscopus ijimae,species,,,NA,516,nonbreeding
+653,黑喉潛鳥,黑喉潛鳥,Gavia arctica,species,,,NA,54,nonbreeding
+654,茅斑蝗鶯,矛斑蝗鶯,Locustella lanceolata,species,,,NA,539,nonbreeding
+655,北蝗鶯,北蝗鶯,Locustella ochotensis,species,,,NA,537,nonbreeding
+656,紅喉潛鳥,紅喉潛鳥,Gavia stellata,species,,,NA,53,nonbreeding
+657,白腹鰹鳥,白腹鰹鳥,Sula leucogaster,species,,,NA,93,nonbreeding
+658,冠鸊鷉,冠鸊鷉,Podiceps cristatus,species,,,NA,61,nonbreeding
+659,朱連雀,朱連雀,Bombycilla japonica,species,,,NA,695,nonbreeding
+660,紅尾熱帶鳥,紅尾熱帶鳥,Phaethon rubricauda,species,,,NA,84,nonbreeding
+661,長尾水薙鳥,長尾水薙鳥,Ardenna pacifica,species,,,NA,74,nonbreeding
+662,長尾水薙,長尾水薙鳥,Ardenna pacifica,species,,,NA,74,nonbreeding
+663,灰雁,灰雁,Anser anser,species,,,NA,8,nonbreeding
+664,大水薙鳥,大水薙鳥,Calonectris leucomelas,species,,,NA,72,nonbreeding
+665,大水薙,大水薙鳥,Calonectris leucomelas,species,,,NA,72,nonbreeding
+666,斑臉海蕃鴨,斑臉海蕃鴨,Melanitta fusca stejnegeri,species,,,NA,813,nonbreeding
+667,白眉燕鷗,白眉燕鷗,Onychoprion anaethetus,species,,,NA,290,breed
+668,烏領燕鷗,烏領燕鷗,Onychoprion fuscatus,species,,,NA,289,breed
+669,紅喉鶲,紅喉鶲,Ficedula albicilla,species,,,NA,617,nonbreeding
+670,丹氏鸕鷀,丹氏鸕鷀,Phalacrocorax capillatus,species,,,NA,98,nonbreeding
+671,小加拿大雁,小加拿大雁,Branta hutchinsii ,species,,,NA,782,nonbreeding
+672,海鸕鷀,海鸕鷀,Phalacrocorax pelagicus,species,,,NA,96,nonbreeding
+673,小綠鳩,小綠鳩,Ptilinopus leclancheri,species,,,NA,320,breed
+674,小勺鷸,小杓鷸,Numenius minutus,species,,墾丁新年數鳥NYBC,B0212,218,nonbreeding
+675,小嘴烏鴉,小嘴烏鴉,Corvus corone,species,,墾丁新年數鳥NYBC,NA,438,nonbreeding
+676,小嘴鴉,小嘴烏鴉,Corvus corone,species,,墾丁新年數鳥NYBC,NA,438,nonbreeding
+677,寒林豆雁,寒林豆雁,Anser fabalis,species,,,NA,4,nonbreeding
+678,凍原豆雁,凍原豆雁,Anser serrirostris,species,,,NA,5,nonbreeding
+679,白額雁,白額雁,Anser albifrons,species,,,NA,6,nonbreeding
+680,小白額雁,小白額雁,Anser erythropus,species,,,NA,7,nonbreeding
+681,黑雁,黑雁,Branta bernicla,species,,,NA,9,nonbreeding
+682,疣鼻天鵝,疣鼻天鵝,Cygnus olor,species,,,NA,10,nonbreeding
+683,小天鵝,小天鵝,Cygnus columbianus,species,,,NA,11,nonbreeding
+684,黃嘴天鵝,黃嘴天鵝,Cygnus cygnus,species,,,NA,12,nonbreeding
+685,瀆鳧,瀆鳧,Tadorna ferruginea,species,,,NA,13,nonbreeding
+686,棉鴨,棉鴨,Nettapus coromandelianus,species,,,NA,15,nonbreeding
+687,葡萄胸鴨,葡萄胸鴨,Mareca americana,species,,,NA,20,nonbreeding
+688,呂宋鴨,呂宋鴨,Anas luzonica,species,,,NA,23,nonbreeding
+689,赤嘴潛鴨,赤嘴潛鴨,Netta rufina,species,,,NA,29,nonbreeding
+690,帆背潛鴨,帆背潛鴨,Aythya valisineria,species,,,NA,30,nonbreeding
+691,白眼潛鴨,白眼潛鴨,Aythya nyroca,species,,,NA,32,nonbreeding
+692,小斑背潛鴨,小斑背潛鴨,Aythya affinis,species,,,NA,36,nonbreeding
+693,長尾鴨,長尾鴨,Clangula hyemalis,species,,,NA,37,nonbreeding
+694,鵲鴨,鵲鴨,Bucephala clangula,species,,,NA,38,nonbreeding
+695,白秋沙,白秋沙,Mergellus albellus,species,,,NA,39,nonbreeding
+696,川秋沙,川秋沙,Mergus merganser,species,,,NA,40,nonbreeding
+697,雉科,雉科,Phasianidae,family,,,NA,43,NA
+698,潛鳥科,潛鳥科,Gaviidae,family,,,NA,52,NA
+699,太平洋潛鳥,太平洋潛鳥,Gavia pacifica,species,,,NA,55,nonbreeding
+700,白嘴潛鳥,白嘴潛鳥,Gavia adamsii,species,,,NA,56,nonbreeding
+701,鸊鷉科,鸊鷉科,Podicipedidae,family,,,NA,57,NA
+702,角鸊鷉,角鸊鷉,Podiceps auritus,species,,,NA,59,nonbreeding
+703,赤頸鸊鷉,赤頸鸊鷉,Podiceps grisegena,species,,,NA,60,nonbreeding
+704,信天翁科,信天翁科,Diomedeidae,family,,,NA,63,NA
+705,黑背信天翁,黑背信天翁,Phoebastria immutabilis,species,,,NA,64,nonbreeding
+706,黑腳信天翁,黑腳信天翁,Phoebastria nigripes,species,,,NA,65,nonbreeding
+707,鸌科,鸌科,Procellariidae,family,,,NA,67,NA
+708,暴風鸌,暴風鸌,Fulmarus glacialis,species,,,NA,68,nonbreeding
+709,白腹穴鳥,白腹穴鳥,Pterodroma hypoleuca,species,,,NA,69,nonbreeding
+710,黑背白腹穴鳥,黑背白腹穴鳥,Pseudobulweria rostrata,species,,,NA,71,nonbreeding
+711,肉足水薙鳥,肉足水薙鳥,Ardenna carneipes,species,,,NA,73,nonbreeding
+712,灰水薙鳥,灰水薙鳥,Ardenna grisea,species,,,NA,75,nonbreeding
+713,短尾水薙鳥,短尾水薙鳥,Ardenna tenuirostris,species,,,NA,76,nonbreeding
+714,白腰叉尾海燕,白腰叉尾海燕,Oceanodroma leucorhoa,species,,,NA,78,nonbreeding
+715,褐翅叉尾海燕,褐翅叉尾海燕,Oceanodroma tristrami,species,,,NA,80,nonbreeding
+716,熱帶鳥科,熱帶鳥科,Phaethontidae,family,,,NA,81,NA
+717,紅嘴熱帶鳥,紅嘴熱帶鳥,Phaethon aethereus,species,,,NA,83,nonbreeding
+718,鸛科,鸛科,Ciconiidae,family,,,NA,85,NA
+719,軍艦鳥科,軍艦鳥科,Fregatidae,family,,,NA,88,NA
+720,軍艦鳥,軍艦鳥,Fregata minor,species,,,NA,89,nonbreeding
+721,鰹鳥科,鰹鳥科,Sulidae,family,,,NA,91,NA
+722,藍臉鰹鳥,藍臉鰹鳥,Sula dactylatra,species,,,NA,92,nonbreeding
+723,紅腳鰹鳥,紅腳鰹鳥,Sula sula,species,,,NA,94,nonbreeding
+724,鸕鷀科,鸕鷀科,Phalacrocoracidae,family,,,NA,95,NA
+725,鵜鶘科,鵜鶘科,Pelecanidae,family,,,NA,99,NA
+726,白臉鷺,白臉鷺,Egretta novaehollandiae,species,,,NA,111,nonbreeding
+727,白頸黑鷺,白頸黑鷺,Egretta picata,species,,,NA,115,nonbreeding
+728,爪哇池鷺,爪哇池鷺,Ardeola speciosa,species,,,NA,118,nonbreeding
+729,棕夜鷺,棕夜鷺,Nycticorax caledonicus,species,,,NA,121,nonbreeding
+730,䴉科,䴉科,Threskiornithidae,family,,,NA,124,NA
+731,朱鷺,朱鷺,Nipponia nippon,species,,,NA,128,nonbreeding
+732,鶚科,鶚科,Pandionidae,family,,,NA,131,NA
+733,黑冠鵑隼,黑冠鵑隼,Aviceda leuphotes,species,,,NA,136,nonbreeding
+734,禿鷲,禿鷲,Aegypius monachus,species,,,NA,137,nonbreeding
+735,白腹鵰,白腹鵰,Aquila fasciata,species,,,NA,143,nonbreeding
+736,白尾海鵰,白尾海鵰,Haliaeetus albicilla,species,,,NA,157,nonbreeding
+737,大鵟,大鵟,Buteo hemilasius,species,,,NA,160,nonbreeding
+738,紅腳秧雞,紅腳秧雞,Rallina fasciata,species,,,NA,162,nonbreeding
+739,白眉秧雞,白眉秧雞,Amaurornis cinerea,species,,,NA,167,nonbreeding
+740,斑胸秧雞,斑胸秧雞,Porzana porzana,species,,,NA,168,nonbreeding
+741,斑脇秧雞,斑脇秧雞,Zapornia paykullii,species,,,NA,170,nonbreeding
+742,紅腳苦惡鳥,紅腳苦惡鳥,Zapornia akool,species,,,NA,171,nonbreeding
+743,紫水雞,灰頭紫水雞,Porphyrio poliocephalus,species,,,NA,174,nonbreeding
+744,鶴科,鶴科,Gruidae,family,,,NA,177,NA
+745,簑羽鶴,簑羽鶴,Anthropoides virgo,species,,,NA,178,nonbreeding
+746,白鶴,白鶴,Leucogeranus leucogeranus,species,,,NA,179,nonbreeding
+747,白枕鶴,白枕鶴,Antigone vipio,species,,,NA,180,nonbreeding
+748,灰鶴,灰鶴,Grus grus,species,,,NA,181,nonbreeding
+749,白頭鶴,白頭鶴,Grus monacha,species,,,NA,182,nonbreeding
+750,丹頂鶴,丹頂鶴,Grus japonensis,species,,,NA,183,nonbreeding
+751,長腳鷸科,長腳鷸科,Recurvirostridae,family,,,NA,184,NA
+752,蠣鷸科,蠣鷸科,Haematopodidae,family,,,NA,187,NA
+753,蠣鴴,蠣鴴,Haematopus ostralegus,species,,,NA,188,nonbreeding
+754,劍鴴,劍鴴,Charadrius placidus,species,,,NA,198,nonbreeding
+755,彩鷸科,彩鷸科,Rostratulidae,family,,,NA,201,NA
+756,水雉科,水雉科,Jacanidae,family,,,NA,203,NA
+757,美洲黃足鷸,美洲黃足鷸,Tringa incana,species,,,NA,210,nonbreeding
+758,小黃腳鷸,小黃腳鷸,Tringa flavipes,species,,,NA,214,nonbreeding
+759,高蹺濱鷸,高蹺濱鷸,Calidris himantopus,species,,,NA,230,nonbreeding
+760,琵嘴鷸,琵嘴鷸,Calidris pygmaea,species,,,NA,234,nonbreeding
+761,黃胸鷸,黃胸鷸,Calidris subruficollis,species,,,NA,239,nonbreeding
+762,美洲尖尾濱鷸,美洲尖尾濱鷸,Calidris melanotos,species,,,NA,240,nonbreeding
+763,西濱鷸,西濱鷸,Calidris mauri,species,,,NA,241,nonbreeding
+764,三趾鶉科,三趾鶉科,Turnicidae,family,,,NA,253,NA
+765,黃腳三趾鶉,黃腳三趾鶉,Turnix tanki,species,,,NA,255,nonbreeding
+766,燕鴴科,燕鴴科,Glareolidae,family,,,NA,257,NA
+767,賊鷗科,賊鷗科,Stercorariidae,family,,,NA,259,NA
+768,灰賊鷗,灰賊鷗,Stercorarius maccormicki,species,,,NA,260,nonbreeding
+769,中賊鷗,中賊鷗,Stercorarius pomarinus,species,,,NA,261,nonbreeding
+770,短尾賊鷗,短尾賊鷗,Stercorarius parasiticus,species,,,NA,262,nonbreeding
+771,長尾賊鷗,長尾賊鷗,Stercorarius longicaudus,species,,,NA,263,nonbreeding
+772,海雀科,海雀科,Alcidae,family,,,NA,264,NA
+773,崖海鴉,崖海鴉,Uria aalge,species,,,NA,265,nonbreeding
+774,扁嘴海雀,扁嘴海雀,Synthliboramphus antiquus,species,,,NA,266,nonbreeding
+775,冠海雀,冠海雀,Synthliboramphus wumizusume,species,,,NA,267,nonbreeding
+776,鷗科,鷗科,Laridae,family,,,NA,268,NA
+777,三趾鷗,三趾鷗,Rissa tridactyla,species,,,NA,269,nonbreeding
+778,叉尾鷗,叉尾鷗,Xema sabini,species,,,NA,270,nonbreeding
+779,細嘴鷗,細嘴鷗,Chroicocephalus genei,species,,,NA,272,nonbreeding
+780,澳洲紅嘴鷗,紐澳紅嘴鷗,Chroicocephalus novaehollandiae,species,,,NA,273,nonbreeding
+781,棕頭鷗,棕頭鷗,Chroicocephalus brunnicephalus,species,,,NA,275,nonbreeding
+782,小鷗,小鷗,Hydrocoloeus minutus,species,,,NA,276,nonbreeding
+783,笑鷗,笑鷗,Leucophaeus atricilla,species,,,NA,277,nonbreeding
+784,弗氏鷗,弗氏鷗,Leucophaeus pipixcan,species,,,NA,278,nonbreeding
+785,遺鷗,遺鷗,Ichthyaetus relictus,species,,,NA,279,nonbreeding
+786,漁鷗,漁鷗,Ichthyaetus ichthyaetus,species,,,NA,280,nonbreeding
+787,北極鷗,北極鷗,Larus hyperboreus,species,,,NA,286,nonbreeding
+788,大鷗類,大鷗類,Larus sp.,genus,,,NA,757,NA
+789,玄燕鷗,玄燕鷗,Anous stolidus,species,,,NA,287,breed
+790,黑玄燕鷗,黑玄燕鷗,Anous minutus,species,,,NA,288,nonbreeding
+791,白腰燕鷗,白腰燕鷗,Onychoprion aleuticus,species,,,NA,291,nonbreeding
+792,黑浮鷗,黑浮鷗,Chlidonias niger,species,,,NA,295,nonbreeding
+793,白嘴端燕鷗,白嘴端燕鷗,Thalasseus sandvicensis,species,,,NA,302,nonbreeding
+794,小鳳頭燕鷗,小鳳頭燕鷗,Thalasseus bengalensis,species,,,NA,303,nonbreeding
+795,黑嘴端鳳頭燕鷗,黑嘴端鳳頭燕鷗,Thalasseus bernsteini,species,,,NA,304,breed
+796,黑林鴿,黑林鴿,Columba janthina,species,,,NA,308,nonbreeding
+797,灰斑鳩,灰斑鳩,Streptopelia decaocto,species,,,NA,310,introduced
+798,斑尾鵑鳩,斑尾鵑鳩,Macropygia unchall,species,,,NA,313,nonbreeding
+799,橙胸綠鳩,橙胸綠鳩,Treron bicinctus,species,,,NA,316,nonbreeding
+800,厚嘴綠鳩,厚嘴綠鳩,Treron curvirostra,species,,,NA,317,nonbreeding
+801,杜鵑科,杜鵑科,Cuculidae,family,,,NA,321,NA
+802,褐翅鴉鵑,褐翅鴉鵑,Centropus sinensis,species,,,NA,322,nonbreeding
+803,冠郭公,冠郭公,Clamator coromandus,species,,,NA,325,nonbreeding
+804,斑翅鳳頭鵑,斑翅鳳頭鵑,Clamator jacobinus,species,,,NA,326,nonbreeding
+805,八聲杜鵑,八聲杜鵑,Cacomantis merulinus,species,,,NA,327,nonbreeding
+806,烏鵑,烏鵑,Surniculus dicruroides,species,,,NA,804,nonbreeding
+807,北方鷹鵑,北方鷹鵑,Hierococcyx hyperythrus,species,,,NA,330,nonbreeding
+808,棕腹鷹鵑,棕腹鷹鵑,Hierococcyx nisicolor,species,,,NA,331,nonbreeding
+809,草鴞科,草鴞科,Tytonidae,family,,,NA,336,NA
+810,鴟鴞科,鴟鴞科,Strigidae,family,,,NA,338,NA
+811,縱紋腹小鴞,縱紋腹小鴞,Athene noctua,species,,,NA,345,nonbreeding
+812,夜鷹科,夜鷹科,Caprimulgidae,family,,,NA,351,NA
+813,普通夜鷹,普通夜鷹,Caprimulgus jotaka,species,,,NA,352,nonbreeding
+814,紫針尾雨燕,紫針尾雨燕,Hirundapus celebensis,species,,,NA,357,nonbreeding
+815,短嘴金絲燕,短嘴金絲燕,Aerodramus brevirostris,species,,,NA,358,nonbreeding
+816,三趾翠鳥,黑背三趾翠鳥,Ceyx erithaca,species,,,NA,363,nonbreeding
+817,蒼翡翠,蒼翡翠,Halcyon smyrnensis,species,,,NA,365,nonbreeding
+818,白領翡翠,白領翡翠,Todiramphus chloris,species,,,NA,367,nonbreeding
+819,斑翡翠,斑翡翠,Ceryle rudis,species,,,NA,368,nonbreeding
+820,蜂虎科,蜂虎科,Meropidae,family,,,NA,369,NA
+821,藍喉蜂虎,藍喉蜂虎,Merops viridis,species,,,NA,370,nonbreeding
+822,栗喉蜂虎,栗喉蜂虎,Merops philippinus,species,,,NA,371,nonbreeding
+823,彩虹蜂虎,彩虹蜂虎,Merops ornatus,species,,,NA,372,nonbreeding
+824,佛法僧科,佛法僧科,Coraciidae,family,,,NA,374,NA
+825,戴勝科,戴勝科,Upupidae,family,,,NA,376,NA
+826,鬚鴷科,鬚鴷科,Megalaimidae,family,,,NA,378,NA
+827,地啄木,地啄木,Jynx torquilla,species,,,NA,381,nonbreeding
+828,紅腳隼,紅腳隼,Falco amurensis,species,,,NA,387,nonbreeding
+829,灰背隼,灰背隼,Falco columbarius,species,,,NA,388,nonbreeding
+830,燕隼,燕隼,Falco subbuteo,species,,,NA,389,nonbreeding
+831,八色鳥科,八色鳥科,Pittidae,family,,,NA,391,NA
+832,藍翅八色鳥,藍翅八色鳥,Pitta moluccensis,species,,,NA,392,nonbreeding
+833,綠胸八色鳥,綠胸八色鳥,Pitta sordida,species,,,NA,394,nonbreeding
+834,山椒鳥科,山椒鳥科,Campephagidae,family,,,NA,395,NA
+835,長尾山椒鳥,長尾山椒鳥,Pericrocotus ethologus,species,,,NA,397,nonbreeding
+836,琉球山椒鳥,琉球山椒鳥,Pericrocotus tegimae,species,,,NA,398,nonbreeding
+837,小灰山椒鳥,小灰山椒鳥,Pericrocotus cantonensis,species,,,NA,400,nonbreeding
+838,粉紅山椒鳥,粉紅山椒鳥,Pericrocotus roseus,species,,,NA,401,nonbreeding
+839,黑原鵑鵙,黑原鵑鵙,Lalage nigra,species,,,NA,403,nonbreeding
+840,虎紋伯勞,虎紋伯勞,Lanius tigrinus,species,,,NA,406,nonbreeding
+841,紅背伯勞,紅背伯勞,Lanius collurio,species,,,NA,408,nonbreeding
+842,栗背伯勞,栗背伯勞,Lanius collurioides,species,,,NA,410,nonbreeding
+843,綠鵙科,綠鵙科,Vireonidae,family,,,NA,413,NA
+844,黃鸝科,黃鸝科,Oriolidae,family,,,NA,415,NA
+845,鴉嘴卷尾,鴉嘴卷尾,Dicrurus annectens,species,,,NA,421,nonbreeding
+846,髮冠卷尾,髮冠卷尾,Dicrurus hottentottus,species,,,NA,423,nonbreeding
+847,王鶲科,王鶲科,Monarchidae,family,,,NA,424,NA
+848,阿穆爾綬帶,阿穆爾綬帶,Terpsiphone incei,species,,,NA,427,nonbreeding
+849,東方寒鴉,東方寒鴉,Corvus dauuricus,species,,,NA,435,nonbreeding
+850,家烏鴉,家烏鴉,Corvus splendens,species,,,NA,436,nonbreeding
+851,禿鼻鴉,禿鼻鴉,Corvus frugilegus,species,,,NA,437,nonbreeding
+852,玉頸鴉,玉頸鴉,Corvus pectoralis,species,,,NA,440,breedKM
+853,賽氏短趾百靈,賽氏短趾百靈,Calandrella dukhunensis,species,,,NA,442,nonbreeding
+854,亞洲短趾百靈,亞洲短趾百靈,Alaudala cheleensis,species,,,NA,443,nonbreeding
+855,白腹毛腳燕,白腹毛腳燕,Delichon urbicum,species,,,NA,453,nonbreeding
+856,細嘴鶲科,細嘴鶲科,Stenostiridae,family,,,NA,455,NA
+857,方尾鶲,方尾鶲,Culicicapa ceylonensis,species,,,NA,456,nonbreeding
+858,山雀科,山雀科,Paridae,family,,,NA,457,NA
+859,黃腹山雀,黃腹山雀,Periparus venustulus,species,,,NA,459,nonbreeding
+860,雜色山雀,雜色山雀,Sittiparus varius,species,,,NA,460,nonbreeding
+861,白頰山雀,白頰山雀,Parus minor,species,,,NA,462,nonbreeding
+862,攀雀科,攀雀科,Remizidae,family,,,NA,465,NA
+863,攀雀,攀雀,Remiz consobrinus,species,,,NA,466,nonbreeding
+864,長尾山雀科,長尾山雀科,Aegithalidae,family,,,NA,467,NA
+865,鳾科,鳾科,Sittidae,family,,,NA,469,NA
+866,鷦鷯科,鷦鷯科,Troglodytidae,family,,,NA,471,NA
+867,河烏科,河烏科,Cinclidae,family,,,NA,473,NA
+868,白喉紅臀鵯,白喉紅臀鵯,Pycnonotus aurigaster,species,,,NA,479,nonbreeding
+869,栗背短腳鵯,栗背短腳鵯,Hemixos castanonotus,species,,,NA,482,nonbreeding
+870,戴菊科,戴菊科,Regulidae,family,,,NA,483,NA
+871,鷦眉科,鷦眉科,Pnoepygidae,family,,,NA,486,NA
+872,樹鶯科,樹鶯科,Scotocercidae,family,,,NA,488,NA
+873,歐亞柳鶯,歐亞柳鶯,Phylloscopus trochilus,species,,,NA,496,nonbreeding
+874,嘰喳柳鶯,嘰喳柳鶯,Phylloscopus collybita,species,,,NA,497,nonbreeding
+875,林柳鶯,林柳鶯,Phylloscopus sibilatrix,species,,,NA,498,nonbreeding
+876,黃腹柳鶯,黃腹柳鶯,Phylloscopus affinis,species,,,NA,500,nonbreeding
+877,棕腹柳鶯,棕腹柳鶯,Phylloscopus subaffinis,species,,,NA,501,nonbreeding
+878,棕眉柳鶯,棕眉柳鶯,Phylloscopus armandii,species,,,NA,502,nonbreeding
+879,巨嘴柳鶯,巨嘴柳鶯,Phylloscopus schwarzi,species,,,NA,503,nonbreeding
+880,雲南柳鶯,雲南柳鶯,Phylloscopus yunnanensis,species,,,NA,505,nonbreeding
+881,淡眉柳鶯,淡眉柳鶯,Phylloscopus humei,species,,,NA,507,nonbreeding
+882,勘察加柳鶯,極北柳鶯複合種,Phylloscopus borealis/xanthodryas/examinandus,speciesComplex,,,NA,822,nonbreeding
+883,日本柳鶯,極北柳鶯複合種,Phylloscopus borealis/xanthodryas/examinandus,speciesComplex,,eBird 2018,NA,822,nonbreeding
+884,暗綠柳鶯,暗綠柳鶯,Phylloscopus trochiloides,speciesComplex,,eBird 2018,NA,511,nonbreeding
+885,雙斑綠柳鶯,雙斑綠柳鶯,Phylloscopus plumbeitarsus,species,,,NA,512,nonbreeding
+886,淡腳柳鶯,淡腳柳鶯,Phylloscopus tenellipes,species,,,NA,513,nonbreeding
+887,克氏冠紋柳鶯,克氏冠紋柳鶯,Phylloscopus claudiae,species,,,NA,517,nonbreeding
+888,哈氏冠紋柳鶯,哈氏冠紋柳鶯,Phylloscopus goodsoni,species,,,NA,518,nonbreeding
+889,黑眉柳鶯,黑眉柳鶯,Phylloscopus ricketti,species,,,NA,519,nonbreeding
+890,淡尾鶲鶯,淡尾鶲鶯,Phylloscopus soror,species,,,NA,520,nonbreeding
+891,比氏鶲鶯,比氏鶲鶯,Phylloscopus valentini,species,,,NA,521,nonbreeding
+892,白眶鶲鶯,白眶鶲鶯,Phylloscopus intermedius,species,,,NA,522,nonbreeding
+893,栗頭鶲鶯,栗頭鶲鶯,Phylloscopus castaniceps,species,,,NA,523,nonbreeding
+894,葦鶯科,葦鶯科,Acrocephalidae,family,,,NA,524,NA
+895,厚嘴葦鶯 ,厚嘴葦鶯,Arundinax aedon,species,,,NA,525,nonbreeding
+896,靴籬鶯,靴籬鶯,Iduna caligata,species,,,NA,526,nonbreeding
+897,細紋葦鶯,細紋葦鶯,Acrocephalus sorghophilus,species,,,NA,528,nonbreeding
+898,稻田葦鶯,稻田葦鶯,Acrocephalus agricola,species,,,NA,529,nonbreeding
+899,遠東葦鶯,遠東葦鶯,Acrocephalus tangorum,species,,,NA,530,nonbreeding
+900,布氏葦鶯,布氏葦鶯,Acrocephalus dumetorum,species,,,NA,531,nonbreeding
+901,蝗鶯科,蝗鶯科,Locustellidae,family,,,NA,533,NA
+902,庫頁島蝗鶯,庫頁島蝗鶯,Locustella amnicola,species,,,NA,535,nonbreeding
+903,小蝗鶯,小蝗鶯,Locustella certhiola,species,,,NA,536,nonbreeding
+904,史氏蝗鶯,史氏蝗鶯,Locustella pleskei,species,,,NA,538,nonbreeding
+905,漠地林鶯,漠地林鶯,Sylvia nana,species,,,NA,548,nonbreeding
+906,白喉林鶯,白喉林鶯,Sylvia curruca,species,,,NA,549,nonbreeding
+907,鸚嘴科,鸚嘴科,Paradoxornithidae sp.,family,,,NA,550,NA
+908,繡眼科,繡眼科,Zosteropidae,family,,,NA,554,NA
+909,栗耳鳳鶥,栗耳鳳眉,Staphida torqueola,species,,,NA,555,nonbreeding
+910,紅脇繡眼,紅脇繡眼,Zosterops erythropleurus,species,,,NA,557,nonbreeding
+911,雀眉科,雀眉科,Pellorneidae,family,,,NA,564,NA
+912,噪眉科,噪眉科,Leiothrichidae,family,,,NA,566,NA
+913,黑臉噪鶥,黑臉噪鶥,Garrulax perspicillatus,species,,,NA,568,introduced
+914,鶲科,鶲科,Muscicapidae,family,,,NA,578,NA
+915,斑鶲,斑鶲,Muscicapa striata,species,,,NA,581,nonbreeding
+916,褐胸鶲,褐胸鶲,Muscicapa muttui,species,,,NA,584,nonbreeding
+917,海南藍仙鶲,海南藍仙鶲,Cyornis hainanus,species,,,NA,587,nonbreeding
+918,白喉林鶲,白喉林鶲,Cyornis brunneatus,species,,,NA,588,nonbreeding
+919,棕腹大仙鶲,棕腹大仙鶲,Niltava davidi,species,,,NA,589,nonbreeding
+920,棕腹仙鶲,棕腹仙鶲,Niltava sundara,species,,,NA,590,nonbreeding
+921,琉璃藍鶲,琉璃藍鶲,Cyanoptila cumatilis,species,,,NA,593,nonbreeding
+922,銅藍鶲,銅藍鶲,Eumyias thalassinus,species,,,NA,594,nonbreeding
+923,白喉短翅鶇,白喉短翅鶇,Brachypteryx leucophris,species,,,NA,595,nonbreeding
+924,紅尾歌鴝,紅尾歌鴝,Larvivora sibilans,species,,,NA,597,nonbreeding
+925,琉球歌鴝,琉球歌鴝,Larvivora komadori,species,,,NA,599,nonbreeding
+926,藍喉鴝,藍喉鴝,Luscinia svecica,species,,,NA,601,nonbreeding
+927,白斑紫嘯鶇,白斑紫嘯鶇,Myophonus caeruleus,species,,,NA,603,nonbreeding
+928,白眉鶲,白眉鶲,Ficedula zanthopygia,species,,,NA,610,nonbreeding
+929,綠背姬鶲,綠背姬鶲,Ficedula elisae,species,,,NA,611,nonbreeding
+930,白眉黃鶲,白眉黃鶲,Ficedula mugimaki,species,,,NA,613,nonbreeding
+931,銹胸藍姬鶲,銹胸藍姬鶲,Ficedula sordida,species,,,NA,614,nonbreeding
+932,橙胸姬鶲,橙胸姬鶲,Ficedula strophiata,species,,,NA,616,nonbreeding
+933,藍額紅尾鴝,藍額紅尾鴝,Phoenicurus frontalis,species,,,NA,619,nonbreeding
+934,白頂溪鴝,白頂溪鴝,Phoenicurus leucocephalus,species,,,NA,621,nonbreeding
+935,赭紅尾鴝,赭紅尾鴝,Phoenicurus ochruros,species,,,NA,622,nonbreeding
+936,白喉磯鶇,白喉磯鶇,Monticola gularis,species,,,NA,624,nonbreeding
+937,白斑黑石䳭,白斑黑石䳭,Saxicola caprata,species,,,NA,627,nonbreeding
+938,灰叢鴝,灰叢鴝,Saxicola ferreus,species,,,NA,628,nonbreeding
+939,穗䳭,穗䳭,Oenanthe oenanthe,species,,,NA,629,nonbreeding
+940,白頂䳭,白頂䳭,Oenanthe pleschanka,species,,,NA,630,nonbreeding
+941,漠䳭,漠䳭,Oenanthe deserti,species,,,NA,631,nonbreeding
+942,沙䳭,沙䳭,Oenanthe isabellina,species,,,NA,632,nonbreeding
+943,白眉地鶇,白眉地鶇,Geokichla sibirica,species,,,NA,634,nonbreeding
+944,橙頭地鶇,橙頭地鶇,Geokichla citrina,species,,,NA,635,nonbreeding
+945,灰背鶇,灰背鶇,Turdus hortulorum,species,,,NA,638,nonbreeding
+946,烏灰鶇,烏灰鶇,Turdus cardis,species,,,NA,639,nonbreeding
+947,中國黑鶇,中國黑鶇,Turdus mandarinus,species,,,NA,640,breed
+948,黑頸鶇,黑頸鶇,Turdus atrogularis,species,,,NA,645,nonbreeding
+949,赤頸鶇,赤頸鶇,Turdus ruficollis,species,,,NA,646,nonbreeding
+950,寶興歌鶇,寶興歌鶇,Otocichla mupinensis,species,,,NA,649,nonbreeding
+951,粉紅椋鳥,粉紅椋鳥,Pastor roseus,species,,,NA,653,nonbreeding
+952,吸蜜鳥科,吸蜜鳥科,Nectariniidae,family,,,NA,668,NA
+953,黃腹花蜜鳥,黃腹花蜜鳥,Cinnyris jugularis,species,,,NA,669,nonbreeding
+954,藍喉太陽鳥,藍喉太陽鳥,Aethopyga gouldiae,species,,,NA,670,nonbreeding
+955,叉尾太陽鳥,叉尾太陽鳥,Aethopyga christinae,species,,,NA,671,nonbreeding
+956,岩鷚科,岩鷚科,Prunellidae,family,,,NA,672,NA
+957,棕眉山岩鷚,棕眉山岩鷚,Prunella montanella,species,,,NA,674,nonbreeding
+958,山鶺鴒,山鶺鴒,Dendronanthus indicus,species,,,NA,676,nonbreeding
+959,西方黃鶺鴒,黃鶺鴒複合種,Motacilla flava/tschutschensis,speciesComplex,,,B0471,819,nonbreeding
+960,日本鶺鴒,日本鶺鴒,Motacilla grandis,species,,,NA,682,nonbreeding
+961,布萊氏鷚,布萊氏鷚,Anthus godlewskii,species,,,NA,684,nonbreeding
+962,草地鷚,草地鷚,Anthus pratensis,species,,,NA,685,nonbreeding
+963,粉紅胸鷚,粉紅胸鷚,Anthus roseatus,species,,,NA,686,nonbreeding
+964,林鷚,林鷚,Anthus trivialis,species,,,NA,687,nonbreeding
+965,水鷚,水鷚,Anthus spinoletta,species,,,NA,691,nonbreeding
+966,連雀科,連雀科,Bombycillidae,family,,,NA,693,NA
+967,黃連雀,黃連雀,Bombycilla garrulus,species,,,NA,694,nonbreeding
+968,鐵爪鵐科,鐵爪鵐科,Calcariidae,family,,,NA,696,NA
+969,鐵爪鵐,鐵爪鵐,Calcarius lapponicus,species,,,NA,697,nonbreeding
+970,雪鵐,雪鵐,Plectrophenax nivalis,species,,,NA,698,nonbreeding
+971,冠鵐,冠鵐,Emberiza lathami,species,,,NA,700,nonbreeding
+972,白頭鵐,白頭鵐,Emberiza leucocephalos,species,,,NA,701,nonbreeding
+973,白頂鵐,白頂鵐,Emberiza stewarti,species,,,NA,703,nonbreeding
+974,紅頸葦鵐,紅頸葦鵐,Emberiza yessoensis,species,,,NA,704,nonbreeding
+975,赤胸鵐,赤胸鵐,Emberiza fucata,species,,,NA,706,nonbreeding
+976,黃喉鵐,黃喉鵐,Emberiza elegans,species,,,NA,710,nonbreeding
+977,黑頭鵐,黑頭鵐,Emberiza melanocephala,species,,,NA,713,nonbreeding
+978,褐頭鵐,褐頭鵐,Emberiza bruniceps,species,,,NA,714,nonbreeding
+979,灰鵐,灰鵐,Emberiza variabilis,species,,,NA,717,nonbreeding
+980,葦鵐,葦鵐,Emberiza pallasi,species,,,NA,718,nonbreeding
+981,雀科,雀科,Fringillidae,family,,,NA,720,NA
+982,歐亞鷽,歐亞鷽,Pyrrhula pyrrhula,species,,,NA,724,nonbreeding
+983,普通朱雀,普通朱雀,Carpodacus erythrinus,species,,,NA,725,nonbreeding
+984,北朱雀,北朱雀,Carpodacus roseus,species,,,NA,727,nonbreeding
+985,臘嘴雀,臘嘴雀,Coccothraustes coccothraustes,species,,,NA,731,nonbreeding
+986,桑鳲,桑鳲,Eophona personata,species,,,NA,733,nonbreeding
+987,麻雀科,麻雀科,Passeridae,family,,,NA,735,NA
+988,家麻雀,家麻雀,Passer domesticus,species,,,NA,736,introduced
+989,藍孔雀,藍孔雀,Pavo cristatus,species,,,NA,51,introduced
+990,斑馬鳩,斑馬鳩,Geopelia striata,species,,,NA,811,introduced
+991,戈芬氏鳳頭鸚鵡,戈芬氏鳳頭鸚鵡,Cacatua goffiniana,species,,,NA,784,introduced
+992,白鳳頭鸚鵡,白鳳頭鸚鵡,Cacatua alba,species,,,NA,790,introduced
+993,紅色吸蜜鸚鵡,紅色吸蜜鸚鵡,Eos bornea,species,,,NA,800,introduced
+994,彩虹吸蜜鸚鵡,彩虹吸蜜鸚鵡,Trichoglossus haematodus,species,,,NA,806,introduced
+995,紅耳鵯,紅耳鵯,Pycnonotus jocosus,species,,,NA,799,introduced
+996,唐納雀科,唐納雀科,Thraupidae sp.,family,,,NA,750,introduced
+997,紅冠臘嘴鵐,紅冠臘嘴鵐,Paroaria coronata,species,,,NA,801,introduced
+998,黃額絲雀,黃額絲雀,Serinus mozambicus,species,,,NA,818,introduced
+999,織布鳥科,織布鳥科,Ploceidae sp.,family,,,NA,754,introduced
+1000,非洲金織雀,非洲金織雀,Ploceus subaureus,species,,,NA,798,introduced
+1001,黑頭織雀,黑頭織雀,Ploceus cucullatus,species,,,NA,821,introduced
+1002,白頭文鳥,白頭文鳥,Lonchura maja,species,,,NA,791,introduced
+1003,維達雀科,維達雀科,Viduidae sp.,family,,,NA,751,introduced
+1004,針尾維達雀,針尾維達雀,Vidua macroura,species,,,NA,805,introduced
+1005,克島圓尾穴鳥,克島圓尾穴鳥,Pterodroma neglecta,species,,,NA,793,nonbreeding
+1006,日本叉尾海燕,日本叉尾海燕,Oceanodroma matsudairae,species,,,NA,785,nonbreeding
+1007,喜馬拉雅中杜鵑,喜馬拉雅中杜鵑,Cuculus saturatus,species,,,NA,809,nonbreeding
+1008,褐耳鷹,褐耳鷹,Accipiter badius,species,,,NA,829,nonbreeding
+1009,鵰鴞,鵰鴞,Bubo bubo,species,,,NA,836,introduced
+1010,傑曼氏金絲燕,傑曼氏金絲燕,Aerodramus germani,species,,,NA,808,nonbreeding
+1011,黃爪隼,黃爪隼,Falco naumanni,species,,,NA,816,nonbreeding
+1012,燕鵙科,燕鵙科,Artamidae sp.,family,,,NA,753,NA
+1013,白胸燕鵙,白胸燕鵙,Artamus leucorynchus,species,,,NA,789,nonbreeding
+1014,赤紅山椒鳥,赤紅山椒鳥,Pericrocotus speciosus,species,,,NA,794,nonbreeding
+1015,蒙古百靈,蒙古百靈,Melanocorypha mongolica,species,,,NA,827,introduced
+1016,褐頭鶇,褐頭鶇,Turdus feae,species,,,NA,830,nonbreeding
+1017,中勺鷸,中杓鷸,Numenius phaeopus,species,,,B0213,219,nonbreeding
+1018,丹氏鸕鶿,丹氏鸕鷀,Phalacrocorax capillatus,species,,,NA,98,nonbreeding
+1019,北黃鶯,北蝗鶯,Locustella ochotensis,species,,,NA,537,nonbreeding
+1020,台八哥,八哥,Acridotheres cristatellus,species,,,B0481,664,breed
+1021,白冠水雞,白冠雞,Fulica atra,species,,,B0160,176,nonbreeding
+1022,白背鹨,白背鷚,Anthus gustavi,species,,,B0463,689,nonbreeding
+1023,灰面鷲,灰面鵟鷹,Butastur indicus,species,,,B0118,144,nonbreeding
+1024,灰背赤腹鶇,灰背鶇,Turdus hortulorum,species,,,NA,638,nonbreeding
+1025,灰背紅尾伯勞,紅尾伯勞,Lanius cristatus,species,,,B0476,409,nonbreeding
+1026,灰頭伯勞,紅尾伯勞,Lanius cristatus,species,,,B0476,409,nonbreeding
+1027,灰頭黑臉鵐,灰頭黑臉鵐,Emberiza spodocephala,species,,,B0532,716,nonbreeding
+1028,沙鴴,蒙古/鐵嘴鴴,Charadrius mongolus/leschenaultii,speciesComplex,,,NA,826,nonbreeding
+1029,牡丹鸚鵡,牡丹鸚鵡屬,Agapornis sp.,genus,,,NA,762,introduced
+1030,冠鷿鷉,冠鸊鷉,Podiceps cristatus,species,,,NA,61,nonbreeding
+1031,冠鸊鷈,冠鸊鷉,Podiceps cristatus,species,,,NA,61,nonbreeding
+1032,紅腹藍磯鶇,藍磯鶇,Monticola solitarius,species,,,B0394,625,breed
+1033,栗腹磯鶇,藍磯鶇,Monticola solitarius,species,,,B0394,625,breed
+1034,栗腹藍磯鶇,藍磯鶇,Monticola solitarius,species,,,B0394,625,breed
+1035,海鸕鶿,海鸕鷀,Phalacrocorax pelagicus,species,,,NA,96,nonbreeding
+1036,烏鶇,中國黑鶇,Turdus mandarinus,species,,,NA,640,breed
+1037,黑鶇,中國黑鶇,Turdus mandarinus,species,,,NA,640,breed
+1038,彩環,彩䴉,Plegadis falcinellus,species,,,B0065,125,nonbreeding
+1039,猛禽,日行性猛禽,Accipitriformes/Falconiformes sp.,class,,,NA,748,NA
+1040,雀鷹,雀鷹屬,Accipiter sp.,genus,,,NA,768,NA
+1041,寒鴉,東方寒鴉,Corvus dauuricus,species,,,NA,435,nonbreeding
+1042,游隼,遊隼,Falco peregrinus,species,,,B0138,390,breed
+1043,灰山椒,灰山椒鳥,Pericrocotus divaricatus,species,,,B0331,399,nonbreeding
+1044,灰喉山椒,灰喉山椒鳥,Pericrocotus solaris,species,,,B0332,396,breed
+1045,花翅山椒,花翅山椒鳥,Coracina macei,species,,,B0330,402,breed
+1046,紅山椒,灰喉山椒鳥,Pericrocotus solaris,species,,,B0332,396,breed
+1047,黑翅山椒,黑翅山椒鳥,Lalage melaschistos,species,,,B0329,404,nonbreeding
+1048,長尾山椒,長尾山椒鳥,Pericrocotus ethologus,species,,,NA,397,nonbreeding
+1049,琉球山椒,琉球山椒鳥,Pericrocotus tegimae,species,,,NA,398,nonbreeding
+1050,小灰山椒,小灰山椒鳥,Pericrocotus cantonensis,species,,,NA,400,nonbreeding
+1051,粉紅山椒,粉紅山椒鳥,Pericrocotus roseus,species,,,NA,401,nonbreeding
+1052,赤紅山椒,赤紅山椒鳥,Pericrocotus speciosus,species,,,NA,794,nonbreeding
+1053,黑胸鴴,太平洋金斑鴴,Pluvialis fulva,species,,,B0186,191,nonbreeding
+1054,雀形目,雀形目,Passeriformes sp.,order,,,NA,745,NA
+1055,過眼線白鶺鴒,白鶺鴒,Motacilla alba,species,,,B0468,681,breed
+1056,鳧翁,白冠雞,Fulica atra,species,,,B0160,176,nonbreeding
+1057,綠蓑鷺,綠簑鷺,Butorides striata,species,,,B0043,119,breed
+1058,綬帶鳥,綬帶屬,Terpsiphone sp.,genus,,,NA,771,NA
+1059,臺灣八哥,八哥,Acridotheres cristatellus,species,,,B0481,664,breed
+1060,台灣八哥,八哥,Acridotheres cristatellus,species,,,B0481,664,breed
+1061,臺灣畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+1062,臺灣山鷓鴣,臺灣山鷓鴣,Arborophila crudigularis,species,,,B0146,46,breed
+1063,臺灣水鹿,臺灣水鹿,Rusa unicolor swinhoei,nonAves,,,NA,839,NA
+1064,臺灣白喉噪眉,臺灣白喉噪眉,Ianthocincla ruficeps,species,,,B0366,571,breed
+1065,臺灣朱雀,臺灣朱雀,Carpodacus formosanus,species,,,B0511,726,breed
+1066,臺灣竹雞,臺灣竹雞,Bambusicola sonorivox,species,,,B0147,47,breed
+1067,臺灣夜鷹,南亞夜鷹,Caprimulgus affinis,species,,,B0302,353,breed
+1068,臺灣松雀鷹,松雀鷹,Accipiter virgatus,species,,,B0111,151,breed
+1069,臺灣畫眉/大陸畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+1070,臺灣紫嘯鶇,臺灣紫嘯鶇,Myophonus insularis,species,,,B0396,602,breed
+1071,臺灣噪眉,臺灣噪眉,Trochalopteron morrisonianum,species,,,B0368,574,breed
+1072,臺灣叢樹鶯,臺灣叢樹鶯,Locustella alishanensis,species,,,B0424,540,breed
+1073,臺灣藍鵲,臺灣藍鵲,Urocissa caerulea,species,,,B0351,431,breed
+1074,臺灣鷦眉,臺灣鷦眉,Pnoepyga formosana,species,,,B0372,487,breed
+1075,蒙古沙鴴,蒙古鴴,Charadrius mongolus,species,,,B0183,194,nonbreeding
+1076,褐色鷚,水鷚/黃腹鷚,Anthus spinoletta/rubescens,speciesComplex,,,NA,817,nonbreeding
+1077,澤鳬,鳳頭潛鴨,Aythya fuligula,species,,,B0087,34,nonbreeding
+1078,雕頭鷹,東方蜂鷹,Pernis ptilorhynchus,species,,,B0131,135,breed
+1079,磯鶇屬,磯鶇屬,Monticola sp.,genus,,,NA,776,NA
+1080,羅紋鴨,羅文鴨,Mareca falcata,species,,,NA,18,nonbreeding
+1081,獼猴,臺灣獼猴,Macaca cyclopis,nonAves,,,NA,841,NA
+1082,鶺鴒,鶺鴒科,Motacillidae,family,,,NA,675,NA
+1083,鷦鶯,扇尾鶯科,Cisticolidae,family,,,NA,541,NA
+1084,鷹班鷸,鷹斑鷸,Tringa glareola,species,,,B0219,216,nonbreeding
+1085,鸕鶿,鸕鷀,Phalacrocorax carbo,species,,,B0032,97,nonbreeding
+1086,小鷿鷈,小鸊鷉,Tachybaptus ruficollis,species,,,B0007,58,breed
+1087,亞洲綬帶,阿穆爾綬帶,Terpsiphone incei,species,,,NA,427,nonbreeding
+1088,小水鷚,水鷚/黃腹鷚,Anthus spinoletta/rubescens,speciesComplex,,,NA,817,nonbreeding
+1089,花鳧,花鳧,Tadorna tadorna,species,,,B0107,14,nonbreeding
+1090,紅頭潛鴨,紅頭潛鴨,Aythya ferina,species,,,B0086,31,nonbreeding
+1091,斑背潛鴨,斑背潛鴨,Aythya marila,species,,,B0088,35,nonbreeding
+1092,彩䴉,彩䴉,Plegadis falcinellus,species,,,B0065,125,nonbreeding
+1093,東方紅胸鴴,東方紅胸鴴,Charadrius veredus,species,,,B0179,200,nonbreeding
+1094,三趾濱鷸,三趾濱鷸,Calidris alba,species,,,B0199,236,nonbreeding
+1095,灰瓣足鷸,灰瓣足鷸,Phalaropus fulicarius,species,,,B0236,252,nonbreeding
+1096,灰背鷗,灰背鷗,Larus schistisagus,species,,,B0250,285,nonbreeding
+1097,東方灰林鴞,東方灰林鴞,Strix nivicolum,species,,,B0300,347,breed
+1098,南亞夜鷹,南亞夜鷹,Caprimulgus affinis,species,,,B0302,353,breed
+1099,黃眉黃鶲,黃眉黃鶲,Ficedula narcissina,species,,,B0450,612,nonbreeding
+1100,普通朱頂雀,普通朱頂雀,Acanthis flammea,species,,,B0521,729,nonbreeding
+1101,孔雀,孔雀屬,Pavo sp.,genus,,,NA,759,introduced
+1102,栗耳鳳眉,栗耳鳳眉,Staphida torqueola,species,,,NA,555,nonbreeding
+1103,虎皮鸚鵡,虎皮鸚鵡,Melopsittacus undulatus,species,,,NA,796,introduced
+1104,大短趾百靈,賽氏短趾百靈,Calandrella dukhunensis,species,,,NA,442,nonbreeding
+1105,嘰咋柳鶯,嘰喳柳鶯,Phylloscopus collybita,species,,,NA,497,nonbreeding
+1106,鷹科,鷹科,Accipitridae,family,,,NA,133,NA
+1107,畫眉科,畫眉科,Timaliidae,family,,,NA,560,NA
+1108,鶇科,鶇科,Turdidae,family,,,NA,633,NA
+1109,鶺鴒科,鶺鴒科,Motacillidae,family,,,NA,675,NA
+1110,鵐科,鵐科,Emberizidae,family,,,NA,699,NA
+1111,家鴨,綠頭鴨(馴化),Anas platyrhynchos (Domestic type),species,,,B0076_domestic,825,domestic
+1112,雁鴨科,雁鴨科,Anatidae,family,,,NA,1,NA
+1113,雁屬,雁屬,Anser sp.,genus,,,NA,769,NA
+1114,啄木鳥科,啄木鳥科,Picidae,family,,,NA,380,NA
+1115,雲雀屬,雲雀屬,Alauda sp.,genus,,,NA,770,NA
+1116,噪眉屬,噪眉科,Leiothrichidae,family,,,NA,566,NA
+1117,澤鵟屬,澤鵟屬,Circus sp.,genus,,,NA,774,NA
+1118,鷸鴴類,鴴形目,Charadriiformes sp.,order,,,NA,746,NA
+1119,柳鶯科,柳鶯科,Phylloscopidae,family,,,NA,495,NA
+1120,台灣/大陸畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+1121,文鳥類,麻雀科,Passeridae,family,,,NA,735,NA
+1122,馴化綠頭鴨,綠頭鴨(馴化),Anas platyrhynchos (Domestic type),species,,,B0076_domestic,825,domestic
+1123,雜交鴨,雁鴨科,Anatidae,family,,,NA,1,NA
+1124,鷺科,鷺科,Ardeidae,family,,,NA,101,NA
+1125,雀鷹屬,雀鷹屬,Accipiter sp.,genus,,,NA,768,NA
+1126,濱鷸屬,濱鷸屬,Calidris sp.,genus,,,NA,775,NA
+1127,鷗屬,大鷗類,Larus sp.,genus,,,NA,757,NA
+1128,鳩鴿科,鳩鴿科,Columbidae,family,,,NA,305,NA
+1129,伯勞,伯勞科,Laniidae,family,,,NA,405,NA
+1130,燕科,燕科,Hirundinidae,family,,,NA,446,NA
+1131,短翅樹鶯複合群,短翅樹鶯複合種,Horornis diphone/canturians,speciesComplex,,,B0426,815,nonbreeding
+1132,扇尾鶯,扇尾鶯屬,Cisticola sp.,genus,,,NA,765,NA
+1133,八哥科,八哥科,Sturnidae,family,,,NA,650,NA
+1134,鶺鴒屬,鶺鴒屬,Motacilla sp.,genus,,,NA,777,NA
+1135,鷚屬,鷚屬,Anthus sp.,genus,,,NA,778,NA
+1136,XX外來種,鳥綱,Aves sp.,class,,,NA,749,NA
+1137,鳥,鳥綱,Aves sp.,class,,,NA,749,NA
+1138,鴴科,鴴科,Charadriidae,family,,,NA,189,NA
+1139,杓鷸屬,杓鷸屬,Numenius sp.,genus,,,NA,761,NA
+1140,田鷸屬,田鷸屬,Gallinago sp.,genus,,,NA,760,NA
+1141,雨燕屬,雨燕屬,Apus sp.,genus,,,NA,764,NA
+1142,隼屬,隼屬,Falco sp.,genus,,,NA,767,NA
+1143,歐亞/小雲雀,歐亞/小雲雀,Alauda arvensis/gulgula,speciesComplex,,,NA,828,nonbreeding
+1144,樹鶯屬,樹鶯屬,Horornis sp.,genus,,,NA,773,NA
+1145,鶯科,鶯科,Sylviidae,family,,,NA,547,NA
+1146,小彎嘴畫眉,小彎嘴,Pomatorhinus musicus,species,,,B0374,562,breed
+1147,大彎嘴畫眉,大彎嘴,Megapomatorhinus erythrocnemis,species,,,B0373,563,breed
+1148,XX燕鷗,鷗科,Laridae,family,,,NA,268,NA
+1149,鳥綱,鳥綱,Aves sp.,class,,,NA,749,NA
+1150,梅花雀科,梅花雀科,Estrildidae,family,,,NA,739,NA
+1151,伯勞科,伯勞科,Laniidae,family,,,NA,405,NA
+1152,卷尾科,卷尾科,Dicruridae,family,,,NA,418,NA
+1153,林鴝屬,林鴝屬,Tarsiger sp.,genus,,,NA,763,NA
+1154,雨燕科,雨燕科,Apodidae,family,,,NA,354,NA
+1155,扇尾鶯科,扇尾鶯科,Cisticolidae,family,,,NA,541,NA
+1156,秧雞科,秧雞科,Rallidae,family,,,NA,161,NA
+1157,針尾雨燕屬,針尾雨燕屬,Hirundapus sp.,genus,,,NA,766,NA
+1158,隼科,隼科,Falconidae,family,,,NA,385,NA
+1159,啄花科,啄花科,Dicaeidae,family,,,NA,665,NA
+1160,日行性猛禽,日行性猛禽,Accipitriformes/Falconiformes sp.,class,,,NA,748,NA
+1161,無尾目,無尾目,Anura sp.,nonAves,,,NA,849,NA
+1162,百靈科,百靈科,Alaudidae,family,,,NA,441,NA
+1163,翠鳥科,翠鳥科,Alcedinidae,family,,,NA,361,NA
+1164,蝗鶯屬,蝗鶯屬,Locustella sp.,genus,,,NA,772,NA
+1165,鴉科,鴉科,Corvidae,family,,,NA,428,NA
+1166,小型鴴類,小型鴴類,Charadrius sp.,genus,,,NA,758,NA
+1167,鵯科,鵯科,Pycnonotidae,family,,,NA,475,NA
+1168,鷸科,鷸科,Scolopacidae,family,,,NA,205,NA
+1169,鸚形目,鸚形目,Psittaciformes sp.,order,,,NA,747,introduced
+1170,白氏/虎斑地鶇,白氏/虎斑地鶇,Zoothera aurea/dauma,speciesComplex,,,B0408,788,nonbreeding
+1171,寒林/凍原豆雁,寒林/凍原豆雁,Anser fabalis/serrirostris,speciesComplex,,,B0084MIX,810,nonbreeding
+1172,番鴨(馴化),疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+1173,紅面番鴨,疣鼻棲鴨(馴化),Cairina moschata (Domestic type),species,,,NA,814,domestic
+1174,林鴛鴦(馴化),林鴛鴦(馴化),Aix sponsa (Domestic type),species,,,NA,795,domestic
+1175,大八哥(叢八哥),大八哥(叢八哥),Acridotheres grandis,species,,,B0600,780,introduced
+1176,食蟹獴,食蟹獴,Herpestes urva formosanus,nonAves,,,NA,846,NA
+1177,八哥屬(黑八哥類),八哥屬(黑八哥類),Acridotheres sp. (black myna sp.),genus,unknown common name,名錄對照_大肚溪.xlsx(20170939),NA,756,NA
+1178,蒙古/鐵嘴鴴,蒙古/鐵嘴鴴,Charadrius mongolus/leschenaultii,speciesComplex,,名錄對照_大肚溪.xlsx(20170957),NA,826,nonbreeding
+1179,鸚鵡科,鸚鵡科,Psittacidae sp.,family,,名錄對照_大肚溪.xlsx(20170970),NA,755,introduced
+1180,鴴形目,鴴形目,Charadriiformes sp.,order,,名錄對照_大肚溪.xlsx(20171031),NA,746,NA
+1181,鳳頭鸚鵡科,鳳頭鸚鵡科,Cacatuidae sp.,family,,名錄對照_大肚溪.xlsx(20171125),NA,752,introduced
+1182,海燕科,海燕科,Hydrobatidae,family,,名錄對照_大肚溪.xlsx(20171159),NA,77,NA
+1183,牡丹鸚鵡屬,牡丹鸚鵡屬,Agapornis sp.,genus,,,NA,762,introduced
+1184,綬帶屬,綬帶屬,Terpsiphone sp.,genus,,,NA,771,NA
+1185,黃腹/水鷚,水鷚/黃腹鷚,Anthus spinoletta/rubescens,speciesComplex,,,NA,817,nonbreeding
+1186,孔雀屬,孔雀屬,Pavo sp.,genus,,,NA,759,introduced
+1187,扇尾鶯屬,扇尾鶯屬,Cisticola sp.,genus,,,NA,765,NA
+1188,翼手目,翼手目,Chiroptera sp.,nonAves,,,NA,848,NA
+1189,梅花鹿,臺灣梅花鹿,Cervus nippon taiouanus,nonAves,,,NA,856,NA
+1190,臺灣梅花鹿,臺灣梅花鹿,Cervus nippon taiouanus,nonAves,,,NA,856,NA
+1191,台灣梅花鹿,臺灣梅花鹿,Cervus nippon taiouanus,nonAves,,,NA,856,NA
+1192,小花蔓澤蘭,小花蔓澤蘭,Mikania micrantha,nonAves,,,NA,857,NA
+1193,銀膠菊,銀膠菊,Parthenium hysterophorus,nonAves,,,NA,858,NA
+1195,鹿野氏鼴鼠,鹿野氏鼴鼠,Mogera kanoana,nonAves,,,NA,859,NA
+1196,水鷚/黃腹鷚,水鷚/黃腹鷚,Anthus spinoletta/rubescens,speciesComplex,,,NA,817,nonbreeding
+1197,穉鷸,紅胸濱鷸,Calidris ruficollis,species,,,B0195,235,nonbreeding
+1198,丹氏穉鷸,丹氏濱鷸,Calidris temminckii,species,,,B0197,232,nonbreeding
+1199,鷗,鷗科,Laridae,family,,,NA,268,NA
+1200,琵鷺,琵鷺屬,Platalea sp.,genus,,,NA,860,NA
+1201,鴨,雁鴨科,Anatidae,family,,,NA,1,NA
+1202,老鼠,嚙齒目,Order Rodentia,nonAves,,,NA,861,NA
+1203,織女銀鷗,銀鷗,Larus argentatus,species,,,B0243,283,nonbreeding
+1204,斯氏繡眼,斯氏繡眼,Zosterops simplex,species,,,B0499,558,breed
+1205,日菲繡眼,日菲繡眼,Zosterops japonicus,species,,,NA,862,nonbreeding
+1206,松鼠科,松鼠科,Sciuridae,nonAves,,,NA,863,NA
+1207,莫氏樹蛙,莫氏樹蛙,Zhangixalus moltrechti,nonAves,,,NA,864,NA
+1208,環頸潛鴨,環頸潛鴨,Aythya collaris,species,,,NA,865,nonbreeding
+1209,白喉林鴿,白喉林鴿,Columba vitiensis,species,,,NA,866,nonbreeding
+1210,方尾烏鵑,方尾烏鵑,Surniculus lugubris,species,,,NA,867,nonbreeding
+1211,西方秧雞,西方秧雞,Rallus aquaticus,species,,,NA,868,nonbreeding
+1212,沙丘鶴,沙丘鶴,Antigone canadensis,species,,,NA,869,nonbreeding
+1213,孤田鷸,孤田鷸,Gallinago solitaria,species,,,NA,870,nonbreeding
+1214,印度池鷺,印度池鷺,Ardeola grayii,species,,,NA,871,nonbreeding
+1215,靴隼鵰,靴隼鵰,Hieraaetus pennatus,species,,,NA,872,nonbreeding
+1216,西方澤鵟,西方澤鵟,Circus aeruginosus,species,,,NA,873,nonbreeding
+1217,赤背三趾翠鳥,赤背三趾翠鳥,Ceyx rufidorsa,species,,,NA,874,nonbreeding
+1218,藍頰蜂虎,藍頰蜂虎,Merops persicus,species,,,NA,875,nonbreeding
+1219,荒漠伯勞,荒漠伯勞,Lanius isabellinus,species,,,NA,876,nonbreeding
+1220,灰背伯勞,灰背伯勞,Lanius tephronotus,species,,,NA,877,nonbreeding
+1221,鈍翅葦鶯,鈍翅葦鶯,Acrocephalus concinens,species,,,NA,878,nonbreeding
+1222,赤褐蝗鶯,赤褐蝗鶯,Locustella mandelli,species,,,NA,879,nonbreeding
+1223,山藍仙鶲,山藍仙鶲,Cyornis banyumas,species,,,NA,880,nonbreeding
+1224,鏽胸藍姬鶲,鏽胸藍姬鶲,Ficedula erithacus,species,,,NA,881,nonbreeding
+1225,稻田鷚,稻田鷚,Anthus rufulus,species,,,NA,882,nonbreeding
+1226,赤胸朱頂雀,赤胸朱頂雀,Linaria cannabina,species,,,NA,883,nonbreeding
+1227,紅交嘴雀,紅交嘴雀,Loxia curvirostra,species,,,NA,884,nonbreeding
+1228,稀樹草鵐,稀樹草鵐,Passerculus sandwichensis,species,,,NA,885,nonbreeding
+1229,灰腰金絲燕,灰腰金絲燕,Collocalia marginata,species,,,NA,886,nonbreeding
+1230,酒紅朱雀vinaceus亞種,酒紅朱雀,Carpodacus vinaceus,species,,,NA,887,nonbreeding
+1231,臺灣/大陸畫眉,臺灣/大陸畫眉,Garrulax canorus/taewanus,speciesComplex,,,B0367,787,breed
+1232,亞洲輝椋鳥,亞洲輝椋鳥,Aplonis panayensis,species,,,B0483,651,introduced
+1233,鏽鵐,鏽鵐,Emberiza rutila,species,,,B0530,712,nonbreeding
+1234,臺灣野兔,臺灣野兔,Lepus sinensis formosus,nonAves,,,NA,840,NA
+1235,東亞秧雞,東亞秧雞,Rallus indicus,species,,名錄對照_大肚溪.xlsx(20170980),B0168,165,nonbreeding
+1236,巴丹鸚鵡,鳳頭鸚鵡屬,Cacatua sp.,genus,,,NA,888,introduced
+1237,鱗胸鷦鶥,臺灣鷦眉,Pnoepyga formosana,species,,,B0372,487,breed
+1238,電報鳥,臺灣叢樹鶯,Locustella alishanensis,species,,,B0424,540,breed
+1239,褐色叢樹鶯,臺灣叢樹鶯,Locustella alishanensis,species,,,B0424,540,breed
+1240,紅胸啄花鳥,紅胸啄花,Dicaeum ignipectus,species,,,B0498,667,breed
+1241,綠啄花鳥,綠啄花,Dicaeum minullum,species,,,B0497,666,breed
+1242,小鷿鷉,小鸊鷉,Tachybaptus ruficollis,species,,,B0007,58,breed
+1243,小鷿鵜,小鸊鷉,Tachybaptus ruficollis,species,,,B0007,58,breed
+1244,灰頭文鳥,灰頭文鳥,Lonchura caniceps,species,,,NA,889,introduced
+1245,無,NN,NA,nonAves,,,NA,855,NA
+1246,林雕,林鵰,Ictinaetus malaiensis,species,,,B0129,140,breed
+1247,布穀,大杜鵑,Cuculus canorus,species,,,B0281,334,nonbreeding
+1248,其他（填於備註欄）,鳥綱,Aves sp.,class,,,NA,749,NA
+1249,F_艾氏樹蛙,艾氏樹蛙,Kurixalus eiffingeri,nonAves,,,NA,890,NA
+1250,M_台灣水鹿,臺灣水鹿,Rusa unicolor swinhoei,nonAves,,,NA,839,NA
+1251,M_條紋松鼠,條紋松鼠,Tamiops maritimus formosanus,nonAves,,,NA,845,NA
+1252,R_疣尾蝎虎,疣尾蝎虎,Hemidactylus frenatus,nonAves,,,NA,891,NA
+1253,古氏赤蛙,福建大頭蛙,Limnonectes fujianensis,nonAves,,,NA,892,NA
+1254,家鴿,野鴿,Columba livia,species,,,B0269,306,introduced
+1255,燕雀目,雀形目,Passeriformes sp.,order,,,NA,745,NA
+1256,玄鳳鸚鵡,玄鳳鸚鵡,Nymphicus hollandicus,species,,,NA,893,introduced
+1257,白頷樹蛙,布氏樹蛙,Polypedates braueri,nonAves,,,NA,894,NA
+1258,金翼,臺灣噪眉,Trochalopteron morrisonianum,species,,,B0368,574,breed
+1259,面天樹蛙,面天樹蛙,Kurixalus idiootocus,nonAves,,,NA,895,NA
+1260,麻鷺屬,麻鷺屬,Gorsachius,genus,,,NA,898,NA
+1261,臺灣長鬃山羊,長鬃山羊,Capricornis swinhoei,nonAves,,,NA,844,NA
+1262,高砂熊蟬,高砂熊蟬,Cryptotympana takasagona,nonAves,,,NA,899,NA
+1263,脊椎動物門,脊索動物門,Chordata,phylum,,,NA,896,NA
+1264,脊索動物門,脊索動物門,Chordata,phylum,,,NA,896,NA
+1265,紅耳泥龜,紅耳泥龜,Trachemys scripta,nonAves,,,NA,900,introduced
+1266,灰雁(馴化),灰雁(馴化),Anser anser (Domestic type),species,,,NA,901,introduced
+1267,白鵜鶘,白鵜鶘,Pelecanus onocrotalus,species,,,NA,902,introduced
+1268,台灣鼴鼠,台灣鼴鼠,Mogera insularis insularis,nonAves,,,NA,903,NA
+1269,XX毛腳燕,毛腳燕屬,Delichon,genus,,,NA,904,NA
+1270,鷦鶯屬(XX鷦鶯),鷦鶯屬,Prinia,genus,,,NA,897,NA
+1271,毛腳燕屬,毛腳燕屬,Delichon,genus,,,NA,904,NA
+1272,鷦鶯屬,鷦鶯屬,Prinia,genus,,,NA,897,NA
+1273,斑頭雁,斑頭雁,Anser indicus,species,,TWBF2023,NA,905,nonbreeding
+1274,黑領高蹺鴴,黑領高蹺鴴,Himantopus leucocephalus,species,,TWBF2023,NA,906,breed
+1275,白臉鴴,白臉鴴,Charadrius dealbatus,species,,TWBF2023,NA,907,nonbreeding
+1276,歐亞海鷗,歐亞海鷗,Larus canus,species,,TWBF2023,NA,282,nonbreeding
+1277,黃蹼洋海燕,黃蹼洋海燕,Oceanites oceanicus,species,,TWBF2023,NA,909,nonbreeding
+1278,索氏圓尾鸌,索氏圓尾鸌,Pterodroma solandri,species,,TWBF2023,NA,910,nonbreeding
+1279,黑細鸌,黑細鸌,Puffinus nativitatis,species,,TWBF2023,NA,911,nonbreeding
+1280,聖誕島軍艦鳥,聖誕島軍艦鳥,Fregata andrewsi,species,,TWBF2023,NA,912,nonbreeding
+1281,金鵰,金鵰,Aquila chrysaetos,species,,TWBF2023,NA,913,nonbreeding
+1282,歐亞鵟,歐亞鵟,Buteo buteo,species,,TWBF2023,NA,914,nonbreeding
+1283,菲律賓扇尾鶲,菲律賓扇尾鶲,Rhipidura nigritorquis,species,,TWBF2023,NA,915,nonbreeding
+1284,西方灰伯勞,西方灰伯勞,Lanius excubitor,species,,TWBF2023,NA,916,nonbreeding
+1285,黑臉噪眉,黑臉噪眉,Pterorhinus perspicillatus,species,,TWBF2023,NA,918,nonbreeding
+1286,中華藍仙鶲,中華藍仙鶲,Cyornis glaucicomans,species,,TWBF2023,NA,919,nonbreeding
+1287,臺灣白眉林鴝,臺灣白眉林鴝,Tarsiger formosanus,species,,TWBF2023,B0404,608,breed
+1288,琉球姬鶲,琉球姬鶲,Ficedula owstoni,species,,TWBF2023,NA,921,nonbreeding
+1289,圃鵐,圃鵐,Emberiza hortulana,species,,TWBF2023,NA,922,nonbreeding
+1290,黃喉黑臉鵐,黃喉黑臉鵐,Emberiza personata,species,,TWBF2023,NA,923,nonbreeding
+1291,紐澳紅嘴鷗,紐澳紅嘴鷗,Chroicocephalus novaehollandiae,species,,TWBF2023,NA,273,nonbreeding
+1292,所羅門鸌,所羅門鸌,Puffinus heinrothi,species,,TWBF2023,NA,925,nonbreeding
+1293,大黃腹琉璃,大黃腹琉璃,Niltava oatesi,species,,TWBF2023,NA,926,nonbreeding
+1294,鴻雁(馴化),鴻雁(馴化),Anser cygnoides (Domestic type),species,,,NA,927,domestic
+1295,哺乳綱,哺乳綱,Mammalia,nonAves,,,NA,928,NA
+1296,紫斑蝶屬,紫斑蝶屬,Euploea,nonAves,,,NA,929,NA
+1296,疣鼻棲x綠頭鴨(雜交),疣鼻棲x綠頭鴨(雜交),Cairina moschata x Anas platyrhynchos,speciesHybrid,,,NA,930,domestic
