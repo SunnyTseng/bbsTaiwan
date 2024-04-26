@@ -1,13 +1,16 @@
-#' Find species' English common name or scientific name
+#' Find species' scientific name
 #'
-#' @param species A character of the bird species' name in Chinese
+#' @param species_name a single character or a vector of characters including species' name in Chinese
 #'
-#' @return A character of the bird species' name in English
+#' @return a vector of bird species' scientific name
 #' @export
 #'
 #' @examples
-#' bbs_translate(species = "abc")
-bbs_translation <- function(species_name) {
+#' # For single species
+#' bbs_translate("白頭翁")
+#' # For multiple species
+#' bbs_translate(c("烏頭翁", "白頭翁"))
+bbs_translate <- function(species_name) {
 
   # sub function ----------------------------------------------------------
 

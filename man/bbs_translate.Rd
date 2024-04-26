@@ -2,19 +2,22 @@
 % Please edit documentation in R/bbs_translate.R
 \name{bbs_translate}
 \alias{bbs_translate}
-\title{Find species' English common name or scientific name}
+\title{Find species' scientific name}
 \usage{
-bbs_translate(species)
+bbs_translate(species_name)
 }
 \arguments{
-\item{species}{A character of the bird species' name in Chinese}
+\item{species_name}{a single character or a vector of characters including species' name in Chinese}
 }
 \value{
-A character of the bird species' name in English
+a vector of bird species' scientific name
 }
 \description{
-Find species' English common name or scientific name
+Find species' scientific name
 }
 \examples{
-bbs_translate(species = "abc")
+# For single species
+bbs_translate("白頭翁")
+# For multiple species
+bbs_translate(c("烏頭翁", "白頭翁"))
 }
