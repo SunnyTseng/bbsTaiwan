@@ -22,8 +22,11 @@ LazyData: true
 Imports: 
     checkmate,
     dplyr,
+    ggplot2,
     here,
     purrr,
     raster,
     readr,
-    tidyr
+    terra,
+    tidyr,
+    tidyterra
