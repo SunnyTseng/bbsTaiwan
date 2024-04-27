@@ -22,5 +22,8 @@ LazyData: true
 Imports: 
     checkmate,
     dplyr,
+    here,
     purrr,
-    raster
+    raster,
+    readr,
+    tidyr
