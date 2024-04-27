@@ -23,10 +23,8 @@ Imports:
     checkmate,
     dplyr,
     ggplot2,
-    here,
     purrr,
-    raster,
-    readr,
+    stringr,
     terra,
     tidyr,
     tidyterra

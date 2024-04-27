@@ -20,5 +20,5 @@ a list containing 1. species occurrence and 2. site information
 Filter and clean BBS Taiwan data given certain year range and target species
 }
 \examples{
-bbs_fetch(y_min = 2009, y_max = 2016, target_species = c("Pycnonotus taivanus" "Pycnonotus sinensis"))
+bbs_fetch(y_min = 2009, y_max = 2016, target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
 }
