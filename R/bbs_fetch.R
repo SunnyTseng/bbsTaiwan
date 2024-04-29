@@ -31,7 +31,7 @@ bbs_fetch <- function(y_min = 2009, y_max = 2029, target_species = NULL) {
   )
 
   if (is.null(target_species)) {
-    target_species <- bird_info %>% pull(scientificName)
+    target_species <- bird_info |> dplyr::pull(scientificName)
   } else {
     checkmate::assert_character(
       target_species,

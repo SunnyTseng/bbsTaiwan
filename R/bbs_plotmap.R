@@ -23,19 +23,42 @@ bbs_plotmap <- function(data) {
     tidyr::drop_na() |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
+  ## prepare the elevation raster for plotting
+
+  tw_elev_terra <- tw_elev %>%
+    methods::as("SpatRaster") %>%
+    terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
+
   ## create map
   distribution_map <- ggplot2::ggplot() +
-    tidyterra::geom_spatvector(data = tw_map, fill = "white") +
-    tidyterra::geom_spatvector(data = all_site, fill = "grey", alpha = 0.01) +
-    tidyterra::geom_spatvector(data = bird_site, ggplot2::aes(colour = scientificName), alpha = 0.3) +
+
+    # basemap and elevation
+    tidyterra::geom_spatraster(data = tw_elev_terra) +
+    tidyterra::geom_spatvector(data = tw_map, fill = NA, colour = "gray65") +
+    scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
+
+    # sites with and without detection
+    tidyterra::geom_spatvector(data = all_site,
+                               colour = "lightblue4",
+                               alpha = 0.1) +
+    tidyterra::geom_spatvector(data = bird_site,
+                               ggplot2::aes(colour = scientificName),
+                               alpha = 0.5) +
+    ggplot2::scale_colour_brewer(palette = "Set2") +
+
+    # plot fine tunes
     ggplot2::theme_bw() +
-    ggplot2::theme(legend.position = c(0.23, 0.9),
-                   legend.title = ggplot2::element_blank()) +
+    ggplot2::guides(fill = ggplot2::guide_none(),
+                    colour = ggplot2::guide_legend(title = NULL,
+                                                   override.aes = list(size = 3))) +
+    ggplot2::theme(legend.position = "top",
+                   legend.text = ggplot2::element_text(size = 10)) +
     ggplot2::ggtitle(paste("BBS Taiwan detection sites between",
                            data$occurrence$year |> min(),
                            "to",
                            data$occurrence$year |> max(),
                            sep = " "))
+  distribution_map
 
   return(distribution_map)
 }
