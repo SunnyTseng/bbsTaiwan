@@ -12,7 +12,7 @@
 #' @examples
 #' bbs_fetch(y_min = 2009, y_max = 2016,
 #' target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
-bbs_fetch <- function(y_min = 2009, y_max = 2029, target_species = NULL) {
+bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
 
   # argument check ----------------------------------------------------------
 
