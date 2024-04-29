@@ -8,9 +8,9 @@
 #' @export
 #'
 #' @examples
-#' bbs_translate("五色鳥") |>
-#' bbs_fetch() |>
-#' bbs_plotmap()
+#' bbs_plotmap(data =
+#' bbs_fetch(target_species =
+#' c("Psilopogon nuchalis", "Pycnonotus taivanus")))
 bbs_plotmap <- function(data) {
 
   ## transform the data into spatial info
@@ -37,5 +37,5 @@ bbs_plotmap <- function(data) {
                            data$occurrence$year |> max(),
                            sep = " "))
 
-  return(diatribution_map)
+  return(distribution_map)
 }

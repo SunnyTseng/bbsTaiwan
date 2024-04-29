@@ -10,7 +10,8 @@
 #' @export
 #'
 #' @examples
-#' bbs_fetch(y_min = 2009, y_max = 2016, target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+#' bbs_fetch(y_min = 2009, y_max = 2016,
+#' target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
 bbs_fetch <- function(y_min = 2009, y_max = 2029, target_species = NULL) {
 
   # argument check ----------------------------------------------------------
@@ -52,7 +53,7 @@ bbs_fetch <- function(y_min = 2009, y_max = 2029, target_species = NULL) {
     dplyr::rename(weather = "天氣代號", wind = "風速代號", habitat = "棲地代號")
 
   occurrence_info <- extendedmeasurementorfact |>
-    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain occurrence related measurement, like
+    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain occurrence related measurement
     dplyr::filter(type == 30) |>
     dplyr::select(id, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
@@ -68,7 +69,6 @@ bbs_fetch <- function(y_min = 2009, y_max = 2029, target_species = NULL) {
     tidyr::drop_na() |>
     dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
 
-  # site, city, district, location, region, elevation, X_wgs84, Y_wgs84
 
   # filter occurrence to a given species and year ---------------------------
 

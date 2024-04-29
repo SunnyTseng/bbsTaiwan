@@ -16,7 +16,7 @@ a distribution map
 Visualizes sites surveyed for breeding birds in Taiwan, highlighting presence and absence of specific species.
 }
 \examples{
-bbs_translate("五色鳥") |>
-bbs_fetch() |>
-bbs_plotmap()
+bbs_plotmap(data =
+bbs_fetch(target_species =
+c("Psilopogon nuchalis", "Pycnonotus taivanus")))
 }
