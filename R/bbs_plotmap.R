@@ -29,6 +29,7 @@ bbs_plotmap <- function(data) {
     terra::rast() |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
+
   ## create map
   distribution_map <- ggplot2::ggplot() +
 
