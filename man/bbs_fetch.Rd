@@ -4,14 +4,14 @@
 \alias{bbs_fetch}
 \title{Fetch BBS Taiwan data from GBIF}
 \usage{
-bbs_fetch(y_min = 2009, y_max = 2029, target_species = NULL)
+bbs_fetch(target_species = NULL, y_min = 2009, y_max = 2029)
 }
 \arguments{
+\item{target_species}{a character vector for species of interest, return all species if NULL}
+
 \item{y_min}{a numeric value indicating the start year of the year range, by default 2009, the start year of Taiwan BBS data}
 
 \item{y_max}{a numeric value indicating the end year of the year range, by default 2029. Note that GBIF only updates BBS data until 2016}
-
-\item{target_species}{a character vector for species of interest, return all species if NULL}
 }
 \value{
 a list containing 1. species occurrence and 2. site information

@@ -25,8 +25,8 @@ bbs_plotmap <- function(data) {
 
   ## prepare the elevation raster for plotting
 
-  tw_elev_terra <- tw_elev %>%
-    methods::as("SpatRaster") %>%
+  tw_elev_terra <- tw_elev |>
+    terra::rast() |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
   ## create map
@@ -35,7 +35,7 @@ bbs_plotmap <- function(data) {
     # basemap and elevation
     tidyterra::geom_spatraster(data = tw_elev_terra) +
     tidyterra::geom_spatvector(data = tw_map, fill = NA, colour = "gray65") +
-    scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
+    ggplot2::scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
 
     # sites with and without detection
     tidyterra::geom_spatvector(data = all_site,
