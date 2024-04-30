@@ -23,7 +23,7 @@ bbs_plotmap <- function(data) {
     tidyr::drop_na() |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
-  ## prepare the elevation raster for plotting
+  ## prepare the elevation for plotting
 
   tw_elev_terra <- tw_elev |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
