@@ -26,6 +26,7 @@ bbs_plotmap <- function(data) {
   ## prepare the elevation for plotting
 
   tw_elev_terra <- tw_elev |>
+    terra::rast(crs = "epsg:4326", type = "xyz") |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
 
