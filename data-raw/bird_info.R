@@ -1,7 +1,3 @@
-## code to prepare `bird_info` dataset goes here
-
-# BBS species list form Jerome Ko
-
 bird_full_list <- readr::read_csv(here::here("data-raw", "taiwan_species_list_2023.csv")) |>
   dplyr::rename(chinese_name_t = "中文名", english_name_t = "英文名", scientific_name_t = "學名")
 

@@ -27,15 +27,19 @@ bbs_plotmap <- function(data) {
 
   tw_elev_terra <- tw_elev |>
     terra::rast(crs = "epsg:4326", type = "xyz") |>
+    terra::crop(y = terra::ext(119.1, 122.1, 21.75, 25.35)) |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
+
+  tw_map_sf <- tw_map |>
+    sf::st_crop(c(xmin = 119.1, xmax = 122.1, ymin = 21.75, ymax = 25.35))
 
   ## create map
   distribution_map <- ggplot2::ggplot() +
 
     # basemap and elevation
     tidyterra::geom_spatraster(data = tw_elev_terra) +
-    tidyterra::geom_spatvector(data = tw_map, fill = NA, colour = "gray65") +
+    tidyterra::geom_spatvector(data = tw_map_sf, fill = NA, colour = "gray65") +
     ggplot2::scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
 
     # sites with and without detection

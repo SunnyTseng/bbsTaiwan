@@ -8,6 +8,7 @@
 #' @examples
 #' # For single species
 #' bbs_translate("白頭翁")
+#'
 #' # For multiple species
 #' bbs_translate(c("烏頭翁", "白頭翁"))
 bbs_translate <- function(species_name) {

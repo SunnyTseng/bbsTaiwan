@@ -18,6 +18,7 @@ Find species' scientific name
 \examples{
 # For single species
 bbs_translate("白頭翁")
+
 # For multiple species
 bbs_translate(c("烏頭翁", "白頭翁"))
 }
