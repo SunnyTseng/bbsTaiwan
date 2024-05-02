@@ -24,7 +24,7 @@ Imports:
     dplyr,
     ggplot2,
     purrr,
-    sp,
+    sf,
     stringr,
     terra,
     tidyr,

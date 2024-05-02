@@ -8,7 +8,7 @@
 A data frame with 909 rows and 4 columns:
 \describe{
 \item{scientificName}{scientific name}
-\item{chinesenName}{all possible Chinese that were used for the species}
+\item{chineseName}{all possible Chinese that were used for the species}
 \item{englishName}{english name from Taiwan Wild Bird Federation}
 \item{scientificName_t}{scientific name from Taiwan Wild Bird Federation}
 ...
