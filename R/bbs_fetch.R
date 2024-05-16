@@ -42,7 +42,6 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   # clean data --------------------------------------------------------------
 
   ## I guess there was a mixed up with both sheets. These codes needs to be updated once new data is up on GBIF
-
   event_info <- measurementorfacts |>
     dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain only event related measurement, like weather
     dplyr::filter(type == 23) |>
@@ -93,8 +92,15 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                   eventDate, eventTime, weather, wind, habitat, time_slot, distance, flock,
                   site, plot, locationID, locality, decimalLatitude, decimalLongitude)
 
+  site_add_var <- site_info |>
+    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
+    terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
+    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    dplyr::select(site, plot, elev)
+
+
   return(list(occurrence = occurrence_add_var,
-              site_info = site_info))
+              site_info = site_add_var))
 }
 
 
