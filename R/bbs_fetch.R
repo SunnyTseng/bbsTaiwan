@@ -68,6 +68,16 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
     tidyr::drop_na() |>
     dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
 
+  site_elev <- site_info |>
+    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
+    terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
+    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    select(locationID, elev) |>
+    dplyr::as_tibble()
+
+    #sf::st_as_sf() |>
+    #sf::st_intersects(tw_region, sparse = T)
+
 
   # filter occurrence to a given species and year ---------------------------
 
@@ -87,15 +97,15 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
     dplyr::left_join(site_info, by = dplyr::join_by(locationID == locationID)) |>
+    dplyr::left_join(site_elev, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::select(year, eventID, occurrenceID, scientificName, vernacularName, individualCount,
                   eventDate, eventTime, weather, wind, habitat, time_slot, distance, flock,
-                  site, plot, locationID, locality, decimalLatitude, decimalLongitude)
+                  site, plot, locationID, locality, decimalLatitude, decimalLongitude,
+                  elev)
 
   site_add_var <- site_info |>
-    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
-    terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
-    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
-    dplyr::select(site, plot, elev)
+    dplyr::left_join(site_elev) |>
+    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude, elev)
 
 
   return(list(occurrence = occurrence_add_var,
