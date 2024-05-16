@@ -81,7 +81,6 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                            stringr::str_split_i(id, pattern = "_", i = 4)))
 
 
-
   # link event info, occurrence info, bird info, and site info --------------
 
   occurrence_add_var <- occurrence_filter |>
@@ -102,5 +101,3 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   return(list(occurrence = occurrence_add_var,
               site_info = site_add_var))
 }
-
-

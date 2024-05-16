@@ -31,8 +31,7 @@ bbs_plotmap <- function(data) {
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
 
-  tw_map_sf <- tw_map |>
-    sf::st_crop(c(xmin = 119.1, xmax = 122.1, ymin = 21.75, ymax = 25.35))
+  tw_map_sf <- tw_map
 
   ## create map
   distribution_map <- ggplot2::ggplot() +
