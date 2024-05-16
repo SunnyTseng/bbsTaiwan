@@ -2,4 +2,5 @@
 
 export(bbs_fetch)
 export(bbs_plotmap)
+export(bbs_stat)
 export(bbs_translate)
