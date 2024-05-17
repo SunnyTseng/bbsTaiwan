@@ -9,8 +9,11 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  eval = TRUE
 )
+
+library(bbsTaiwan)
 ```
 
 # bbsTaiwan
@@ -21,36 +24,77 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling, using TRIM (TRends and Indices for Monitoring data). Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.
+The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling. Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.
+
+## Background
 
 ## Set up
 
-Package installation: you can install the development version of bbsTaiwan from [GitHub](https://github.com/) with:
+Package installation and load: you can install the development version of bbsTaiwan from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
-```
 
-## Workflow
+# load the package
+library(bbsTaiwan)
+```
 
 ## How to use
 
+### If you need raw Taiwan BBS dataset on GBIF:
+
+Taiwan BBS raw data can be accessed directly by typing the object name:
+
+```{r eval = FALSE}
+bbsTaiwan::occurrence
+bbsTaiwan::event
+bbsTaiwan::measurementorfacts
+bbsTaiwan::extendedmeasurementorfact
+```
+
+The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (DwC - A) format:
+
+-   Occurrence: lists a set of times and locations at which particular species have been recorded
+
+-   Event: lists includes the protocols used, the sample size, and the location for each
+
+-   Measurement or Facts: includes additional information relating to the events
+
+-   Extended Measurement or Fact: includes additional information relating to the taxon occurrences
+
+### We also provide a workflow to process Taiwan BBS data:
+
 This is a basic example which shows you how to use the package:
 
-```{r example, eval=FALSE}
-library(bbsTaiwan)
+1.  Look up the scientific name for species of interest
 
-# looked up the species of interest 
-bbs_translate("山紅頭")
-bbs_translate("金翼白眉")
+```{r example}
+bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
+```
 
-# subset the GBIF data to the species of interest
-bird_data <- bbs_subset(folder = "PATH_TO_GBIF_FOLDER",
-                        from = 2009,
-                        to = 2015,
-                        species_list = c())
+2.  Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the three arguments (`target_species`, `y_min`, and `y_max`) empty.
 
-# visualize the species distribution 
-bird_map <- bbs_visualization(data = bird_data)
+```{r }
+bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"),
+                       y_min = 2011,
+                       y_max = 2016)
+```
+
+The output from `bbs_fetch` is a list, with first element as a tibble, showing all the observations for the target species within selected year range
+
+```{r}
+bird_data$occurrence
+```
+
+The second element is a tibble including all the BBS site info within selected year range.
+
+```{r}
+bird_data$site_info
+```
+
+3.  View the distribution of all the occurrence for the target species within selected year range
+
+```{r}
+bbs_plotmap(bird_data)
 ```
