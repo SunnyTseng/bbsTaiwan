@@ -15,7 +15,7 @@
 bbs_stat <- function(data) {
 
   statistics <- data$occurrence |>
-    dplyr::group_by(vernacularName, scientificName) %>%
+    dplyr::group_by(vernacularName, scientificName) |>
     dplyr::summarise(n_site = dplyr::n_distinct(site),
               total_count = base::sum(individualCount),
               mean_elev = base::mean(elev, na.rm = TRUE)) |>
