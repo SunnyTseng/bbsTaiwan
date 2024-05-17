@@ -3,7 +3,7 @@ pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   bbsTaiwan: bbsTaiwan.html
-last_built: 2024-04-26T18:17Z
+last_built: 2024-05-17T01:58Z
 urls:
   reference: https://sunnytseng.github.io/bbsTaiwan/reference
   article: https://sunnytseng.github.io/bbsTaiwan/articles
