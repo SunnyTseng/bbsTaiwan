@@ -71,9 +71,9 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   site_elev <- site_info |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
+    dplyr::as_tibble() |>
     dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
-    select(locationID, elev) |>
-    dplyr::as_tibble()
+    dplyr::select(locationID, elev)
 
     #sf::st_as_sf() |>
     #sf::st_intersects(tw_region, sparse = T)
