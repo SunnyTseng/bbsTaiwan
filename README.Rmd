@@ -81,13 +81,13 @@ bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus tai
                        y_max = 2016)
 ```
 
-The output from `bbs_fetch` is a list, with first element as a tibble, showing all the observations for the target species within selected year range
+The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
 
 ```{r}
 bird_data$occurrence
 ```
 
-The second element is a tibble including all the BBS site info within selected year range.
+The second element `site_info` is a tibble including all the BBS siteswithin selected year range.
 
 ```{r}
 bird_data$site_info
@@ -97,4 +97,10 @@ bird_data$site_info
 
 ```{r}
 bbs_plotmap(bird_data)
+```
+
+4.  Get basic summary statistics for the fetched data
+
+```{r}
+bbs_stat(bird_data)
 ```

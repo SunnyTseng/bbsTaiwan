@@ -13,7 +13,7 @@
 #' c("Psilopogon nuchalis", "Pycnonotus taivanus")))
 bbs_plotmap <- function(data) {
 
-  ## transform the data into spatial info
+  # prepare sites with and without detections into spatial info -------------
   all_site <- data$site_info |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
@@ -23,15 +23,16 @@ bbs_plotmap <- function(data) {
     tidyr::drop_na() |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
-  ## prepare the elevation for plotting
 
+  # prepare taiwan map and elevation ----------------------------------------
   tw_elev_terra <- tw_elev |>
     terra::rast(crs = "epsg:4326", type = "xyz") |>
     terra::classify(c(0, 100, 1000, 2500, Inf), include.lowest = FALSE, brackets = TRUE)
 
   tw_map_sf <- tw_map
 
-  ## create map
+
+  # create map --------------------------------------------------------------
   distribution_map <- ggplot2::ggplot() +
 
     # basemap and elevation
@@ -42,10 +43,12 @@ bbs_plotmap <- function(data) {
     # sites with and without detection
     tidyterra::geom_spatvector(data = all_site,
                                colour = "lightblue4",
-                               alpha = 0.1) +
+                               alpha = 0.05,
+                               size = 1) +
     tidyterra::geom_spatvector(data = bird_site,
                                ggplot2::aes(colour = scientificName),
-                               alpha = 0.5) +
+                               alpha = 0.5,
+                               size = 1) +
     ggplot2::scale_colour_brewer(palette = "Set2") +
 
     # plot fine tunes
@@ -55,12 +58,11 @@ bbs_plotmap <- function(data) {
                                                    override.aes = list(size = 3))) +
     ggplot2::theme(legend.position = "top",
                    legend.text = ggplot2::element_text(size = 10)) +
-    ggplot2::ggtitle(paste("BBS Taiwan detection sites between",
+    ggplot2::ggtitle(paste("Taiwan BBS from",
                            data$occurrence$year |> min(),
                            "to",
                            data$occurrence$year |> max(),
                            sep = " "))
-  distribution_map
 
   return(distribution_map)
 }

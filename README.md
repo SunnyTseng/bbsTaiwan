@@ -82,9 +82,9 @@ bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus tai
 #> Joining with `by = join_by(locationID)`
 ```
 
-The output from `bbs_fetch` is a list, with first element as a tibble,
-showing all the observations for the target species within selected year
-range
+The output from `bbs_fetch` is a list with two elements: `occurrence`
+and `site_info`. `occurrence` is a tibble, showing all the observations
+for the target species within selected year range
 
 ``` r
 bird_data$occurrence
@@ -108,8 +108,8 @@ bird_data$occurrence
 #> #   decimalLatitude <dbl>, decimalLongitude <dbl>, elev <dbl>
 ```
 
-The second element is a tibble including all the BBS site info within
-selected year range.
+The second element `site_info` is a tibble including all the BBS
+siteswithin selected year range.
 
 ``` r
 bird_data$site_info
@@ -137,3 +137,14 @@ bbs_plotmap(bird_data)
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+4.  Get basic summary statistics for the fetched data
+
+``` r
+bbs_stat(bird_data)
+#> # A tibble: 2 × 6
+#>   vernacularName scientificName      n_site total_count min_elev max_elev
+#>   <chr>          <chr>                <int>       <dbl>    <dbl>    <dbl>
+#> 1 烏頭翁         Pycnonotus taivanus     48        8640    22.1     1055.
+#> 2 白頭翁         Pycnonotus sinensis    358       76246     1.89    2237.
+```

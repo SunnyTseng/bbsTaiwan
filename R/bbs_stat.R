@@ -4,7 +4,7 @@
 #'
 #' @param data a list object derived from the bbs_fetch() function
 #'
-#' @return a tibble containing basic stats
+#' @return a tibble containing basic stats for fetched data
 #' @export
 #'
 #' @examples
@@ -17,8 +17,9 @@ bbs_stat <- function(data) {
   statistics <- data$occurrence |>
     dplyr::group_by(vernacularName, scientificName) |>
     dplyr::summarise(n_site = dplyr::n_distinct(site),
-              total_count = base::sum(individualCount),
-              mean_elev = base::mean(elev, na.rm = TRUE)) |>
+                     total_count = base::sum(individualCount, na.rm = TRUE),
+                     min_elev = base::min(elev, na.rm = TRUE),
+                     max_elev = base::max(elev, na.rm = TRUE)) |>
     dplyr::ungroup()
 
   return(statistics)
