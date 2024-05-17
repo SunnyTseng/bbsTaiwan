@@ -1,0 +1,689 @@
+﻿編碼,中文名,學名,亞種小名,英文名,科名,"臺灣地區遷徙屬性
+（蘭嶼：蘭、綠島：綠、
+龜山島：龜、本島局部地區：局）",馬祖地區遷徙屬性,金門地區遷徙屬性,東沙島遷徙屬性,特有性,臺灣保育等級
+1,樹鴨,Dendrocygna javanica,無亞種分化,Lesser Whistling-Duck,雁鴨科 Anatidae,迷,無,無,迷,,
+2,斑頭雁,Anser indicus,無亞種分化,Bar-headed Goose,雁鴨科 Anatidae,迷,無,無,無,,
+3,灰雁,Anser anser,rubrirostris,Graylag Goose,雁鴨科 Anatidae,迷,迷,冬、稀,無,,
+4,鴻雁,Anser cygnoides,無亞種分化,Swan Goose,雁鴨科 Anatidae,冬、稀,無,冬、稀,無,,
+5,白額雁,Anser albifrons,frontalis,Greater White-fronted Goose,雁鴨科 Anatidae,冬、稀,過、稀,冬、稀,迷,,
+6,小白額雁,Anser erythropus,無亞種分化,Lesser White-fronted Goose,雁鴨科 Anatidae,過、稀,無,無,無,,
+7,寒林豆雁,Anser fabalis,middendorffii,Taiga Bean-Goose,雁鴨科 Anatidae,冬、稀,過、稀,冬、稀,迷,,
+8,凍原豆雁,Anser serrirostris,serrirostris,Tundra Bean-Goose,雁鴨科 Anatidae,冬、稀,過、稀,冬、稀,迷,,
+9,黑雁,Branta bernicla,nigricans,Brant,雁鴨科 Anatidae,迷,無,無,無,,
+10,疣鼻天鵝,Cygnus olor,無亞種分化,Mute Swan,雁鴨科 Anatidae,迷,無,無,無,,
+11,小天鵝,Cygnus columbianus,bewickii,Tundra Swan,雁鴨科 Anatidae,冬、稀,無,迷,無,,
+12,黃嘴天鵝,Cygnus cygnus,無亞種分化,Whooper Swan,雁鴨科 Anatidae,迷,無,迷,無,,
+13,瀆鳧,Tadorna ferruginea,無亞種分化,Ruddy Shelduck,雁鴨科 Anatidae,冬、稀,無,迷,迷,,
+14,花鳧,Tadorna tadorna,無亞種分化,Common Shelduck,雁鴨科 Anatidae,冬、稀,無,迷,無,,
+15,棉鴨,Nettapus coromandelianus,coromandelianus,Cotton Pygmy-Goose,雁鴨科 Anatidae,冬、稀,迷,迷,迷,,
+16,鴛鴦,Aix galericulata,無亞種分化,Mandarin Duck,雁鴨科 Anatidae,留、稀/過、稀,過、稀,過、稀,迷,,II
+17,巴鴨,Sibirionetta formosa,無亞種分化,Baikal Teal,雁鴨科 Anatidae,冬、稀,過、稀,過、稀,無,,II
+18,白眉鴨,Spatula querquedula,無亞種分化,Garganey,雁鴨科 Anatidae,冬、稀/過、普,過、稀,冬、稀/過、不普,過、不普,,
+19,琵嘴鴨,Spatula clypeata,無亞種分化,Northern Shoveler,雁鴨科 Anatidae,冬、普,過、稀,冬、不普,過、普,,
+20,赤膀鴨,Mareca strepera,strepera,Gadwall,雁鴨科 Anatidae,冬、不普,過、稀,冬、稀,過、稀,,
+21,羅文鴨,Mareca falcata,無亞種分化,Falcated Duck,雁鴨科 Anatidae,冬、稀,過、稀,冬、稀,無,,
+22,赤頸鴨,Mareca penelope,無亞種分化,Eurasian Wigeon,雁鴨科 Anatidae,冬、普,過、稀,冬、普,冬、普,,
+23,葡萄胸鴨,Mareca americana,無亞種分化,American Wigeon,雁鴨科 Anatidae,迷,無,迷,無,,
+24,呂宋鴨,Anas luzonica,無亞種分化,Philippine Duck,雁鴨科 Anatidae,迷,無,無,無,,
+25,花嘴鴨,Anas zonorhyncha,無亞種分化,Eastern Spot-billed Duck,雁鴨科 Anatidae,留、普/冬、不普,過、稀,留、普/冬、不普,過、稀,,
+26,綠頭鴨,Anas platyrhynchos,platyrhynchos,Mallard,雁鴨科 Anatidae,冬、稀/引進種、不普,過、不普,冬、不普,過、稀,,
+27,尖尾鴨,Anas acuta,無亞種分化,Northern Pintail,雁鴨科 Anatidae,冬、普,過、稀,冬、不普,冬、稀/過、不普,,
+28,小水鴨,Anas crecca,"crecca, carolinensis",Green-winged Teal,雁鴨科 Anatidae,冬、普,過、不普,冬、普,冬、普,,
+29,赤嘴潛鴨,Netta rufina,無亞種分化,Red-crested Pochard,雁鴨科 Anatidae,迷,無,無,無,,
+30,帆背潛鴨,Aythya valisineria,無亞種分化,Canvasback,雁鴨科 Anatidae,迷,無,無,無,,
+31,紅頭潛鴨,Aythya ferina,無亞種分化,Common Pochard,雁鴨科 Anatidae,冬、稀,過、稀,冬、稀,無,,
+32,環頸潛鴨,Aythya collaris,無亞種分化,Ring-necked Duck,雁鴨科 Anatidae,迷,無,無,無,,
+33,白眼潛鴨,Aythya nyroca,無亞種分化,Ferruginous Duck,雁鴨科 Anatidae,冬、稀,無,無,無,,
+34,青頭潛鴨,Aythya baeri,無亞種分化,Baer's Pochard,雁鴨科 Anatidae,冬、稀,無,迷,無,,II
+35,鳳頭潛鴨,Aythya fuligula,無亞種分化,Tufted Duck,雁鴨科 Anatidae,冬、普,過、稀,冬、稀,過、稀,,
+36,斑背潛鴨,Aythya marila,marila,Greater Scaup,雁鴨科 Anatidae,冬、稀,無,冬、稀,無,,
+37,小斑背潛鴨,Aythya affinis,無亞種分化,Lesser Scaup,雁鴨科 Anatidae,迷,無,無,無,,
+38,長尾鴨,Clangula hyemalis,無亞種分化,Long-tailed Duck,雁鴨科 Anatidae,迷,無,無,無,,
+39,鵲鴨,Bucephala clangula,clangula,Common Goldeneye,雁鴨科 Anatidae,迷,無,迷,無,,
+40,白秋沙,Mergellus albellus,無亞種分化,Smew,雁鴨科 Anatidae,冬、稀,無,無,無,,
+41,川秋沙,Mergus merganser,merganser,Common Merganser,雁鴨科 Anatidae,迷,無,迷,無,,
+42,紅胸秋沙,Mergus serrator,無亞種分化,Red-breasted Merganser,雁鴨科 Anatidae,冬、稀,過、稀,過、稀,無,,
+43,唐秋沙,Mergus squamatus,無亞種分化,Scaly-sided Merganser,雁鴨科 Anatidae,冬、稀,無,無,無,,
+44,臺灣山鷓鴣,Arborophila crudigularis,無亞種分化,Taiwan Partridge,雉科 Phasianidae,留、普,無,無,無,臺灣特有種,III
+45,黑長尾雉,Syrmaticus mikado,無亞種分化,Mikado Pheasant,雉科 Phasianidae,留、不普,無,無,無,臺灣特有種,II
+46,環頸雉,Phasianus colchicus,"formosanus, torquatus, karpowi",Ring-necked Pheasant,雉科 Phasianidae,留、稀/引進種、不普,無,引進種、普,無,含臺灣特有亞種(P. c. formosanus),II
+47,藍腹鷴,Lophura swinhoii,無亞種分化,Swinhoe's Pheasant,雉科 Phasianidae,留、不普,無,無,無,臺灣特有種,II
+48,藍孔雀,Pavo cristatus,無亞種分化,Indian Peafowl,雉科 Phasianidae,無,無,引進種、普,無,,
+49,臺灣竹雞,Bambusicola sonorivox,無亞種分化,Taiwan Bamboo-Partridge,雉科 Phasianidae,留、普,無,無,無,臺灣特有種,
+50,小鵪鶉,Synoicus chinensis,chinensis,Blue-breasted Quail,雉科 Phasianidae,留、稀,無,無,無,,II
+51,鵪鶉,Coturnix japonica,無亞種分化,Japanese Quail,雉科 Phasianidae,過、稀,過、稀,冬、稀/過、稀,過、稀,,
+52,小鸊鷉,Tachybaptus ruficollis,poggei,Little Grebe,鸊鷉科 Podicipedidae,留、普/冬、普,留、稀/過、不普,留、普,過、不普,,
+53,角鸊鷉,Podiceps auritus,auritus,Horned Grebe,鸊鷉科 Podicipedidae,迷,過、稀,迷,無,,
+54,赤頸鸊鷉,Podiceps grisegena,holbollii,Red-necked Grebe,鸊鷉科 Podicipedidae,無,迷,無,迷,,
+55,冠鸊鷉,Podiceps cristatus,cristatus,Great Crested Grebe,鸊鷉科 Podicipedidae,冬、稀,過、稀,冬、普,無,,
+56,黑頸鸊鷉,Podiceps nigricollis,nigricollis,Eared Grebe,鸊鷉科 Podicipedidae,冬、稀,過、稀,冬、稀,無,,
+57,野鴿,Columba livia,廣泛雜交，無法區分亞種,Rock Pigeon,鳩鴿科 Columbidae,引進種、普,引進種、稀,引進種、普,無,,
+58,灰林鴿,Columba pulchricollis,無亞種分化,Ashy Wood-Pigeon,鳩鴿科 Columbidae,留、不普,無,無,無,,
+59,黑林鴿,Columba janthina,?,Japanese Wood-Pigeon,鳩鴿科 Columbidae,迷,迷,?,無,,
+60,白喉林鴿,Columba vitiensis,?,Metallic Pigeon,鳩鴿科 Columbidae,迷,無,無,無,,
+61,金背鳩,Streptopelia orientalis,"orii, orientalis",Oriental Turtle-Dove,鳩鴿科 Columbidae,留、普(orii)/過、稀,過、不普,冬、不普,冬、普/過、普,含臺灣特有亞種(S. o. orii),
+62,灰斑鳩,Streptopelia decaocto,無亞種分化,Eurasian Collared-Dove,鳩鴿科 Columbidae,引進種、稀,無,迷,迷,,
+63,紅鳩,Streptopelia tranquebarica,humilis,Red Collared-Dove,鳩鴿科 Columbidae,留、普,過、不普,留、普,過、稀,,
+64,珠頸斑鳩,Spilopelia chinensis,chinensis,Spotted Dove,鳩鴿科 Columbidae,留、普,留、普,留、普,過、稀,,
+65,斑尾鵑鳩,Macropygia unchall,minor,Barred Cuckoo-Dove,鳩鴿科 Columbidae,迷,迷,過、稀,無,,
+66,長尾鳩,Macropygia tenuirostris,septentrionalis,Philippine Cuckoo-Dove,鳩鴿科 Columbidae,留、蘭不普,無,無,無,,III
+67,翠翼鳩,Chalcophaps indica,indica,Asian Emerald Dove,鳩鴿科 Columbidae,留、普,無,迷,迷,,
+68,斑馬鳩,Geopelia striata,無亞種分化,Zebra Dove,鳩鴿科 Columbidae,引進種、局不普,無,無,無,,
+69,橙胸綠鳩,Treron bicinctus,domvilii,Orange-breasted Green-Pigeon,鳩鴿科 Columbidae,歷史紀錄,無,迷,無,,
+70,厚嘴綠鳩,Treron curvirostra,無亞種分化,Thick-billed Green-Pigeon,鳩鴿科 Columbidae,無,迷,無,無,,
+71,綠鳩,Treron sieboldii,sieboldii,White-bellied Green-Pigeon,鳩鴿科 Columbidae,留、普,迷,迷,無,,
+72,紅頭綠鳩,Treron formosae,"formosae, medioximus(?)",Whistling Green-Pigeon,鳩鴿科 Columbidae,留、稀,迷,?,迷,含臺灣特有亞種(T. f. formosae),II
+73,小綠鳩,Ptilinopus leclancheri,longialis,Black-chinned Fruit-Dove,鳩鴿科 Columbidae,冬、稀,無,無,無,,
+74,褐翅鴉鵑,Centropus sinensis,sinensis,Greater Coucal,杜鵑科 Cuculidae,無,留、不普,留、普,無,,
+75,番鵑,Centropus bengalensis,lignator,Lesser Coucal,杜鵑科 Cuculidae,留、普,過、稀,留、稀,迷,,
+76,冠郭公,Clamator coromandus,無亞種分化,Chestnut-winged Cuckoo,杜鵑科 Cuculidae,過、稀,過、稀,夏、稀/過、不普,過、稀,,
+77,斑翅鳳頭鵑,Clamator jacobinus,pica,Pied Cuckoo,杜鵑科 Cuculidae,迷,無,無,無,,
+78,噪鵑,Eudynamys scolopaceus,chinensis,Asian Koel,杜鵑科 Cuculidae,夏、稀/過、稀,過、不普,留、稀/夏、普,過、普,,
+79,八聲杜鵑,Cacomantis merulinus,querulus,Plaintive Cuckoo,杜鵑科 Cuculidae,過、稀,過、稀,夏、稀/過、稀,過、不普,,
+80,方尾烏鵑,Surniculus lugubris,barussarum,Square-tailed Drongo-Cuckoo,杜鵑科 Cuculidae,迷,過、稀,過、稀,過、稀,,
+81,鷹鵑,Hierococcyx sparverioides,無亞種分化,Large Hawk-Cuckoo,杜鵑科 Cuculidae,夏、普,過、稀,過、稀,過、稀,,
+82,北方鷹鵑,Hierococcyx hyperythrus,無亞種分化,Northern Hawk-Cuckoo,杜鵑科 Cuculidae,迷,過、稀,無,過、稀,,
+83,棕腹鷹鵑,Hierococcyx nisicolor,無亞種分化,Hodgson's Hawk-Cuckoo,杜鵑科 Cuculidae,迷,過、稀,無,迷,,
+84,小杜鵑,Cuculus poliocephalus,無亞種分化,Lesser Cuckoo,杜鵑科 Cuculidae,過、稀,過、稀,過、稀,過、稀,,
+85,四聲杜鵑,Cuculus micropterus,micropterus,Indian Cuckoo,杜鵑科 Cuculidae,過、稀,過、稀,夏、不普/過、不普,過、不普,,
+86,大杜鵑,Cuculus canorus,canorus,Common Cuckoo,杜鵑科 Cuculidae,過、稀,過、稀,過、稀,過、稀,,
+87,北方中杜鵑,Cuculus optatus,無亞種分化,Oriental Cuckoo,杜鵑科 Cuculidae,夏、普,過、不普,夏、稀/過、不普,過、不普,,
+88,普通夜鷹,Caprimulgus jotaka,jotaka,Gray Nightjar,夜鷹科 Caprimulgidae,過、稀,過、稀,過、稀,過、稀,,
+89,南亞夜鷹,Caprimulgus affinis,"stictomus, amoyensis",Savanna Nightjar,夜鷹科 Caprimulgidae,留、普,過、稀,過、稀,無,含臺灣特有亞種(C. a. stictomus),
+90,白喉針尾雨燕,Hirundapus caudacutus,caudacutus,White-throated Needletail,雨燕科 Apodidae,過、稀,過、稀,過、稀,過、稀,,
+91,灰喉針尾雨燕,Hirundapus cochinchinensis,formosanus,Silver-backed Needletail,雨燕科 Apodidae,留、不普,過、稀,迷,過、稀,臺灣特有亞種(H. c. formosanus),
+92,紫針尾雨燕,Hirundapus celebensis,無亞種分化,Purple Needletail,雨燕科 Apodidae,迷,無,無,無,,
+93,短嘴金絲燕,Aerodramus brevirostris,innominatus,Himalayan Swiftlet,雨燕科 Apodidae,?,?,?,過、稀,,
+94,叉尾雨燕,Apus pacificus,"pacificus, kurodae",Pacific Swift,雨燕科 Apodidae,過、不普,夏、普,過、稀,過、不普,,
+95,小雨燕,Apus nipalensis,kuntzi,House Swift,雨燕科 Apodidae,留、普,留、不普,留、普,過、稀,臺灣特有亞種(A. n. kuntzi),
+96,西方秧雞,Rallus aquaticus,korejewi,Water Rail,秧雞科 Rallidae,迷,無,無,無,,
+97,東亞秧雞,Rallus indicus,無亞種分化,Brown-cheeked Rail,秧雞科 Rallidae,冬、稀,過、稀,過、稀,無,,
+98,灰胸秧雞,Lewinia striata,"taiwana, jouyi",Slaty-breasted Rail,秧雞科 Rallidae,留、不普,迷,?,無,含臺灣特有亞種(L. s. taiwana),
+99,斑胸秧雞,Porzana porzana,無亞種分化,Spotted Crake,秧雞科 Rallidae,迷,無,無,無,,
+100,紅冠水雞,Gallinula chloropus,chloropus,Eurasian Moorhen,秧雞科 Rallidae,留、普,過、不普,留、普,過、不普,,
+101,白冠雞,Fulica atra,atra,Eurasian Coot,秧雞科 Rallidae,冬、不普,過、稀,冬、普,過、不普,,
+102,灰頭紫水雞,Porphyrio poliocephalus,viridis,Gray-headed Swamphen,秧雞科 Rallidae,無,無,冬、稀,無,,
+103,白眉秧雞,Poliolimnas cinereus,無亞種分化,White-browed Crake,秧雞科 Rallidae,迷,迷,無,過、稀,,
+104,董雞,Gallicrex cinerea,無亞種分化,Watercock,秧雞科 Rallidae,留、稀/夏、稀,過、稀,過、稀,過、稀,,III
+105,白腹秧雞,Amaurornis phoenicurus,"phoenicurus, leucomelana",White-breasted Waterhen,秧雞科 Rallidae,留、普,留、不普,留、普,留、普,,
+106,紅腳秧雞,Rallina fasciata,無亞種分化,Red-legged Crake,秧雞科 Rallidae,迷,迷,無,無,,
+107,灰腳秧雞,Rallina eurizonoides,formosana,Slaty-legged Crake,秧雞科 Rallidae,留、不普,無,迷,迷,臺灣特有亞種(R. e. formosana),
+108,緋秧雞,Zapornia fusca,erythrothorax,Ruddy-breasted Crake,秧雞科 Rallidae,留、普,過、稀,過、稀,無,,
+109,斑脇秧雞,Zapornia paykullii,無亞種分化,Band-bellied Crake,秧雞科 Rallidae,迷,迷,無,無,,
+110,紅腳苦惡鳥,Zapornia akool,coccineipes,Brown Crake,秧雞科 Rallidae,無,過、稀,迷,無,,
+111,小秧雞,Zapornia pusilla,pusilla,Baillon's Crake,秧雞科 Rallidae,冬、稀,過、稀,過、稀,過、稀,,
+112,簑羽鶴,Anthropoides virgo,無亞種分化,Demoiselle Crane,鶴科 Gruidae,迷,迷,無,無,,II
+113,白鶴,Leucogeranus leucogeranus,無亞種分化,Siberian Crane,鶴科 Gruidae,迷,無,無,無,,I
+114,沙丘鶴,Antigone canadensis,canadensis,Sandhill Crane,鶴科 Gruidae,迷,無,無,無,,II
+115,白枕鶴,Antigone vipio,無亞種分化,White-naped Crane,鶴科 Gruidae,迷,無,無,無,,I
+116,灰鶴,Grus grus,無亞種分化,Common Crane,鶴科 Gruidae,迷,無,無,無,,II
+117,白頭鶴,Grus monacha,無亞種分化,Hooded Crane,鶴科 Gruidae,迷,迷,無,無,,I
+118,丹頂鶴,Grus japonensis,無亞種分化,Red-crowned Crane,鶴科 Gruidae,迷,無,無,無,,I
+119,高蹺鴴,Himantopus himantopus,無亞種分化,Black-winged Stilt,長腳鷸科 Recurvirostridae,留、普/冬、普,過、不普,留、不普/冬、不普/過、不普,過、普,,
+120,黑領高蹺鴴,Himantopus leucocephalus,無亞種分化,Pied Stilt,長腳鷸科 Recurvirostridae,迷,無,無,無,,
+121,反嘴鴴,Recurvirostra avosetta,無亞種分化,Pied Avocet,長腳鷸科 Recurvirostridae,冬、普,過、稀,冬、稀/過、稀,過、稀,,
+122,蠣鴴,Haematopus ostralegus,osculans,Eurasian Oystercatcher,蠣鷸科 Haematopodidae,迷,夏、稀,留、不普/冬、普,無,,
+123,灰斑鴴,Pluvialis squatarola,無亞種分化,Black-bellied Plover,鴴科 Charadriidae,冬、普,過、稀,冬、普,冬、普/過、普,,
+124,太平洋金斑鴴,Pluvialis fulva,無亞種分化,Pacific Golden-Plover,鴴科 Charadriidae,冬、普,過、不普,冬、不普/過、不普,冬、普/過、普,,
+125,小辮鴴,Vanellus vanellus,無亞種分化,Northern Lapwing,鴴科 Charadriidae,冬、不普,過、稀,過、稀,冬、不普,,
+126,跳鴴,Vanellus cinereus,無亞種分化,Gray-headed Lapwing,鴴科 Charadriidae,冬、稀/過、稀,過、稀,過、稀,過、稀,,
+127,蒙古鴴,Charadrius mongolus,"mongolus, stegmanni",Lesser Sand-Plover,鴴科 Charadriidae,冬、不普/過、普,過、稀,冬、不普/過、不普,冬、普/過、普,,
+128,鐵嘴鴴,Charadrius leschenaultii,leschenaultii,Greater Sand-Plover,鴴科 Charadriidae,冬、不普/過、普,過、不普,冬、普/過、普,冬、普/過、普,,
+129,東方環頸鴴,Charadrius alexandrinus,"alexandrinus, nihonensis",Kentish Plover,鴴科 Charadriidae,留、不普/冬、普,留、不普/過、普,留、不普/冬、普,冬、普/過、普,,
+130,白臉鴴,Charadrius dealbatus,無亞種分化,White-faced Plover,鴴科 Charadriidae,無,無,夏、不普,無,,
+131,環頸鴴,Charadrius hiaticula,tundrae,Common Ringed Plover,鴴科 Charadriidae,冬、稀/過、稀,無,無,過、稀,,
+132,劍鴴,Charadrius placidus,無亞種分化,Long-billed Plover,鴴科 Charadriidae,冬、稀,無,過、稀,無,,
+133,小環頸鴴,Charadrius dubius,curonicus,Little Ringed Plover,鴴科 Charadriidae,留、不普/冬、普,過、不普,留、不普/冬、不普/過、普,冬、不普/過、普,,
+134,東方紅胸鴴,Charadrius veredus,無亞種分化,Oriental Plover,鴴科 Charadriidae,過、稀,過、稀,過、稀,過、稀,,
+135,彩鷸,Rostratula benghalensis,無亞種分化,Greater Painted-Snipe,彩鷸科 Rostratulidae,留、普,過、稀,冬、稀,迷,,II
+136,水雉,Hydrophasianus chirurgus,無亞種分化,Pheasant-tailed Jacana,水雉科 Jacanidae,留、不普/過、稀,過、稀,過、稀,迷,,II
+137,中杓鷸,Numenius phaeopus,"variegatus, hudsonicus",Whimbrel,鷸科 Scolopacidae,冬、不普/過、普,過、稀,冬、普/過、普,冬、普/過、普,,
+138,小杓鷸,Numenius minutus,無亞種分化,Little Curlew,鷸科 Scolopacidae,過、不普,過、稀,過、稀,過、稀,,
+139,黦鷸,Numenius madagascariensis,無亞種分化,Far Eastern Curlew,鷸科 Scolopacidae,冬、稀/過、不普,過、稀,冬、稀/過、稀,過、稀,,III
+140,大杓鷸,Numenius arquata,orientalis,Eurasian Curlew,鷸科 Scolopacidae,冬、不普,過、稀,冬、普,過、稀,,III
+141,斑尾鷸,Limosa lapponica,"baueri, menzbieri",Bar-tailed Godwit,鷸科 Scolopacidae,冬、稀/過、不普,過、稀,冬、稀/過、不普,過、不普,,
+142,黑尾鷸,Limosa limosa,melanuroides,Black-tailed Godwit,鷸科 Scolopacidae,冬、稀/過、不普,過、稀,過、稀,過、稀,,III
+143,翻石鷸,Arenaria interpres,interpres,Ruddy Turnstone,鷸科 Scolopacidae,冬、普/過、普,過、稀,冬、普/過、普,冬、普/過、普,,
+144,大濱鷸,Calidris tenuirostris,無亞種分化,Great Knot,鷸科 Scolopacidae,冬、稀/過、不普,過、稀,過、不普,過、稀,,III
+145,紅腹濱鷸,Calidris canutus,"rogersi, piersmai",Red Knot,鷸科 Scolopacidae,冬、稀/過、不普,過、稀,過、稀,過、稀,,III
+146,流蘇鷸,Calidris pugnax,無亞種分化,Ruff,鷸科 Scolopacidae,冬、稀,過、稀,過、稀,過、稀,,
+147,寬嘴鷸,Calidris falcinellus,sibirica,Broad-billed Sandpiper,鷸科 Scolopacidae,過、不普,過、稀,過、不普,過、稀,,
+148,尖尾濱鷸,Calidris acuminata,無亞種分化,Sharp-tailed Sandpiper,鷸科 Scolopacidae,過、普,過、不普,過、不普,過、普,,
+149,高蹺濱鷸,Calidris himantopus,無亞種分化,Stilt Sandpiper,鷸科 Scolopacidae,迷,無,無,無,,
+150,彎嘴濱鷸,Calidris ferruginea,無亞種分化,Curlew Sandpiper,鷸科 Scolopacidae,冬、稀/過、普,過、稀,過、不普,過、普,,
+151,丹氏濱鷸,Calidris temminckii,無亞種分化,Temminck's Stint,鷸科 Scolopacidae,冬、稀,過、稀,冬、稀/過、稀,過、稀,,
+152,長趾濱鷸,Calidris subminuta,無亞種分化,Long-toed Stint,鷸科 Scolopacidae,冬、不普,過、不普,過、稀,過、普,,
+153,琵嘴鷸,Calidris pygmaea,無亞種分化,Spoon-billed Sandpiper,鷸科 Scolopacidae,過、稀,無,過、稀,迷,,II
+154,紅胸濱鷸,Calidris ruficollis,無亞種分化,Red-necked Stint,鷸科 Scolopacidae,冬、普,過、不普,冬、不普/過、普,冬、稀/過、普,,
+155,三趾濱鷸,Calidris alba,無亞種分化,Sanderling,鷸科 Scolopacidae,冬、不普,過、不普,冬、普/過、普,冬、不普/過、不普,,
+156,黑腹濱鷸,Calidris alpina,"sakhalina, kistchinski, actites, arcticola",Dunlin,鷸科 Scolopacidae,冬、普,過、不普,冬、普/過、普,冬、不普/過、不普,,
+157,小濱鷸,Calidris minuta,無亞種分化,Little Stint,鷸科 Scolopacidae,冬、稀/過、稀,過、稀,過、稀,過、稀,,
+158,黃胸鷸,Calidris subruficollis,無亞種分化,Buff-breasted Sandpiper,鷸科 Scolopacidae,迷,無,迷,無,,
+159,美洲尖尾濱鷸,Calidris melanotos,無亞種分化,Pectoral Sandpiper,鷸科 Scolopacidae,過、稀,過、稀,無,迷,,
+160,西濱鷸,Calidris mauri,無亞種分化,Western Sandpiper,鷸科 Scolopacidae,迷,無,無,無,,
+161,半蹼鷸,Limnodromus semipalmatus,無亞種分化,Asian Dowitcher,鷸科 Scolopacidae,過、稀,過、稀,過、稀,過、稀,,III
+162,長嘴半蹼鷸,Limnodromus scolopaceus,無亞種分化,Long-billed Dowitcher,鷸科 Scolopacidae,冬、稀,無,迷,迷,,
+163,小鷸,Lymnocryptes minimus,無亞種分化,Jack Snipe,鷸科 Scolopacidae,迷,無,無,無,,
+164,山鷸,Scolopax rusticola,無亞種分化,Eurasian Woodcock,鷸科 Scolopacidae,冬、不普,過、不普,冬、稀/過、稀,過、不普,,
+165,孤田鷸,Gallinago solitaria,japonica,Solitary Snipe,鷸科 Scolopacidae,迷,無,無,無,,
+166,大地鷸,Gallinago hardwickii,無亞種分化,Latham's Snipe,鷸科 Scolopacidae,迷,過、稀,無,過、稀,,
+167,田鷸,Gallinago gallinago,gallinago,Common Snipe,鷸科 Scolopacidae,冬、普,過、不普,冬、不普,冬、稀/過、普,,
+168,針尾鷸,Gallinago stenura,無亞種分化,Pin-tailed Snipe,鷸科 Scolopacidae,冬、稀/過、普,過、稀,過、稀,過、普,,
+169,中地鷸,Gallinago megala,無亞種分化,Swinhoe's Snipe,鷸科 Scolopacidae,冬、稀/過、普,過、稀,過、稀,過、普,,
+170,反嘴鷸,Xenus cinereus,無亞種分化,Terek Sandpiper,鷸科 Scolopacidae,過、不普,過、稀,冬、稀/過、不普,過、不普,,
+171,紅領瓣足鷸,Phalaropus lobatus,無亞種分化,Red-necked Phalarope,鷸科 Scolopacidae,過、普,過、普,過、不普,過、稀,,
+172,灰瓣足鷸,Phalaropus fulicarius,無亞種分化,Red Phalarope,鷸科 Scolopacidae,過、稀,過、稀,過、稀,無,,
+173,磯鷸,Actitis hypoleucos,無亞種分化,Common Sandpiper,鷸科 Scolopacidae,冬、普,冬、普/過、普,冬、普/過、普,冬、稀/過、普,,
+174,白腰草鷸,Tringa ochropus,無亞種分化,Green Sandpiper,鷸科 Scolopacidae,冬、不普,過、不普,冬、不普,過、稀,,
+175,黃足鷸,Tringa brevipes,無亞種分化,Gray-tailed Tattler,鷸科 Scolopacidae,過、普,過、不普,冬、稀/過、普,冬、普/過、普,,
+176,美洲黃足鷸,Tringa incana,無亞種分化,Wandering Tattler,鷸科 Scolopacidae,迷,無,無,無,,
+177,鶴鷸,Tringa erythropus,無亞種分化,Spotted Redshank,鷸科 Scolopacidae,冬、稀,過、稀,冬、不普/過、稀,過、稀,,
+178,青足鷸,Tringa nebularia,無亞種分化,Common Greenshank,鷸科 Scolopacidae,冬、普,過、不普,冬、普/過、普,過、普,,
+179,諾氏鷸,Tringa guttifer,無亞種分化,Nordmann's Greenshank,鷸科 Scolopacidae,冬、稀/過、稀,無,過、稀,無,,I
+180,小黃腳鷸,Tringa flavipes,無亞種分化,Lesser Yellowlegs,鷸科 Scolopacidae,迷,無,無,無,,
+181,小青足鷸,Tringa stagnatilis,無亞種分化,Marsh Sandpiper,鷸科 Scolopacidae,冬、不普/過、普,過、稀,冬、稀/過、不普,過、普,,
+182,鷹斑鷸,Tringa glareola,無亞種分化,Wood Sandpiper,鷸科 Scolopacidae,冬、普/過、普,過、不普,冬、稀/過、不普,過、普,,
+183,赤足鷸,Tringa totanus,"ussuriensis, terrignotae(?)",Common Redshank,鷸科 Scolopacidae,冬、普,過、稀,冬、普/過、普,過、普,,
+184,林三趾鶉,Turnix sylvaticus,davidi,Small Buttonquail,三趾鶉科 Turnicidae,留、稀,無,無,無,,III
+185,黃腳三趾鶉,Turnix tanki,blanfordii,Yellow-legged Buttonquail,三趾鶉科 Turnicidae,迷,過、稀,過、稀,無,,
+186,棕三趾鶉,Turnix suscitator,rostratus,Barred Buttonquail,三趾鶉科 Turnicidae,留、普,過、稀,無,無,臺灣特有亞種(T. s. rostratus),
+187,燕鴴,Glareola maldivarum,無亞種分化,Oriental Pratincole,燕鴴科 Glareolidae,夏、普/過、普,過、不普,夏、不普/過、稀,過、普,,III
+188,灰賊鷗,Stercorarius maccormicki,無亞種分化,South Polar Skua,賊鷗科 Stercorariidae,海、迷,無,無,無,,
+189,中賊鷗,Stercorarius pomarinus,無亞種分化,Pomarine Jaeger,賊鷗科 Stercorariidae,海、稀,海、稀,過、稀,無,,
+190,短尾賊鷗,Stercorarius parasiticus,無亞種分化,Parasitic Jaeger,賊鷗科 Stercorariidae,海、稀,海、稀,無,無,,
+191,長尾賊鷗,Stercorarius longicaudus,pallescens,Long-tailed Jaeger,賊鷗科 Stercorariidae,海、稀,海、稀,無,無,,
+192,崖海鴉,Uria aalge,inornata,Common Murre,海雀科 Alcidae,海、迷,無,無,無,,
+193,扁嘴海雀,Synthliboramphus antiquus,microrhynchos,Ancient Murrelet,海雀科 Alcidae,海、稀,海、稀,海、稀,無,,
+194,冠海雀,Synthliboramphus wumizusume,無亞種分化,Japanese Murrelet,海雀科 Alcidae,海、稀,海、稀,無,無,,
+195,三趾鷗,Rissa tridactyla,pollicaris,Black-legged Kittiwake,鷗科 Laridae,冬、稀,過、稀,過、稀,無,,
+196,叉尾鷗,Xema sabini,?,Sabine's Gull,鷗科 Laridae,迷,無,無,無,,
+197,黑嘴鷗,Saundersilarus saundersi,無亞種分化,Saunders's Gull,鷗科 Laridae,冬、不普,過、稀,冬、稀/過、稀,無,,II
+198,細嘴鷗,Chroicocephalus genei,無亞種分化,Slender-billed Gull,鷗科 Laridae,迷,無,無,無,,
+199,紅嘴鷗,Chroicocephalus ridibundus,無亞種分化,Black-headed Gull,鷗科 Laridae,冬、普,過、稀,冬、普/過、普,過、稀,,
+200,棕頭鷗,Chroicocephalus brunnicephalus,無亞種分化,Brown-headed Gull,鷗科 Laridae,迷,無,無,無,,
+201,小鷗,Hydrocoloeus minutus,無亞種分化,Little Gull,鷗科 Laridae,迷,無,無,無,,
+202,笑鷗,Leucophaeus atricilla,megalopterus,Laughing Gull,鷗科 Laridae,迷,無,無,無,,
+203,弗氏鷗,Leucophaeus pipixcan,無亞種分化,Franklin's Gull,鷗科 Laridae,迷,無,無,無,,
+204,遺鷗,Ichthyaetus relictus,無亞種分化,Relict Gull,鷗科 Laridae,無,無,迷,無,,I
+205,漁鷗,Ichthyaetus ichthyaetus,無亞種分化,Pallas's Gull,鷗科 Laridae,冬、稀,無,?,無,,
+206,黑尾鷗,Larus crassirostris,無亞種分化,Black-tailed Gull,鷗科 Laridae,冬、不普/過、不普,夏、普/過、普,冬、稀/過、不普,過、稀,,
+207,歐亞海鷗,Larus canus,"kamtschatschensis, heinei",Common Gull,鷗科 Laridae,冬、稀,過、稀,過、稀 ,無,,
+208,銀鷗,Larus argentatus,"vegae, mongolicus",Herring Gull,鷗科 Laridae,冬、稀,過、稀,冬、不普/過、稀,過、稀,,
+209,小黑背鷗,Larus fuscus,heuglini,Lesser Black-backed Gull,鷗科 Laridae,冬、稀,過、稀,冬、不普/過、不普,過、稀,,
+210,灰背鷗,Larus schistisagus,無亞種分化,Slaty-backed Gull,鷗科 Laridae,冬、稀,過、稀,冬、稀,無,,
+211,北極鷗,Larus hyperboreus,hyperboreus,Glaucous Gull,鷗科 Laridae,迷,無,無,無,,
+212,玄燕鷗,Anous stolidus,pileatus,Brown Noddy,鷗科 Laridae,夏、稀,過、稀,過、稀,過、稀,,II
+213,黑玄燕鷗,Anous minutus,?,Black Noddy,鷗科 Laridae,迷,無,無,無,,
+214,烏領燕鷗,Onychoprion fuscatus,nubilosus,Sooty Tern,鷗科 Laridae,夏、稀/過、稀,過、稀,無,無,,
+215,白眉燕鷗,Onychoprion anaethetus,anaethetus,Bridled Tern,鷗科 Laridae,夏、不普,夏、普,夏、不普,無,,II
+216,白腰燕鷗,Onychoprion aleuticus,無亞種分化,Aleutian Tern,鷗科 Laridae,過、不普,過、稀,過、稀,無,,
+217,小燕鷗,Sternula albifrons,sinensis,Little Tern,鷗科 Laridae,留、不普/夏、不普,過、稀,夏、不普/過、普,過、不普,,II
+218,鷗嘴燕鷗,Gelochelidon nilotica,affinis,Gull-billed Tern,鷗科 Laridae,冬、稀/過、不普,過、稀,過、不普,過、不普,,
+219,裏海燕鷗,Hydroprogne caspia,無亞種分化,Caspian Tern,鷗科 Laridae,冬、不普,無,冬、普,過、不普,,
+220,黑浮鷗,Chlidonias niger,niger,Black Tern,鷗科 Laridae,迷,無,無,無,,
+221,白翅黑燕鷗,Chlidonias leucopterus,無亞種分化,White-winged Tern,鷗科 Laridae,冬、稀/過、普,過、稀,過、不普,過、普,,
+222,黑腹燕鷗,Chlidonias hybrida,hybrida,Whiskered Tern,鷗科 Laridae,冬、普/過、普,過、稀,冬、稀/過、不普,過、普,,
+223,紅燕鷗,Sterna dougallii,bangsi,Roseate Tern,鷗科 Laridae,夏、不普,夏、不普,夏、不普,過、稀,,II
+224,蒼燕鷗,Sterna sumatrana,sumatrana,Black-naped Tern,鷗科 Laridae,夏、不普,夏、普,夏、不普,過、稀,,II
+225,燕鷗,Sterna hirundo,"longipennis, hirundo(?), tibetana(?)",Common Tern,鷗科 Laridae,過、普,過、稀,過、稀,過、不普,,
+226,鳳頭燕鷗,Thalasseus bergii,cristatus,Great Crested Tern,鷗科 Laridae,夏、不普,夏、普,夏、不普/過、不普,過、稀,,II
+227,白嘴端燕鷗,Thalasseus sandvicensis,sandvicensis,Sandwich Tern,鷗科 Laridae,迷,無,無,無,,
+228,小鳳頭燕鷗,Thalasseus bengalensis,torresii,Lesser Crested Tern,鷗科 Laridae,迷,無,無,無,,
+229,黑嘴端鳳頭燕鷗,Thalasseus bernsteini,無亞種分化,Chinese Crested Tern,鷗科 Laridae,夏、稀/過、稀,夏、稀,過、稀,無,,I
+230,白尾熱帶鳥,Phaethon lepturus,dorotheae,White-tailed Tropicbird,熱帶鳥科 Phaethontidae,海、迷,海、迷,無,無,,
+231,紅嘴熱帶鳥,Phaethon aethereus,mesonauta,Red-billed Tropicbird,熱帶鳥科 Phaethontidae,海、迷,無,無,無,,
+232,紅尾熱帶鳥,Phaethon rubricauda,melanorhynchos,Red-tailed Tropicbird,熱帶鳥科 Phaethontidae,海、稀,海、迷,無,無,,
+233,紅喉潛鳥,Gavia stellata,無亞種分化,Red-throated Loon,潛鳥科 Gaviidae,迷,冬、稀,過、稀,無,,
+234,黑喉潛鳥,Gavia arctica,viridigularis,Arctic Loon,潛鳥科 Gaviidae,迷,無,迷,無,,
+235,太平洋潛鳥,Gavia pacifica,無亞種分化,Pacific Loon,潛鳥科 Gaviidae,迷,無,無,無,,
+236,白嘴潛鳥,Gavia adamsii,無亞種分化,Yellow-billed Loon,潛鳥科 Gaviidae,無,迷,無,無,,
+237,黑背信天翁,Phoebastria immutabilis,無亞種分化,Laysan Albatross,信天翁科 Diomedeidae,海、稀,無,無,無,,
+238,黑腳信天翁,Phoebastria nigripes,無亞種分化,Black-footed Albatross,信天翁科 Diomedeidae,海、稀,無,海、稀,無,,I
+239,短尾信天翁,Phoebastria albatrus,無亞種分化,Short-tailed Albatross,信天翁科 Diomedeidae,海、稀,無,海、稀,無,,I
+240,黃蹼洋海燕,Oceanites oceanicus,?,Wilson's Storm-Petrel,海燕科 Hydrobatidae,海、迷,無,無,無,,
+241,白腰叉尾海燕,Hydrobates leucorhous,leucorhous,Leach's Storm-Petrel,海燕科 Hydrobatidae,無,海、迷,無,無,,
+242,黑叉尾海燕,Hydrobates monorhis,無亞種分化,Swinhoe's Storm-Petrel,海燕科 Hydrobatidae,海、不普,海、稀,海、稀,無,,
+243,褐翅叉尾海燕,Hydrobates tristrami,無亞種分化,Tristram's Storm-Petrel,海燕科 Hydrobatidae,海、迷,無,無,無,,
+244,暴風鸌,Fulmarus glacialis,rodgersii,Northern Fulmar,鸌科 Procellariidae,海、迷,無,無,無,,
+245,索氏圓尾鸌,Pterodroma solandri,無亞種分化,Providence Petrel,鸌科 Procellariidae,海、迷,無,無,無,,
+246,白腹穴鳥,Pterodroma hypoleuca,無亞種分化,Bonin Petrel,鸌科 Procellariidae,海、稀,無,無,無,,
+247,穴鳥,Bulweria bulwerii,無亞種分化,Bulwer's Petrel,鸌科 Procellariidae,海、普,海、稀,無,海、稀,,
+248,黑背白腹穴鳥,Pseudobulweria rostrata,rostrata,Tahiti Petrel,鸌科 Procellariidae,海、迷,無,無,無,,
+249,大水薙鳥,Calonectris leucomelas,無亞種分化,Streaked Shearwater,鸌科 Procellariidae,海、普,海、稀,海、稀,海、稀,,
+250,肉足水薙鳥,Ardenna carneipes,無亞種分化,Flesh-footed Shearwater,鸌科 Procellariidae,海、稀,無,無,無,,
+251,長尾水薙鳥,Ardenna pacifica,chlororhyncha,Wedge-tailed Shearwater,鸌科 Procellariidae,海、稀,無,無,海、稀,,
+252,灰水薙鳥,Ardenna grisea,無亞種分化,Sooty Shearwater,鸌科 Procellariidae,海、稀,海、稀,無,無,,
+253,短尾水薙鳥,Ardenna tenuirostris,無亞種分化,Short-tailed Shearwater,鸌科 Procellariidae,海、稀,海、稀,無,海、稀,,
+254,黑細鸌,Puffinus nativitatis,無亞種分化,Christmas Shearwater,鸌科 Procellariidae,海、迷,無,無,無,,
+255,黑鸛,Ciconia nigra,無亞種分化,Black Stork,鸛科 Ciconiidae,冬、稀/過、稀,過、稀,冬、稀,無,,II
+256,東方白鸛,Ciconia boyciana,無亞種分化,Oriental Stork,鸛科 Ciconiidae,冬、稀,過、稀,過、稀,無,,I
+257,白斑軍艦鳥,Fregata ariel,ariel,Lesser Frigatebird,軍艦鳥科 Fregatidae,海、稀,海、稀,海、迷,海、不普,,
+258,聖誕島軍艦鳥,Fregata andrewsi,無亞種分化,Christmas Island Frigatebird,軍艦鳥科 Fregatidae,海、迷,無,無,無,,
+259,軍艦鳥,Fregata minor,minor,Great Frigatebird,軍艦鳥科 Fregatidae,海、稀,海、稀,海、迷,海、稀,,
+260,藍臉鰹鳥,Sula dactylatra,personata,Masked Booby,鰹鳥科 Sulidae,海、稀,海、稀(海、迷?),無,無,,
+261,白腹鰹鳥,Sula leucogaster,"plotus, brewsteri(?)",Brown Booby,鰹鳥科 Sulidae,海、普,海、稀,海、稀,海、稀,,
+262,紅腳鰹鳥,Sula sula,rubripes,Red-footed Booby,鰹鳥科 Sulidae,海、稀,海、稀,無,海、稀,,
+263,海鸕鷀,Urile pelagicus,pelagicus,Pelagic Cormorant,鸕鷀科 Phalacrocoracidae,冬、稀,迷,迷,無,,
+264,鸕鷀,Phalacrocorax carbo,sinensis,Great Cormorant,鸕鷀科 Phalacrocoracidae,冬、普,冬、不普,冬、普,冬、稀/過、稀,,
+265,丹氏鸕鷀,Phalacrocorax capillatus,無亞種分化,Japanese Cormorant,鸕鷀科 Phalacrocoracidae,冬、稀,冬、稀,迷,無,,
+266,卷羽鵜鶘,Pelecanus crispus,無亞種分化,Dalmatian Pelican,鵜鶘科 Pelecanidae,迷,無,迷,無,,I
+267,大麻鷺,Botaurus stellaris,stellaris,Great Bittern,鷺科 Ardeidae,冬、稀,過、稀,冬、稀,無,,
+268,黃小鷺,Ixobrychus sinensis,無亞種分化,Yellow Bittern,鷺科 Ardeidae,留、不普/夏、不普,過、普,夏、不普/冬、不普/過、不普,過、不普,,
+269,秋小鷺,Ixobrychus eurhythmus,無亞種分化,Schrenck's Bittern,鷺科 Ardeidae,過、稀,過、稀,過、稀,過、稀,,
+270,栗小鷺,Ixobrychus cinnamomeus,無亞種分化,Cinnamon Bittern,鷺科 Ardeidae,留、不普,過、稀,過、稀,過、不普,,
+271,黃頸黑鷺,Ixobrychus flavicollis,flavicollis,Black Bittern,鷺科 Ardeidae,冬、稀/過、稀,過、稀,過、稀,過、稀,,
+272,蒼鷺,Ardea cinerea,jouyi,Gray Heron,鷺科 Ardeidae,冬、普,冬、不普/過、普,冬、普,冬、普/過、普,,
+273,紫鷺,Ardea purpurea,manilensis,Purple Heron,鷺科 Ardeidae,留、稀/冬、稀,過、稀,冬、稀/過、稀,過、稀,,
+274,大白鷺,Ardea alba,modesta,Great Egret,鷺科 Ardeidae,留、不普/夏、不普/冬、普,冬、稀/過、普,冬、普,冬、普/過、普,,
+275,中白鷺,Ardea intermedia,intermedia,Intermediate Egret,鷺科 Ardeidae,夏、稀/冬、普,冬、稀/過、普,冬、不普,冬、普/過、普,,
+276,白臉鷺,Egretta novaehollandiae,novaehollandiae,White-faced Heron,鷺科 Ardeidae,迷,無,無,無,,
+277,唐白鷺,Egretta eulophotes,無亞種分化,Chinese Egret,鷺科 Ardeidae,冬、稀/過、不普,過、稀,夏、不普/冬、稀/過、不普,過、不普,,II
+278,小白鷺,Egretta garzetta,garzetta,Little Egret,鷺科 Ardeidae,留、不普/夏、普/冬、普/過、普,夏、不普/冬、不普/過、普,留、普,冬、普/過、普,,
+279,岩鷺,Egretta sacra,sacra,Pacific Reef-Heron,鷺科 Ardeidae,留、不普,留、不普,留、不普,過、稀,,
+280,白頸黑鷺,Egretta picata,無亞種分化,Pied Heron,鷺科 Ardeidae,迷,無,無,無,,
+281,黃頭鷺,Bubulcus ibis,coromandus,Cattle Egret,鷺科 Ardeidae,留、不普/夏、普/冬、普/過、普,夏、不普/過、普,留、不普/過、不普,冬、普/過、普,,
+282,印度池鷺,Ardeola grayii,無亞種分化,Indian Pond-Heron,鷺科 Ardeidae,迷,無,無,無,,
+283,池鷺,Ardeola bacchus,無亞種分化,Chinese Pond-Heron,鷺科 Ardeidae,冬、稀,夏、普/過、普,夏、不普/冬、稀/過、不普,過、不普,,
+284,爪哇池鷺,Ardeola speciosa,continentalis,Javan Pond-Heron,鷺科 Ardeidae,迷,無,無,無,,
+285,綠簑鷺,Butorides striata,"carcinophila, amurensis, actophila",Striated Heron,鷺科 Ardeidae,留、不普/過、稀,過、不普,夏、稀/過、稀,過、不普,,
+286,夜鷺,Nycticorax nycticorax,nycticorax,Black-crowned Night-Heron,鷺科 Ardeidae,留、普/冬、稀/過、稀,留、不普/冬、稀/過、普,留、普,過、普,,
+287,棕夜鷺,Nycticorax caledonicus,manillensis,Nankeen Night-Heron,鷺科 Ardeidae,迷,無,無,無,,
+288,麻鷺,Gorsachius goisagi,無亞種分化,Japanese Night-Heron,鷺科 Ardeidae,過、稀,過、稀,無,無,,III
+289,黑冠麻鷺,Gorsachius melanolophus,melanolophus,Malayan Night-Heron,鷺科 Ardeidae,留、普,迷,迷,無,,
+290,彩䴉,Plegadis falcinellus,無亞種分化,Glossy Ibis,䴉科 Threskiornithidae,迷,無,迷,無,,
+291,埃及聖䴉,Threskiornis aethiopicus,無亞種分化,African Sacred Ibis,䴉科 Threskiornithidae,引進種、不普,引進種、稀,無,無,,
+292,黑頭白䴉,Threskiornis melanocephalus,無亞種分化,Black-headed Ibis,䴉科 Threskiornithidae,冬、稀/過、稀,無,過、稀,無,,II
+293,朱鷺,Nipponia nippon,無亞種分化,Crested Ibis,䴉科 Threskiornithidae,歷史紀錄,無,無,無,,I
+294,白琵鷺,Platalea leucorodia,leucorodia,Eurasian Spoonbill,䴉科 Threskiornithidae,冬、稀,過、稀,冬、稀/過、稀,無,,II
+295,黑面琵鷺,Platalea minor,無亞種分化,Black-faced Spoonbill,䴉科 Threskiornithidae,冬、不普/過、稀,過、稀,冬、不普,冬、稀/過、稀,,I
+296,魚鷹,Pandion haliaetus,haliaetus,Osprey,鶚科 Pandionidae,冬、不普,冬、稀/過、不普,過、不普/冬、普,冬、普/過、普,,II
+297,黑翅鳶,Elanus caeruleus,vociferus,Black-winged Kite,鷹科 Accipitridae,留、普,過、稀,留、稀,過、稀,,II
+298,東方蜂鷹,Pernis ptilorhynchus,orientalis,Oriental Honey-buzzard,鷹科 Accipitridae,留、不普,過、稀,過、稀,過、稀,,II
+299,黑冠鵑隼,Aviceda leuphotes,syama,Black Baza,鷹科 Accipitridae,過、稀,迷,迷,無,,II
+300,禿鷲,Aegypius monachus,無亞種分化,Cinereous Vulture,鷹科 Accipitridae,迷,無,無,無,,II
+301,大冠鷲,Spilornis cheela,hoya,Crested Serpent-Eagle,鷹科 Accipitridae,留、普,無,過、稀,無,臺灣特有亞種(S. c. hoya),II
+302,熊鷹,Nisaetus nipalensis,nipalensis,Mountain Hawk-Eagle,鷹科 Accipitridae,留、稀,無,無,無,,I
+303,林鵰,Ictinaetus malaiensis,malaiensis,Black Eagle,鷹科 Accipitridae,留、不普,無,迷,無,,II
+304,花鵰,Clanga clanga,無亞種分化,Greater Spotted Eagle,鷹科 Accipitridae,迷,過、稀,過、稀,無,,II
+305,靴隼鵰,Hieraaetus pennatus,無亞種分化,Booted Eagle,鷹科 Accipitridae,無,無,迷,無,,II
+306,白肩鵰,Aquila heliaca,無亞種分化,Imperial Eagle,鷹科 Accipitridae,迷,無,冬、稀,無,,I
+307,金鵰,Aquila chrysaetos,?,Golden Eagle,鷹科 Accipitridae,無,迷,無,無,,
+308,白腹鵰,Aquila fasciata,fasciata,Bonelli's Eagle,鷹科 Accipitridae,無,無,迷,無,,II
+309,灰面鵟鷹,Butastur indicus,無亞種分化,Gray-faced Buzzard,鷹科 Accipitridae,冬、稀/過、普,過、普,過、不普,冬、稀/過、普,,II
+310,西方澤鵟,Circus aeruginosus,aeruginosus(?),Eurasian Marsh-Harrier,鷹科 Accipitridae,迷,無,無,無,,II
+311,東方澤鵟,Circus spilonotus,無亞種分化,Eastern Marsh-Harrier,鷹科 Accipitridae,冬、不普/過、不普,過、稀,過、稀,過、稀,,II
+312,灰澤鵟,Circus cyaneus,無亞種分化,Hen Harrier,鷹科 Accipitridae,冬、稀/過、稀,過、稀,過、稀,過、稀,,II
+313,花澤鵟,Circus melanoleucos,無亞種分化,Pied Harrier,鷹科 Accipitridae,冬、稀/過、稀,無,過、稀,迷,,II
+314,鳳頭蒼鷹,Accipiter trivirgatus,"formosae, indicus",Crested Goshawk,鷹科 Accipitridae,留、普,過、稀,過、稀,無,含臺灣特有亞種(A. t. formosae),II
+315,赤腹鷹,Accipiter soloensis,無亞種分化,Chinese Sparrowhawk,鷹科 Accipitridae,過、普,過、普,過、不普,冬、稀/過、普,,II
+316,日本松雀鷹,Accipiter gularis,gularis,Japanese Sparrowhawk,鷹科 Accipitridae,冬、稀/過、不普,冬、不普/過、普,冬、稀?/過、稀,冬、稀/過、不普,,II
+317,松雀鷹,Accipiter virgatus,"fuscipectus, affinis",Besra,鷹科 Accipitridae,留、不普,過、稀,留、稀/過、稀,無,含臺灣特有亞種(A. v. fuscipectus),II
+318,北雀鷹,Accipiter nisus,nisosimilis,Eurasian Sparrowhawk,鷹科 Accipitridae,冬、稀,過、稀,過、稀,冬、稀/過、不普,,II
+319,蒼鷹,Accipiter gentilis,"fujiyamae, schvedowi",Northern Goshawk,鷹科 Accipitridae,冬、稀,過、稀,冬、稀/過、稀,過、稀,,II
+320,黑鳶,Milvus migrans,"formosanus, lineatus",Black Kite,鷹科 Accipitridae,留、不普/冬、稀,過、稀,冬、不普/過、不普,迷,,II
+321,栗鳶,Haliastur indus,indus,Brahminy Kite,鷹科 Accipitridae,迷,無,迷,無,,II
+322,白尾海鵰,Haliaeetus albicilla,無亞種分化,White-tailed Eagle,鷹科 Accipitridae,冬、稀,無,無,無,,I
+323,白腹海鵰,Haliaeetus leucogaster,無亞種分化,White-bellied Sea-Eagle,鷹科 Accipitridae,迷,迷,迷,無,,II
+324,毛足鵟,Buteo lagopus,"menzbieri, kamtschatkensis",Rough-legged Hawk,鷹科 Accipitridae,迷,無,迷,無,,II
+325,歐亞鵟,Buteo buteo,vulpinus,Common Buzzard,鷹科 Accipitridae,無,無,迷,無,,
+326,東方鵟,Buteo japonicus,japonicus,Eastern Buzzard,鷹科 Accipitridae,冬、不普/過、不普,冬、普/過、普,冬、普,冬、普/過、普,,II
+327,大鵟,Buteo hemilasius,無亞種分化,Upland Buzzard,鷹科 Accipitridae,冬、稀,過、稀,過、稀,迷,,II
+328,草鴞,Tyto longimembris,pithecops,Australasian Grass-Owl,草鴞科 Tytonidae,留、稀,迷,迷,無,臺灣特有亞種(T. l. pithecops),I
+329,黃嘴角鴞,Otus spilocephalus,hambroecki,Mountain Scops-Owl,鴟鴞科 Strigidae,留、普,無,無,無,臺灣特有亞種(O. s. hambroecki),II
+330,領角鴞,Otus lettia,"glabripes, erythrocampe",Collared Scops-Owl,鴟鴞科 Strigidae,留、普,迷,迷,無,含臺灣特有亞種(O. l. glabripes),II
+331,蘭嶼角鴞,Otus elegans,botelensis,Ryukyu Scops-Owl,鴟鴞科 Strigidae,留、蘭普,無,無,無,蘭嶼特有亞種(O. e. botelensis),II
+332,東方角鴞,Otus sunia,"japonicus, stictonotus",Oriental Scops-Owl,鴟鴞科 Strigidae,過、稀,過、稀,過、稀,過、稀,,II
+333,黃魚鴞,Ketupa flavipes,無亞種分化,Tawny Fish-Owl,鴟鴞科 Strigidae,留、稀,無,無,無,,II
+334,鵂鶹,Taenioptynx brodiei,pardalotus,Collared Owlet,鴟鴞科 Strigidae,留、不普,無,無,無,臺灣特有亞種(T. b. pardalotus),II
+335,縱紋腹小鴞,Athene noctua,plumipes,Little Owl,鴟鴞科 Strigidae,迷,無,?,無,,II
+336,褐林鴞,Strix leptogrammica,caligata,Brown Wood-Owl,鴟鴞科 Strigidae,留、稀,無,無,無,,II
+337,東方灰林鴞,Strix nivicolum,yamadae,Himalayan Owl,鴟鴞科 Strigidae,留、稀,無,無,無,臺灣特有亞種(S. n. yamadae),II
+338,長耳鴞,Asio otus,otus,Long-eared Owl,鴟鴞科 Strigidae,冬、稀,無,冬、稀,過、稀,,II
+339,短耳鴞,Asio flammeus,flammeus,Short-eared Owl,鴟鴞科 Strigidae,冬、不普,過、稀,冬、稀,冬、稀/過、不普,,II
+340,褐鷹鴞,Ninox japonica,"totogo, japonica",Northern Boobook,鴟鴞科 Strigidae,留、不普/過、不普,過、稀,過、稀,過、不普,,II
+341,戴勝,Upupa epops,saturata,Eurasian Hoopoe,戴勝科 Upupidae,冬、稀/過、稀,過、普,留、普/過、不普,過、不普,,
+342,翠鳥,Alcedo atthis,bengalensis,Common Kingfisher,翠鳥科 Alcedinidae,留、普/過、不普,留、普,留、普/過、稀,過、普,,
+343,黑背三趾翠鳥,Ceyx erithaca,erithaca,Black-backed Dwarf-Kingfisher,翠鳥科 Alcedinidae,迷,迷,迷,無,,
+344,赤翡翠,Halcyon coromanda,"major, bangsi",Ruddy Kingfisher,翠鳥科 Alcedinidae,過、稀,過、稀,過、稀,過、稀,,
+345,蒼翡翠,Halcyon smyrnensis,fokiensis,White-throated Kingfisher,翠鳥科 Alcedinidae,過、稀,過、稀,留、普,迷,,
+346,黑頭翡翠,Halcyon pileata,無亞種分化,Black-capped Kingfisher,翠鳥科 Alcedinidae,冬、稀/過、稀,過、稀,冬、稀/過、稀,冬、稀/過、稀,,
+347,白領翡翠,Todiramphus chloris,collaris,Collared Kingfisher,翠鳥科 Alcedinidae,迷,無,無,無,,
+348,斑翡翠,Ceryle rudis,insignis,Pied Kingfisher,翠鳥科 Alcedinidae,無,過、稀,留、不普,無,,
+349,藍喉蜂虎,Merops viridis,無亞種分化,Blue-throated Bee-eater,蜂虎科 Meropidae,無,無,迷,無,,
+350,藍頰蜂虎,Merops persicus,persicus,Blue-cheeked Bee-eater,蜂虎科 Meropidae,無,無,迷,無,,
+351,栗喉蜂虎,Merops philippinus,無亞種分化,Blue-tailed Bee-eater,蜂虎科 Meropidae,迷,無,夏、普,過、稀,,
+352,彩虹蜂虎,Merops ornatus,無亞種分化,Rainbow Bee-eater,蜂虎科 Meropidae,迷,無,無,無,,
+353,佛法僧,Eurystomus orientalis,cyanocollis,Dollarbird,佛法僧科 Coraciidae,過、稀,過、普,過、稀,過、不普,,
+354,五色鳥,Psilopogon nuchalis,無亞種分化,Taiwan Barbet,鬚鴷科 Megalaimidae,留、普,無,無,無,臺灣特有種,
+355,地啄木,Jynx torquilla,torquilla,Eurasian Wryneck,啄木鳥科 Picidae,冬、稀/過、稀,過、稀,冬、不普,過、稀,,
+356,小啄木,Yungipicus canicapillus,kaleensis,Gray-capped Pygmy Woodpecker,啄木鳥科 Picidae,留、普,無,無,無,,
+357,大赤啄木,Dendrocopos leucotos,insularis,White-backed Woodpecker,啄木鳥科 Picidae,留、不普,無,無,無,臺灣特有亞種(D. l. insularis),II
+358,綠啄木,Picus canus,tancolo,Gray-headed Woodpecker,啄木鳥科 Picidae,留、稀,無,無,無,,II
+359,紅隼,Falco tinnunculus,interstinctus(?),Eurasian Kestrel,隼科 Falconidae,冬、普,冬、不普/過、普,冬、不普,冬、普/過、普,,II
+360,紅腳隼,Falco amurensis,無亞種分化,Amur Falcon,隼科 Falconidae,過、稀,過、稀,過、稀,過、稀,,II
+361,灰背隼,Falco columbarius,"insignis(?), pacificus(?)",Merlin,隼科 Falconidae,冬、稀,迷,無,過、稀,,II
+362,燕隼,Falco subbuteo,"subbuteo(?), streichi(?)",Eurasian Hobby,隼科 Falconidae,過、不普,過、不普,過、稀,過、稀,,II
+363,遊隼,Falco peregrinus,"calidus, peregrinator,   japonensis, ernesti",Peregrine Falcon,隼科 Falconidae,留、稀/冬、不普/過、不普,夏、稀/過、不普,冬、不普,冬、稀/過、不普,,II
+364,藍翅八色鳥,Pitta moluccensis,無亞種分化,Blue-winged Pitta,八色鳥科 Pittidae,迷,迷,迷,迷,,
+365,八色鳥,Pitta nympha,無亞種分化,Fairy Pitta,八色鳥科 Pittidae,夏、不普,過、稀,迷,迷,,II
+366,綠胸八色鳥,Pitta sordida,sordida,Hooded Pitta,八色鳥科 Pittidae,迷,無,無,無,,
+367,灰喉山椒鳥,Pericrocotus solaris,griseogularis,Gray-chinned Minivet,山椒鳥科 Campephagidae,留、普,迷,迷,無,,
+368,長尾山椒鳥,Pericrocotus ethologus,ethologus,Long-tailed Minivet,山椒鳥科 Campephagidae,迷,無,無,無,,
+369,赤紅山椒鳥,Pericrocotus speciosus,fohkiensis,Scarlet Minivet,山椒鳥科 Campephagidae,無,無,迷,無,,
+370,琉球山椒鳥,Pericrocotus tegimae,無亞種分化,Ryukyu Minivet,山椒鳥科 Campephagidae,迷,迷,迷,迷,,
+371,灰山椒鳥,Pericrocotus divaricatus,無亞種分化,Ashy Minivet,山椒鳥科 Campephagidae,冬、稀/過、稀,過、普,過、不普,過、不普,,
+372,小灰山椒鳥,Pericrocotus cantonensis,無亞種分化,Brown-rumped Minivet,山椒鳥科 Campephagidae,迷,過、稀,夏、稀/過、稀,過、稀,,
+373,粉紅山椒鳥,Pericrocotus roseus,roseus(?),Rosy Minivet,山椒鳥科 Campephagidae,無,迷,無,無,,
+374,花翅山椒鳥,Coracina macei,rexpineti,Large Cuckooshrike,山椒鳥科 Campephagidae,留、稀,迷,迷,無,,II
+375,黑原鵑鵙,Lalage nigra,nigra,Pied Triller,山椒鳥科 Campephagidae,迷,無,無,無,,
+376,黑翅山椒鳥,Lalage melaschistos,intermedia,Black-winged Cuckooshrike,山椒鳥科 Campephagidae,冬、稀/過、稀,過、不普,冬、稀/過、稀,過、稀,,
+377,綠畫眉,Erpornis zantholeuca,griseiloris,White-bellied Erpornis,綠鵙科 Vireonidae,留、普,無,迷,無,,
+378,黃鸝,Oriolus chinensis,diffusus,Black-naped Oriole,黃鸝科 Oriolidae,留、稀/過、稀,過、不普,冬、稀/過、稀,過、稀,,II
+379,朱鸝,Oriolus traillii,ardens,Maroon Oriole,黃鸝科 Oriolidae,留、不普,無,無,無,臺灣特有亞種(O. t. ardens),II
+380,菲律賓扇尾鶲,Rhipidura nigritorquis,無亞種分化,Philippine Pied-Fantail,扇尾鶲科 Rhipiduridae,迷,無,無,無,,
+381,大卷尾,Dicrurus macrocercus,"harterti, cathoecus",Black Drongo,卷尾科 Dicruridae,留、普/過、稀,過、普,夏、不普/冬、稀/過、不普,過、不普,含臺灣特有亞種(D. m. harterti),
+382,灰卷尾,Dicrurus leucophaeus,leucogenis,Ashy Drongo,卷尾科 Dicruridae,冬、稀/過、稀,過、普,過、稀,過、稀,,
+383,鴉嘴卷尾,Dicrurus annectens,無亞種分化,Crow-billed Drongo,卷尾科 Dicruridae,無,迷,?,無,,
+384,小卷尾,Dicrurus aeneus,braunianus,Bronzed Drongo,卷尾科 Dicruridae,留、普,無,無,迷,臺灣特有亞種(D. a. braunianus),
+385,髮冠卷尾,Dicrurus hottentottus,brevirostris,Hair-crested Drongo,卷尾科 Dicruridae,過、稀,過、不普,過、稀,過、不普,,
+386,黑枕藍鶲,Hypothymis azurea,"oberholseri, styani",Black-naped Monarch,王鶲科 Monarchidae,留、普,迷,迷,無,含臺灣特有亞種(H. a. oberholseri),
+387,紫綬帶,Terpsiphone atrocaudata,"atrocaudata, periophthalmica",Japanese Paradise-Flycatcher,王鶲科 Monarchidae,留、蘭稀/夏、蘭普/過、不普,過、不普,過、稀,過、稀,,II
+388,阿穆爾綬帶,Terpsiphone incei,無亞種分化,Amur Paradise-Flycatcher,王鶲科 Monarchidae,過、稀,過、不普,過、稀,過、稀,,
+389,虎紋伯勞,Lanius tigrinus,無亞種分化,Tiger Shrike,伯勞科 Laniidae,迷,過、稀,過、稀,過、稀,,
+390,紅頭伯勞,Lanius bucephalus,bucephalus,Bull-headed Shrike,伯勞科 Laniidae,冬、稀,過、稀,過、稀,冬、稀,,
+391,紅背伯勞,Lanius collurio,無亞種分化,Red-backed Shrike,伯勞科 Laniidae,迷,迷,迷,無,,
+392,荒漠伯勞,Lanius isabellinus,isabellinus,Isabelline Shrike,伯勞科 Laniidae,無,無,迷,無,,
+393,紅尾伯勞,Lanius cristatus,"cristatus, confusus, lucionensis, superciliosus",Brown Shrike,伯勞科 Laniidae,冬、普/過、普,過、普,冬、稀/過、不普,冬、稀/過、普,,III
+394,栗背伯勞,Lanius collurioides,collurioides,Burmese Shrike,伯勞科 Laniidae,迷,無,無,無,,
+395,棕背伯勞,Lanius schach,schach,Long-tailed Shrike,伯勞科 Laniidae,留、普,留、稀/過、不普,留、普,過、稀,,
+396,灰背伯勞,Lanius tephronotus,tephronotus,Gray-backed Shrike,伯勞科 Laniidae,迷,無,無,無,,
+397,西方灰伯勞,Lanius excubitor,pallidirostris,Great Gray Shrike,伯勞科 Laniidae,迷,無,無,無,,
+398,楔尾伯勞,Lanius sphenocercus,無亞種分化,Chinese Gray Shrike,伯勞科 Laniidae,冬、稀,過、稀,過、稀,無,,
+399,松鴉,Garrulus glandarius,taivanus,Eurasian Jay,鴉科 Corvidae,留、普,無,無,無,臺灣特有亞種(G. g. taivanus),
+400,灰喜鵲,Cyanopica cyanus,?,Azure-winged Magpie,鴉科 Corvidae,引進種、稀,迷,無,無,,
+401,臺灣藍鵲,Urocissa caerulea,無亞種分化,Taiwan Blue-Magpie,鴉科 Corvidae,留、普,無,無,無,臺灣特有種,III
+402,樹鵲,Dendrocitta formosae,"formosae, sinica",Gray Treepie,鴉科 Corvidae,留、普,迷,迷,無,含臺灣特有亞種(D. f. formosae),
+403,喜鵲,Pica serica,無亞種分化,Oriental Magpie,鴉科 Corvidae,引進種、普,過、稀,留、普,無,,
+404,星鴉,Nucifraga caryocatactes,owstoni,Eurasian Nutcracker,鴉科 Corvidae,留、普,無,無,無,臺灣特有亞種(N. c. owstoni),
+405,東方寒鴉,Corvus dauuricus,無亞種分化,Daurian Jackdaw,鴉科 Corvidae,迷,無,冬、稀,無,,
+406,禿鼻鴉,Corvus frugilegus,pastinator,Rook,鴉科 Corvidae,冬、稀,過、稀,冬、稀,迷,,
+407,小嘴烏鴉,Corvus corone,orientalis,Carrion Crow,鴉科 Corvidae,冬、稀,過、稀,冬、稀,無,,
+408,巨嘴鴉,Corvus macrorhynchos,colonorum,Large-billed Crow,鴉科 Corvidae,留、普,迷,冬、稀,無,,
+409,玉頸鴉,Corvus pectoralis,無亞種分化,Collared Crow,鴉科 Corvidae,無,無,留、不普,無,,
+410,方尾鶲,Culicicapa ceylonensis,calochrysea,Gray-headed Canary-Flycatcher,細嘴鶲科 Stenostiridae,迷,迷,無,無,,
+411,煤山雀,Periparus ater,ptilosus,Coal Tit,山雀科 Paridae,留、普,無,無,無,臺灣特有亞種(P. a. ptilosus),III
+412,黃腹山雀,Periparus venustulus,無亞種分化,Yellow-bellied Tit,山雀科 Paridae,迷,過、稀,迷,無,,
+413,赤腹山雀,Sittiparus castaneoventris,無亞種分化,Chestnut-bellied Tit,山雀科 Paridae,留、不普,無,無,無,臺灣特有種,II
+414,雜色山雀,Sittiparus varius,varius,Varied Tit,山雀科 Paridae,迷,迷,無,無,,
+415,青背山雀,Parus monticolus,insperatus,Green-backed Tit,山雀科 Paridae,留、普,無,無,無,臺灣特有亞種(P. m. insperatus),III
+416,白頰山雀,Parus minor,commixtus,Japanese Tit,山雀科 Paridae,迷,留、稀,迷,無,,
+417,黃山雀,Machlolophus holsti,無亞種分化,Taiwan Yellow Tit,山雀科 Paridae,留、不普,無,無,無,臺灣特有種,II
+418,攀雀,Remiz consobrinus,無亞種分化,Chinese Penduline-Tit,攀雀科 Remizidae,迷,過、稀,冬、稀,無,,
+419,賽氏短趾百靈,Calandrella dukhunensis,無亞種分化,Mongolian Short-toed Lark,百靈科 Alaudidae,迷,迷,無,無,,
+420,亞洲短趾百靈,Alaudala cheleensis,cheleensis,Asian Short-toed Lark,百靈科 Alaudidae,迷,迷,無,無,,
+421,歐亞雲雀,Alauda arvensis,intermedia,Eurasian Skylark,百靈科 Alaudidae,冬、稀,過、稀,冬、不普,過、稀,,
+422,小雲雀,Alauda gulgula,"wattersi, coelivox",Oriental Skylark,百靈科 Alaudidae,留、普,過、稀,留、不普,無,,
+423,斑紋鷦鶯,Prinia striata,striata,Striped Prinia,扇尾鶯科 Cisticolidae,留、不普,無,無,無,臺灣特有亞種(P. s. striata),
+424,灰頭鷦鶯,Prinia flaviventris,sonitans,Yellow-bellied Prinia,扇尾鶯科 Cisticolidae,留、普,留、不普,留、普,無,,
+425,褐頭鷦鶯,Prinia inornata,"flavirostris, extensicauda",Plain Prinia,扇尾鶯科 Cisticolidae,留、普,留、稀,留、普,無,含臺灣特有亞種(P. i. flavirostris),
+426,棕扇尾鶯,Cisticola juncidis,tinnabulans,Zitting Cisticola,扇尾鶯科 Cisticolidae,留、普,過、不普,冬、稀/過、不普,過、稀,,
+427,黃頭扇尾鶯,Cisticola exilis,volitans,Golden-headed Cisticola,扇尾鶯科 Cisticolidae,留、不普,無,迷,過、稀,臺灣特有亞種(C. e. volitans),
+428,厚嘴葦鶯,Arundinax aedon,rufescens,Thick-billed Warbler,葦鶯科 Acrocephalidae,迷,迷,迷,無,,
+429,靴籬鶯,Iduna caligata,無亞種分化,Booted Warbler,葦鶯科 Acrocephalidae,迷,無,無,迷,,
+430,雙眉葦鶯,Acrocephalus bistrigiceps,無亞種分化,Black-browed Reed Warbler,葦鶯科 Acrocephalidae,冬、稀/過、稀,過、稀,過、稀,迷,,
+431,細紋葦鶯,Acrocephalus sorghophilus,無亞種分化,Streaked Reed Warbler,葦鶯科 Acrocephalidae,迷,過、稀,無,無,,
+432,稻田葦鶯,Acrocephalus agricola,無亞種分化,Paddyfield Warbler,葦鶯科 Acrocephalidae,迷,無,無,無,,
+433,鈍翅葦鶯,Acrocephalus concinens,concinens,Blunt-winged Warbler,葦鶯科 Acrocephalidae,無,迷,無,無,,
+434,遠東葦鶯,Acrocephalus tangorum,無亞種分化,Manchurian Reed Warbler,葦鶯科 Acrocephalidae,迷,無,無,無,,
+435,布氏葦鶯,Acrocephalus dumetorum,無亞種分化,Blyth's Reed Warbler,葦鶯科 Acrocephalidae,迷,無,無,無,,
+436,東方大葦鶯,Acrocephalus orientalis,無亞種分化,Oriental Reed Warbler,葦鶯科 Acrocephalidae,冬、普,過、不普,冬、稀/過、不普,過、不普,,
+437,蒼眉蝗鶯,Helopsaltes fasciolatus,無亞種分化,Gray's Grasshopper Warbler,蝗鶯科 Locustellidae,過、稀,無,過、稀,過、稀,,
+438,庫頁島蝗鶯,Helopsaltes amnicola,無亞種分化,Sakhalin Grasshopper Warbler,蝗鶯科 Locustellidae,過、稀,無,無,無,,
+439,小蝗鶯,Helopsaltes certhiola,certhiola,Pallas's Grasshopper Warbler,蝗鶯科 Locustellidae,過、稀,過、稀,無,迷,,
+440,北蝗鶯,Helopsaltes ochotensis,"ochotensis(?), subcerthiola(?)",Middendorff's Grasshopper Warbler,蝗鶯科 Locustellidae,冬、稀/過、不普,過、稀,過、稀,過、稀,,
+441,史氏蝗鶯,Helopsaltes pleskei,無亞種分化,Pleske's Grasshopper Warbler,蝗鶯科 Locustellidae,過、稀,無,無,無,,
+442,矛斑蝗鶯,Locustella lanceolata,無亞種分化,Lanceolated Warbler,蝗鶯科 Locustellidae,過、不普,過、稀,過、稀,過、稀,,
+443,臺灣叢樹鶯,Locustella alishanensis,無亞種分化,Taiwan Bush Warbler,蝗鶯科 Locustellidae,留、普,無,無,無,臺灣特有種,
+444,赤褐蝗鶯,Locustella mandelli,melanorhyncha(?),Russet Bush Warbler,蝗鶯科 Locustellidae,無,無,冬、稀,無,,
+445,臺灣鷦眉,Pnoepyga formosana,無亞種分化,Taiwan Cupwing,鷦眉科 Pnoepygidae,留、普,無,無,無,臺灣特有種,
+446,棕沙燕,Riparia chinensis,chinensis,Gray-throated Martin,燕科 Hirundinidae,留、普,迷,?,過、稀,,
+447,灰沙燕,Riparia riparia,ijimae,Bank Swallow,燕科 Hirundinidae,過、稀,過、不普,過、稀,過、不普,,
+448,家燕,Hirundo rustica,"gutturalis, mandschurica, tytleri(?)",Barn Swallow,燕科 Hirundinidae,夏、普/冬、普/過、普,夏、普/過、普,夏、普/冬、稀/過、普,冬、稀/過、普,,
+449,洋燕,Hirundo tahitica,"namiyei, javanica",Pacific Swallow,燕科 Hirundinidae,留、普,過、稀,留、稀/過、稀,迷,,
+450,金腰燕,Cecropis daurica,japonica,Red-rumped Swallow,燕科 Hirundinidae,過、稀,夏、稀/過、不普,冬、稀/過、稀,過、不普,,
+451,赤腰燕,Cecropis striolata,striolata,Striated Swallow,燕科 Hirundinidae,留、普,無,?,無,,
+452,白腹毛腳燕,Delichon urbicum,lagopodum,Common House-Martin,燕科 Hirundinidae,迷,迷,迷,迷,,
+453,東方毛腳燕,Delichon dasypus,"nigrimentale, dasypus",Asian House-Martin,燕科 Hirundinidae,留、不普,過、不普,迷,過、稀,,
+454,白環鸚嘴鵯,Spizixos semitorques,"cinereicapillus, semitorques",Collared Finchbill,鵯科 Pycnonotidae,留、普,迷,無,無,含臺灣特有亞種(S. s. cinereicapillus),
+455,烏頭翁,Pycnonotus taivanus,無亞種分化,Styan's Bulbul,鵯科 Pycnonotidae,留、局普,無,無,無,臺灣特有種,II
+456,白頭翁,Pycnonotus sinensis,"formosae, sinensis",Light-vented Bulbul,鵯科 Pycnonotidae,留、普,留、普,留、普,過、不普,含臺灣特有亞種(P. s. formosae),
+457,白喉紅臀鵯,Pycnonotus aurigaster,chrysorrhoides,Sooty-headed Bulbul,鵯科 Pycnonotidae,無,無,留、稀?/過、稀,無,,
+458,紅嘴黑鵯,Hypsipetes leucocephalus,"nigerrimus, leucocephalus, ?",Black Bulbul,鵯科 Pycnonotidae,留、普,留、不普/過、稀,留、稀/冬、稀/過、稀,迷,含臺灣特有亞種(H. l. nigerrimus),
+459,棕耳鵯,Hypsipetes amaurotis,"harterti, amaurotis",Brown-eared Bulbul,鵯科 Pycnonotidae,留、蘭綠龜普/過、稀,過、稀,迷,過、稀,含蘭嶼特有亞種(H. a. harterti),
+460,栗背短腳鵯,Hemixos castanonotus,canipennis,Chestnut Bulbul,鵯科 Pycnonotidae,無,過、稀,留、稀/冬、稀/過、稀,無,,
+461,林柳鶯,Phylloscopus sibilatrix,無亞種分化,Wood Warbler,柳鶯科 Phylloscopidae,迷,無,無,無,,
+462,黃眉柳鶯,Phylloscopus inornatus,無亞種分化,Yellow-browed Warbler,柳鶯科 Phylloscopidae,冬、普,冬、不普/過、普,冬、普,冬、普/過、普,,
+463,淡眉柳鶯,Phylloscopus humei,?,Hume's Warbler,柳鶯科 Phylloscopidae,無,迷,無,無,,
+464,雲南柳鶯,Phylloscopus yunnanensis,無亞種分化,Chinese Leaf Warbler,柳鶯科 Phylloscopidae,無,迷,無,無,,
+465,黃腰柳鶯,Phylloscopus proregulus,無亞種分化,Pallas's Leaf Warbler,柳鶯科 Phylloscopidae,冬、稀/過、不普,過、不普,冬、不普,過、稀,,
+466,巨嘴柳鶯,Phylloscopus schwarzi,無亞種分化,Radde's Warbler,柳鶯科 Phylloscopidae,過、稀,過、稀,過、稀,過、不普,,
+467,棕眉柳鶯,Phylloscopus armandii,armandii,Yellow-streaked Warbler,柳鶯科 Phylloscopidae,迷,迷,無,無,,
+468,黃腹柳鶯,Phylloscopus affinis,occisinensis(?),Tickell's Leaf Warbler,柳鶯科 Phylloscopidae,無,迷,無,無,,
+469,褐色柳鶯,Phylloscopus fuscatus,fuscatus,Dusky Warbler,柳鶯科 Phylloscopidae,冬、稀/過、稀,過、不普,冬、普,過、不普,,
+470,棕腹柳鶯,Phylloscopus subaffinis,無亞種分化,Buff-throated Warbler,柳鶯科 Phylloscopidae,迷,無,無,無,,
+471,歐亞柳鶯,Phylloscopus trochilus,?,Willow Warbler,柳鶯科 Phylloscopidae,迷,無,無,無,,
+472,嘰喳柳鶯,Phylloscopus collybita,?,Common Chiffchaff,柳鶯科 Phylloscopidae,迷,迷,迷,無,,
+473,冠羽柳鶯,Phylloscopus coronatus,無亞種分化,Eastern Crowned Warbler,柳鶯科 Phylloscopidae,過、稀,過、稀,過、稀,過、稀,,
+474,飯島柳鶯,Phylloscopus ijimae,無亞種分化,Ijima's Leaf Warbler,柳鶯科 Phylloscopidae,過、稀,過、稀,迷,無,,III
+475,白眶鶲鶯,Phylloscopus intermedius,intermedius,White-spectacled Warbler,柳鶯科 Phylloscopidae,無,迷,迷,無,,
+476,比氏鶲鶯,Phylloscopus valentini,?,Bianchi's Warbler,柳鶯科 Phylloscopidae,迷,迷,無,無,,
+477,淡尾鶲鶯,Phylloscopus soror,無亞種分化,Alström's Warbler,柳鶯科 Phylloscopidae,無,迷,無,無,,
+478,暗綠柳鶯,Phylloscopus trochiloides,?,Greenish Warbler,柳鶯科 Phylloscopidae,迷,無,迷,無,,
+479,雙斑綠柳鶯,Phylloscopus plumbeitarsus,無亞種分化,Two-barred Warbler,柳鶯科 Phylloscopidae,迷,過、稀,過、稀,過、稀,,
+480,淡腳柳鶯,Phylloscopus tenellipes,無亞種分化,Pale-legged Leaf Warbler,柳鶯科 Phylloscopidae,過、稀,過、稀,過、稀,過、稀,,
+481,庫頁島柳鶯,Phylloscopus borealoides,無亞種分化,Sakhalin Leaf Warbler,柳鶯科 Phylloscopidae,過、稀,過、稀,過、稀,迷,,
+482,日本柳鶯,Phylloscopus xanthodryas,無亞種分化,Japanese Leaf Warbler,柳鶯科 Phylloscopidae,?,?,?,?,,
+483,極北柳鶯,Phylloscopus borealis,無亞種分化,Arctic Warbler,柳鶯科 Phylloscopidae,冬、普,冬、普,冬、稀/過、不普,冬、普/過、普,,
+484,勘察加柳鶯,Phylloscopus examinandus,無亞種分化,Kamchatka Leaf Warbler,柳鶯科 Phylloscopidae,?,過、稀,迷,?,,
+485,栗頭鶲鶯,Phylloscopus castaniceps,sinensis(?),Chestnut-crowned Warbler,柳鶯科 Phylloscopidae,迷,迷,無,無,,
+486,黑眉柳鶯,Phylloscopus ricketti,無亞種分化,Sulphur-breasted Warbler,柳鶯科 Phylloscopidae,迷,過、稀,無,無,,
+487,克氏冠紋柳鶯,Phylloscopus claudiae,無亞種分化,Claudia's Leaf Warbler,柳鶯科 Phylloscopidae,迷,過、稀,迷,無,,
+488,哈氏冠紋柳鶯,Phylloscopus goodsoni,fokiensis,Hartert's Leaf Warbler,柳鶯科 Phylloscopidae,迷,過、稀,冬、稀,無,,
+489,短尾鶯,Urosphena squameiceps,無亞種分化,Asian Stubtail,樹鶯科 Scotocercidae,冬、稀/過、稀,過、不普,冬、稀/過、稀,過、稀,,
+490,棕面鶯,Abroscopus albogularis,fulvifacies,Rufous-faced Warbler,樹鶯科 Scotocercidae,留、普,過、稀,過、稀,無,,
+491,日本樹鶯,Horornis diphone,"cantans, viridis",Japanese Bush Warbler,樹鶯科 Scotocercidae,冬、稀,過、稀,過、稀,無,,
+492,遠東樹鶯,Horornis canturians,"borealis, canturians",Manchurian Bush Warbler,樹鶯科 Scotocercidae,冬、普,過、不普,冬、稀,冬、稀/過、不普,,
+493,小鶯,Horornis fortipes,"robustipes, davidianus",Brownish-flanked Bush Warbler,樹鶯科 Scotocercidae,留、普,留、普,留、普/過、稀,無,含臺灣特有亞種(H. f. robustipes),
+494,深山鶯,Horornis acanthizoides,concolor,Yellowish-bellied Bush Warbler,樹鶯科 Scotocercidae,留、普,無,無,無,臺灣特有亞種(H. a. concolor),
+495,紅頭山雀,Aegithalos concinnus,concinnus,Black-throated Tit,長尾山雀科 Aegithalidae,留、普,留、普,迷,無,,
+496,白喉林鶯,Curruca curruca,?,Lesser Whitethroat,鶯科 Sylviidae,迷,無,迷,無,,
+497,漠地林鶯,Curruca nana,無亞種分化,Asian Desert Warbler,鶯科 Sylviidae,迷,無,無,無,,
+498,褐頭花翼,Fulvetta formosana,無亞種分化,Taiwan Fulvetta,鶯科 Sylviidae,留、普,無,無,無,臺灣特有種,
+499,黃羽鸚嘴,Suthora verreauxi,morrisoniana,Golden Parrotbill,鶯科 Sylviidae,留、稀,無,無,無,臺灣特有亞種(S. v. morrisoniana),
+500,粉紅鸚嘴,Sinosuthora webbiana,bulomacha,Vinous-throated Parrotbill,鶯科 Sylviidae,留、普,無,無,無,臺灣特有亞種(S. w. bulomacha),
+501,栗耳鳳眉,Staphida torqueola,無亞種分化,Indochinese Yuhina,繡眼科 Zosteropidae,無,迷,迷,無,,
+502,冠羽畫眉,Yuhina brunneiceps,無亞種分化,Taiwan Yuhina,繡眼科 Zosteropidae,留、普,無,無,無,臺灣特有種,III
+503,紅脇繡眼,Zosterops erythropleurus,無亞種分化,Chestnut-flanked White-eye,繡眼科 Zosteropidae,迷,迷,無,無,,
+504,斯氏繡眼,Zosterops simplex,simplex,Swinhoe's White-eye,繡眼科 Zosteropidae,留、普,留、普,留、普,冬、不普/過、普,,
+505,日菲繡眼,Zosterops japonicus,"japonicus, ?",Warbling White-eye,繡眼科 Zosteropidae,留、綠龜普/冬、稀,無,迷,無,,
+506,低地繡眼,Zosterops meyeni,batanis,Lowland White-eye,繡眼科 Zosteropidae,留、蘭普,無,無,無,,
+507,山紅頭,Cyanoderma ruficeps,praecognitum,Rufous-capped Babbler,畫眉科 Timaliidae,留、普,無,無,無,臺灣特有亞種(C. r. praecognitum),
+508,小彎嘴,Pomatorhinus musicus,無亞種分化,Taiwan Scimitar-Babbler,畫眉科 Timaliidae,留、普,無,無,無,臺灣特有種,
+509,大彎嘴,Erythrogenys erythrocnemis,無亞種分化,Black-necklaced Scimitar-Babbler,畫眉科 Timaliidae,留、普,無,無,無,臺灣特有種,
+510,頭烏線,Schoeniparus brunneus,brunneus,Dusky Fulvetta,雀眉科 Pellorneidae ,留、普,無,無,無,臺灣特有亞種(S. b. brunneus),
+511,繡眼畫眉,Alcippe morrisonia,無亞種分化,Morrison's Fulvetta,噪眉科 Leiothrichidae,留、普,無,無,無,臺灣特有種,
+512,臺灣噪眉,Trochalopteron morrisonianum,無亞種分化,White-whiskered Laughingthrush,噪眉科 Leiothrichidae,留、普,無,無,無,臺灣特有種,
+513,白耳畫眉,Heterophasia auricularis,無亞種分化,White-eared Sibia,噪眉科 Leiothrichidae,留、普,無,無,無,臺灣特有種,III
+514,紋翼畫眉,Actinodura morrisoniana,無亞種分化,Taiwan Barwing,噪眉科 Leiothrichidae,留、普,無,無,無,臺灣特有種,III
+515,黃胸藪眉,Liocichla steerii,無亞種分化,Steere's Liocichla,噪眉科 Leiothrichidae,留、普,無,無,無,臺灣特有種,III
+516,大陸畫眉,Garrulax canorus,canorus,Chinese Hwamei,噪眉科 Leiothrichidae,引進種、不普,迷,留、普,無,,II
+517,臺灣畫眉,Garrulax taewanus,無亞種分化,Taiwan Hwamei,噪眉科 Leiothrichidae,留、不普,無,無,無,臺灣特有種,II
+518,黑喉噪眉,Pterorhinus chinensis,chinensis(?),Black-throated Laughingthrush,噪眉科 Leiothrichidae,引進種、局不普,無,無,無,,
+519,白頰噪眉,Pterorhinus sannio,?,White-browed Laughingthrush,噪眉科 Leiothrichidae,引進種、局不普,無,無,無,,
+520,黑臉噪眉,Pterorhinus perspicillatus,無亞種分化,Masked Laughingthrush,噪眉科 Leiothrichidae,無,無,迷,無,,
+521,臺灣白喉噪眉,Pterorhinus ruficeps,無亞種分化,Rufous-crowned Laughingthrush,噪眉科 Leiothrichidae,留、稀,無,無,無,臺灣特有種,II
+522,棕噪眉,Pterorhinus poecilorhynchus,無亞種分化,Rusty Laughingthrush,噪眉科 Leiothrichidae,留、不普,無,無,無,臺灣特有種,II
+523,戴菊鳥,Regulus regulus,japonensis,Goldcrest,戴菊科 Regulidae,冬、稀/過、稀,過、稀,過、稀,迷,,
+524,火冠戴菊鳥,Regulus goodfellowi,無亞種分化,Flamecrest,戴菊科 Regulidae,留、普,無,無,無,臺灣特有種,III
+525,茶腹鳾,Sitta europaea,formosana,Eurasian Nuthatch,鳾科 Sittidae,留、普,無,無,無,臺灣特有亞種(S. e. formosana),
+526,鷦鷯,Troglodytes troglodytes,taivanus,Eurasian Wren,鷦鷯科 Troglodytidae,留、普,無,無,無,臺灣特有亞種(T. t. taivanus),
+527,河烏,Cinclus pallasii,pallasii,Brown Dipper,河烏科 Cinclidae,留、不普,無,無,無,,
+528,亞洲輝椋鳥,Aplonis panayensis,?,Asian Glossy Starling,八哥科 Sturnidae,引進種、普,無,無,過、稀,,
+529,歐洲椋鳥,Sturnus vulgaris,poltaratskyi,European Starling,八哥科 Sturnidae,冬、稀/過、稀,過、稀,冬、稀,過、稀,,
+530,粉紅椋鳥,Pastor roseus,無亞種分化,Rosy Starling,八哥科 Sturnidae,迷,迷,迷,過、稀,,
+531,北椋鳥,Agropsar sturninus,無亞種分化,Daurian Starling,八哥科 Sturnidae,過、稀,過、稀,過、稀,過、不普,,
+532,小椋鳥,Agropsar philippensis,無亞種分化,Chestnut-cheeked Starling,八哥科 Sturnidae,過、稀,過、稀,過、稀,過、普,,
+533,黑領椋鳥,Gracupica nigricollis,無亞種分化,Black-collared Starling,八哥科 Sturnidae,引進種、普,過、稀,留、不普,無,,
+534,灰背椋鳥,Sturnia sinensis,無亞種分化,White-shouldered Starling,八哥科 Sturnidae,冬、不普,過、不普,夏、不普/冬、稀/過、不普,過、普,,
+535,灰頭椋鳥,Sturnia malabarica,nemoricola,Chestnut-tailed Starling,八哥科 Sturnidae,引進種、不普,無,無,無,,
+536,絲光椋鳥,Spodiopsar sericeus,無亞種分化,Red-billed Starling,八哥科 Sturnidae,冬、不普,過、普,冬、不普,冬、普/過、不普,,
+537,灰椋鳥,Spodiopsar cineraceus,無亞種分化,White-cheeked Starling,八哥科 Sturnidae,冬、不普,過、不普,冬、不普,冬、稀/過、稀,,
+538,家八哥,Acridotheres tristis,tristis,Common Myna,八哥科 Sturnidae,引進種、普,引進種、不普,引進種、稀,引進種、稀,,
+539,白尾八哥,Acridotheres javanicus,無亞種分化,Javan Myna,八哥科 Sturnidae,引進種、普,引進種、稀,引進種、稀,無,,
+540,八哥,Acridotheres cristatellus,"formosanus, cristatellus",Crested Myna,八哥科 Sturnidae,留、不普,留、普,留、普,引進種、稀,含臺灣特有亞種(A. c. formosanus),II
+541,白氏地鶇,Zoothera aurea,"aurea, toratugumi",White's Thrush,鶇科 Turdidae,冬、普,冬、不普,冬、稀/過、稀,過、不普,,
+542,虎斑地鶇,Zoothera dauma,dauma,Scaly Thrush,鶇科 Turdidae,留、稀,無,無,無,,
+543,白眉地鶇,Geokichla sibirica,"sibirica, davisoni",Siberian Thrush,鶇科 Turdidae,過、稀,過、稀,過、稀,過、稀,,
+544,橙頭地鶇,Geokichla citrina,?,Orange-headed Thrush,鶇科 Turdidae,迷,過、稀,無,無,,
+545,寶興歌鶇,Turdus mupinensis,無亞種分化,Chinese Thrush,鶇科 Turdidae,迷,迷,無,無,,
+546,中國黑鶇,Turdus mandarinus,mandarinus,Chinese Blackbird,鶇科 Turdidae,留、稀/冬、稀,過、不普,留、普,冬、稀/過、稀,,
+547,白頭鶇,Turdus niveiceps,無亞種分化,Taiwan Thrush,鶇科 Turdidae,留、稀,無,無,無,臺灣特有種,II
+548,烏灰鶇,Turdus cardis,無亞種分化,Japanese Thrush,鶇科 Turdidae,過、稀,過、稀,冬、稀/過、稀,過、稀,,
+549,灰背鶇,Turdus hortulorum,無亞種分化,Gray-backed Thrush,鶇科 Turdidae,過、稀,過、稀,冬、稀/過、稀,迷,,
+550,白眉鶇,Turdus obscurus,無亞種分化,Eyebrowed Thrush,鶇科 Turdidae,冬、不普,過、不普,冬、稀/過、不普,過、不普,,
+551,赤腹鶇,Turdus chrysolaus,chrysolaus,Brown-headed Thrush,鶇科 Turdidae,冬、普,過、不普,冬、稀,冬、普,,
+552,白腹鶇,Turdus pallidus,無亞種分化,Pale Thrush,鶇科 Turdidae,冬、普,過、不普,冬、不普,冬、普/過、普,,
+553,黑頸鶇,Turdus atrogularis,無亞種分化,Black-throated Thrush,鶇科 Turdidae,迷,無,無,無,,
+554,赤頸鶇,Turdus ruficollis,無亞種分化,Red-throated Thrush,鶇科 Turdidae,冬、稀,迷,迷,迷,,
+555,斑點鶇,Turdus eunomus,無亞種分化,Dusky Thrush,鶇科 Turdidae,冬、不普,過、不普,冬、稀,冬、不普/過、稀,,
+556,紅尾鶇,Turdus naumanni,無亞種分化,Naumann's Thrush,鶇科 Turdidae,冬、稀,過、不普,冬、稀,冬、稀/過、稀,,
+557,灰斑鶲,Muscicapa griseisticta,無亞種分化,Gray-streaked Flycatcher,鶲科 Muscicapidae,過、不普,過、普,過、稀,過、普,,
+558,烏鶲,Muscicapa sibirica,sibirica,Dark-sided Flycatcher,鶲科 Muscicapidae,過、稀,過、不普,過、稀,過、不普,,
+559,紅尾鶲,Muscicapa ferruginea,無亞種分化,Ferruginous Flycatcher,鶲科 Muscicapidae,夏、不普,過、稀,過、稀,過、稀,,
+560,寬嘴鶲,Muscicapa dauurica,dauurica,Asian Brown Flycatcher,鶲科 Muscicapidae,冬、稀/過、不普,過、普,過、不普,過、普,,
+561,褐胸鶲,Muscicapa muttui,無亞種分化,Brown-breasted Flycatcher,鶲科 Muscicapidae,迷,迷,無,無,,
+562,斑鶲,Muscicapa striata,mongola,Spotted Flycatcher,鶲科 Muscicapidae,迷,無,無,無,,
+563,鵲鴝,Copsychus saularis,saularis,Oriental Magpie-Robin,鶲科 Muscicapidae,引進種、普,留、普,留、普,無,,
+564,白腰鵲鴝,Copsychus malabaricus,?,White-rumped Shama,鶲科 Muscicapidae,引進種、普,無,無,無,,
+565,海南藍仙鶲,Cyornis hainanus,hainanus,Hainan Blue Flycatcher,鶲科 Muscicapidae,迷,迷,過、稀,迷,,
+566,中華藍仙鶲,Cyornis glaucicomans,無亞種分化,Chinese Blue Flycatcher,鶲科 Muscicapidae,迷,無,無,無,,
+567,山藍仙鶲,Cyornis whitei,無亞種分化,Hill Blue Flycatcher,鶲科 Muscicapidae,無,迷,無,無,,
+568,白喉林鶲,Cyornis brunneatus,無亞種分化,Brown-chested Jungle Flycatcher,鶲科 Muscicapidae,迷,迷,無,無,,
+569,棕腹大仙鶲,Niltava davidi,無亞種分化,Fujian Niltava,鶲科 Muscicapidae,迷,無,無,無,,
+570,棕腹仙鶲,Niltava sundara,denotata(?),Rufous-bellied Niltava,鶲科 Muscicapidae,迷,無,無,無,,
+571,黃腹琉璃,Niltava vivida,無亞種分化,Taiwan Vivid Niltava,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有種,III
+572,白腹琉璃,Cyanoptila cyanomelana,cyanomelana,Blue-and-white Flycatcher,鶲科 Muscicapidae,過、稀,過、稀,過、稀,過、稀,,
+573,琉璃藍鶲,Cyanoptila cumatilis,無亞種分化,Zappey's Flycatcher,鶲科 Muscicapidae,?,過、稀,?,無,,
+574,銅藍鶲,Eumyias thalassinus,thalassinus,Verditer Flycatcher,鶲科 Muscicapidae,冬、稀,過、稀,過、稀,迷,,
+575,白喉短翅鶇,Brachypteryx leucophris,carolinae,Lesser Shortwing,鶲科 Muscicapidae,無,無,過、稀,無,,
+576,小翼鶇,Brachypteryx goodfellowi,無亞種分化,Taiwan Shortwing,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有種,
+577,紅尾歌鴝,Larvivora sibilans,無亞種分化,Rufous-tailed Robin,鶲科 Muscicapidae,過、稀,過、稀,過、不普,無,,
+578,日本歌鴝,Larvivora akahige,akahige,Japanese Robin,鶲科 Muscicapidae,冬、稀,過、稀,迷,無,,
+579,琉球歌鴝,Larvivora komadori,komadori,Ryukyu Robin,鶲科 Muscicapidae,迷,無,無,無,,
+580,藍歌鴝,Larvivora cyane,?,Siberian Blue Robin,鶲科 Muscicapidae,過、稀,過、稀,過、稀,過、稀,,
+581,藍喉鴝,Luscinia svecica,svecica,Bluethroat,鶲科 Muscicapidae,冬、稀,過、稀,冬、稀,無,,
+582,臺灣紫嘯鶇,Myophonus insularis,無亞種分化,Taiwan Whistling-Thrush,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有種,
+583,白斑紫嘯鶇,Myophonus caeruleus,caeruleus,Blue Whistling-Thrush,鶲科 Muscicapidae,迷,留、普,留、稀/冬、不普,無,,
+584,小剪尾,Enicurus scouleri,fortis,Little Forktail,鶲科 Muscicapidae,留、稀,無,無,無,臺灣特有亞種(E. s. fortis),II
+585,野鴝,Calliope calliope,無亞種分化,Siberian Rubythroat,鶲科 Muscicapidae,冬、普/過、普,過、不普,冬、不普/過、不普,過、不普,,
+586,白尾鴝,Myiomela leucura,montium,White-tailed Robin,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有亞種(M. l. montium),III
+587,藍尾鴝,Tarsiger cyanurus,cyanurus,Red-flanked Bluetail,鶲科 Muscicapidae,冬、不普,冬、不普,冬、稀,過、不普,,
+588,臺灣白眉林鴝,Tarsiger formosanus,無亞種分化,Taiwan Bush-Robin,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有種,III
+589,栗背林鴝,Tarsiger johnstoniae,無亞種分化,Collared Bush-Robin,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有種,III
+590,白眉鶲,Ficedula zanthopygia,無亞種分化,Yellow-rumped Flycatcher,鶲科 Muscicapidae,過、稀,過、稀,過、稀,過、稀,,
+591,黃眉黃鶲,Ficedula narcissina,無亞種分化,Narcissus Flycatcher,鶲科 Muscicapidae,過、稀,過、不普,過、稀,過、稀,,
+592,琉球姬鶲,Ficedula owstoni,無亞種分化,Ryukyu Flycatcher,鶲科 Muscicapidae,過、稀,無,無,無,,
+593,白眉黃鶲,Ficedula mugimaki,無亞種分化,Mugimaki Flycatcher,鶲科 Muscicapidae,冬、稀/過、稀,過、不普,過、稀,過、稀,,
+594,鏽胸藍姬鶲,Ficedula erithacus,無亞種分化,Slaty-backed Flycatcher,鶲科 Muscicapidae,迷,迷,無,無,,
+595,黃胸青鶲,Ficedula hyperythra,innexa,Snowy-browed Flycatcher,鶲科 Muscicapidae,留、普,無,無,無,臺灣特有亞種(F. h. innexa),
+596,橙胸姬鶲,Ficedula strophiata,strophiata,Rufous-gorgeted Flycatcher,鶲科 Muscicapidae,迷,無,無,無,,
+597,紅喉鶲,Ficedula albicilla,無亞種分化,Taiga Flycatcher,鶲科 Muscicapidae,冬、稀,過、不普,過、稀,過、稀,,
+598,紅胸鶲,Ficedula parva,無亞種分化,Red-breasted Flycatcher,鶲科 Muscicapidae,冬、稀,過、稀,過、稀,無,,
+599,藍額紅尾鴝,Phoenicurus frontalis,無亞種分化,Blue-fronted Redstart,鶲科 Muscicapidae,迷,無,無,無,,
+600,鉛色水鶇,Phoenicurus fuliginosus,"affinis, fuliginosus",Plumbeous Redstart,鶲科 Muscicapidae,留、普,過、稀,迷,無,含臺灣特有亞種(P. f. affinis),III
+601,白頂溪鴝,Phoenicurus leucocephalus,無亞種分化,White-capped Redstart,鶲科 Muscicapidae,無,迷,無,無,,
+602,赭紅尾鴝,Phoenicurus ochruros,rufiventris,Black Redstart,鶲科 Muscicapidae,迷,迷,無,迷,,
+603,黃尾鴝,Phoenicurus auroreus,auroreus,Daurian Redstart,鶲科 Muscicapidae,冬、普,冬、普,冬、普?/過、普,冬、不普/過、普,,
+604,白喉磯鶇,Monticola gularis,無亞種分化,White-throated Rock-Thrush,鶲科 Muscicapidae,迷,過、稀,無,迷,,
+605,藍磯鶇,Monticola solitarius,"philippensis, pandoo",Blue Rock-Thrush,鶲科 Muscicapidae,留、稀/冬、普,留、普,冬、稀/過、不普,冬、不普/過、普,,
+606,黑喉鴝,Saxicola stejnegeri,無亞種分化,Amur Stonechat,鶲科 Muscicapidae,冬、不普/過、不普,冬、不普/過、不普,冬、不普,過、不普,,
+607,白斑黑石䳭,Saxicola caprata,?,Pied Bushchat,鶲科 Muscicapidae,無,迷,無,無,,
+608,灰叢鴝,Saxicola ferreus,haringtoni,Gray Bushchat,鶲科 Muscicapidae,過、稀,過、稀,過、稀,迷,,
+609,穗䳭,Oenanthe oenanthe,oenanthe,Northern Wheatear,鶲科 Muscicapidae,迷,無,無,無,,
+610,沙䳭,Oenanthe isabellina,無亞種分化,Isabelline Wheatear,鶲科 Muscicapidae,迷,無,迷,迷,,
+611,漠䳭,Oenanthe deserti,?,Desert Wheatear,鶲科 Muscicapidae,迷,迷,無,迷,,
+612,白頂䳭,Oenanthe pleschanka,無亞種分化,Pied Wheatear,鶲科 Muscicapidae,無,迷,無,無,,
+613,黃連雀,Bombycilla garrulus,centralasiae,Bohemian Waxwing,連雀科 Bombycillidae,迷,過、稀,無,無,,
+614,朱連雀,Bombycilla japonica,無亞種分化,Japanese Waxwing,連雀科 Bombycillidae,冬、稀,過、稀,迷,無,,
+615,綠啄花,Dicaeum minullum,uchidai,Plain Flowerpecker,啄花科 Dicaeidae,留、不普,無,無,無,臺灣特有亞種(D. m. uchidai),
+616,紅胸啄花,Dicaeum ignipectus,formosum,Fire-breasted Flowerpecker,啄花科 Dicaeidae,留、普,無,無,無,臺灣特有亞種(D. i. formosum),
+617,黃腹花蜜鳥,Cinnyris jugularis,rhizophorae,Olive-backed Sunbird,吸蜜鳥科 Nectariniidae,迷,迷,無,無,,
+618,藍喉太陽鳥,Aethopyga gouldiae,dabryii,Mrs. Gould's Sunbird,吸蜜鳥科 Nectariniidae,迷,迷,引進種、稀,無,,
+619,叉尾太陽鳥,Aethopyga christinae,latouchii,Fork-tailed Sunbird,吸蜜鳥科 Nectariniidae,迷,過、稀,留、稀/冬、不普,無,,
+620,白喉文鳥,Euodice malabarica,無亞種分化,Indian Silverbill,梅花雀科 Estrildidae,引進種、不普,無,無,無,,
+621,斑文鳥,Lonchura punctulata,topela,Scaly-breasted Munia,梅花雀科 Estrildidae,留、普,留、稀,留、稀,迷,,
+622,白腰文鳥,Lonchura striata,swinhoei,White-rumped Munia,梅花雀科 Estrildidae,留、普,迷,過、稀,無,,
+623,黑頭文鳥,Lonchura atricapilla,"formosana, jagori(?), deignani(?)",Chestnut Munia,梅花雀科 Estrildidae,留、稀/引進種、不普,無,迷,無,,III
+624,橙頰梅花雀,Estrilda melpoda,無亞種分化,Orange-cheeked Waxbill,梅花雀科 Estrildidae,引進種、不普,無,無,無,,
+625,岩鷚,Prunella collaris,fennelli,Alpine Accentor,岩鷚科 Prunellidae,留、不普,無,無,無,臺灣特有亞種(P. c. fennelli),III
+626,棕眉山岩鷚,Prunella montanella,?,Siberian Accentor,岩鷚科 Prunellidae,迷,無,無,無,,
+627,山麻雀,Passer cinnamomeus,rutilans,Russet Sparrow,麻雀科 Passeridae,留、稀,無,無,無,,I
+628,麻雀,Passer montanus,saturatus,Eurasian Tree Sparrow,麻雀科 Passeridae,留、普,留、普,留、普,過、稀,,
+629,山鶺鴒,Dendronanthus indicus,無亞種分化,Forest Wagtail,鶺鴒科 Motacillidae,冬、稀,過、稀,過、稀,過、稀,,
+630,灰鶺鴒,Motacilla cinerea,cinerea,Gray Wagtail,鶺鴒科 Motacillidae,冬、普,冬、不普/過、普,冬、不普/過、不普,冬、不普/過、普,,
+631,西方黃鶺鴒,Motacilla flava,"thunbergi, lutea ",Western Yellow Wagtail,鶺鴒科 Motacillidae,迷,?,無,無,,
+632,東方黃鶺鴒,Motacilla tschutschensis,"taivana, tschutschensis, macronyx",Eastern Yellow Wagtail,鶺鴒科 Motacillidae,冬、普/過、普,冬、不普/過、普,冬、稀/過、普,過、普,,
+633,黃頭鶺鴒,Motacilla citreola,citreola,Citrine Wagtail,鶺鴒科 Motacillidae,過、稀,過、稀,過、稀,過、稀,,
+634,日本鶺鴒,Motacilla grandis,無亞種分化,Japanese Wagtail,鶺鴒科 Motacillidae,迷,無,無,無,,
+635,白鶺鴒,Motacilla alba,"leucopsis, ocularis, lugens, baicalensis, dukhunensis, personata",White Wagtail,鶺鴒科 Motacillidae,留、普/冬、普,留、不普/冬、普,留、稀/冬、普/過、普,冬、不普/過、普,,
+636,大花鷚,Anthus richardi,"ussuriensis,  sinensis",Richard's Pipit,鶺鴒科 Motacillidae,冬、不普,冬、不普,冬、普,過、稀,,
+637,稻田鷚,Anthus rufulus,?,Paddyfield Pipit,鶺鴒科 Motacillidae,迷,無,無,無,,
+638,布萊氏鷚,Anthus godlewskii,無亞種分化,Blyth's Pipit,鶺鴒科 Motacillidae,迷,迷,迷,無,,
+639,草地鷚,Anthus pratensis,pratensis,Meadow Pipit,鶺鴒科 Motacillidae,迷,無,無,無,,
+640,粉紅胸鷚,Anthus roseatus,無亞種分化,Rosy Pipit,鶺鴒科 Motacillidae,迷,無,無,無,,
+641,林鷚,Anthus trivialis,trivialis,Tree Pipit,鶺鴒科 Motacillidae,迷,迷,迷,無,,
+642,樹鷚,Anthus hodgsoni,"hodgsoni, yunnanensis",Olive-backed Pipit,鶺鴒科 Motacillidae,冬、普,冬、普/過、不普,冬、普/過、不普,過、不普,,
+643,白背鷚,Anthus gustavi,gustavi,Pechora Pipit,鶺鴒科 Motacillidae,過、不普,過、不普,過、稀,過、不普,,
+644,赤喉鷚,Anthus cervinus,無亞種分化,Red-throated Pipit,鶺鴒科 Motacillidae,冬、不普,冬、不普/過、普,冬、不普,過、不普,,
+645,水鷚,Anthus spinoletta,blakistoni,Water Pipit,鶺鴒科 Motacillidae,迷,過、稀,迷,無,,
+646,黃腹鷚,Anthus rubescens,japonicus,American Pipit,鶺鴒科 Motacillidae,冬、稀,過、稀,冬、稀/過、稀,過、稀,,
+647,花雀,Fringilla montifringilla,無亞種分化,Brambling,雀科 Fringillidae,冬、不普,過、稀,過、稀,過、稀,,
+648,臘嘴雀,Coccothraustes coccothraustes,japonicus,Hawfinch,雀科 Fringillidae,冬、稀,過、稀,迷,無,,
+649,小桑鳲,Eophona migratoria,migratoria,Yellow-billed Grosbeak,雀科 Fringillidae,冬、稀,留、不普,留、普,過、稀,,
+650,桑鳲,Eophona personata,"personata, magnirostris(?)",Japanese Grosbeak,雀科 Fringillidae,冬、稀,過、稀,過、稀,過、稀,,
+651,普通朱雀,Carpodacus erythrinus,grebnitskii,Common Rosefinch,雀科 Fringillidae,冬、稀,迷,迷,過、稀,,
+652,臺灣朱雀,Carpodacus formosanus,無亞種分化,Taiwan Rosefinch,雀科 Fringillidae,留、普,無,無,無,臺灣特有種,III
+653,北朱雀,Carpodacus roseus,roseus,Pallas's Rosefinch,雀科 Fringillidae,迷,無,無,無,,
+654,褐鷽,Pyrrhula nipalensis,uchidai,Brown Bullfinch,雀科 Fringillidae,留、不普,無,無,無,臺灣特有亞種(P. n. uchidai),
+655,灰鷽,Pyrrhula owstoni,無亞種分化,Taiwan Bullfinch,雀科 Fringillidae,留、不普,無,無,無,臺灣特有種,
+656,歐亞鷽,Pyrrhula pyrrhula,?,Eurasian Bullfinch,雀科 Fringillidae,迷,無,無,無,,
+657,金翅雀,Chloris sinica,"kawarahiba, sinica",Oriental Greenfinch,雀科 Fringillidae,冬、稀,留、不普,留、不普,過、稀,,
+658,赤胸朱頂雀,Linaria cannabina,?,Eurasian Linnet,雀科 Fringillidae,迷,無,無,無,,
+659,普通朱頂雀,Acanthis flammea,flammea,Common Redpoll,雀科 Fringillidae,迷,無,無,無,,
+660,紅交嘴雀,Loxia curvirostra,japonica,Red Crossbill,雀科 Fringillidae,迷,無,無,無,,
+661,黃雀,Spinus spinus,無亞種分化,Eurasian Siskin,雀科 Fringillidae,冬、稀,過、不普,過、稀,冬、稀/過、不普,,
+662,鐵爪鵐,Calcarius lapponicus,coloratus,Lapland Longspur,鐵爪鵐科 Calcariidae,迷,無,無,無,,
+663,雪鵐,Plectrophenax nivalis,vlasowae,Snow Bunting,鐵爪鵐科 Calcariidae,迷,無,無,無,,
+664,冠鵐,Emberiza lathami,無亞種分化,Crested Bunting,鵐科 Emberizidae,迷,過、稀,過、稀,過、稀,,
+665,黑頭鵐,Emberiza melanocephala,無亞種分化,Black-headed Bunting,鵐科 Emberizidae,過、稀,過、稀,迷,過、稀,,
+666,褐頭鵐,Emberiza bruniceps,無亞種分化,Red-headed Bunting,鵐科 Emberizidae,迷,迷,迷,無,,
+667,赤胸鵐,Emberiza fucata,"fucata, kuatunensis",Chestnut-eared Bunting,鵐科 Emberizidae,冬、稀/過、稀,過、稀,過、稀,無,,
+668,草鵐,Emberiza cioides,castaneiceps,Meadow Bunting,鵐科 Emberizidae,迷,迷,無,無,,
+669,白頂鵐,Emberiza stewarti,無亞種分化,White-capped Bunting,鵐科 Emberizidae,迷,無,無,無,,
+670,白頭鵐,Emberiza leucocephalos,leucocephalos,Pine Bunting,鵐科 Emberizidae,迷,無,無,無,,
+671,圃鵐,Emberiza hortulana,無亞種分化,Ortolan Bunting,鵐科 Emberizidae,迷,無,無,無,,
+672,黃喉鵐,Emberiza elegans,elegans,Yellow-throated Bunting,鵐科 Emberizidae,冬、稀,過、不普,過、稀,過、稀,,
+673,紅頸葦鵐,Emberiza yessoensis,?,Ochre-rumped Bunting,鵐科 Emberizidae,迷,無,過、稀,無,,
+674,葦鵐,Emberiza pallasi,polaris,Pallas's Bunting,鵐科 Emberizidae,冬、稀,過、稀,過、稀,無,,
+675,蘆鵐,Emberiza schoeniclus,"pyrrhulina(?), pallidior(?)",Reed Bunting,鵐科 Emberizidae,迷,無,迷,迷,,
+676,金鵐,Emberiza aureola,ornata,Yellow-breasted Bunting,鵐科 Emberizidae,過、稀,過、不普,過、稀,過、稀,,II
+677,小鵐,Emberiza pusilla,無亞種分化,Little Bunting,鵐科 Emberizidae,冬、稀/過、不普,過、普,冬、稀/過、不普,冬、普/過、普,,
+678,田鵐,Emberiza rustica,?,Rustic Bunting,鵐科 Emberizidae,冬、稀/過、稀,過、稀,過、稀,過、稀,,
+679,野鵐,Emberiza sulphurata,無亞種分化,Yellow Bunting,鵐科 Emberizidae,過、稀,過、不普,過、稀,過、稀,,II
+680,灰頭黑臉鵐,Emberiza spodocephala,"spodocephala, sordida",Black-faced Bunting,鵐科 Emberizidae,冬、普,冬、不普/過、普,冬、普,過、稀,,
+681,黃喉黑臉鵐,Emberiza personata,無亞種分化,Masked Bunting,鵐科 Emberizidae,冬、稀,?,?,無,,
+682,鏽鵐,Emberiza rutila,無亞種分化,Chestnut Bunting,鵐科 Emberizidae,過、稀,過、不普,過、稀,過、稀,,
+683,黃眉鵐,Emberiza chrysophrys,無亞種分化,Yellow-browed Bunting,鵐科 Emberizidae,過、稀,過、不普,冬、稀/過、稀,過、不普,,
+684,白眉鵐,Emberiza tristrami,無亞種分化,Tristram's Bunting,鵐科 Emberizidae,過、稀,過、不普,過、稀,過、稀,,
+685,灰鵐,Emberiza variabilis,無亞種分化,Gray Bunting,鵐科 Emberizidae,迷,迷,無,無,,
+686,稀樹草鵐,Passerculus sandwichensis,?,Savannah Sparrow,雀鵐科 Passerellidae,迷,無,無,無,,

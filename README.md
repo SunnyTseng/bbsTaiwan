@@ -19,19 +19,13 @@ BBS data access to the broader R-society in Taiwan.
 
 ## Set up
 
-1.  Package installation: you can install the development version of
-    bbsTaiwan from [GitHub](https://github.com/) with:
+Package installation: you can install the development version of
+bbsTaiwan from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
 ```
-
-2.  Data download: you can retrieve Taiwan Breeding Birds Survey data
-    from this [GBIF
-    dataset](https://www.gbif.org/zh-tw/dataset/f170f056-3f8a-4ef3-ac9f-4503cc854ce0).
-    After visiting the site, use **Download** \> **Source archive**
-    option while downloading.
 
 ## Workflow
 
