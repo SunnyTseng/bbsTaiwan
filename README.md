@@ -20,8 +20,8 @@ to expand Taiwan BBS data access to the broader R-society in Taiwan.
 
 ## Set up
 
-Package installation and load: you can install the development version
-of bbsTaiwan from [GitHub](https://github.com/) with:
+You can install and load the development version of bbsTaiwan from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
