@@ -30,7 +30,7 @@ The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data r
 
 ## Set up
 
-Package installation and load: you can install the development version of bbsTaiwan from [GitHub](https://github.com/) with:
+You can install and load the development version of bbsTaiwan from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
