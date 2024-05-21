@@ -26,9 +26,9 @@ library(bbsTaiwan)
 
 The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling. Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.
 
-## Background
+## 📑 Background
 
-## Set up
+## 💻 Set up
 
 You can install and load the development version of bbsTaiwan from [GitHub](https://github.com/) with:
 
@@ -40,7 +40,7 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 library(bbsTaiwan)
 ```
 
-## How to use
+## ⛺ How to use
 
 ### If you need raw Taiwan BBS dataset on GBIF:
 
@@ -63,7 +63,7 @@ The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (Dw
 
 -   Extended Measurement or Fact: includes additional information relating to the taxon occurrences
 
-### We also provide a workflow to process Taiwan BBS data:
+### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
 
 This is a basic example which shows you how to use the package:
 

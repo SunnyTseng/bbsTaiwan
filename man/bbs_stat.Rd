@@ -10,7 +10,7 @@ bbs_stat(data)
 \item{data}{a list object derived from the bbs_fetch() function}
 }
 \value{
-a tibble containing basic stats
+a tibble containing basic stats for fetched data
 }
 \description{
 Summarizing basic statistics for BBS data, highlighting the trend of specific species.
