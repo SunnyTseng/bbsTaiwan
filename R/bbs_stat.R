@@ -22,6 +22,7 @@ bbs_stat <- function(data) {
 
   # calculate statistics ----------------------------------------------------
   statistics <- data$occurrence |>
+    dplyr::filter(individualCount != 0) |>
     dplyr::group_by(vernacularName, scientificName, zone) |>
     dplyr::summarise(site_n = dplyr::n_distinct(site)) |>
     tidyr::drop_na(zone) |>
