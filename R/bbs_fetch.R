@@ -95,20 +95,22 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
 
   occurrence_zero <- occurrence_filter %>%
     # add zero for each point count and each target species
-    right_join(expand_grid(id = event_info$id, scientificName = target_species),
-               by = dplyr::join_by(id == id, scientificName == scientificName)) %>%
-    mutate(individualCount = if_else(is.na(individualCount), 0, individualCount)) %>%
+    dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
+                      by = dplyr::join_by(id == id, scientificName == scientificName)) %>%
+    dplyr::mutate(individualCount = if_else(is.na(individualCount), 0, individualCount)) %>%
     # remove sites that never detected the species
-    mutate(site_1 = stringr::str_split_i(id, pattern = "_", i = 3)) %>%
-    group_by(site_1, scientificName) %>%
-    filter(sum(individualCount) != 0) %>%
-    ungroup() %>%
+    dplyr::mutate(site_1 = stringr::str_split_i(id, pattern = "_", i = 3)) %>%
+    dplyr::group_by(site_1, scientificName) %>%
+    dplyr::filter(base::sum(individualCount) != 0) %>%
+    dplyr::ungroup() %>%
     # add necessary column to the zero rows for the join purpose
-    mutate(locationID = if_else(is.na(locationID),
-                                paste0(stringr::str_split_i(id, pattern = "_", i = 3)
-                                       ,"_",
-                                       stringr::str_split_i(id, pattern = "_", i = 4)),
-                                locationID))
+    dplyr::mutate(locationID = dplyr::if_else(is.na(locationID),
+                                              base::paste0(stringr::str_split_i(id, pattern = "_", i = 3)
+                                                           ,"_",
+                                                           stringr::str_split_i(id, pattern = "_", i = 4)),
+                                              locationID))
+
+
 
 
   # link event info, occurrence info, bird info, and site info --------------
