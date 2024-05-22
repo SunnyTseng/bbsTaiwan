@@ -41,7 +41,7 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
 
   # clean data --------------------------------------------------------------
 
-  ## I guess there was a mixed up with both sheets. These codes needs to be updated once new data is up on GBIF
+  # get event covariates associated with each point count event
   event_info <- measurementorfacts |>
     dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain only event related measurement, like weather
     dplyr::filter(type == 23) |>
@@ -51,6 +51,7 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                        values_from = measurementValue) |>
     dplyr::rename(weather = "天氣代號", wind = "風速代號", habitat = "棲地代號")
 
+  # get occurrence covariates associated with each observation within a point count
   occurrence_info <- extendedmeasurementorfact |>
     dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain occurrence related measurement
     dplyr::filter(type == 30) |>
@@ -71,7 +72,7 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   site_zone <- site_info |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
-    terra::intersect(x = tw_region |> terra::vect() |> terra::buffer(1500)) |>
+    terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
     dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
     dplyr::select(locationID, elev, region) |>
@@ -90,9 +91,29 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                            stringr::str_split_i(id, pattern = "_", i = 4)))
 
 
+  # zero control for all the point counts sites & species observation -------
+
+  occurrence_zero <- occurrence_filter %>%
+    # add zero for each point count and each target species
+    right_join(expand_grid(id = event_info$id, scientificName = target_species),
+               by = dplyr::join_by(id == id, scientificName == scientificName)) %>%
+    mutate(individualCount = if_else(is.na(individualCount), 0, individualCount)) %>%
+    # remove sites that never detected the species
+    mutate(site_1 = stringr::str_split_i(id, pattern = "_", i = 3)) %>%
+    group_by(site_1, scientificName) %>%
+    filter(sum(individualCount) != 0) %>%
+    ungroup() %>%
+    # add necessary column to the zero rows for the join purpose
+    mutate(locationID = if_else(is.na(locationID),
+                                paste0(stringr::str_split_i(id, pattern = "_", i = 3)
+                                       ,"_",
+                                       stringr::str_split_i(id, pattern = "_", i = 4)),
+                                locationID))
+
+
   # link event info, occurrence info, bird info, and site info --------------
 
-  occurrence_add_var <- occurrence_filter |>
+  occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
     dplyr::left_join(site_info, by = dplyr::join_by(locationID == locationID)) |>
