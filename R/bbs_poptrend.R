@@ -1,5 +1,8 @@
 #' Calculate the population trend based on BBS data
 #'
+#' @param data a list object derived from the bbs_fetch() function
+#' @param zone which zone of Taiwan that the trend is analyzed from
+#'
 #' @return some info here
 #' @export
 #'

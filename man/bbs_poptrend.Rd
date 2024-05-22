@@ -4,7 +4,7 @@
 \alias{bbs_poptrend}
 \title{Calculate the population trend based on BBS data}
 \usage{
-bbs_poptrend()
+bbs_poptrend(data, zone = NULL)
 }
 \value{
 some info here
