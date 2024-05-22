@@ -4,22 +4,27 @@
 #' @export
 #'
 #' @examples
-bbs_poptrend <- function() {
-
-  bird_data <- bbs_fetch(bbs_translate("金背鳩"))
+#' bbs_poptrend(data = bbs_fetch(bbs_translate("金背鳩")))
+bbs_poptrend <- function(data, zone = NULL) {
 
   ## Fit a smooth trend with fixed site effects, random time effects,
   ## and automatic selection of degrees of freedom
-  test_model <- ptrend(formula = individualCount ~ trend(year, tempRE = TRUE, type = "smooth", k = 7) +
-                         locationID,
-                       data = bird_data$occurrence)
+  trend_model <- poptrend::ptrend(
+    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 7) + locationID,
+    data = data$occurrence)
 
-  #checkFit(test_model)
+  #checkFit(trend_model)
 
-  plot(test_model,
-       plotGrid = FALSE)
+  change <- poptrend::change(trend_model,
+                             min(data$occurrence$year, na.rm = TRUE),
+                             max(data$occurrence$year, na.rm = TRUE))
 
-  change(test_model, min(bird_data$occurrence$year, na.rm = TRUE), max(bird_data$occurrence$year, na.rm = TRUE))
-
-  return(test_model)
-  }
+  trend_plot <- plot(trend_model,
+                     plotGrid = FALSE,
+                     main = paste0("Change = ",
+                                   change$percentChange |> round(2), "% (",
+                                   change$CI[1] |> round(2), "%, ",
+                                   change$CI[2] |> round(2), "%",
+                                   ")"))
+  return(trend_plot)
+}

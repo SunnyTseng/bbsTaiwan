@@ -1,9 +1,11 @@
-#' Map of regions in Taiwan
+#' Map of eco-regions in Taiwan
 #'
-#' Need more info
+#' There are three regions: North, West, and East, representing different
+#' ecosystems in Taiwan specifically for avian biodiversity. This map was
+#' developed by Hau-Jie Shiu in 2003.
 #'
 #' @format
 #' Need more info
 #'
-#' @source <https://geodata.mit.edu/catalog/stanford-dz142zj5454>
+#' @source <https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&s=id=%22091NTU00312007%22.&searchmode=basic>
 "tw_region"
