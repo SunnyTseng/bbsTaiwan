@@ -23,7 +23,7 @@ bbs_stat <- function(data) {
   # calculate statistics ----------------------------------------------------
   statistics <- data$occurrence |>
     dplyr::group_by(vernacularName, scientificName, zone) |>
-    dplyr::summarise(site_n = n_distinct(site)) |>
+    dplyr::summarise(site_n = dplyr::n_distinct(site)) |>
     tidyr::drop_na(zone) |>
     tidyr::pivot_wider(names_from = zone, values_from = site_n, values_fill = 0) |>
     dplyr::mutate(Total = (sum(East, Mountain, West, North)/sum(sites_zone)) |> round(2),

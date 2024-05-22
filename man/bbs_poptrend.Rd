@@ -6,6 +6,11 @@
 \usage{
 bbs_poptrend(data, zone = NULL)
 }
+\arguments{
+\item{data}{a list object derived from the bbs_fetch() function}
+
+\item{zone}{which zone of Taiwan that the trend is analyzed from}
+}
 \value{
 some info here
 }

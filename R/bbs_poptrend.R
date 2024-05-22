@@ -13,10 +13,10 @@ bbs_poptrend <- function(data, zone = NULL) {
   ## Fit a smooth trend with fixed site effects, random time effects,
   ## and automatic selection of degrees of freedom
   trend_model <- poptrend::ptrend(
-    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 7) + locationID,
+    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 5) + locationID,
     data = data$occurrence)
 
-  #checkFit(trend_model)
+  poptrend::checkFit(trend_model)
 
   change <- poptrend::change(trend_model,
                              min(data$occurrence$year, na.rm = TRUE),
