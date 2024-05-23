@@ -2,33 +2,16 @@
 #'
 #' Filter and clean BBS Taiwan data given certain year range and target species
 #'
-#' @param y_min a numeric value indicating the start year of the year range, by default 2009, the start year of Taiwan BBS data
-#' @param y_max a numeric value indicating the end year of the year range, by default 2029. Note that GBIF only updates BBS data until 2016
 #' @param target_species  a character vector for species of interest, return all species if NULL
 #'
 #' @return a list containing 1. species occurrence and 2. site information
 #' @export
 #'
 #' @examples
-#' bbs_fetch(y_min = 2009, y_max = 2016,
-#' target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
-bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
+#' bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-
-  checkmate::assert_number(
-    y_min,
-    na.ok = FALSE,
-    lower = 2009,
-    upper = 2029
-  )
-
-  checkmate::assert_number(
-    y_max,
-    na.ok = FALSE,
-    lower = 2009,
-    upper = 2029
-  )
 
   if (is.null(target_species)) {
     target_species <- bird_info |> dplyr::pull(scientificName)
@@ -49,6 +32,9 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
                        values_from = measurementValue) |>
+    dplyr::mutate(year = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 1) |> as.numeric(),
+                  month = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 2) |> as.numeric(),
+                  day = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 3) |> as.numeric()) |>
     dplyr::rename(date = measurementDeterminedDate,
                   weather = "天氣代號",
                   wind = "風速代號",
@@ -84,8 +70,6 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   # filter occurrence to a given species and year ---------------------------
 
   occurrence_filter <- occurrence |>
-    dplyr::mutate(year = stringr::str_split_i(id, pattern = "_", i = 2) |> as.numeric()) |>
-    dplyr::filter(year %in% seq(y_min, y_max)) |>
     dplyr::filter(scientificName %in% target_species) |>
     dplyr::mutate(locationID =
                     paste0(stringr::str_split_i(id, pattern = "_", i = 3)
@@ -112,17 +96,14 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                                                            stringr::str_split_i(id, pattern = "_", i = 4)),
                                               locationID))
 
-
-
-
   # link event info, occurrence info, bird info, and site info --------------
 
   occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
-    dplyr::select(year, eventID, occurrenceID, scientificName, vernacularName, individualCount,
-                  date, weather, wind, habitat, time_slot, distance, flock,
-                  locationID)
+    dplyr::select(year, month, day, locationID, eventID, weather, wind, habitat,
+                  occurrenceID, scientificName, vernacularName, individualCount,
+                  time_slot, distance, flock)
 
   site_add_var <- site_info |>
     dplyr::left_join(site_zone) |>

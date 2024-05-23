@@ -18,6 +18,7 @@ bbs_plotmap <- function(data) {
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
   bird_site <- data$occurrence |>
+    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::filter(individualCount != 0) |>
     dplyr::select(site, scientificName, decimalLatitude, decimalLongitude) |>
     dplyr::distinct(.keep_all = TRUE) |>
@@ -58,7 +59,8 @@ bbs_plotmap <- function(data) {
                     colour = ggplot2::guide_legend(title = NULL,
                                                    override.aes = list(size = 3))) +
     ggplot2::theme(legend.position = "top",
-                   legend.text = ggplot2::element_text(size = 10)) +
+                   legend.text = ggplot2::element_text(size = 10),
+                   plot.title = ggplot2::element_text(hjust = 0.5)) +
     ggplot2::ggtitle(paste("Taiwan BBS from",
                            data$occurrence$year |> min(na.rm = TRUE),
                            "to",
