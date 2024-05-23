@@ -10,8 +10,16 @@
 #' bbs_poptrend(data = bbs_fetch(bbs_translate("金背鳩")))
 bbs_poptrend <- function(data, zone = NULL) {
 
-  ## Fit a smooth trend with fixed site effects, random time effects,
-  ## and automatic selection of degrees of freedom
+
+  # adding weight info into the dataset -------------------------------------
+  data_weight <- data$occurrence |>
+    group_by(year, zone) |>
+    mutate(zone_sites = n_distinct(site)) |>
+    ungroup()
+
+
+  # Fit a smooth trend with fixed site effects, random time effects,
+  # and automatic selection of degrees of freedom
   trend_model <- poptrend::ptrend(
     formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 5) + locationID,
     data = data$occurrence)

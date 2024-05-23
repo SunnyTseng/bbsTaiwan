@@ -45,11 +45,14 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   event_info <- measurementorfacts |>
     dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain only event related measurement, like weather
     dplyr::filter(type == 23) |>
-    dplyr::select(id, measurementType, measurementValue) |>
+    dplyr::select(id, measurementDeterminedDate, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
                        values_from = measurementValue) |>
-    dplyr::rename(weather = "天氣代號", wind = "風速代號", habitat = "棲地代號")
+    dplyr::rename(date = measurementDeterminedDate,
+                  weather = "天氣代號",
+                  wind = "風速代號",
+                  habitat = "棲地代號")
 
   # get occurrence covariates associated with each observation within a point count
   occurrence_info <- extendedmeasurementorfact |>
@@ -64,8 +67,7 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   site_info <- event |>
     dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
     dplyr::mutate(plot = stringr::str_split_i(id, pattern = "_", i = 4)) |>
-    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude,
-                  eventDate, eventTime) |>
+    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude) |>
     tidyr::drop_na() |>
     dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
 
@@ -118,12 +120,9 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
-    dplyr::left_join(site_info, by = dplyr::join_by(locationID == locationID)) |>
-    dplyr::left_join(site_zone, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::select(year, eventID, occurrenceID, scientificName, vernacularName, individualCount,
-                  eventDate, eventTime, weather, wind, habitat, time_slot, distance, flock,
-                  site, plot, locationID, locality, decimalLatitude, decimalLongitude,
-                  elev, region, zone)
+                  date, weather, wind, habitat, time_slot, distance, flock,
+                  locationID)
 
   site_add_var <- site_info |>
     dplyr::left_join(site_zone) |>

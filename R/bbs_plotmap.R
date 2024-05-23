@@ -60,9 +60,9 @@ bbs_plotmap <- function(data) {
     ggplot2::theme(legend.position = "top",
                    legend.text = ggplot2::element_text(size = 10)) +
     ggplot2::ggtitle(paste("Taiwan BBS from",
-                           data$occurrence$year |> min(),
+                           data$occurrence$year |> min(na.rm = TRUE),
                            "to",
-                           data$occurrence$year |> max(),
+                           data$occurrence$year |> max(na.rm = TRUE),
                            sep = " "))
 
   return(distribution_map)
