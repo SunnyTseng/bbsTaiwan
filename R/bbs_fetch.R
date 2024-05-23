@@ -26,7 +26,7 @@ bbs_fetch <- function(target_species = NULL) {
 
   # get event covariates associated with each point count event
   event_info <- measurementorfacts |>
-    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain only event related measurement, like weather
+    dplyr::mutate(type = stringr::str_length(id)) |> #!two lines to retain only event related measurement, like weather
     dplyr::filter(type == 23) |>
     dplyr::select(id, measurementDeterminedDate, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
@@ -42,7 +42,7 @@ bbs_fetch <- function(target_species = NULL) {
 
   # get occurrence covariates associated with each observation within a point count
   occurrence_info <- extendedmeasurementorfact |>
-    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain occurrence related measurement
+    dplyr::mutate(type = stringr::str_length(id)) |> #!two lines to retain occurrence related measurement
     dplyr::filter(type == 30) |>
     dplyr::select(id, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
@@ -66,6 +66,8 @@ bbs_fetch <- function(target_species = NULL) {
     dplyr::select(locationID, elev, region) |>
     dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
+  #! There are 6 sites and 106 plots can't be mapped into zones. Check the shape file or the coordinates.
+  #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
 
   # filter occurrence to a given species and year ---------------------------
 

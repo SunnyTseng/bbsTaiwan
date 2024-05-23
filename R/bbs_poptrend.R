@@ -13,6 +13,7 @@ bbs_poptrend <- function(data, zone = NULL) {
 
   # adding weight info into the dataset -------------------------------------
   data_weight <- data$occurrence |>
+    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     group_by(year, zone) |>
     mutate(zone_sites = n_distinct(site)) |>
     ungroup()
@@ -21,8 +22,8 @@ bbs_poptrend <- function(data, zone = NULL) {
   # Fit a smooth trend with fixed site effects, random time effects,
   # and automatic selection of degrees of freedom
   trend_model <- poptrend::ptrend(
-    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 5) + locationID,
-    data = data$occurrence)
+    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 6) + locationID,
+    data = data_weight)
 
   poptrend::checkFit(trend_model)
 
