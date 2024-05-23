@@ -22,6 +22,7 @@ bbs_stat <- function(data) {
 
   # calculate statistics ----------------------------------------------------
   statistics <- data$occurrence |>
+    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::filter(individualCount != 0) |>
     dplyr::group_by(vernacularName, scientificName, zone) |>
     dplyr::summarise(site_n = dplyr::n_distinct(site)) |>
