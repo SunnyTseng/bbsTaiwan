@@ -25,9 +25,10 @@ bbs_fetch <- function(target_species = NULL) {
   # clean data --------------------------------------------------------------
 
   # get event covariates associated with each point count event
+  #! first two lines to retain only event related measurement, like weather
+  dplyr::filter(type == 23) |>
   event_info <- measurementorfacts |>
-    dplyr::mutate(type = stringr::str_length(id)) |> #!two lines to retain only event related measurement, like weather
-    dplyr::filter(type == 23) |>
+    dplyr::mutate(type = stringr::str_length(id)) |>
     dplyr::select(id, measurementDeterminedDate, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
@@ -41,8 +42,9 @@ bbs_fetch <- function(target_species = NULL) {
                   habitat = "棲地代號")
 
   # get occurrence covariates associated with each observation within a point count
+  #! first two lines to retain occurrence related measurement
   occurrence_info <- extendedmeasurementorfact |>
-    dplyr::mutate(type = stringr::str_length(id)) |> #!two lines to retain occurrence related measurement
+    dplyr::mutate(type = stringr::str_length(id)) |>
     dplyr::filter(type == 30) |>
     dplyr::select(id, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
@@ -58,7 +60,7 @@ bbs_fetch <- function(target_species = NULL) {
     dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
 
   site_zone <- site_info |>
-    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
+    terra::vect(geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
     terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
