@@ -26,9 +26,9 @@ bbs_fetch <- function(target_species = NULL) {
 
   # get event covariates associated with each point count event
   #! first two lines to retain only event related measurement, like weather
-  dplyr::filter(type == 23) |>
   event_info <- measurementorfacts |>
     dplyr::mutate(type = stringr::str_length(id)) |>
+    dplyr::filter(type == 23) |>
     dplyr::select(id, measurementDeterminedDate, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
