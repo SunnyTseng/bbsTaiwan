@@ -1,9 +1,10 @@
-#' Title
+#' Number of sites surveyed each year
 #'
-#' @return
+#' @return A table showing number of sites surveyed each year in regions
 #' @export
 #'
 #' @examples
+#' bbs_history()
 bbs_history <- function() {
 
   # get time (year, trip) and space (site, plot) info from event table ------
@@ -39,12 +40,12 @@ bbs_history <- function() {
     split(.$year) %>%
     purrr::map_df(\(df) df |>
                     dplyr::group_by(zone) |>
-                    dplyr::summarize(n_sites = n_distinct(site)), .id = "id") |>
+                    dplyr::summarize(n_sites = n_distinct(site)), .id = "year") |>
     dplyr::mutate(zone = tidyr::replace_na(zone, "Others"))
 
   year_site_vis <- year_site |>
     dplyr::mutate(zone = factor(zone, levels = c("Others", "North", "West", "East", "Mountain"))) |>
-    ggplot2::ggplot(aes(x = id, y = n_sites, fill = zone, label = n_sites)) +
+    ggplot2::ggplot(aes(x = year, y = n_sites, fill = zone, label = n_sites)) +
     ggplot2::geom_bar(position = "stack", stat = "identity") +
     ggplot2::geom_text(size = 3, position = position_stack(vjust = 0.5)) +
     ggplot2::scale_fill_brewer(palette = "Set2") +
@@ -52,7 +53,6 @@ bbs_history <- function() {
                   x = "Year",
                   y = "# of sites",
                   fill = "Region") +
-    # plot fine tunes
     ggplot2::theme_bw() +
     ggplot2::guides(fill = ggplot2::guide_legend(title = NULL,
                                                  override.aes = list(size = 3))) +
@@ -65,12 +65,7 @@ bbs_history <- function() {
                        values_from = n_sites,
                        values_fill = 0)
 
-  return(year_site_vis)
+  plot(year_site_vis)
+
+  return(year_site_table)
 }
-
-
-
-
-
-
-
