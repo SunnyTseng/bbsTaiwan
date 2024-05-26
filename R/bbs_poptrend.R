@@ -14,29 +14,29 @@ bbs_poptrend <- function(data, zone = NULL) {
   # adding weight info into the dataset -------------------------------------
   data_weight <- data$occurrence |>
     dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
-    group_by(year, zone) |>
-    mutate(zone_sites = n_distinct(site)) |>
-    ungroup()
+    dplyr::group_by(year, zone) |>
+    dplyr::mutate(zone_sites = dplyr::n_distinct(site)) |>
+    dplyr::ungroup()
 
 
-  # Fit a smooth trend with fixed site effects, random time effects,
-  # and automatic selection of degrees of freedom
-  trend_model <- poptrend::ptrend(
-    formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 6) + locationID,
-    data = data_weight)
-
-  poptrend::checkFit(trend_model)
-
-  change <- poptrend::change(trend_model,
-                             min(data$occurrence$year, na.rm = TRUE),
-                             max(data$occurrence$year, na.rm = TRUE))
-
-  trend_plot <- plot(trend_model,
-                     plotGrid = FALSE,
-                     main = paste0("Change = ",
-                                   change$percentChange |> round(2), "% (",
-                                   change$CI[1] |> round(2), "%, ",
-                                   change$CI[2] |> round(2), "%",
-                                   ")"))
-  return(trend_plot)
+  # # Fit a smooth trend with fixed site effects, random time effects,
+  # # and automatic selection of degrees of freedom
+  # trend_model <- poptrend::ptrend(
+  #   formula = individualCount ~ trend(var = year, tempRE = TRUE, type = "smooth", k = 6) + locationID,
+  #   data = data_weight)
+  #
+  # poptrend::checkFit(trend_model)
+  #
+  # change <- poptrend::change(trend_model,
+  #                            min(data$occurrence$year, na.rm = TRUE),
+  #                            max(data$occurrence$year, na.rm = TRUE))
+  #
+  # trend_plot <- plot(trend_model,
+  #                    plotGrid = FALSE,
+  #                    main = paste0("Change = ",
+  #                                  change$percentChange |> round(2), "% (",
+  #                                  change$CI[1] |> round(2), "%, ",
+  #                                  change$CI[2] |> round(2), "%",
+  #                                  ")"))
+  return(data_weight)
 }
