@@ -68,13 +68,13 @@
 <!-- badges: end -->
 <p>The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling. Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.</p>
 <div class="section level2">
-<h2 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
+<h2 id="id_-background">📑 Background<a class="anchor" aria-label="anchor" href="#id_-background"></a>
 </h2>
 </div>
 <div class="section level2">
-<h2 id="set-up">Set up<a class="anchor" aria-label="anchor" href="#set-up"></a>
+<h2 id="id_-set-up">💻 Set up<a class="anchor" aria-label="anchor" href="#id_-set-up"></a>
 </h2>
-<p>Package installation and load: you can install the development version of bbsTaiwan from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<p>You can install and load the development version of bbsTaiwan from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SunnyTseng/bbsTaiwan"</span><span class="op">)</span></span>
@@ -83,7 +83,7 @@
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://sunnytseng.github.io/bbsTaiwan/">bbsTaiwan</a></span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="how-to-use">How to use<a class="anchor" aria-label="anchor" href="#how-to-use"></a>
+<h2 id="id_-how-to-use">⛺ How to use<a class="anchor" aria-label="anchor" href="#id_-how-to-use"></a>
 </h2>
 <div class="section level3">
 <h3 id="if-you-need-raw-taiwan-bbs-dataset-on-gbif">If you need raw Taiwan BBS dataset on GBIF:<a class="anchor" aria-label="anchor" href="#if-you-need-raw-taiwan-bbs-dataset-on-gbif"></a>
@@ -103,7 +103,8 @@
 </ul>
 </div>
 <div class="section level3">
-<h3 id="we-also-provide-a-workflow-to-process-taiwan-bbs-data">We also provide a workflow to process Taiwan BBS data:<a class="anchor" aria-label="anchor" href="#we-also-provide-a-workflow-to-process-taiwan-bbs-data"></a>
+<h3 id="bbstaiwan-also-provide-a-workflow-to-process-taiwan-bbs-data">
+<code>bbsTaiwan</code> also provide a workflow to process Taiwan BBS data:<a class="anchor" aria-label="anchor" href="#bbstaiwan-also-provide-a-workflow-to-process-taiwan-bbs-data"></a>
 </h3>
 <p>This is a basic example which shows you how to use the package:</p>
 <ol style="list-style-type: decimal">
@@ -117,64 +118,62 @@
 <li>Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the three arguments (<code>target_species</code>, <code>y_min</code>, and <code>y_max</code>) empty.</li>
 </ol>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">bird_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Pycnonotus sinensis"</span>, <span class="st">"Pycnonotus taivanus"</span><span class="op">)</span>,</span>
-<span>                       y_min <span class="op">=</span> <span class="fl">2011</span>,</span>
-<span>                       y_max <span class="op">=</span> <span class="fl">2016</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="va">bird_data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Pycnonotus sinensis"</span>, <span class="st">"Pycnonotus taivanus"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Joining with `by = join_by(locationID)`</span></span></code></pre></div>
 <p>The output from <code>bbs_fetch</code> is a list with two elements: <code>occurrence</code> and <code>site_info</code>. <code>occurrence</code> is a tibble, showing all the observations for the target species within selected year range</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">bird_data</span><span class="op">$</span><span class="va">occurrence</span></span>
-<span><span class="co">#&gt; # A tibble: 35,258 × 21</span></span>
-<span><span class="co">#&gt;     year eventID      occurrenceID scientificName vernacularName individualCount</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;chr&gt;        &lt;chr&gt;        &lt;chr&gt;          &lt;chr&gt;                    &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       5</span></span>
-<span><span class="co">#&gt;  2  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1</span></span>
-<span><span class="co">#&gt;  3  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1</span></span>
-<span><span class="co">#&gt;  4  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1</span></span>
-<span><span class="co">#&gt;  5  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       2</span></span>
-<span><span class="co">#&gt;  6  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1</span></span>
-<span><span class="co">#&gt;  7  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       2</span></span>
-<span><span class="co">#&gt;  8  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       3</span></span>
-<span><span class="co">#&gt;  9  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1</span></span>
-<span><span class="co">#&gt; 10  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       3</span></span>
-<span><span class="co">#&gt; # ℹ 35,248 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 15 more variables: eventDate &lt;date&gt;, eventTime &lt;chr&gt;, weather &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   wind &lt;chr&gt;, habitat &lt;chr&gt;, time_slot &lt;chr&gt;, distance &lt;chr&gt;, flock &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   site &lt;chr&gt;, plot &lt;chr&gt;, locationID &lt;chr&gt;, locality &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   decimalLatitude &lt;dbl&gt;, decimalLongitude &lt;dbl&gt;, elev &lt;dbl&gt;</span></span></code></pre></div>
+<span><span class="co">#&gt; # A tibble: 52,118 × 15</span></span>
+<span><span class="co">#&gt;     year month   day locationID eventID       weather wind  habitat occurrenceID</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;       </span></span>
+<span><span class="co">#&gt;  1  2009     3    10 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  2  2009     3    10 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  3  2009     4     5 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  4  2009     4    26 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  5  2009     3    10 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  6  2009     4    26 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  7  2009     4     5 A02-01_01  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C1:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  8  2009     4    26 A02-01_02  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C2:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt;  9  2009     3    10 A02-01_02  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C2:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt; 10  2009     4     5 A02-01_02  TWBBS_2009_A… &lt;NA&gt;    &lt;NA&gt;  C2:A1:… TWBBS_2009_…</span></span>
+<span><span class="co">#&gt; # ℹ 52,108 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 6 more variables: scientificName &lt;chr&gt;, vernacularName &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;, distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></code></pre></div>
 <p>The second element <code>site_info</code> is a tibble including all the BBS siteswithin selected year range.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">bird_data</span><span class="op">$</span><span class="va">site_info</span></span>
-<span><span class="co">#&gt; # A tibble: 4,160 × 7</span></span>
-<span><span class="co">#&gt;    site   plot  locationID locality   decimalLatitude decimalLongitude  elev</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt;  1 A02-01 01    A02-01_01  台北縣瑞芳            25.1             122.  109.</span></span>
-<span><span class="co">#&gt;  2 A02-01 02    A02-01_02  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  3 A02-01 03    A02-01_03  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  4 A02-01 04    A02-01_04  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  5 A02-01 05    A02-01_05  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  6 A02-01 06    A02-01_06  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  7 A02-01 07    A02-01_07  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  8 A02-01 08    A02-01_08  台北縣瑞芳            25.1             122.  105.</span></span>
-<span><span class="co">#&gt;  9 A02-01 09    A02-01_09  台北縣瑞芳            25.1             122.  154.</span></span>
-<span><span class="co">#&gt; 10 A02-01 10    A02-01_10  台北縣瑞芳            25.1             122.  154.</span></span>
-<span><span class="co">#&gt; # ℹ 4,150 more rows</span></span></code></pre></div>
+<span><span class="co">#&gt; # A tibble: 4,160 × 9</span></span>
+<span><span class="co">#&gt;    site  plot  locationID locality decimalLatitude decimalLongitude  elev region</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;              &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; </span></span>
+<span><span class="co">#&gt;  1 A02-… 01    A02-01_01  台北縣…             25.1             122.  109. North </span></span>
+<span><span class="co">#&gt;  2 A02-… 02    A02-01_02  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  3 A02-… 03    A02-01_03  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  4 A02-… 04    A02-01_04  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  5 A02-… 05    A02-01_05  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  6 A02-… 06    A02-01_06  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  7 A02-… 07    A02-01_07  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  8 A02-… 08    A02-01_08  台北縣…             25.1             122.  105. North </span></span>
+<span><span class="co">#&gt;  9 A02-… 09    A02-01_09  台北縣…             25.1             122.  154. North </span></span>
+<span><span class="co">#&gt; 10 A02-… 10    A02-01_10  台北縣…             25.1             122.  154. North </span></span>
+<span><span class="co">#&gt; # ℹ 4,150 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 1 more variable: zone &lt;chr&gt;</span></span></code></pre></div>
 <ol start="3" style="list-style-type: decimal">
 <li>View the distribution of all the occurrence for the target species within selected year range</li>
 </ol>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span><span class="va">bird_data</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
+<p><img src="reference/figures/README-bbs_plotmap-1.png" width="100%"></p>
 <ol start="4" style="list-style-type: decimal">
 <li>Get basic summary statistics for the fetched data</li>
 </ol>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_stat.html">bbs_stat</a></span><span class="op">(</span><span class="va">bird_data</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 2 × 6</span></span>
-<span><span class="co">#&gt;   vernacularName scientificName      n_site total_count min_elev max_elev</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;          &lt;chr&gt;                &lt;int&gt;       &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1 烏頭翁         Pycnonotus taivanus     48        8640    22.1     1055.</span></span>
-<span><span class="co">#&gt; 2 白頭翁         Pycnonotus sinensis    358       76246     1.89    2237.</span></span></code></pre></div>
+<span><span class="co">#&gt; # A tibble: 2 × 7</span></span>
+<span><span class="co">#&gt; # Groups:   vernacularName, scientificName [2]</span></span>
+<span><span class="co">#&gt;   vernacularName scientificName       East Mountain  West North Total</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;          &lt;chr&gt;               &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt; 1 烏頭翁         Pycnonotus taivanus  0.92     0.03  0.02  0     0.11</span></span>
+<span><span class="co">#&gt; 2 白頭翁         Pycnonotus sinensis  0.14     0.25  0.96  0.98  0.78</span></span></code></pre></div>
 </div>
 </div>
 </div>
