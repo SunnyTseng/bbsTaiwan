@@ -18,8 +18,8 @@ bbs_plotmap <- function(data) {
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
   bird_site <- data$occurrence |>
-    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::filter(individualCount != 0) |>
+    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::select(site, scientificName, decimalLatitude, decimalLongitude) |>
     dplyr::distinct(.keep_all = TRUE) |>
     tidyr::drop_na() |>
