@@ -23,6 +23,7 @@ Imports:
     checkmate,
     dplyr,
     ggplot2,
+    poptrend,
     purrr,
     stringr,
     terra,

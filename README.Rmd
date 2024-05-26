@@ -26,13 +26,13 @@ library(bbsTaiwan)
 
 The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling. Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.
 
-## Background
+## 📑 Background
 
-## Set up
+## 💻 Set up
 
-Package installation and load: you can install the development version of bbsTaiwan from [GitHub](https://github.com/) with:
+You can install and load the development version of bbsTaiwan from [GitHub](https://github.com/) with:
 
-``` r
+```{r eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
 
@@ -40,7 +40,7 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 library(bbsTaiwan)
 ```
 
-## How to use
+## ⛺ How to use
 
 ### If you need raw Taiwan BBS dataset on GBIF:
 
@@ -63,44 +63,42 @@ The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (Dw
 
 -   Extended Measurement or Fact: includes additional information relating to the taxon occurrences
 
-### We also provide a workflow to process Taiwan BBS data:
+### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
 
 This is a basic example which shows you how to use the package:
 
 1.  Look up the scientific name for species of interest
 
-```{r example}
+```{r bbs_translate}
 bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 ```
 
 2.  Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the three arguments (`target_species`, `y_min`, and `y_max`) empty.
 
-```{r }
-bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"),
-                       y_min = 2011,
-                       y_max = 2016)
+```{r bbs_fetch}
+bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"))
 ```
 
 The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
 
-```{r}
+```{r bbs_fetch_out1}
 bird_data$occurrence
 ```
 
 The second element `site_info` is a tibble including all the BBS siteswithin selected year range.
 
-```{r}
+```{r bbs_fetch_out2}
 bird_data$site_info
 ```
 
 3.  View the distribution of all the occurrence for the target species within selected year range
 
-```{r}
+```{r bbs_plotmap}
 bbs_plotmap(bird_data)
 ```
 
 4.  Get basic summary statistics for the fetched data
 
-```{r}
+```{r bbs_stat}
 bbs_stat(bird_data)
 ```

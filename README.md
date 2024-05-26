@@ -16,12 +16,12 @@ population trend modelling. Users can tailor species analysis,
 controlling data stratification, preparation, and modeling. The goal is
 to expand Taiwan BBS data access to the broader R-society in Taiwan.
 
-## Background
+## 📑 Background
 
-## Set up
+## 💻 Set up
 
-Package installation and load: you can install the development version
-of bbsTaiwan from [GitHub](https://github.com/) with:
+You can install and load the development version of bbsTaiwan from
+[GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
@@ -31,7 +31,7 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 library(bbsTaiwan)
 ```
 
-## How to use
+## ⛺ How to use
 
 ### If you need raw Taiwan BBS dataset on GBIF:
 
@@ -59,7 +59,7 @@ Archive (DwC - A) format:
 - Extended Measurement or Fact: includes additional information relating
   to the taxon occurrences
 
-### We also provide a workflow to process Taiwan BBS data:
+### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
 
 This is a basic example which shows you how to use the package:
 
@@ -76,9 +76,7 @@ bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
     (`target_species`, `y_min`, and `y_max`) empty.
 
 ``` r
-bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"),
-                       y_min = 2011,
-                       y_max = 2016)
+bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"))
 #> Joining with `by = join_by(locationID)`
 ```
 
@@ -88,24 +86,22 @@ for the target species within selected year range
 
 ``` r
 bird_data$occurrence
-#> # A tibble: 35,258 × 21
-#>     year eventID      occurrenceID scientificName vernacularName individualCount
-#>    <dbl> <chr>        <chr>        <chr>          <chr>                    <dbl>
-#>  1  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       5
-#>  2  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1
-#>  3  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1
-#>  4  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1
-#>  5  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       2
-#>  6  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1
-#>  7  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       2
-#>  8  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       3
-#>  9  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       1
-#> 10  2011 TWBBS_2011_… TWBBS_2011_… Pycnonotus si… 白頭翁                       3
-#> # ℹ 35,248 more rows
-#> # ℹ 15 more variables: eventDate <date>, eventTime <chr>, weather <chr>,
-#> #   wind <chr>, habitat <chr>, time_slot <chr>, distance <chr>, flock <chr>,
-#> #   site <chr>, plot <chr>, locationID <chr>, locality <chr>,
-#> #   decimalLatitude <dbl>, decimalLongitude <dbl>, elev <dbl>
+#> # A tibble: 52,118 × 15
+#>     year month   day locationID eventID       weather wind  habitat occurrenceID
+#>    <dbl> <dbl> <dbl> <chr>      <chr>         <chr>   <chr> <chr>   <chr>       
+#>  1  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  2  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  3  2009     4     5 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  4  2009     4    26 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  5  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  6  2009     4    26 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  7  2009     4     5 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
+#>  8  2009     4    26 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
+#>  9  2009     3    10 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
+#> 10  2009     4     5 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
+#> # ℹ 52,108 more rows
+#> # ℹ 6 more variables: scientificName <chr>, vernacularName <chr>,
+#> #   individualCount <dbl>, time_slot <chr>, distance <chr>, flock <chr>
 ```
 
 The second element `site_info` is a tibble including all the BBS
@@ -113,20 +109,21 @@ siteswithin selected year range.
 
 ``` r
 bird_data$site_info
-#> # A tibble: 4,160 × 7
-#>    site   plot  locationID locality   decimalLatitude decimalLongitude  elev
-#>    <chr>  <chr> <chr>      <chr>                <dbl>            <dbl> <dbl>
-#>  1 A02-01 01    A02-01_01  台北縣瑞芳            25.1             122.  109.
-#>  2 A02-01 02    A02-01_02  台北縣瑞芳            25.1             122.  105.
-#>  3 A02-01 03    A02-01_03  台北縣瑞芳            25.1             122.  105.
-#>  4 A02-01 04    A02-01_04  台北縣瑞芳            25.1             122.  105.
-#>  5 A02-01 05    A02-01_05  台北縣瑞芳            25.1             122.  105.
-#>  6 A02-01 06    A02-01_06  台北縣瑞芳            25.1             122.  105.
-#>  7 A02-01 07    A02-01_07  台北縣瑞芳            25.1             122.  105.
-#>  8 A02-01 08    A02-01_08  台北縣瑞芳            25.1             122.  105.
-#>  9 A02-01 09    A02-01_09  台北縣瑞芳            25.1             122.  154.
-#> 10 A02-01 10    A02-01_10  台北縣瑞芳            25.1             122.  154.
+#> # A tibble: 4,160 × 9
+#>    site  plot  locationID locality decimalLatitude decimalLongitude  elev region
+#>    <chr> <chr> <chr>      <chr>              <dbl>            <dbl> <dbl> <chr> 
+#>  1 A02-… 01    A02-01_01  台北縣…             25.1             122.  109. North 
+#>  2 A02-… 02    A02-01_02  台北縣…             25.1             122.  105. North 
+#>  3 A02-… 03    A02-01_03  台北縣…             25.1             122.  105. North 
+#>  4 A02-… 04    A02-01_04  台北縣…             25.1             122.  105. North 
+#>  5 A02-… 05    A02-01_05  台北縣…             25.1             122.  105. North 
+#>  6 A02-… 06    A02-01_06  台北縣…             25.1             122.  105. North 
+#>  7 A02-… 07    A02-01_07  台北縣…             25.1             122.  105. North 
+#>  8 A02-… 08    A02-01_08  台北縣…             25.1             122.  105. North 
+#>  9 A02-… 09    A02-01_09  台北縣…             25.1             122.  154. North 
+#> 10 A02-… 10    A02-01_10  台北縣…             25.1             122.  154. North 
 #> # ℹ 4,150 more rows
+#> # ℹ 1 more variable: zone <chr>
 ```
 
 3.  View the distribution of all the occurrence for the target species
@@ -136,15 +133,16 @@ bird_data$site_info
 bbs_plotmap(bird_data)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+<img src="man/figures/README-bbs_plotmap-1.png" width="100%" />
 
 4.  Get basic summary statistics for the fetched data
 
 ``` r
 bbs_stat(bird_data)
-#> # A tibble: 2 × 6
-#>   vernacularName scientificName      n_site total_count min_elev max_elev
-#>   <chr>          <chr>                <int>       <dbl>    <dbl>    <dbl>
-#> 1 烏頭翁         Pycnonotus taivanus     48        8640    22.1     1055.
-#> 2 白頭翁         Pycnonotus sinensis    358       76246     1.89    2237.
+#> # A tibble: 2 × 7
+#> # Groups:   vernacularName, scientificName [2]
+#>   vernacularName scientificName       East Mountain  West North Total
+#>   <chr>          <chr>               <dbl>    <dbl> <dbl> <dbl> <dbl>
+#> 1 烏頭翁         Pycnonotus taivanus  0.92     0.03  0.02  0     0.11
+#> 2 白頭翁         Pycnonotus sinensis  0.14     0.25  0.96  0.98  0.78
 ```

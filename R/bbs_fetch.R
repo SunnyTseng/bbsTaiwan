@@ -2,33 +2,16 @@
 #'
 #' Filter and clean BBS Taiwan data given certain year range and target species
 #'
-#' @param y_min a numeric value indicating the start year of the year range, by default 2009, the start year of Taiwan BBS data
-#' @param y_max a numeric value indicating the end year of the year range, by default 2029. Note that GBIF only updates BBS data until 2016
 #' @param target_species  a character vector for species of interest, return all species if NULL
 #'
 #' @return a list containing 1. species occurrence and 2. site information
 #' @export
 #'
 #' @examples
-#' bbs_fetch(y_min = 2009, y_max = 2016,
-#' target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
-bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
+#' bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-
-  checkmate::assert_number(
-    y_min,
-    na.ok = FALSE,
-    lower = 2009,
-    upper = 2029
-  )
-
-  checkmate::assert_number(
-    y_max,
-    na.ok = FALSE,
-    lower = 2009,
-    upper = 2029
-  )
 
   if (is.null(target_species)) {
     target_species <- bird_info |> dplyr::pull(scientificName)
@@ -41,18 +24,27 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
 
   # clean data --------------------------------------------------------------
 
-  ## I guess there was a mixed up with both sheets. These codes needs to be updated once new data is up on GBIF
+  # get event covariates associated with each point count event
+  #! first two lines to retain only event related measurement, like weather
   event_info <- measurementorfacts |>
-    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain only event related measurement, like weather
+    dplyr::mutate(type = stringr::str_length(id)) |>
     dplyr::filter(type == 23) |>
-    dplyr::select(id, measurementType, measurementValue) |>
+    dplyr::select(id, measurementDeterminedDate, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
                        values_from = measurementValue) |>
-    dplyr::rename(weather = "天氣代號", wind = "風速代號", habitat = "棲地代號")
+    dplyr::mutate(year = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 1) |> as.numeric(),
+                  month = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 2) |> as.numeric(),
+                  day = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 3) |> as.numeric()) |>
+    dplyr::rename(date = measurementDeterminedDate,
+                  weather = "天氣代號",
+                  wind = "風速代號",
+                  habitat = "棲地代號")
 
+  # get occurrence covariates associated with each observation within a point count
+  #! first two lines to retain occurrence related measurement
   occurrence_info <- extendedmeasurementorfact |>
-    dplyr::mutate(type = stringr::str_length(id)) |> # two lines to retain occurrence related measurement
+    dplyr::mutate(type = stringr::str_length(id)) |>
     dplyr::filter(type == 30) |>
     dplyr::select(id, measurementType, measurementValue) |>
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
@@ -63,27 +55,25 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
   site_info <- event |>
     dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
     dplyr::mutate(plot = stringr::str_split_i(id, pattern = "_", i = 4)) |>
-    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude,
-                  eventDate, eventTime) |>
+    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude) |>
     tidyr::drop_na() |>
     dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
 
-  site_elev <- site_info |>
-    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
+  site_zone <- site_info |>
+    terra::vect(geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
+    terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
     dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
-    dplyr::select(locationID, elev)
+    dplyr::select(locationID, elev, region) |>
+    dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
-    #sf::st_as_sf() |>
-    #sf::st_intersects(tw_region, sparse = T)
-
+  #! There are 6 sites and 106 plots can't be mapped into zones. Check the shape file or the coordinates.
+  #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
 
   # filter occurrence to a given species and year ---------------------------
 
   occurrence_filter <- occurrence |>
-    dplyr::mutate(year = stringr::str_split_i(id, pattern = "_", i = 2) |> as.numeric()) |>
-    dplyr::filter(year %in% seq(y_min, y_max)) |>
     dplyr::filter(scientificName %in% target_species) |>
     dplyr::mutate(locationID =
                     paste0(stringr::str_split_i(id, pattern = "_", i = 3)
@@ -91,21 +81,37 @@ bbs_fetch <- function(target_species = NULL, y_min = 2009, y_max = 2029) {
                            stringr::str_split_i(id, pattern = "_", i = 4)))
 
 
+  # zero control for all the point counts sites & species observation -------
+
+  occurrence_zero <- occurrence_filter |>
+    # add zero for each point count and each target species
+    dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
+                      by = dplyr::join_by(id == id, scientificName == scientificName)) |>
+    dplyr::mutate(individualCount = dplyr::if_else(is.na(individualCount), 0, individualCount)) |>
+    # remove sites that never detected the species
+    dplyr::mutate(site_1 = stringr::str_split_i(id, pattern = "_", i = 3)) |>
+    dplyr::group_by(site_1, scientificName) |>
+    dplyr::filter(base::sum(individualCount) != 0) |>
+    dplyr::ungroup() |>
+    # add necessary column to the zero rows for the join purpose
+    dplyr::mutate(locationID = dplyr::if_else(is.na(locationID),
+                                              base::paste0(stringr::str_split_i(id, pattern = "_", i = 3)
+                                                           ,"_",
+                                                           stringr::str_split_i(id, pattern = "_", i = 4)),
+                                              locationID))
+
   # link event info, occurrence info, bird info, and site info --------------
 
-  occurrence_add_var <- occurrence_filter |>
+  occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
-    dplyr::left_join(site_info, by = dplyr::join_by(locationID == locationID)) |>
-    dplyr::left_join(site_elev, by = dplyr::join_by(locationID == locationID)) |>
-    dplyr::select(year, eventID, occurrenceID, scientificName, vernacularName, individualCount,
-                  eventDate, eventTime, weather, wind, habitat, time_slot, distance, flock,
-                  site, plot, locationID, locality, decimalLatitude, decimalLongitude,
-                  elev)
+    dplyr::select(year, month, day, locationID, eventID, weather, wind, habitat,
+                  occurrenceID, scientificName, vernacularName, individualCount,
+                  time_slot, distance, flock)
 
   site_add_var <- site_info |>
-    dplyr::left_join(site_elev) |>
-    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude, elev)
+    dplyr::left_join(site_zone) |>
+    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude, elev, region, zone)
 
 
   return(list(occurrence = occurrence_add_var,

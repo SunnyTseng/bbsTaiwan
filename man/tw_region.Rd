@@ -3,17 +3,19 @@
 \docType{data}
 \name{tw_region}
 \alias{tw_region}
-\title{Map of regions in Taiwan}
+\title{Map of eco-regions in Taiwan}
 \format{
 Need more info
 }
 \source{
-\url{https://geodata.mit.edu/catalog/stanford-dz142zj5454}
+\url{https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&s=id=\%22091NTU00312007\%22.&searchmode=basic}
 }
 \usage{
 tw_region
 }
 \description{
-Need more info
+There are three regions: North, West, and East, representing different
+ecosystems in Taiwan specifically for avian biodiversity. This map was
+developed by Hau-Jie Shiu in 2003.
 }
 \keyword{datasets}
