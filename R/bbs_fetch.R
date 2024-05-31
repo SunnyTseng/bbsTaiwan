@@ -12,7 +12,7 @@
 bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-  if (test_null(target_species)) {
+  if (checkmate::test_null(target_species)) {
     target_species <- bird_info |> dplyr::pull(scientificName)
   } else {
     checkmate::assert_character(
