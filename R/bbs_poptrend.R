@@ -38,5 +38,6 @@ bbs_poptrend <- function(data, zone = NULL) {
   #                                  change$CI[1] |> round(2), "%, ",
   #                                  change$CI[2] |> round(2), "%",
   #                                  ")"))
+
   return(data_weight)
 }

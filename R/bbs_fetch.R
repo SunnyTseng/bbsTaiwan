@@ -12,8 +12,7 @@
 bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-
-  if (is.null(target_species)) {
+  if (test_null(target_species)) {
     target_species <- bird_info |> dplyr::pull(scientificName)
   } else {
     checkmate::assert_character(
@@ -71,8 +70,8 @@ bbs_fetch <- function(target_species = NULL) {
   #! There are 6 sites and 106 plots can't be mapped into zones. Check the shape file or the coordinates.
   #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
 
-  # filter occurrence to a given species and year ---------------------------
 
+  # filter occurrence to a given species and year ---------------------------
   occurrence_filter <- occurrence |>
     dplyr::filter(scientificName %in% target_species) |>
     dplyr::mutate(locationID =
@@ -82,7 +81,6 @@ bbs_fetch <- function(target_species = NULL) {
 
 
   # zero control for all the point counts sites & species observation -------
-
   occurrence_zero <- occurrence_filter |>
     # add zero for each point count and each target species
     dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
@@ -100,8 +98,8 @@ bbs_fetch <- function(target_species = NULL) {
                                                            stringr::str_split_i(id, pattern = "_", i = 4)),
                                               locationID))
 
-  # link event info, occurrence info, bird info, and site info --------------
 
+  # link event info, occurrence info, bird info, and site info --------------
   occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
