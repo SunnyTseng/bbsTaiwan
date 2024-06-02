@@ -13,15 +13,14 @@
 #' c("Psilopogon nuchalis", "Pycnonotus taivanus")))
 bbs_plotmap <- function(data) {
 
-
   # argument check ----------------------------------------------------------
-  assert_data_frame(
+  checkmate::assert_data_frame(
     data$occurrence,
     min.rows = 1,
     null.ok = FALSE
   )
 
-  assert_list(
+  checkmate::assert_list(
     data,
     len = 2,
     unique = FALSE,

@@ -23,20 +23,31 @@ bbs_history <- function() {
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
     terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
-    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    dplyr::rename(elev = 7) |>
     dplyr::select(year, trip, locationID, elev, region) |>
     dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
   time_location <- year_location_trip |>
     dplyr::left_join(year_location_trip_zone, dplyr::join_by(year == year,
                                                              trip == trip,
-                                                             locationID == locationID)) |>
+                                                             locationID == locationID))
+
+  # try to fix the issue that one site with multiple zone matched
+  site_zone_standard <- time_location |>
+    dplyr::count(site, zone) |>
+    dplyr::slice_max(n, by = site)
+
+  time_location_1 <- time_location |>
+    dplyr::left_join(site_zone_standard,
+                     dplyr::join_by(site == site),
+                     multiple = "last",
+                     suffix = c("_raw", "")) |>
     dplyr::select(year, trip, site, plot, locationID, zone)
 
 
   # information for sites each year -----------------------------------------
 
-  year_site <- time_location |>
+  year_site <- time_location_1 |>
     split(time_location$year) |>
     purrr::map_df(\(df) df |>
                     dplyr::group_by(zone) |>

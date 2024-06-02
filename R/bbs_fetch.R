@@ -21,6 +21,7 @@ bbs_fetch <- function(target_species = NULL) {
     )
   }
 
+
   # clean data --------------------------------------------------------------
 
   # get event covariates associated with each point count event
@@ -36,9 +37,9 @@ bbs_fetch <- function(target_species = NULL) {
                   month = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 2) |> as.numeric(),
                   day = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 3) |> as.numeric()) |>
     dplyr::rename(date = measurementDeterminedDate,
-                  weather = "天氣代號",
-                  wind = "風速代號",
-                  habitat = "棲地代號")
+                  weather = 3,
+                  wind = 4,
+                  habitat = 5)
 
   # get occurrence covariates associated with each observation within a point count
   #! first two lines to retain occurrence related measurement
@@ -49,7 +50,7 @@ bbs_fetch <- function(target_species = NULL) {
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
                        values_from = measurementValue) |>
-    dplyr::rename(time_slot = "時段", distance = "距離", flock = "結群")
+    dplyr::rename(time_slot = 2, distance = 3, flock = 4)
 
   site_info <- event |>
     dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
@@ -63,7 +64,7 @@ bbs_fetch <- function(target_species = NULL) {
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
     terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
-    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    dplyr::rename(elev = 6) |>
     dplyr::select(locationID, elev, region) |>
     dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
