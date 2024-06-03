@@ -23,20 +23,31 @@ bbs_history <- function() {
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
     terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
-    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    dplyr::rename(elev = 7) |>
     dplyr::select(year, trip, locationID, elev, region) |>
     dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
   time_location <- year_location_trip |>
     dplyr::left_join(year_location_trip_zone, dplyr::join_by(year == year,
                                                              trip == trip,
-                                                             locationID == locationID)) |>
+                                                             locationID == locationID))
+
+  # try to fix the issue that one site with multiple zone matched
+  site_zone_standard <- time_location |>
+    dplyr::count(site, zone) |>
+    dplyr::slice_max(n, by = site)
+
+  time_location_1 <- time_location |>
+    dplyr::left_join(site_zone_standard,
+                     dplyr::join_by(site == site),
+                     multiple = "last",
+                     suffix = c("_raw", "")) |>
     dplyr::select(year, trip, site, plot, locationID, zone)
 
 
   # information for sites each year -----------------------------------------
 
-  year_site <- time_location |>
+  year_site <- time_location_1 |>
     split(time_location$year) |>
     purrr::map_df(\(df) df |>
                     dplyr::group_by(zone) |>
@@ -49,8 +60,7 @@ bbs_history <- function() {
     ggplot2::geom_bar(position = "stack", stat = "identity") +
     ggplot2::geom_text(size = 3, position = ggplot2::position_stack(vjust = 0.5)) +
     ggplot2::scale_fill_brewer(palette = "Set2") +
-    ggplot2::labs(title = "Taiwan BBS surveyed sites",
-                  x = "Year",
+    ggplot2::labs(x = "Year",
                   y = "# of sites",
                   fill = "Region") +
     ggplot2::theme_bw() +

@@ -12,8 +12,7 @@
 bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-
-  if (is.null(target_species)) {
+  if (checkmate::test_null(target_species)) {
     target_species <- bird_info |> dplyr::pull(scientificName)
   } else {
     checkmate::assert_character(
@@ -21,6 +20,7 @@ bbs_fetch <- function(target_species = NULL) {
       min.len = 1
     )
   }
+
 
   # clean data --------------------------------------------------------------
 
@@ -37,9 +37,9 @@ bbs_fetch <- function(target_species = NULL) {
                   month = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 2) |> as.numeric(),
                   day = measurementDeterminedDate |> stringr::str_split_i(pattern = "-", i = 3) |> as.numeric()) |>
     dplyr::rename(date = measurementDeterminedDate,
-                  weather = "天氣代號",
-                  wind = "風速代號",
-                  habitat = "棲地代號")
+                  weather = 3,
+                  wind = 4,
+                  habitat = 5)
 
   # get occurrence covariates associated with each observation within a point count
   #! first two lines to retain occurrence related measurement
@@ -50,7 +50,7 @@ bbs_fetch <- function(target_species = NULL) {
     dplyr::distinct(id, measurementType, .keep_all = TRUE) |>
     tidyr::pivot_wider(names_from = measurementType,
                        values_from = measurementValue) |>
-    dplyr::rename(time_slot = "時段", distance = "距離", flock = "結群")
+    dplyr::rename(time_slot = 2, distance = 3, flock = 4)
 
   site_info <- event |>
     dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
@@ -64,15 +64,15 @@ bbs_fetch <- function(target_species = NULL) {
     terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
     terra::intersect(x = tw_region |> terra::vect()) |>
     dplyr::as_tibble() |>
-    dplyr::rename(elev = `G1km_TWD97-121_DTM_ELE`) |>
+    dplyr::rename(elev = 6) |>
     dplyr::select(locationID, elev, region) |>
     dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
 
   #! There are 6 sites and 106 plots can't be mapped into zones. Check the shape file or the coordinates.
   #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
 
-  # filter occurrence to a given species and year ---------------------------
 
+  # filter occurrence to a given species and year ---------------------------
   occurrence_filter <- occurrence |>
     dplyr::filter(scientificName %in% target_species) |>
     dplyr::mutate(locationID =
@@ -82,7 +82,6 @@ bbs_fetch <- function(target_species = NULL) {
 
 
   # zero control for all the point counts sites & species observation -------
-
   occurrence_zero <- occurrence_filter |>
     # add zero for each point count and each target species
     dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
@@ -100,8 +99,8 @@ bbs_fetch <- function(target_species = NULL) {
                                                            stringr::str_split_i(id, pattern = "_", i = 4)),
                                               locationID))
 
-  # link event info, occurrence info, bird info, and site info --------------
 
+  # link event info, occurrence info, bird info, and site info --------------
   occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>

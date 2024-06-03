@@ -4,10 +4,10 @@
 \alias{bbs_translate}
 \title{Find species' scientific name}
 \usage{
-bbs_translate(species_name)
+bbs_translate(target_species)
 }
 \arguments{
-\item{species_name}{a single character or a vector of characters including species' name in Chinese}
+\item{target_species}{a single character or a vector of characters including species' name in Chinese}
 }
 \value{
 a vector of bird species' scientific name
