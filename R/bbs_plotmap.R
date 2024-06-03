@@ -24,7 +24,6 @@ bbs_plotmap <- function(data) {
     data,
     len = 2,
     unique = FALSE,
-    names = c("occurrence", "site_info"),
     null.ok = FALSE
   )
 

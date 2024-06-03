@@ -60,8 +60,7 @@ bbs_history <- function() {
     ggplot2::geom_bar(position = "stack", stat = "identity") +
     ggplot2::geom_text(size = 3, position = ggplot2::position_stack(vjust = 0.5)) +
     ggplot2::scale_fill_brewer(palette = "Set2") +
-    ggplot2::labs(title = "Taiwan BBS surveyed sites",
-                  x = "Year",
+    ggplot2::labs(x = "Year",
                   y = "# of sites",
                   fill = "Region") +
     ggplot2::theme_bw() +

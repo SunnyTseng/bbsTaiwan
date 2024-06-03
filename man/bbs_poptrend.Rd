@@ -4,12 +4,13 @@
 \alias{bbs_poptrend}
 \title{Calculate the population trend based on BBS data}
 \usage{
-bbs_poptrend(data, zone = NULL)
+bbs_poptrend(data, prop = 1)
 }
 \arguments{
 \item{data}{a list object derived from the bbs_fetch() function}
 
-\item{zone}{which zone of Taiwan that the trend is analyzed from}
+\item{prop}{the proportion of observations to fit the population trend model.
+The lower value can reduce the}
 }
 \value{
 some info here
