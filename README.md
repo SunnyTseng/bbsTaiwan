@@ -63,6 +63,17 @@ Archive (DwC - A) format:
 
 This is a basic example which shows you how to use the package:
 
+1.  Check out the distribution of the BBS sites and the number of sites
+    that have been surveyed throughout the years:
+
+``` r
+bbs_history()
+```
+
+<img src="man/figures/README-bbs_history-1.png" width="100%" />
+
+    #> NULL
+
 1.  Look up the scientific name for species of interest
 
 ``` r
@@ -71,12 +82,11 @@ bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 #> [3] "Trochalopteron morrisonianum"
 ```
 
-2.  Fetch the data for years and species of interest. If you need the
-    dataset across all years and all species, leave the three arguments
-    (`target_species`, `y_min`, and `y_max`) empty.
+2.  Fetch the data for the species of interest. If you need the dataset
+    across all species, leave the argument `target_species` as `NULL`.
 
 ``` r
-bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"))
+x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
 #> Joining with `by = join_by(locationID)`
 ```
 
@@ -85,30 +95,29 @@ and `site_info`. `occurrence` is a tibble, showing all the observations
 for the target species within selected year range
 
 ``` r
-bird_data$occurrence
-#> # A tibble: 52,118 × 15
+x$occurrence
+#> # A tibble: 3,109 × 15
 #>     year month   day locationID eventID       weather wind  habitat occurrenceID
 #>    <dbl> <dbl> <dbl> <chr>      <chr>         <chr>   <chr> <chr>   <chr>       
-#>  1  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  2  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  3  2009     4     5 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  4  2009     4    26 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  5  2009     3    10 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  6  2009     4    26 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  7  2009     4     5 A02-01_01  TWBBS_2009_A… <NA>    <NA>  C1:A1:… TWBBS_2009_…
-#>  8  2009     4    26 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
-#>  9  2009     3    10 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
-#> 10  2009     4     5 A02-01_02  TWBBS_2009_A… <NA>    <NA>  C2:A1:… TWBBS_2009_…
-#> # ℹ 52,108 more rows
+#>  1  2009     4    19 B14-01_10  TWBBS_2009_B… <NA>    <NA>  A3:B4:… TWBBS_2009_…
+#>  2  2009     6     7 B13-01_06  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  3  2009     6    25 B13-01_06  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  4  2009     5    26 B13-01_05  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  5  2009     6     7 B13-01_05  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  6  2009     5    26 B13-01_03  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  7  2009     6     7 B13-01_03  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  8  2009     6    25 B13-01_01  TWBBS_2009_B… <NA>    <NA>  A3:C5:… TWBBS_2009_…
+#>  9  2009     6     7 B13-01_07  TWBBS_2009_B… <NA>    <NA>  A2:C5:… TWBBS_2009_…
+#> 10  2009     5    29 B13-01_08  TWBBS_2009_B… <NA>    <NA>  A2:C5:… TWBBS_2009_…
+#> # ℹ 3,099 more rows
 #> # ℹ 6 more variables: scientificName <chr>, vernacularName <chr>,
 #> #   individualCount <dbl>, time_slot <chr>, distance <chr>, flock <chr>
 ```
 
-The second element `site_info` is a tibble including all the BBS
-siteswithin selected year range.
+The second element `site_info` is a tibble including all the BBS sites:
 
 ``` r
-bird_data$site_info
+x$site_info
 #> # A tibble: 4,160 × 9
 #>    site  plot  locationID locality decimalLatitude decimalLongitude  elev region
 #>    <chr> <chr> <chr>      <chr>              <dbl>            <dbl> <dbl> <chr> 
@@ -126,11 +135,19 @@ bird_data$site_info
 #> # ℹ 1 more variable: zone <chr>
 ```
 
+The function `bbs_fetch` can also take multiple species at the same
+time:
+
+``` r
+x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
+#> Joining with `by = join_by(locationID)`
+```
+
 3.  View the distribution of all the occurrence for the target species
     within selected year range
 
 ``` r
-bbs_plotmap(bird_data)
+bbs_plotmap(x)
 ```
 
 <img src="man/figures/README-bbs_plotmap-1.png" width="100%" />
@@ -138,7 +155,7 @@ bbs_plotmap(bird_data)
 4.  Get basic summary statistics for the fetched data
 
 ``` r
-bbs_stat(bird_data)
+bbs_stat(x)
 #> # A tibble: 2 × 7
 #> # Groups:   vernacularName, scientificName [2]
 #>   vernacularName scientificName       East Mountain  West North Total

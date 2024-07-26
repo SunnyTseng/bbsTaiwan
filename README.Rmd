@@ -79,7 +79,7 @@ bbs_history()
 bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 ```
 
-2.  Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the argument `target_species` as `NULL`.
+2.  Fetch the data for the species of interest. If you need the dataset across all species, leave the argument `target_species` as `NULL`.
 
 ```{r bbs_fetch}
 x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
@@ -106,11 +106,11 @@ x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
 3.  View the distribution of all the occurrence for the target species within selected year range
 
 ```{r bbs_plotmap}
-bbs_plotmap(bird_data)
+bbs_plotmap(x)
 ```
 
 4.  Get basic summary statistics for the fetched data
 
 ```{r bbs_stat}
-bbs_stat(bird_data)
+bbs_stat(x)
 ```
