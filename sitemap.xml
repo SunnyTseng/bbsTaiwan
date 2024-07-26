@@ -1,72 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/404.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/index.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbsTaiwan-package.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_fetch.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_history.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_plotmap.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_poptrend.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_stat.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_translate.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/bird_info.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/event.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/extendedmeasurementorfact.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/measurementorfacts.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/occurrence.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_elev.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_map.html</loc>
-  </url>
-  <url>
-    <loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_region.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/404.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/LICENSE-text.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/LICENSE.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/articles/index.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/authors.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/index.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbsTaiwan-package.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_fetch.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_history.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_plotmap.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_poptrend.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_stat.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bbs_translate.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/bird_info.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/event.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/extendedmeasurementorfact.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/index.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/measurementorfacts.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/occurrence.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_elev.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_map.html</loc></url>
+<url><loc>https://sunnytseng.github.io/bbsTaiwan/reference/tw_region.html</loc></url>
 </urlset>
+

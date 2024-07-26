@@ -1,10 +1,9 @@
 pandoc: 3.1.11
-pkgdown: 2.0.9
+pkgdown: 2.1.0
 pkgdown_sha: ~
 articles:
   bbsTaiwan: bbsTaiwan.html
-last_built: 2024-06-03T03:59Z
+last_built: 2024-07-26T19:55Z
 urls:
   reference: https://sunnytseng.github.io/bbsTaiwan/reference
   article: https://sunnytseng.github.io/bbsTaiwan/articles
-
