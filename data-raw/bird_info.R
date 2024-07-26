@@ -2,8 +2,7 @@ bird_full_list <- readr::read_csv(here::here("data-raw", "taiwan_species_list_20
   dplyr::rename(chinese_name_t = "中文名", english_name_t = "英文名", scientific_name_t = "學名")
 
 bird_info <- readr::read_csv(here::here("data-raw", "bbs_species_list_v0.csv")) |>
-  dplyr::mutate(vernacularName_2023 = vernacularName) |>
-  dplyr::mutate(vernacularName_2023 = stringr::str_replace_all(vernacularName_2023,
+  dplyr::mutate(vernacularName_2023 = stringr::str_replace_all(vernacularName,
                                                                c("台" = "臺",
                                                                  "臺灣/大陸畫眉" = "臺灣畫眉",
                                                                  "白氏/虎斑地鶇" = "虎鶇",
@@ -23,6 +22,10 @@ bird_info <- readr::read_csv(here::here("data-raw", "bbs_species_list_v0.csv")) 
                                                     dplyr::pull(scientific_name_t) |>
                                                     unique())) |>
   dplyr::select(scientificName, chineseName, englishName, scientificName_t)
+
+
+test <- bird_info %>%
+  filter(scientificName != scientificName_t)
 
 
 usethis::use_data(bird_info, overwrite = TRUE)

@@ -77,5 +77,5 @@ bbs_history <- function() {
 
   plot(year_site_vis)
 
-  return(year_site_table)
+  return(NULL)
 }

@@ -37,7 +37,8 @@ bbs_translate <- function(target_species) {
 
   # main function body ----------------------------------------------------
   bird_name <- target_species |>
-    purrr::map_chr(decision)
+    purrr::map(decision) |>
+    base::unlist()
 
   return(bird_name)
 }
