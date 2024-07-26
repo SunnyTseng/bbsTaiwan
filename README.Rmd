@@ -67,28 +67,40 @@ The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (Dw
 
 This is a basic example which shows you how to use the package:
 
+1.  Check out the distribution of the BBS sites and the number of sites that have been surveyed throughout the years:
+
+```{r bbs_history}
+bbs_history()
+```
+
 1.  Look up the scientific name for species of interest
 
 ```{r bbs_translate}
 bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 ```
 
-2.  Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the three arguments (`target_species`, `y_min`, and `y_max`) empty.
+2.  Fetch the data for years and species of interest. If you need the dataset across all years and all species, leave the argument `target_species` as `NULL`.
 
 ```{r bbs_fetch}
-bird_data <- bbs_fetch(target_species = c("Pycnonotus sinensis", "Pycnonotus taivanus"))
+x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
 ```
 
 The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
 
 ```{r bbs_fetch_out1}
-bird_data$occurrence
+x$occurrence
 ```
 
-The second element `site_info` is a tibble including all the BBS siteswithin selected year range.
+The second element `site_info` is a tibble including all the BBS sites:
 
 ```{r bbs_fetch_out2}
-bird_data$site_info
+x$site_info
+```
+
+The function `bbs_fetch` can also take multiple species at the same time:
+
+```{r bbs_fetch_out3}
+x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
 ```
 
 3.  View the distribution of all the occurrence for the target species within selected year range
