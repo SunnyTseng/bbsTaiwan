@@ -24,8 +24,4 @@ bird_info <- readr::read_csv(here::here("data-raw", "bbs_species_list_v0.csv")) 
   dplyr::select(scientificName, chineseName, englishName, scientificName_t)
 
 
-test <- bird_info %>%
-  filter(scientificName != scientificName_t)
-
-
 usethis::use_data(bird_info, overwrite = TRUE)
