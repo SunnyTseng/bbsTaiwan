@@ -10,7 +10,7 @@ bbs_fetch(target_species = NULL)
 \item{target_species}{a character vector for species of interest, return all species if NULL}
 }
 \value{
-a list containing 1. species occurrence and 2. site information
+a tibble containing species occurrence
 }
 \description{
 Filter and clean BBS Taiwan data given certain year range and target species

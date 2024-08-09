@@ -4,7 +4,10 @@
 \alias{bbs_history}
 \title{Number of sites surveyed each year}
 \usage{
-bbs_history()
+bbs_history(type = "plot")
+}
+\arguments{
+\item{type}{either "table" or "plot" to view the number of sites each year}
 }
 \value{
 A table showing number of sites surveyed each year in regions

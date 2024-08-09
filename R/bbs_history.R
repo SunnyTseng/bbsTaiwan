@@ -1,11 +1,13 @@
 #' Number of sites surveyed each year
 #'
+#' @param type either "table" or "plot" to view the number of sites each year
+#'
 #' @return A table showing number of sites surveyed each year in regions
 #' @export
 #'
 #' @examples
 #' bbs_history()
-bbs_history <- function() {
+bbs_history <- function(type = "plot") {
 
   # get time (year, trip) and space (site, plot) info from event table ------
 
@@ -31,6 +33,9 @@ bbs_history <- function() {
     dplyr::left_join(year_location_trip_zone, dplyr::join_by(year == year,
                                                              trip == trip,
                                                              locationID == locationID))
+
+  #! There are 22 site, 105 plots (399 observations) can't be mapped into zones. Check the shape file or the coordinates.
+  #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
 
   # try to fix the issue that one site with multiple zone matched
   site_zone_standard <- time_location |>
@@ -75,7 +80,9 @@ bbs_history <- function() {
                        values_from = n_sites,
                        values_fill = 0)
 
-  plot(year_site_vis)
-
-  return(NULL)
+  if (type == "plot"){
+    return(year_site_vis)
+  } else {
+    return(year_site_table)
+  }
 }

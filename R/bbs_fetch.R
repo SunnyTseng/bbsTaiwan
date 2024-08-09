@@ -1,10 +1,18 @@
-#' Fetch BBS Taiwan data from GBIF
+#' Fetch BBS occurrence data by species
 #'
-#' Filter and clean BBS Taiwan data given certain year range and target species
+#' This function fetches occurrence data for a specified target species,
+#' utilizing both the event and occurrence tables from GBIF. It then processes
+#' the data by converting implicit missing values into explicit missing values
+#' (e.g., fill in gaps in your data frame).
 #'
-#' @param target_species  a character vector for species of interest, return all species if NULL
+#' @param target_species Character string specifying the scientific name of
+#' the species of interest. It can accept a single character string, such as
+#' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
+#' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
+#' Leave undefined or use `NULL` to return all species. Use the `bbs_translate()`
+#' function to help find the species' scientific name.
 #'
-#' @return a list containing 1. species occurrence and 2. site information
+#' @return a tibble containing species occurrence
 #' @export
 #'
 #' @examples
@@ -52,25 +60,6 @@ bbs_fetch <- function(target_species = NULL) {
                        values_from = measurementValue) |>
     dplyr::rename(time_slot = 2, distance = 3, flock = 4)
 
-  site_info <- event |>
-    dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
-    dplyr::mutate(plot = stringr::str_split_i(id, pattern = "_", i = 4)) |>
-    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude) |>
-    tidyr::drop_na() |>
-    dplyr::distinct(site, plot, locationID, .keep_all = TRUE)
-
-  site_zone <- site_info |>
-    terra::vect(geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326") |>
-    terra::extract(x = tw_elev |> terra::rast(crs = "epsg:4326", type = "xyz"), bind = TRUE) |>
-    terra::intersect(x = tw_region |> terra::vect()) |>
-    dplyr::as_tibble() |>
-    dplyr::rename(elev = 6) |>
-    dplyr::select(locationID, elev, region) |>
-    dplyr::mutate(zone = dplyr::if_else(elev >= 1000, "Mountain", region))
-
-  #! There are 6 sites and 106 plots can't be mapped into zones. Check the shape file or the coordinates.
-  #! site_info[!site_info$locationID %in% site_zone$locationID, ] %>% distinct(locality, .keep_all = TRUE)
-
 
   # filter occurrence to a given species and year ---------------------------
   occurrence_filter <- occurrence |>
@@ -108,11 +97,5 @@ bbs_fetch <- function(target_species = NULL) {
                   occurrenceID, scientificName, vernacularName, individualCount,
                   time_slot, distance, flock)
 
-  site_add_var <- site_info |>
-    dplyr::left_join(site_zone) |>
-    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude, elev, region, zone)
-
-
-  return(list(occurrence = occurrence_add_var,
-              site_info = site_add_var))
+  return(occurrence_add_var)
 }
