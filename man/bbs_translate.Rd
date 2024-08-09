@@ -2,21 +2,27 @@
 % Please edit documentation in R/bbs_translate.R
 \name{bbs_translate}
 \alias{bbs_translate}
-\title{Find species' scientific name}
+\title{Translate Bird Species' Chinese Common Name to Scientific Name}
 \usage{
 bbs_translate(target_species)
 }
 \arguments{
-\item{target_species}{a single character or a vector of characters including species' name in Chinese}
+\item{target_species}{A single character string or a vector of character strings
+representing species' names in Chinese.}
 }
 \value{
-a vector of bird species' scientific name
+A vector of bird species' scientific names. If the input species name is not
+included in the bird list of Taiwan, \code{"The bird is not in the BBS list"} will be returned.
+Please check for any typos.
 }
 \description{
-Find species' scientific name
+This function is intended for use with the \link{bbs_fetch} function, which
+requires the \code{target_species} argument to be in scientific names. This function
+helps users find the scientific names of birds from their Chinese common names
+for species found in Taiwan.
 }
 \examples{
-# For single species
+# For a single species
 bbs_translate("白頭翁")
 
 # For multiple species

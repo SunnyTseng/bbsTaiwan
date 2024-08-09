@@ -2,21 +2,23 @@
 % Please edit documentation in R/bbs_plotmap.R
 \name{bbs_plotmap}
 \alias{bbs_plotmap}
-\title{Visualization of BBS Taiwan detection sites}
+\title{Visualize Species Distribution Across All BBS Sites}
 \usage{
 bbs_plotmap(data)
 }
 \arguments{
-\item{data}{a list object derived from the bbs_fetch() function}
+\item{data}{An occurrence dataset derived from the \link{bbs_fetch} function.}
 }
 \value{
-a distribution map
+A \code{ggplot} object showing the distribution map.
 }
 \description{
-Visualizes sites surveyed for breeding birds in Taiwan, highlighting presence and absence of specific species.
+This function visualizes the sites surveyed for breeding birds in Taiwan,
+highlighting the presence and absence of specific species. It is designed
+to be used with the \link{bbs_fetch} function as the input argument.
 }
 \examples{
-bbs_plotmap(data =
-bbs_fetch(target_species =
-c("Psilopogon nuchalis", "Pycnonotus taivanus")))
+plot <- c("Psilopogon nuchalis", "Pycnonotus taivanus") |>
+  bbs_fetch() |>
+  bbs_plotmap()
 }

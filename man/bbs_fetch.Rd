@@ -11,7 +11,7 @@ bbs_fetch(target_species = NULL)
 the species of interest. It can accept a single character string, such as
 \code{target_species = "Hypsipetes leucocephalus"}, or a vector, such as
 \code{target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")}.
-Leave undefined or use \code{NULL} to return all species. Use the \code{bbs_translate()}
+Leave undefined or use \code{NULL} to return all species. Use the \link{bbs_translate}
 function to help find the species' scientific names.}
 }
 \value{
@@ -24,7 +24,9 @@ undergoes the following processing steps compared to the raw dataset:
 \enumerate{
 \item Retains only observations for the specified target species.
 \item Converts implicit missing values into explicit ones (e.g., filling in
-zeros for trips where the target species was not observed).
+zeros for trips where the target species was not observed). Specifically,
+if a site/plot was visited in a specific year/trip, but without observing
+the target species, then the dataset will have a value of 0 for that row.
 }
 }
 \examples{

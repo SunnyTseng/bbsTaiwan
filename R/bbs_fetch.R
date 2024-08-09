@@ -5,13 +5,15 @@
 #' undergoes the following processing steps compared to the raw dataset:
 #' 1. Retains only observations for the specified target species.
 #' 2. Converts implicit missing values into explicit ones (e.g., filling in
-#' zeros for trips where the target species was not observed).
+#' zeros for trips where the target species was not observed). Specifically,
+#' if a site/plot was visited in a specific year/trip, but without observing
+#' the target species, then the dataset will have a value of 0 for that row.
 #'
 #' @param target_species Character string specifying the scientific name of
 #' the species of interest. It can accept a single character string, such as
 #' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
 #' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return all species. Use the `bbs_translate()`
+#' Leave undefined or use `NULL` to return all species. Use the \link{bbs_translate}
 #' function to help find the species' scientific names.
 #'
 #' @return A `tibble` containing the species occurrence data.
@@ -63,6 +65,13 @@ bbs_fetch <- function(target_species = NULL) {
     dplyr::rename(time_slot = 2, distance = 3, flock = 4)
 
 
+  # site_info for adding coordinate
+  site_info <- event |>
+    dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
+    tidyr::drop_na(site, locationID, decimalLatitude, decimalLongitude) |>
+    dplyr::distinct(locationID, .keep_all = TRUE)
+
+
   # filter occurrence to a given species and year ---------------------------
   occurrence_filter <- occurrence |>
     dplyr::filter(scientificName %in% target_species) |>
@@ -79,10 +88,10 @@ bbs_fetch <- function(target_species = NULL) {
                       by = dplyr::join_by(id == id, scientificName == scientificName)) |>
     dplyr::mutate(individualCount = dplyr::if_else(is.na(individualCount), 0, individualCount)) |>
     # remove sites that never detected the species
-    dplyr::mutate(site_1 = stringr::str_split_i(id, pattern = "_", i = 3)) |>
-    dplyr::group_by(site_1, scientificName) |>
-    dplyr::filter(base::sum(individualCount) != 0) |>
-    dplyr::ungroup() |>
+    # dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
+    # dplyr::group_by(site, scientificName) |>
+    # dplyr::filter(base::sum(individualCount) != 0) |>
+    # dplyr::ungroup() |>
     # add necessary column to the zero rows for the join purpose
     dplyr::mutate(locationID = dplyr::if_else(is.na(locationID),
                                               base::paste0(stringr::str_split_i(id, pattern = "_", i = 3)
@@ -95,8 +104,10 @@ bbs_fetch <- function(target_species = NULL) {
   occurrence_add_var <- occurrence_zero |>
     dplyr::left_join(event_info, by = dplyr::join_by(id == id)) |>
     dplyr::left_join(occurrence_info, by = dplyr::join_by(occurrenceID == id)) |>
-    dplyr::select(year, month, day, locationID, eventID, weather, wind, habitat,
-                  occurrenceID, scientificName, vernacularName, individualCount,
+    dplyr::left_join(site_info, by = dplyr::join_by(locationID == locationID)) |>
+    dplyr::select(year, month, day, site, locationID, decimalLatitude, decimalLongitude,
+                  weather, wind, habitat,
+                  scientificName, vernacularName, individualCount,
                   time_slot, distance, flock)
 
   return(occurrence_add_var)

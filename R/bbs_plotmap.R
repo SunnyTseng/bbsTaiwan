@@ -1,16 +1,18 @@
-#' Visualization of BBS Taiwan detection sites
+#' Visualize Species Distribution Across All BBS Sites
 #'
-#' Visualizes sites surveyed for breeding birds in Taiwan, highlighting presence and absence of specific species.
+#' This function visualizes the sites surveyed for breeding birds in Taiwan,
+#' highlighting the presence and absence of specific species. It is designed
+#' to be used with the \link{bbs_fetch} function as the input argument.
 #'
-#' @param data a list object derived from the bbs_fetch() function
+#' @param data An occurrence dataset derived from the \link{bbs_fetch} function.
 #'
-#' @return a distribution map
+#' @return A `ggplot` object showing the distribution map.
 #' @export
 #'
 #' @examples
-#' bbs_plotmap(data =
-#' bbs_fetch(target_species =
-#' c("Psilopogon nuchalis", "Pycnonotus taivanus")))
+#' plot <- c("Psilopogon nuchalis", "Pycnonotus taivanus") |>
+#'   bbs_fetch() |>
+#'   bbs_plotmap()
 bbs_plotmap <- function(data) {
 
   # argument check ----------------------------------------------------------
@@ -21,14 +23,20 @@ bbs_plotmap <- function(data) {
   )
 
 
-  # prepare sites with and without detections into spatial info -------------
+
+  # sites with target species -----------------------------------------------
   bird_site <- data |>
+    dplyr::slice_max(individualCount, by = c(site, scientificName), with_ties = FALSE) |>
+    dplyr::mutate(type = dplyr::if_else(individualCount == 0, "absense", "presense")) %>%
+    dplyr::group_split(type)
+
+
+
+
     dplyr::filter(individualCount != 0) |>
-    dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
-    dplyr::select(site, scientificName, decimalLatitude, decimalLongitude) |>
-    dplyr::distinct(.keep_all = TRUE) |>
-    tidyr::drop_na() |>
+    dplyr::distinct(site, scientificName, .keep_all = TRUE) |>
     terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
+
 
 
   # prepare taiwan map and elevation ----------------------------------------
@@ -48,6 +56,8 @@ bbs_plotmap <- function(data) {
     ggplot2::scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
 
     # sites with and without detection
+
+
     tidyterra::geom_spatvector(data = bird_site,
                                ggplot2::aes(colour = scientificName),
                                alpha = 0.5,

@@ -14,7 +14,7 @@ This function returns the coordinates of all BBS sites that were surveyed.
 No arguments are needed. The coordinates are reported using the WGS84
 projection system.
 Use \code{terra::vect(geom = c("decimalLatitude", "decimalLongitude"), crs = "epsg:4326")}
-to transform to spatial object.
+to transform the table to spatial object.
 }
 \details{
 The source data comes from the event table in the GBIF dataset.
