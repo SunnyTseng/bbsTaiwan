@@ -27,15 +27,9 @@ bbs_plotmap <- function(data) {
   # sites with target species -----------------------------------------------
   bird_site <- data |>
     dplyr::slice_max(individualCount, by = c(site, scientificName), with_ties = FALSE) |>
-    dplyr::mutate(type = dplyr::if_else(individualCount == 0, "absense", "presense")) %>%
-    dplyr::group_split(type)
-
-
-
-
-    dplyr::filter(individualCount != 0) |>
-    dplyr::distinct(site, scientificName, .keep_all = TRUE) |>
-    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
+    dplyr::mutate(type = dplyr::if_else(individualCount == 0, "absence", "presence")) |>
+    dplyr::group_by(type) |>
+    dplyr::group_map(~ terra::vect(.x, geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326"))
 
 
 
@@ -51,17 +45,21 @@ bbs_plotmap <- function(data) {
   distribution_map <- ggplot2::ggplot() +
 
     # basemap and elevation
-    tidyterra::geom_spatraster(data = tw_elev_terra) +
+    tidyterra::geom_spatraster(data = tw_elev_terra, alpha = 0.5) +
     tidyterra::geom_spatvector(data = tw_map_sf, fill = NA, colour = "gray65") +
     ggplot2::scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
 
     # sites with and without detection
-
-
-    tidyterra::geom_spatvector(data = bird_site,
+    tidyterra::geom_spatvector(data = bird_site[[1]] |> dplyr::filter(!site %in% bird_site[[2]]$site),
+                               colour = "lightblue4",
+                               alpha = 0.5,
+                               size = 1.8,
+                               shape = 1) +
+    tidyterra::geom_spatvector(data = bird_site[[2]],
                                ggplot2::aes(colour = scientificName),
                                alpha = 0.5,
-                               size = 1) +
+                               size = 1.8,
+                               stroke = NA) +
     ggplot2::scale_colour_brewer(palette = "Set2") +
 
     # plot fine tunes
@@ -77,6 +75,8 @@ bbs_plotmap <- function(data) {
                            "to",
                            data$year |> max(na.rm = TRUE),
                            sep = " "))
+
+  distribution_map
 
   return(distribution_map)
 }
