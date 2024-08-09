@@ -4,10 +4,15 @@
 \alias{bbs_plotmap}
 \title{Visualize Species Distribution Across All BBS Sites}
 \usage{
-bbs_plotmap(data)
+bbs_plotmap(target_species = NULL)
 }
 \arguments{
-\item{data}{An occurrence dataset derived from the \link{bbs_fetch} function.}
+\item{target_species}{Character string specifying the scientific name of
+the species of interest. It can accept a single character string, such as
+\code{target_species = "Hypsipetes leucocephalus"}, or a vector, such as
+\code{target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")}.
+Leave undefined or use \code{NULL} to return all species. Use the \link{bbs_translate}
+function to help find the species' scientific names.}
 }
 \value{
 A \code{ggplot} object showing the distribution map.
@@ -15,10 +20,8 @@ A \code{ggplot} object showing the distribution map.
 \description{
 This function visualizes the sites surveyed for breeding birds in Taiwan,
 highlighting the presence and absence of specific species. It is designed
-to be used with the \link{bbs_fetch} function as the input argument.
+upon the function \link{bbs_fetch}.
 }
 \examples{
-plot <- c("Psilopogon nuchalis", "Pycnonotus taivanus") |>
-  bbs_fetch() |>
-  bbs_plotmap()
+bbs_plotmap(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
 }

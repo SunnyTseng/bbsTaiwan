@@ -4,7 +4,7 @@
 \alias{bbs_translate}
 \title{Translate Bird Species' Chinese Common Name to Scientific Name}
 \usage{
-bbs_translate(target_species)
+bbs_translate(target_species = NULL)
 }
 \arguments{
 \item{target_species}{A single character string or a vector of character strings
@@ -26,5 +26,5 @@ for species found in Taiwan.
 bbs_translate("白頭翁")
 
 # For multiple species
-bbs_translate(c("烏頭翁", "白頭翁"))
+bbs_translate(target_species = c("烏頭翁", "白頭翁"))
 }

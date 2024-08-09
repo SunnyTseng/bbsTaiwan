@@ -2,35 +2,35 @@
 #'
 #' This function visualizes the sites surveyed for breeding birds in Taiwan,
 #' highlighting the presence and absence of specific species. It is designed
-#' to be used with the \link{bbs_fetch} function as the input argument.
+#' upon the function \link{bbs_fetch}.
 #'
-#' @param data An occurrence dataset derived from the \link{bbs_fetch} function.
+#' @param target_species Character string specifying the scientific name of
+#' the species of interest. It can accept a single character string, such as
+#' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
+#' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
+#' Leave undefined or use `NULL` to return all species. Use the \link{bbs_translate}
+#' function to help find the species' scientific names.
 #'
 #' @return A `ggplot` object showing the distribution map.
 #' @export
 #'
 #' @examples
-#' plot <- c("Psilopogon nuchalis", "Pycnonotus taivanus") |>
-#'   bbs_fetch() |>
-#'   bbs_plotmap()
-bbs_plotmap <- function(data) {
+#' bbs_plotmap(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+bbs_plotmap <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
-  checkmate::assert_data_frame(
-    data,
-    min.rows = 1,
-    null.ok = FALSE
-  )
 
 
 
-  # sites with target species -----------------------------------------------
+  # calling function within the same package --------------------------------
+  data <- bbs_fetch(target_species)
+
+  # sites with and without target species -----------------------------------
   bird_site <- data |>
     dplyr::slice_max(individualCount, by = c(site, scientificName), with_ties = FALSE) |>
     dplyr::mutate(type = dplyr::if_else(individualCount == 0, "absence", "presence")) |>
     dplyr::group_by(type) |>
     dplyr::group_map(~ terra::vect(.x, geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326"))
-
 
 
   # prepare taiwan map and elevation ----------------------------------------

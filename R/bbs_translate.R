@@ -19,8 +19,8 @@
 #' bbs_translate("白頭翁")
 #'
 #' # For multiple species
-#' bbs_translate(c("烏頭翁", "白頭翁"))
-bbs_translate <- function(target_species) {
+#' bbs_translate(target_species = c("烏頭翁", "白頭翁"))
+bbs_translate <- function(target_species = NULL) {
 
   # sub function ----------------------------------------------------------
   decision <- function(target_species) {
