@@ -1,18 +1,20 @@
-#' Fetch BBS occurrence data by species
+#' Fetch BBS Occurrence Data by Species
 #'
 #' This function fetches occurrence data for a specified target species,
-#' utilizing both the event and occurrence tables from GBIF. It then processes
-#' the data by converting implicit missing values into explicit missing values
-#' (e.g., fill in gaps in your data frame).
+#' utilizing both the event and occurrence tables from GBIF. The fetched dataset
+#' undergoes the following processing steps compared to the raw dataset:
+#' 1. Retains only observations for the specified target species.
+#' 2. Converts implicit missing values into explicit ones (e.g., filling in
+#' zeros for trips where the target species was not observed).
 #'
 #' @param target_species Character string specifying the scientific name of
 #' the species of interest. It can accept a single character string, such as
 #' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
 #' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
 #' Leave undefined or use `NULL` to return all species. Use the `bbs_translate()`
-#' function to help find the species' scientific name.
+#' function to help find the species' scientific names.
 #'
-#' @return a tibble containing species occurrence
+#' @return A `tibble` containing the species occurrence data.
 #' @export
 #'
 #' @examples

@@ -2,15 +2,22 @@
 % Please edit documentation in R/bbs_sites.R
 \name{bbs_sites}
 \alias{bbs_sites}
-\title{All BBS site's coordinate}
+\title{Return the Coordinates of All BBS Sites}
 \usage{
 bbs_sites()
 }
 \value{
-a tibble including the coordinates of all the BBS survey sites
+A \code{tibble} including the coordinates of all BBS survey sites, in WGS84.
 }
 \description{
-All BBS site's coordinate
+This function returns the coordinates of all BBS sites that were surveyed.
+No arguments are needed. The coordinates are reported using the WGS84
+projection system.
+Use \code{terra::vect(geom = c("decimalLatitude", "decimalLongitude"), crs = "epsg:4326")}
+to transform to spatial object.
+}
+\details{
+The source data comes from the event table in the GBIF dataset.
 }
 \examples{
 bbs_sites()

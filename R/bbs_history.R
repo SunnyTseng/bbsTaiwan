@@ -1,12 +1,18 @@
-#' Number of sites surveyed each year
+#' Examine the Number of BBS Sites Surveyed Each Year
 #'
-#' @param type either "table" or "plot" to view the number of sites each year
+#' This function returns the number of sites surveyed each year in the BBS
+#' Taiwan project. Sites were mapped into five regions: East, West, South,
+#' North, and Mountain (elevation higher than 1,000 m).
 #'
-#' @return A table showing number of sites surveyed each year in regions
+#' @param type Character string specifying the output format: either `"table"`
+#' or `"plot"`. Default value `type = "plot"`
+#'
+#' @return A `tibble` or a `ggplot` showing the number of sites surveyed each
+#' year across regions.
 #' @export
 #'
 #' @examples
-#' bbs_history()
+#' bbs_history(type = "table")
 bbs_history <- function(type = "plot") {
 
   # get time (year, trip) and space (site, plot) info from event table ------

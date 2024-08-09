@@ -15,24 +15,14 @@ bbs_plotmap <- function(data) {
 
   # argument check ----------------------------------------------------------
   checkmate::assert_data_frame(
-    data$occurrence,
-    min.rows = 1,
-    null.ok = FALSE
-  )
-
-  checkmate::assert_list(
     data,
-    len = 2,
-    unique = FALSE,
+    min.rows = 1,
     null.ok = FALSE
   )
 
 
   # prepare sites with and without detections into spatial info -------------
-  all_site <- data$site_info |>
-    terra::vect(geom=c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
-
-  bird_site <- data$occurrence |>
+  bird_site <- data |>
     dplyr::filter(individualCount != 0) |>
     dplyr::left_join(data$site_info, by = dplyr::join_by(locationID == locationID)) |>
     dplyr::select(site, scientificName, decimalLatitude, decimalLongitude) |>
@@ -58,10 +48,6 @@ bbs_plotmap <- function(data) {
     ggplot2::scale_fill_manual(values = c("white", "gray90", "gray78", "gray65"), na.value = NA) +
 
     # sites with and without detection
-    tidyterra::geom_spatvector(data = all_site,
-                               colour = "lightblue4",
-                               alpha = 0.05,
-                               size = 1) +
     tidyterra::geom_spatvector(data = bird_site,
                                ggplot2::aes(colour = scientificName),
                                alpha = 0.5,
@@ -77,9 +63,9 @@ bbs_plotmap <- function(data) {
                    legend.text = ggplot2::element_text(size = 10),
                    plot.title = ggplot2::element_text(hjust = 0.5)) +
     ggplot2::ggtitle(paste("Taiwan BBS from",
-                           data$occurrence$year |> min(na.rm = TRUE),
+                           data$year |> min(na.rm = TRUE),
                            "to",
-                           data$occurrence$year |> max(na.rm = TRUE),
+                           data$year |> max(na.rm = TRUE),
                            sep = " "))
 
   return(distribution_map)

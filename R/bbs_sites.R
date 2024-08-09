@@ -1,6 +1,14 @@
-#' All BBS site's coordinate
+#' Return the Coordinates of All BBS Sites
 #'
-#' @return a tibble including the coordinates of all the BBS survey sites
+#' This function returns the coordinates of all BBS sites that were surveyed.
+#' No arguments are needed. The coordinates are reported using the WGS84
+#' projection system.
+#' Use `terra::vect(geom = c("decimalLatitude", "decimalLongitude"), crs = "epsg:4326")`
+#' to transform the table to spatial object.
+#'
+#' The source data comes from the event table in the GBIF dataset.
+#'
+#' @return A `tibble` including the coordinates of all BBS survey sites, in WGS84.
 #' @export
 #'
 #' @examples
