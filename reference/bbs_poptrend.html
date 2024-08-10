@@ -39,7 +39,7 @@
 
     <div class="section level2">
     <h2 id="ref-usage">Uso<a class="anchor" aria-label="anchor" href="#ref-usage"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">bbs_poptrend</span><span class="op">(</span><span class="va">data</span>, prop <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">bbs_poptrend</span><span class="op">(</span>data <span class="op">=</span> <span class="cn">NULL</span>, prop <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div class="section level2">
@@ -62,10 +62,7 @@ The lower value can reduce the</p></dd>
 
     <div class="section level2">
     <h2 id="ref-examples">Ejemplos<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">bbs_poptrend</span><span class="op">(</span>data <span class="op">=</span> <span class="fu"><a href="bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span><span class="fu"><a href="bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="st">"金背鳩"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></span>
-<span class="r-msg co"><span class="r-pr">#&gt;</span> Joining with `by = join_by(locationID)`</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> Estimated percent change from year = 2009 to 2016: -5.8% (-29%, 27%)</span>
-<span class="r-plt img"><img src="bbs_poptrend-1.png" alt="" width="700" height="433"></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">bbs_poptrend</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> NULL</span>
 </code></pre></div>
     </div>
