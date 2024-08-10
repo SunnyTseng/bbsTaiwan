@@ -97,80 +97,89 @@
 <li>Check out the distribution of the BBS sites and the number of sites that have been surveyed throughout the years:</li>
 </ol>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_history.html">bbs_history</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_history.html">bbs_history</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"plot"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-bbs_history-1.png" width="100%"></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="co">#&gt; NULL</span></span></code></pre></div>
-<ol style="list-style-type: decimal">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_history.html">bbs_history</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"table"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 8 × 6</span></span>
+<span><span class="co">#&gt;   year   East Mountain North  West Others</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt; &lt;int&gt;    &lt;int&gt; &lt;int&gt; &lt;int&gt;  &lt;int&gt;</span></span>
+<span><span class="co">#&gt; 1 2009     31       41    24    52      0</span></span>
+<span><span class="co">#&gt; 2 2010     30       26    25    57      2</span></span>
+<span><span class="co">#&gt; 3 2011     24       37    55   134      3</span></span>
+<span><span class="co">#&gt; 4 2012     31       47    88   142      3</span></span>
+<span><span class="co">#&gt; 5 2013     28       43    80   138      2</span></span>
+<span><span class="co">#&gt; 6 2014     36       46    91   118      2</span></span>
+<span><span class="co">#&gt; 7 2015     36       49   112   143     12</span></span>
+<span><span class="co">#&gt; 8 2016     38       42    98   157      2</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span><span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-bbs_plotmap_NULL-1.png" width="100%"></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Check all the sites that have been surveyed before</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_sites.html">bbs_sites</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 4,160 × 20</span></span>
+<span><span class="co">#&gt;    id      eventID parentEventID samplingProtocol sampleSizeValue sampleSizeUnit</span></span>
+<span><span class="co">#&gt;    &lt;chr&gt;   &lt;chr&gt;   &lt;chr&gt;         &lt;chr&gt;                      &lt;dbl&gt; &lt;chr&gt;         </span></span>
+<span><span class="co">#&gt;  1 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  2 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  3 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  4 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  5 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  6 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  7 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  8 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt;  9 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt; 10 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  </span></span>
+<span><span class="co">#&gt; # ℹ 4,150 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 14 more variables: samplingEffort &lt;chr&gt;, eventDate &lt;date&gt;, eventTime &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   locationID &lt;chr&gt;, country &lt;chr&gt;, countryCode &lt;chr&gt;, locality &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   decimalLatitude &lt;dbl&gt;, decimalLongitude &lt;dbl&gt;, geodeticDatum &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   coordinateUncertaintyInMeters &lt;dbl&gt;, coordinatePrecision &lt;dbl&gt;, site &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   plot &lt;chr&gt;</span></span></code></pre></div>
+<ol start="2" style="list-style-type: decimal">
 <li>Look up the scientific name for species of interest</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"白頭翁"</span>, <span class="st">"烏頭翁"</span>, <span class="st">"台灣噪眉"</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co">#&gt; [1] "Pycnonotus sinensis"          "Pycnonotus taivanus"         </span></span>
 <span><span class="co">#&gt; [3] "Trochalopteron morrisonianum"</span></span></code></pre></div>
-<ol start="2" style="list-style-type: decimal">
+<ol start="3" style="list-style-type: decimal">
 <li>Fetch the data for the species of interest. If you need the dataset across all species, leave the argument <code>target_species</code> as <code>NULL</code>.</li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="st">"火冠戴菊鳥"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Joining with `by = join_by(locationID)`</span></span></code></pre></div>
-<p>The output from <code>bbs_fetch</code> is a list with two elements: <code>occurrence</code> and <code>site_info</code>. <code>occurrence</code> is a tibble, showing all the observations for the target species within selected year range</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span><span class="op">$</span><span class="va">occurrence</span></span>
-<span><span class="co">#&gt; # A tibble: 3,109 × 15</span></span>
-<span><span class="co">#&gt;     year month   day locationID eventID       weather wind  habitat occurrenceID</span></span>
-<span><span class="co">#&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      &lt;chr&gt;         &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;   &lt;chr&gt;       </span></span>
-<span><span class="co">#&gt;  1  2009     4    19 B14-01_10  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:B4:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  2  2009     6     7 B13-01_06  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  3  2009     6    25 B13-01_06  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  4  2009     5    26 B13-01_05  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  5  2009     6     7 B13-01_05  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  6  2009     5    26 B13-01_03  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  7  2009     6     7 B13-01_03  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  8  2009     6    25 B13-01_01  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A3:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt;  9  2009     6     7 B13-01_07  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A2:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt; 10  2009     5    29 B13-01_08  TWBBS_2009_B… &lt;NA&gt;    &lt;NA&gt;  A2:C5:… TWBBS_2009_…</span></span>
-<span><span class="co">#&gt; # ℹ 3,099 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 6 more variables: scientificName &lt;chr&gt;, vernacularName &lt;chr&gt;,</span></span>
-<span><span class="co">#&gt; #   individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;, distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></code></pre></div>
-<p>The second element <code>site_info</code> is a tibble including all the BBS sites:</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span><span class="op">$</span><span class="va">site_info</span></span>
-<span><span class="co">#&gt; # A tibble: 4,160 × 9</span></span>
-<span><span class="co">#&gt;    site  plot  locationID locality decimalLatitude decimalLongitude  elev region</span></span>
-<span><span class="co">#&gt;    &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;              &lt;dbl&gt;            &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; </span></span>
-<span><span class="co">#&gt;  1 A02-… 01    A02-01_01  台北縣…             25.1             122.  109. North </span></span>
-<span><span class="co">#&gt;  2 A02-… 02    A02-01_02  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  3 A02-… 03    A02-01_03  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  4 A02-… 04    A02-01_04  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  5 A02-… 05    A02-01_05  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  6 A02-… 06    A02-01_06  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  7 A02-… 07    A02-01_07  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  8 A02-… 08    A02-01_08  台北縣…             25.1             122.  105. North </span></span>
-<span><span class="co">#&gt;  9 A02-… 09    A02-01_09  台北縣…             25.1             122.  154. North </span></span>
-<span><span class="co">#&gt; 10 A02-… 10    A02-01_10  台北縣…             25.1             122.  154. North </span></span>
-<span><span class="co">#&gt; # ℹ 4,150 more rows</span></span>
-<span><span class="co">#&gt; # ℹ 1 more variable: zone &lt;chr&gt;</span></span></code></pre></div>
-<p>The function <code>bbs_fetch</code> can also take multiple species at the same time:</p>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="st">"火冠戴菊鳥"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p>The output from <code>bbs_fetch</code> is a list with two elements: <code>occurrence</code> and <code>site_info</code>. <code>occurrence</code> is a tibble, showing all the observations for the target species within selected year range</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="co">#&gt; Joining with `by = join_by(locationID)`</span></span></code></pre></div>
-<ol start="3" style="list-style-type: decimal">
+<code class="sourceCode R"><span><span class="va">x</span></span>
+<span><span class="co">#&gt; # A tibble: 36,385 × 16</span></span>
+<span><span class="co">#&gt;     year month   day site   locationID decimalLatitude decimalLongitude weather</span></span>
+<span><span class="co">#&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;                &lt;dbl&gt;            &lt;dbl&gt; &lt;chr&gt;  </span></span>
+<span><span class="co">#&gt;  1  2009     4    19 B14-01 B14-01_10             24.4             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  2  2009     6     7 B13-01 B13-01_06             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  3  2009     6    25 B13-01 B13-01_06             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  4  2009     5    26 B13-01 B13-01_05             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  5  2009     6     7 B13-01 B13-01_05             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  6  2009     5    26 B13-01 B13-01_03             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  7  2009     6     7 B13-01 B13-01_03             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  8  2009     6    25 B13-01 B13-01_01             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt;  9  2009     6     7 B13-01 B13-01_07             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt; 10  2009     5    29 B13-01 B13-01_08             24.5             121. &lt;NA&gt;   </span></span>
+<span><span class="co">#&gt; # ℹ 36,375 more rows</span></span>
+<span><span class="co">#&gt; # ℹ 8 more variables: wind &lt;chr&gt;, habitat &lt;chr&gt;, scientificName &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   vernacularName &lt;chr&gt;, individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;,</span></span>
+<span><span class="co">#&gt; #   distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></code></pre></div>
+<p>The function <code>bbs_fetch</code> can also take multiple species at the same time:</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<ol start="4" style="list-style-type: decimal">
 <li>View the distribution of all the occurrence for the target species within selected year range</li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-bbs_plotmap-1.png" width="100%"></p>
-<ol start="4" style="list-style-type: decimal">
-<li>Get basic summary statistics for the fetched data</li>
-</ol>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_stat.html">bbs_stat</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span>
-<span><span class="co">#&gt; # A tibble: 2 × 7</span></span>
-<span><span class="co">#&gt; # Groups:   vernacularName, scientificName [2]</span></span>
-<span><span class="co">#&gt;   vernacularName scientificName       East Mountain  West North Total</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt;          &lt;chr&gt;               &lt;dbl&gt;    &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1 烏頭翁         Pycnonotus taivanus  0.92     0.03  0.02  0     0.11</span></span>
-<span><span class="co">#&gt; 2 白頭翁         Pycnonotus sinensis  0.14     0.25  0.96  0.98  0.78</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span><span class="fu"><a href="reference/bbs_translate.html">bbs_translate</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-bbs_plotmap-1.png" width="100%"></p>
 </div>
 </div>
 </div>
@@ -209,6 +218,7 @@
 <h2 data-toc-skip>Estado de desarrollo</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+<li><a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
 </ul>
 </div>
 
