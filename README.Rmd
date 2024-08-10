@@ -20,7 +20,7 @@ library(bbsTaiwan)
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) 
+[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
@@ -70,16 +70,30 @@ This is a basic example which shows you how to use the package:
 1.  Check out the distribution of the BBS sites and the number of sites that have been surveyed throughout the years:
 
 ```{r bbs_history}
-bbs_history()
+bbs_history(type = "plot")
 ```
 
-1.  Look up the scientific name for species of interest
+```{r bbs_history_table}
+bbs_history(type = "table")
+```
+
+```{r bbs_plotmap_NULL}
+bbs_plotmap(NULL)
+```
+
+2.  Check all the sites that have been surveyed before
+
+```{r bbs_sites}
+bbs_sites()
+```
+
+2.  Look up the scientific name for species of interest
 
 ```{r bbs_translate}
 bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 ```
 
-2.  Fetch the data for the species of interest. If you need the dataset across all species, leave the argument `target_species` as `NULL`.
+3.  Fetch the data for the species of interest. If you need the dataset across all species, leave the argument `target_species` as `NULL`.
 
 ```{r bbs_fetch}
 x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
@@ -88,13 +102,7 @@ x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
 The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
 
 ```{r bbs_fetch_out1}
-x$occurrence
-```
-
-The second element `site_info` is a tibble including all the BBS sites:
-
-```{r bbs_fetch_out2}
-x$site_info
+x
 ```
 
 The function `bbs_fetch` can also take multiple species at the same time:
@@ -103,14 +111,8 @@ The function `bbs_fetch` can also take multiple species at the same time:
 x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
 ```
 
-3.  View the distribution of all the occurrence for the target species within selected year range
+4.  View the distribution of all the occurrence for the target species within selected year range
 
 ```{r bbs_plotmap}
-bbs_plotmap(x)
-```
-
-4.  Get basic summary statistics for the fetched data
-
-```{r bbs_stat}
-bbs_stat(x)
+bbs_plotmap(bbs_translate(c("烏頭翁", "白頭翁")))
 ```

@@ -31,7 +31,7 @@ bbs_plotmap <- function(target_species = NULL) {
 
     # data preparation ------------------------------------------------------
     bird_site <- bbs_sites() |>
-      distinct(site, .keep_all = TRUE) |>
+      dplyr::distinct(site, .keep_all = TRUE) |>
       terra::vect(geom = c("decimalLongitude", "decimalLatitude"), crs = "epsg:4326")
 
     # create map ------------------------------------------------------------
