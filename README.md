@@ -6,6 +6,8 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml)
+![Lifecycle:
+Experimental](https://img.shields.io/badge/lifecycle-experimental-blue)
 
 <!-- badges: end -->
 

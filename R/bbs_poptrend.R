@@ -8,8 +8,8 @@
 #' @export
 #'
 #' @examples
-#' bbs_poptrend(data = bbs_fetch(bbs_translate("金背鳩")))
-bbs_poptrend <- function(data, prop = 1) {
+#' bbs_poptrend()
+bbs_poptrend <- function(data = NULL, prop = 1) {
 
 
   # # adding weight info into the dataset -------------------------------------
@@ -23,27 +23,27 @@ bbs_poptrend <- function(data, prop = 1) {
   # Fit a smooth trend with fixed site effects, random time effects,
   # and automatic selection of degrees of freedom
 
-  trend_model <- data$occurrence |>
-    dplyr::mutate(site = stringr::str_split_i(locationID, pattern = "_", i = 1)) |>
-    dplyr::slice_sample(prop = prop) |>
-    poptrend::ptrend(formula = individualCount ~ trend(var = year,
-                                                       tempRE = TRUE,
-                                                       type = "smooth",
-                                                       k = 8) + site)
+  # trend_model <- data$occurrence |>
+  #   dplyr::mutate(site = stringr::str_split_i(locationID, pattern = "_", i = 1)) |>
+  #   dplyr::slice_sample(prop = prop) |>
+  #   poptrend::ptrend(formula = individualCount ~ trend(var = year,
+  #                                                      tempRE = TRUE,
+  #                                                      type = "smooth",
+  #                                                      k = 8) + site)
+  #
+  # change <- poptrend::change(trend_model,
+  #                            min(data$occurrence$year, na.rm = TRUE),
+  #                            max(data$occurrence$year, na.rm = TRUE))
+  #
+  # trend_plot <- plot(trend_model,
+  #                    plotGrid = FALSE,
+  #                    main = paste0("Change = ",
+  #                                  change$percentChange |> round(2), "% (",
+  #                                  change$CI[1] |> round(2), "%, ",
+  #                                  change$CI[2] |> round(2), "%",
+  #                                  ")"),
+  #                    xlab = "Year",
+  #                    ylab = "Abundance index")
 
-  change <- poptrend::change(trend_model,
-                             min(data$occurrence$year, na.rm = TRUE),
-                             max(data$occurrence$year, na.rm = TRUE))
-
-  trend_plot <- plot(trend_model,
-                     plotGrid = FALSE,
-                     main = paste0("Change = ",
-                                   change$percentChange |> round(2), "% (",
-                                   change$CI[1] |> round(2), "%, ",
-                                   change$CI[2] |> round(2), "%",
-                                   ")"),
-                     xlab = "Year",
-                     ylab = "Abundance index")
-
-  return(trend_plot)
+  return(NULL)
 }

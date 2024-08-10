@@ -2,16 +2,23 @@
 % Please edit documentation in R/bbs_history.R
 \name{bbs_history}
 \alias{bbs_history}
-\title{Number of sites surveyed each year}
+\title{Examine the Number of BBS Sites Surveyed Each Year}
 \usage{
-bbs_history()
+bbs_history(type = "plot")
+}
+\arguments{
+\item{type}{Character string specifying the output format: either \code{"table"}
+or \code{"plot"}. Default value \code{type = "plot"}}
 }
 \value{
-A table showing number of sites surveyed each year in regions
+A \code{tibble} or a \code{ggplot} showing the number of sites surveyed each
+year across regions.
 }
 \description{
-Number of sites surveyed each year
+This function returns the number of sites surveyed each year in the BBS
+Taiwan project. Sites were mapped into five regions: East, West, South,
+North, and Mountain (elevation higher than 1,000 m).
 }
 \examples{
-bbs_history()
+bbs_history(type = "table")
 }

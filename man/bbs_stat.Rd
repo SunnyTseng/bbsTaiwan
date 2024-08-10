@@ -4,7 +4,7 @@
 \alias{bbs_stat}
 \title{Basic stats of BBS Taiwan occurrence data}
 \usage{
-bbs_stat(data)
+bbs_stat(data = NULL)
 }
 \arguments{
 \item{data}{a list object derived from the bbs_fetch() function}
@@ -16,8 +16,6 @@ a tibble containing basic stats for fetched data
 Summarizing basic statistics for BBS data, highlighting the trend of specific species.
 }
 \examples{
-bbs_stat(data =
-bbs_fetch(target_species =
-c("Psilopogon nuchalis", "Pycnonotus taivanus")))
+bbs_stat()
 
 }

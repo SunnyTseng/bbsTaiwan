@@ -2,18 +2,32 @@
 % Please edit documentation in R/bbs_fetch.R
 \name{bbs_fetch}
 \alias{bbs_fetch}
-\title{Fetch BBS Taiwan data from GBIF}
+\title{Fetch BBS Occurrence Data by Species}
 \usage{
 bbs_fetch(target_species = NULL)
 }
 \arguments{
-\item{target_species}{a character vector for species of interest, return all species if NULL}
+\item{target_species}{Character string specifying the scientific name of
+the species of interest. It can accept a single character string, such as
+\code{target_species = "Hypsipetes leucocephalus"}, or a vector, such as
+\code{target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")}.
+Leave undefined or use \code{NULL} to return all species. Use the \link{bbs_translate}
+function to help find the species' scientific names.}
 }
 \value{
-a list containing 1. species occurrence and 2. site information
+A \code{tibble} containing the species occurrence data.
 }
 \description{
-Filter and clean BBS Taiwan data given certain year range and target species
+This function fetches occurrence data for a specified target species,
+utilizing both the event and occurrence tables from GBIF. The fetched dataset
+undergoes the following processing steps compared to the raw dataset:
+\enumerate{
+\item Retains only observations for the specified target species.
+\item Converts implicit missing values into explicit ones (e.g., filling in
+zeros for trips where the target species was not observed). Specifically,
+if a site/plot was visited in a specific year/trip, but without observing
+the target species, then the dataset will have a value of 0 for that row.
+}
 }
 \examples{
 bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))

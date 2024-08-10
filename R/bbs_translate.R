@@ -1,17 +1,26 @@
-#' Find species' scientific name
+#' Translate Bird Species' Chinese Common Name to Scientific Name
 #'
-#' @param target_species a single character or a vector of characters including species' name in Chinese
+#' This function is intended for use with the \link{bbs_fetch} function, which
+#' requires the `target_species` argument to be in scientific names. This function
+#' helps users find the scientific names of birds from their Chinese common names
+#' for species found in Taiwan.
 #'
-#' @return a vector of bird species' scientific name
+#' @param target_species A single character string or a vector of character strings
+#' representing species' names in Chinese.
+#'
+#' @return A vector of bird species' scientific names. If the input species name is not
+#' included in the bird list of Taiwan, `"The bird is not in the BBS list"` will be returned.
+#' Please check for any typos.
+#'
 #' @export
 #'
 #' @examples
-#' # For single species
+#' # For a single species
 #' bbs_translate("白頭翁")
 #'
 #' # For multiple species
-#' bbs_translate(c("烏頭翁", "白頭翁"))
-bbs_translate <- function(target_species) {
+#' bbs_translate(target_species = c("烏頭翁", "白頭翁"))
+bbs_translate <- function(target_species = NULL) {
 
   # sub function ----------------------------------------------------------
   decision <- function(target_species) {
