@@ -11,7 +11,7 @@ bbs_plotmap(target_species = NULL)
 the species of interest. It can accept a single character string, such as
 \code{target_species = "Hypsipetes leucocephalus"}, or a vector, such as
 \code{target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")}.
-Leave undefined or use \code{NULL} to return all species. Use the \link{bbs_translate}
+Leave undefined or use \code{NULL} to return no species. Use the \link{bbs_translate}
 function to help find the species' scientific names.}
 }
 \value{

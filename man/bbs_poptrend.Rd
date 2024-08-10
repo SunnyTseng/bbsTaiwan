@@ -4,7 +4,7 @@
 \alias{bbs_poptrend}
 \title{Calculate the population trend based on BBS data}
 \usage{
-bbs_poptrend(data, prop = 1)
+bbs_poptrend(data = NULL, prop = 1)
 }
 \arguments{
 \item{data}{a list object derived from the bbs_fetch() function}
@@ -19,5 +19,5 @@ some info here
 Calculate the population trend based on BBS data
 }
 \examples{
-bbs_poptrend(data = bbs_fetch(bbs_translate("金背鳩")))
+bbs_poptrend()
 }
