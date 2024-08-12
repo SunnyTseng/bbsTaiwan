@@ -8,7 +8,7 @@
 #'
 #' The source data comes from the event table in the GBIF dataset.
 #'
-#' @return A `tibble` including the coordinates of all BBS survey sites, in WGS84.
+#' @return A tibble including the coordinates of all BBS survey sites, in WGS84.
 #' @export
 #'
 #' @examples

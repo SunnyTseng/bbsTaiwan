@@ -6,5 +6,5 @@
 #' @format
 #' A sf object with 1 feature and 67 fields
 #'
-#' @source <https://geodata.mit.edu/catalog/stanford-dz142zj5454>
+#' @source <https://geodata.libraries.mit.edu>
 "tw_map"

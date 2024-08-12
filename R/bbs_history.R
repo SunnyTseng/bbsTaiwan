@@ -11,7 +11,9 @@
 #' year across regions.
 #' @export
 #'
-#' @examples
+#' @examplesIf rlang::is_interactive()
+#' # example code
+#'
 #' bbs_history(type = "table")
 bbs_history <- function(type = "plot") {
 

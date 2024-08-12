@@ -13,7 +13,7 @@
 #' the species of interest. It can accept a single character string, such as
 #' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
 #' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return all species. Use the \link{bbs_translate}
+#' Leave undefined or use `NULL` to return all species. Use the [bbs_translate]
 #' function to help find the species' scientific names.
 #'
 #' @return A `tibble` containing the species occurrence data.
