@@ -25,7 +25,9 @@ bbs_translate <- function(target_species = NULL) {
   # sub function ----------------------------------------------------------
   decision <- function(target_species) {
     if(!target_species %in% (bird_info$chineseName |> unlist())) {
-      return("The bird is not in the BBS list")
+      cli::cli_alert_warning("The bird is not in the BBS species list")
+      cli::cli_alert_warning("查無鳥名")
+      return("Bird undefined")
     }
 
     bird_name <- bird_info |>
