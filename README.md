@@ -7,8 +7,7 @@
 
 [![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
-stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ### 📑 Overview
@@ -20,6 +19,9 @@ GBIF, where Taiwan BBS data are stored. This work was supported by
 with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the
 mentor [Eunseop
 Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
+
+Visit the [package website](https://sunnytseng.github.io/bbsTaiwan/) for
+further information.
 
 ### 💻 Installation
 

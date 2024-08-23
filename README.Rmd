@@ -20,13 +20,15 @@ library(bbsTaiwan)
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-
+[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) 
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ### 📑 Overview
 
 The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. This work was supported by [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the mentor [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
+
+Visit the [package website](https://sunnytseng.github.io/bbsTaiwan/) for further information.
 
 ### 💻 Installation
 
