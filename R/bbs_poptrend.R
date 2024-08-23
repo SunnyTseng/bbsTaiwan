@@ -1,6 +1,6 @@
 #' Calculate the population trend based on BBS data
 #'
-#' @param data a list object derived from the bbs_fetch() function
+#' @param data a list object derived from [bbs_fetch]
 #' @param prop the proportion of observations to fit the population trend model.
 #' The lower value can reduce the
 #' @return some info here

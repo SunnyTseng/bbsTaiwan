@@ -19,3 +19,78 @@ library(bbsTaiwan)
 ```
 
 This is the vignettes page created by usethis::use_vignette("package_name"). It is the part we can write an article about the package!
+
+#### If you need raw Taiwan BBS dataset on GBIF:
+
+Taiwan BBS raw data can be accessed directly by typing the object name:
+
+```{r eval = FALSE}
+bbsTaiwan::occurrence
+bbsTaiwan::event
+bbsTaiwan::measurementorfacts
+bbsTaiwan::extendedmeasurementorfact
+```
+
+The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (DwC - A) format:
+
+-   Occurrence: lists a set of times and locations at which particular species have been recorded
+
+-   Event: lists includes the protocols used, the sample size, and the location for each
+
+-   Measurement or Facts: includes additional information relating to the events
+
+-   Extended Measurement or Fact: includes additional information relating to the taxon occurrences
+
+#### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
+
+This is a basic example which shows you how to use the package:
+
+1.  Check out the distribution of the BBS sites and the number of sites that have been surveyed throughout the years:
+
+```{r bbs_history}
+bbs_history(type = "plot")
+```
+
+```{r bbs_history_table}
+bbs_history(type = "table")
+```
+
+```{r bbs_plotmap_NULL}
+bbs_plotmap(NULL)
+```
+
+2.  Check all the sites that have been surveyed before
+
+```{r bbs_sites}
+bbs_sites()
+```
+
+2.  Look up the scientific name for species of interest
+
+```{r bbs_translate}
+bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
+```
+
+3.  Fetch the data for the species of interest. If you need the dataset across all species, leave the argument `target_species` as `NULL`.
+
+```{r bbs_fetch}
+x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
+```
+
+The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
+
+```{r bbs_fetch_out1}
+x
+```
+
+The function `bbs_fetch` can also take multiple species at the same time:
+
+```{r bbs_fetch_out3}
+x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
+```
+
+4.  View the distribution of all the occurrence for the target species within selected year range
+
+```{r bbs_plotmap}
+bbs_plotmap(bbs_translate(c("烏頭翁", "白頭翁")))
+```
