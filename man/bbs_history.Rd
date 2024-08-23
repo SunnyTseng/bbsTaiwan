@@ -20,9 +20,5 @@ Taiwan project. Sites were mapped into five regions: East, West, South,
 North, and Mountain (elevation higher than 1,000 m).
 }
 \examples{
-\dontshow{if (rlang::is_interactive()) (if (getRversion() >= "3.4") withAutoprint else force)(\{ # examplesIf}
-# example code
-
 bbs_history(type = "table")
-\dontshow{\}) # examplesIf}
 }

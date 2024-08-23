@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' bbs_plotmap(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
-bbs_plotmap <- function(target_species = NULL) {
+bbs_plotmap <- function(target_species) {
 
   # prepare taiwan map and elevation ----------------------------------------
   tw_elev_terra <- tw_elev |>
@@ -59,14 +59,19 @@ bbs_plotmap <- function(target_species = NULL) {
                      plot.title = ggplot2::element_text(hjust = 0.5)) +
       ggplot2::ggtitle(paste("Taiwan BBS All Sites"))
 
+  } else if (checkmate::test_null(bbs_translate(target_species))) {
+    distribution_map <- NULL
+
   } else {
     checkmate::assert_character(
       target_species,
-      min.len = 1
+      min.len = 1,
+      max.len = 10
     )
 
     # data preparation ------------------------------------------------------
-    data <- bbs_fetch(target_species)
+    data <- target_species |>
+      bbs_fetch()
 
     # sites with and without target species
     bird_site <- data |>

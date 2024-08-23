@@ -20,14 +20,14 @@
 #'
 #' # For multiple species
 #' bbs_translate(target_species = c("烏頭翁", "白頭翁"))
-bbs_translate <- function(target_species = NULL) {
+bbs_translate <- function(target_species) {
 
   # sub function ----------------------------------------------------------
   decision <- function(target_species) {
     if(!target_species %in% (bird_info$chineseName |> unlist())) {
       cli::cli_alert_warning("The bird is not in the BBS species list")
       cli::cli_alert_warning("查無鳥名")
-      return("Bird undefined")
+      return(NA)
     }
 
     bird_name <- bird_info |>
@@ -49,7 +49,8 @@ bbs_translate <- function(target_species = NULL) {
   # main function body ----------------------------------------------------
   bird_name <- target_species |>
     purrr::map(decision) |>
-    base::unlist()
+    base::unlist() |>
+    (\(x) if (anyNA(x)) NULL else x)()
 
   return(bird_name)
 }

@@ -22,6 +22,7 @@ Config/testthat/parallel: true
 LazyData: true
 Imports: 
     checkmate,
+    cli,
     dplyr,
     ggplot2,
     lifecycle,

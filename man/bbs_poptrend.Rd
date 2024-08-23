@@ -18,6 +18,4 @@ some info here
 \description{
 Calculate the population trend based on BBS data
 }
-\examples{
-bbs_poptrend()
-}
+\keyword{internal}

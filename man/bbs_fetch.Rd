@@ -4,7 +4,7 @@
 \alias{bbs_fetch}
 \title{Fetch BBS Occurrence Data by Species}
 \usage{
-bbs_fetch(target_species = NULL)
+bbs_fetch(target_species)
 }
 \arguments{
 \item{target_species}{Character string specifying the scientific name of

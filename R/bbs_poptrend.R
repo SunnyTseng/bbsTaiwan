@@ -3,12 +3,9 @@
 #' @param data a list object derived from the bbs_fetch() function
 #' @param prop the proportion of observations to fit the population trend model.
 #' The lower value can reduce the
-#'
 #' @return some info here
-#' @export
 #'
-#' @examples
-#' bbs_poptrend()
+#' @keywords internal
 bbs_poptrend <- function(data = NULL, prop = 1) {
 
 
