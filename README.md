@@ -18,9 +18,9 @@ population trend modelling. Users can tailor species analysis,
 controlling data stratification, preparation, and modeling. The goal is
 to expand Taiwan BBS data access to the broader R-society in Taiwan.
 
-## 📑 Background
+### 📑 Overview
 
-## 💻 Set up
+### 💻 Installation
 
 You can install and load the development version of bbsTaiwan from
 [GitHub](https://github.com/) with:
@@ -33,9 +33,33 @@ devtools::install_github("SunnyTseng/bbsTaiwan")
 library(bbsTaiwan)
 ```
 
-## ⛺ How to use
+### ⛺ Main functions
 
-### If you need raw Taiwan BBS dataset on GBIF:
+bbsTaiwan provides several intuitive imported datasets and data
+processing functions. For accessing the raw Taiwan BBS dataset that is
+on GBIF:
+
+- occurrence
+
+- event
+
+- measurementorfacts
+
+- extendedmeasurementorfact
+
+To perform basic data retrieval and visualization:
+
+- bbs_translate
+
+- bbs_fetch
+
+- bbs_plotmap
+
+- bbs_history
+
+- bbs\_
+
+#### If you need raw Taiwan BBS dataset on GBIF:
 
 Taiwan BBS raw data can be accessed directly by typing the object name:
 
@@ -61,7 +85,7 @@ Archive (DwC - A) format:
 - Extended Measurement or Fact: includes additional information relating
   to the taxon occurrences
 
-### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
+#### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
 
 This is a basic example which shows you how to use the package:
 
@@ -99,25 +123,20 @@ bbs_plotmap(NULL)
 
 ``` r
 bbs_sites()
-#> # A tibble: 4,160 × 20
-#>    id      eventID parentEventID samplingProtocol sampleSizeValue sampleSizeUnit
-#>    <chr>   <chr>   <chr>         <chr>                      <dbl> <chr>         
-#>  1 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  2 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  3 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  4 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  5 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  6 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  7 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  8 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  9 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#> 10 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
+#> # A tibble: 4,160 × 6
+#>    site   plot  locationID locality   decimalLatitude decimalLongitude
+#>    <chr>  <chr> <chr>      <chr>                <dbl>            <dbl>
+#>  1 A02-01 01    A02-01_01  台北縣瑞芳            25.1             122.
+#>  2 A02-01 02    A02-01_02  台北縣瑞芳            25.1             122.
+#>  3 A02-01 03    A02-01_03  台北縣瑞芳            25.1             122.
+#>  4 A02-01 04    A02-01_04  台北縣瑞芳            25.1             122.
+#>  5 A02-01 05    A02-01_05  台北縣瑞芳            25.1             122.
+#>  6 A02-01 06    A02-01_06  台北縣瑞芳            25.1             122.
+#>  7 A02-01 07    A02-01_07  台北縣瑞芳            25.1             122.
+#>  8 A02-01 08    A02-01_08  台北縣瑞芳            25.1             122.
+#>  9 A02-01 09    A02-01_09  台北縣瑞芳            25.1             122.
+#> 10 A02-01 10    A02-01_10  台北縣瑞芳            25.1             122.
 #> # ℹ 4,150 more rows
-#> # ℹ 14 more variables: samplingEffort <chr>, eventDate <date>, eventTime <chr>,
-#> #   locationID <chr>, country <chr>, countryCode <chr>, locality <chr>,
-#> #   decimalLatitude <dbl>, decimalLongitude <dbl>, geodeticDatum <chr>,
-#> #   coordinateUncertaintyInMeters <dbl>, coordinatePrecision <dbl>, site <chr>,
-#> #   plot <chr>
 ```
 
 2.  Look up the scientific name for species of interest
@@ -133,6 +152,8 @@ bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
 
 ``` r
 x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
+#> ! The bird is not in the BBS species list
+#> ! 查無鳥名
 ```
 
 The output from `bbs_fetch` is a list with two elements: `occurrence`
@@ -141,23 +162,7 @@ for the target species within selected year range
 
 ``` r
 x
-#> # A tibble: 36,385 × 16
-#>     year month   day site   locationID decimalLatitude decimalLongitude weather
-#>    <dbl> <dbl> <dbl> <chr>  <chr>                <dbl>            <dbl> <chr>  
-#>  1  2009     4    19 B14-01 B14-01_10             24.4             121. <NA>   
-#>  2  2009     6     7 B13-01 B13-01_06             24.5             121. <NA>   
-#>  3  2009     6    25 B13-01 B13-01_06             24.5             121. <NA>   
-#>  4  2009     5    26 B13-01 B13-01_05             24.5             121. <NA>   
-#>  5  2009     6     7 B13-01 B13-01_05             24.5             121. <NA>   
-#>  6  2009     5    26 B13-01 B13-01_03             24.5             121. <NA>   
-#>  7  2009     6     7 B13-01 B13-01_03             24.5             121. <NA>   
-#>  8  2009     6    25 B13-01 B13-01_01             24.5             121. <NA>   
-#>  9  2009     6     7 B13-01 B13-01_07             24.5             121. <NA>   
-#> 10  2009     5    29 B13-01 B13-01_08             24.5             121. <NA>   
-#> # ℹ 36,375 more rows
-#> # ℹ 8 more variables: wind <chr>, habitat <chr>, scientificName <chr>,
-#> #   vernacularName <chr>, individualCount <dbl>, time_slot <chr>,
-#> #   distance <chr>, flock <chr>
+#> NULL
 ```
 
 The function `bbs_fetch` can also take multiple species at the same
@@ -165,6 +170,10 @@ time:
 
 ``` r
 x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
+#> ! The bird is not in the BBS species list
+#> ! 查無鳥名
+#> ! The bird is not in the BBS species list
+#> ! 查無鳥名
 ```
 
 4.  View the distribution of all the occurrence for the target species
@@ -172,6 +181,9 @@ x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
 
 ``` r
 bbs_plotmap(bbs_translate(c("烏頭翁", "白頭翁")))
+#> ! The bird is not in the BBS species list
+#> ! 查無鳥名
+#> ! The bird is not in the BBS species list
+#> ! 查無鳥名
+#> NULL
 ```
-
-<img src="man/figures/README-bbs_plotmap-1.png" width="100%" />
