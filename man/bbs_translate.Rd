@@ -4,7 +4,7 @@
 \alias{bbs_translate}
 \title{Translate Bird Species' Chinese Common Name to Scientific Name}
 \usage{
-bbs_translate(target_species = NULL)
+bbs_translate(target_species)
 }
 \arguments{
 \item{target_species}{A single character string or a vector of character strings

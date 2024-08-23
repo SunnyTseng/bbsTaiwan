@@ -15,7 +15,4 @@ a tibble containing basic stats for fetched data
 \description{
 Summarizing basic statistics for BBS data, highlighting the trend of specific species.
 }
-\examples{
-bbs_stat()
-
-}
+\keyword{internal}

@@ -4,7 +4,7 @@
 \alias{bbs_plotmap}
 \title{Visualize Species Distribution Across All BBS Sites}
 \usage{
-bbs_plotmap(target_species = NULL)
+bbs_plotmap(target_species)
 }
 \arguments{
 \item{target_species}{Character string specifying the scientific name of

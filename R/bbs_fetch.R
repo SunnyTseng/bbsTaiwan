@@ -21,18 +21,24 @@
 #'
 #' @examples
 #' bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
-bbs_fetch <- function(target_species = NULL) {
+bbs_fetch <- function(target_species) {
 
   # argument check ----------------------------------------------------------
   if (checkmate::test_null(target_species)) {
     return(NULL)
+
   } else if (any(target_species %in% c("all", "All", "所有", "全部"))){
     target_species <- bird_info |> dplyr::pull(scientificName)
+
+  } else if (checkmate::test_null(bbs_translate(target_species))){
+    return(NULL)
+
   } else {
     checkmate::assert_character(
       target_species,
-      min.len = 1
-    )
+      min.len = 1)
+
+    target_species <- target_species |> bbs_translate()
   }
 
 

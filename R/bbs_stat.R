@@ -3,12 +3,9 @@
 #' Summarizing basic statistics for BBS data, highlighting the trend of specific species.
 #'
 #' @param data a list object derived from the bbs_fetch() function
-#'
 #' @return a tibble containing basic stats for fetched data
-#' @export
 #'
-#' @examples
-#' bbs_stat()
+#' @keywords internal
 #'
 bbs_stat <- function(data = NULL) {
 
