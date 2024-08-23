@@ -2,13 +2,13 @@
 #'
 #' This function visualizes the sites surveyed for breeding birds in Taiwan,
 #' highlighting the presence and absence of specific species. It is designed
-#' upon the function \link{bbs_fetch}.
+#' upon the function [bbs_fetch].
 #'
 #' @param target_species Character string specifying the scientific name of
 #' the species of interest. It can accept a single character string, such as
 #' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
 #' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return no species. Use the \link{bbs_translate}
+#' Leave undefined or use `NULL` to return no species. Use the [bbs_translate]
 #' function to help find the species' scientific names.
 #'
 #' @return A `ggplot` object showing the distribution map.

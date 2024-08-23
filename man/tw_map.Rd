@@ -8,7 +8,7 @@
 A sf object with 1 feature and 67 fields
 }
 \source{
-\url{https://geodata.mit.edu/catalog/stanford-dz142zj5454}
+\url{https://geodata.libraries.mit.edu}
 }
 \usage{
 tw_map

@@ -8,7 +8,7 @@
 #'
 #' The source data comes from the event table in the GBIF dataset.
 #'
-#' @return A `tibble` including the coordinates of all BBS survey sites, in WGS84.
+#' @return A tibble including the coordinates of all BBS survey sites, in WGS84.
 #' @export
 #'
 #' @examples
@@ -19,7 +19,8 @@ bbs_sites <- function() {
     dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3),
                   plot = stringr::str_split_i(id, pattern = "_", i = 4)) |>
     tidyr::drop_na(site, plot, locationID, decimalLatitude, decimalLongitude) |>
-    dplyr::distinct(locationID, .keep_all = TRUE)
+    dplyr::distinct(locationID, .keep_all = TRUE) |>
+    dplyr::select(site, plot, locationID, locality, decimalLatitude, decimalLongitude)
 
   return(year_location_trip)
 }

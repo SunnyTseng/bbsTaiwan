@@ -1,6 +1,6 @@
 #' Translate Bird Species' Chinese Common Name to Scientific Name
 #'
-#' This function is intended for use with the \link{bbs_fetch} function, which
+#' This function is intended for use with the [bbs_fetch] function, which
 #' requires the `target_species` argument to be in scientific names. This function
 #' helps users find the scientific names of birds from their Chinese common names
 #' for species found in Taiwan.
@@ -25,7 +25,9 @@ bbs_translate <- function(target_species = NULL) {
   # sub function ----------------------------------------------------------
   decision <- function(target_species) {
     if(!target_species %in% (bird_info$chineseName |> unlist())) {
-      return("The bird is not in the BBS list")
+      cli::cli_alert_warning("The bird is not in the BBS species list")
+      cli::cli_alert_warning("查無鳥名")
+      return("Bird undefined")
     }
 
     bird_name <- bird_info |>

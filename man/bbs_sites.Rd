@@ -7,7 +7,7 @@
 bbs_sites()
 }
 \value{
-A \code{tibble} including the coordinates of all BBS survey sites, in WGS84.
+A tibble including the coordinates of all BBS survey sites, in WGS84.
 }
 \description{
 This function returns the coordinates of all BBS sites that were surveyed.

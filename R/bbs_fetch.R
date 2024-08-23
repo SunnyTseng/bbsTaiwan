@@ -13,7 +13,7 @@
 #' the species of interest. It can accept a single character string, such as
 #' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
 #' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return all species. Use the \link{bbs_translate}
+#' Leave undefined or use `NULL` to return all species. Use the [bbs_translate]
 #' function to help find the species' scientific names.
 #'
 #' @return A `tibble` containing the species occurrence data.
@@ -25,6 +25,8 @@ bbs_fetch <- function(target_species = NULL) {
 
   # argument check ----------------------------------------------------------
   if (checkmate::test_null(target_species)) {
+    return(NULL)
+  } else if (any(target_species %in% c("all", "All", "所有", "全部"))){
     target_species <- bird_info |> dplyr::pull(scientificName)
   } else {
     checkmate::assert_character(
@@ -82,22 +84,30 @@ bbs_fetch <- function(target_species = NULL) {
 
 
   # zero control for all the point counts sites & species observation -------
-  occurrence_zero <- occurrence_filter |>
-    # add zero for each point count and each target species
-    dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
-                      by = dplyr::join_by(id == id, scientificName == scientificName)) |>
-    dplyr::mutate(individualCount = dplyr::if_else(is.na(individualCount), 0, individualCount)) |>
-    # remove sites that never detected the species
-    # dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
-    # dplyr::group_by(site, scientificName) |>
-    # dplyr::filter(base::sum(individualCount) != 0) |>
-    # dplyr::ungroup() |>
-    # add necessary column to the zero rows for the join purpose
-    dplyr::mutate(locationID = dplyr::if_else(is.na(locationID),
-                                              base::paste0(stringr::str_split_i(id, pattern = "_", i = 3)
-                                                           ,"_",
-                                                           stringr::str_split_i(id, pattern = "_", i = 4)),
-                                              locationID))
+
+  if (base::length(target_species) <= 10){
+
+    occurrence_zero <- occurrence_filter |>
+      # add zero for each point count and each target species
+      dplyr::right_join(tidyr::expand_grid(id = event_info$id, scientificName = target_species),
+                        by = dplyr::join_by(id == id, scientificName == scientificName)) |>
+      dplyr::mutate(individualCount = dplyr::if_else(is.na(individualCount), 0, individualCount)) |>
+      # remove sites that never detected the species
+      # dplyr::mutate(site = stringr::str_split_i(id, pattern = "_", i = 3)) |>
+      # dplyr::group_by(site, scientificName) |>
+      # dplyr::filter(base::sum(individualCount) != 0) |>
+      # dplyr::ungroup() |>
+      # add necessary column to the zero rows for the join purpose
+      dplyr::mutate(locationID = dplyr::if_else(is.na(locationID),
+                                                base::paste0(stringr::str_split_i(id, pattern = "_", i = 3)
+                                                             ,"_",
+                                                             stringr::str_split_i(id, pattern = "_", i = 4)),
+                                                locationID))
+  } else {
+    occurrence_zero <- occurrence_filter
+  }
+
+
 
 
   # link event info, occurrence info, bird info, and site info --------------
