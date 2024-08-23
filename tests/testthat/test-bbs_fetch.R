@@ -8,6 +8,11 @@ test_that("return all species when the input is 'all'", {
 })
 
 test_that("return the species specified according to input", {
-  expect_identical(object = bbs_fetch(bbs_translate(c("深山竹雞", "藍腹鷴", "帝雉"))),
-                   expected = bbs_fetch(bbs_translate(c("藍腹鷴", "帝雉", "深山竹雞"))))
+  expect_identical(object = bbs_fetch(bbs_translate(c("深山竹雞", "藍腹鷴", "帝雉")) |> dim()),
+                   expected = bbs_fetch(bbs_translate(c("藍腹鷴", "帝雉", "深山竹雞")) |> dim()))
+})
+
+test_that("include one species", {
+  expect_equal(object = bbs_fetch("Lophura swinhoii") |> dim(),
+               expected = c(35851, 16))
 })
