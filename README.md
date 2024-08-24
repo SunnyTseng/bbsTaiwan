@@ -8,9 +8,10 @@
 [![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 <!-- badges: end -->
 
-### 📑 Overview
+### Overview 📑
 
 The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey
 (BBS) data retrieval and analysis. It will support data retrieval from
@@ -20,20 +21,21 @@ with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the
 mentor [Eunseop
 Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
 
-Visit the [package website](https://sunnytseng.github.io/bbsTaiwan/) for
-further information.
+- [Package website](#0)
 
-### 💻 Installation
+- Package cheatsheet
+
+### Installation 💻
 
 You can install and load the development version of `bbsTaiwan` from
-[GitHub](https://github.com/) with:
+Github with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
 ```
 
-### ⛺ Main functions
+### Main functions ⛺
 
 `bbsTaiwan` provides several intuitive imported datasets and data
 processing functions. For accessing the raw Taiwan BBS dataset on GBIF:
@@ -63,7 +65,7 @@ To perform basic data retrieval and visualization:
 
 - `bbs_sites()` return the coordinates of sll BBS sites
 
-### 💡 Usage
+### Usage 💡
 
 ``` r
 library(bbsTaiwan)

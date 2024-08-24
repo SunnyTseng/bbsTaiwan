@@ -20,26 +20,32 @@ library(bbsTaiwan)
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) 
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 <!-- badges: end -->
 
-### 📑 Overview
+### Overview 📑
 
 The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. This work was supported by [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the mentor [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
 
-Visit the [package website](https://sunnytseng.github.io/bbsTaiwan/) for further information.
+The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version XXX) and we will updated once new dataset is published
 
-### 💻 Installation
+-   Package cheatsheet
 
-You can install and load the development version of `bbsTaiwan` from [GitHub](https://github.com/) with:
+-   Package introduction
+
+-   Package case study
+
+### Installation 💻
+
+You can install and load the development version of `bbsTaiwan` from Github with:
 
 ```{r eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
 ```
 
-### ⛺ Main functions
+### Main functions ⛺
 
 `bbsTaiwan` provides several intuitive imported datasets and data processing functions. For accessing the raw Taiwan BBS dataset on GBIF:
 
@@ -63,7 +69,7 @@ To perform basic data retrieval and visualization:
 
 -   `bbs_sites()` return the coordinates of sll BBS sites
 
-### 💡 Usage
+### Usage 💡
 
 ```{r}
 library(bbsTaiwan)
