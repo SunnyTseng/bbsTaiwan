@@ -20,7 +20,7 @@ library(bbsTaiwan)
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
@@ -30,11 +30,9 @@ The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey (BBS) data
 
 The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version XXX) and we will updated once new dataset is published
 
--   Package cheatsheet
+-   General introduction of the functionalities
 
--   Package introduction
-
--   Package case study
+-   Case study with the package
 
 ### Installation 💻
 

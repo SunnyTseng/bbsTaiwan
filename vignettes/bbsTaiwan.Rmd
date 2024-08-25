@@ -27,7 +27,9 @@ library(patchwork)
 
 ### Introduction
 
-Hello birder! Importance of using the data but find it super hard to read GBIF.
+Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. Although the open-source data is available on GBIF, its complex arrangement in Darwin Core format can make it difficult to understand and utilize, requiring a certain level of data wrangling skills. The `bbsTaiwan` package is designed to make accessing and using Taiwan BBS data easier.
+
+In this article, we aim to demonstrate the general applications you can perform with this package. We will also provide a case study to show the types of research you can conduct using `bbsTaiwan()`. Enjoy coding with birdies!
 
 ### Overview of BBS Surveying Effort
 
@@ -95,5 +97,3 @@ occurrence
 event
 measurementorfacts
 ```
-
-We will also provide a case study to demonstrate the types of research you can conduct using `bbsTaiwan()`. Enjoy coding with birdies!

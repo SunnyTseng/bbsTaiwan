@@ -5,7 +5,6 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
@@ -21,9 +20,12 @@ with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the
 mentor [Eunseop
 Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
 
-- [Package website](#0)
+The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version
+XXX) and we will updated once new dataset is published
 
-- Package cheatsheet
+- General introduction of the functionalities
+
+- Case study with the package
 
 ### Installation 💻
 
