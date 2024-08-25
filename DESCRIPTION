@@ -26,6 +26,7 @@ Imports:
     dplyr,
     ggplot2,
     lifecycle,
+    patchwork,
     poptrend,
     purrr,
     stringr,
