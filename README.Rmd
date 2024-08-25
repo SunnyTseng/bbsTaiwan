@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 library(bbsTaiwan)
 ```
 
-# bbsTaiwan
+# bbsTaiwan <a href="https://sunnytseng.github.io/bbsTaiwan/"><img src="man/figures/logo.png" alt="bbsTaiwan website" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
@@ -30,11 +30,13 @@ The goal of `bbsTaiwan` is to streamline the retrieval and analysis of Taiwan Br
 
 This project was supported by the [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with [Sunny Tseng](https://sunnytseng.ca/) as the main developer and [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/) as the mentor.
 
+-   [Get Started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)
+
+-   Black Bulbul case study
+
+### Version 🔖
+
 **`bbsTaiwan` v1.0.0 (Initial Release):** Developed based on the GBIF Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.
-
--   General introductio
-
--   Case study with the package
 
 ### Installation 💻
 
@@ -71,7 +73,7 @@ To perform basic data retrieval and visualization:
 
 ### Usage 💡
 
-```{r}
+```{r example}
 library(bbsTaiwan)
 
 ## Get data for species of interest

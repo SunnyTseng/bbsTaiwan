@@ -16,10 +16,9 @@ included in the bird list of Taiwan, \code{"The bird is not in the BBS list"} wi
 Please check for any typos.
 }
 \description{
-This function is intended for use with the \link{bbs_fetch} function, which
-requires the \code{target_species} argument to be in scientific names. This function
-helps users find the scientific names of birds from their Chinese common names
-for species found in Taiwan.
+This function is intended for use with \link{bbs_fetch} and \link{bbs_plotmap}.
+This function helps users find the scientific names of birds from their
+Chinese common names for species found in Taiwan.
 }
 \examples{
 # For a single species

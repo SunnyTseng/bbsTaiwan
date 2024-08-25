@@ -7,7 +7,7 @@
 bbs_poptrend(data = NULL, prop = 1)
 }
 \arguments{
-\item{data}{a list object derived from the bbs_fetch() function}
+\item{data}{a list object derived from \link{bbs_fetch}}
 
 \item{prop}{the proportion of observations to fit the population trend model.
 The lower value can reduce the}

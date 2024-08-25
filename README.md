@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# bbsTaiwan
+# bbsTaiwan <a href="https://sunnytseng.github.io/bbsTaiwan/"><img src="man/figures/logo.png" alt="bbsTaiwan website" align="right" height="139"/></a>
 
 <!-- badges: start -->
 
@@ -12,20 +12,30 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 ### Overview 📑
 
-The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey
-(BBS) data retrieval and analysis. It will support data retrieval from
-GBIF, where Taiwan BBS data are stored. This work was supported by
-[rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024,
-with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the
-mentor [Eunseop
-Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
+The goal of `bbsTaiwan` is to streamline the retrieval and analysis of
+Taiwan Breeding Bird Survey (BBS) data. This package facilitates data
+access from GBIF, where Taiwan BBS data are stored. While the data is
+openly available on GBIF, its complex arrangement in the Darwin Core
+format can make it challenging to understand and use, often requiring
+advanced data wrangling skills. The `bbsTaiwan` package is designed to
+simplify this process, making it easier to access and utilize Taiwan BBS
+data.
 
-The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version
-XXX) and we will updated once new dataset is published
+This project was supported by the [rOpenSci Champions
+Program](https://ropensci.org/champions/) 2023-2024, with [Sunny
+Tseng](https://sunnytseng.ca/) as the main developer and [Eunseop
+Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/)
+as the mentor.
 
-- General introduction of the functionalities
+- [Get
+  Started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)
 
-- Case study with the package
+- Black Bulbul case study
+
+### Version 🔖
+
+**`bbsTaiwan` v1.0.0 (Initial Release):** Developed based on the GBIF
+Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.
 
 ### Installation 💻
 
@@ -96,4 +106,4 @@ bbs_fetch(c("白頭翁", "烏頭翁"))
 bbs_plotmap(c("白頭翁", "烏頭翁"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-example-1.png" width="100%" />

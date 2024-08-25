@@ -7,7 +7,7 @@
 bbs_stat(data = NULL)
 }
 \arguments{
-\item{data}{a list object derived from the bbs_fetch() function}
+\item{data}{a list object derived from \link{bbs_fetch} function}
 }
 \value{
 a tibble containing basic stats for fetched data
