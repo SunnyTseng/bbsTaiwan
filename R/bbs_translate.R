@@ -1,9 +1,8 @@
 #' Translate Bird Species' Chinese Common Name to Scientific Name
 #'
-#' This function is intended for use with the [bbs_fetch] function, which
-#' requires the `target_species` argument to be in scientific names. This function
-#' helps users find the scientific names of birds from their Chinese common names
-#' for species found in Taiwan.
+#' This function is intended for use with [bbs_fetch] and [bbs_plotmap].
+#' This function helps users find the scientific names of birds from their
+#' Chinese common names for species found in Taiwan.
 #'
 #' @param target_species A single character string or a vector of character strings
 #' representing species' names in Chinese.

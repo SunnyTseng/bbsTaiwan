@@ -5,173 +5,95 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
-The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey
+### Overview 📑
+
+The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey
 (BBS) data retrieval and analysis. It will support data retrieval from
-GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the
-population trend modelling. Users can tailor species analysis,
-controlling data stratification, preparation, and modeling. The goal is
-to expand Taiwan BBS data access to the broader R-society in Taiwan.
+GBIF, where Taiwan BBS data are stored. This work was supported by
+[rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024,
+with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the
+mentor [Eunseop
+Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
 
-## 📑 Background
+The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version
+XXX) and we will updated once new dataset is published
 
-## 💻 Set up
+- General introduction of the functionalities
 
-You can install and load the development version of bbsTaiwan from
-[GitHub](https://github.com/) with:
+- Case study with the package
+
+### Installation 💻
+
+You can install and load the development version of `bbsTaiwan` from
+Github with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
+```
 
-# load the package
+### Main functions ⛺
+
+`bbsTaiwan` provides several intuitive imported datasets and data
+processing functions. For accessing the raw Taiwan BBS dataset on GBIF:
+
+- `occurrence`: times and locations at which particular species have
+  been recorded
+
+- `event`: the protocols used, the sample size, and the location for
+  each
+
+- `measurementorfacts`: additional information relating to the events
+
+- `extendedmeasurementorfact`: additional information relating to the
+  taxon occurrences
+
+To perform basic data retrieval and visualization:
+
+- `bbs_translate()` translate bird species’ Chinese common name to
+  scientific name
+
+- `bbs_fetch()` fetch the cleaned version of Taiwan BBS cccurrence data
+  by species
+
+- `bbs_plotmap()` visualize species distribution across all BBS sites
+
+- `bbs_history()` examine the number of BBS sites surveyed each year
+
+- `bbs_sites()` return the coordinates of sll BBS sites
+
+### Usage 💡
+
+``` r
 library(bbsTaiwan)
-```
 
-## ⛺ How to use
-
-### If you need raw Taiwan BBS dataset on GBIF:
-
-Taiwan BBS raw data can be accessed directly by typing the object name:
-
-``` r
-bbsTaiwan::occurrence
-bbsTaiwan::event
-bbsTaiwan::measurementorfacts
-bbsTaiwan::extendedmeasurementorfact
-```
-
-The complete Taiwan BBS dataset on GBIF is following the Darwin Core
-Archive (DwC - A) format:
-
-- Occurrence: lists a set of times and locations at which particular
-  species have been recorded
-
-- Event: lists includes the protocols used, the sample size, and the
-  location for each
-
-- Measurement or Facts: includes additional information relating to the
-  events
-
-- Extended Measurement or Fact: includes additional information relating
-  to the taxon occurrences
-
-### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
-
-This is a basic example which shows you how to use the package:
-
-1.  Check out the distribution of the BBS sites and the number of sites
-    that have been surveyed throughout the years:
-
-``` r
-bbs_history(type = "plot")
-```
-
-<img src="man/figures/README-bbs_history-1.png" width="100%" />
-
-``` r
-bbs_history(type = "table")
-#> # A tibble: 8 × 6
-#>   year   East Mountain North  West Others
-#>   <chr> <int>    <int> <int> <int>  <int>
-#> 1 2009     31       41    24    52      0
-#> 2 2010     30       26    25    57      2
-#> 3 2011     24       37    55   134      3
-#> 4 2012     31       47    88   142      3
-#> 5 2013     28       43    80   138      2
-#> 6 2014     36       46    91   118      2
-#> 7 2015     36       49   112   143     12
-#> 8 2016     38       42    98   157      2
-```
-
-``` r
-bbs_plotmap(NULL)
-```
-
-<img src="man/figures/README-bbs_plotmap_NULL-1.png" width="100%" />
-
-2.  Check all the sites that have been surveyed before
-
-``` r
-bbs_sites()
-#> # A tibble: 4,160 × 20
-#>    id      eventID parentEventID samplingProtocol sampleSizeValue sampleSizeUnit
-#>    <chr>   <chr>   <chr>         <chr>                      <dbl> <chr>         
-#>  1 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  2 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  3 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  4 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  5 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  6 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  7 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  8 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#>  9 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#> 10 TWBBS_… TWBBS_… TWBBS_2009_A… Point count               31416. square metre  
-#> # ℹ 4,150 more rows
-#> # ℹ 14 more variables: samplingEffort <chr>, eventDate <date>, eventTime <chr>,
-#> #   locationID <chr>, country <chr>, countryCode <chr>, locality <chr>,
-#> #   decimalLatitude <dbl>, decimalLongitude <dbl>, geodeticDatum <chr>,
-#> #   coordinateUncertaintyInMeters <dbl>, coordinatePrecision <dbl>, site <chr>,
-#> #   plot <chr>
-```
-
-2.  Look up the scientific name for species of interest
-
-``` r
-bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
-#> [1] "Pycnonotus sinensis"          "Pycnonotus taivanus"         
-#> [3] "Trochalopteron morrisonianum"
-```
-
-3.  Fetch the data for the species of interest. If you need the dataset
-    across all species, leave the argument `target_species` as `NULL`.
-
-``` r
-x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
-```
-
-The output from `bbs_fetch` is a list with two elements: `occurrence`
-and `site_info`. `occurrence` is a tibble, showing all the observations
-for the target species within selected year range
-
-``` r
-x
-#> # A tibble: 36,385 × 16
+## Get data for species of interest
+bbs_fetch(c("白頭翁", "烏頭翁"))
+#> # A tibble: 92,475 × 16
 #>     year month   day site   locationID decimalLatitude decimalLongitude weather
 #>    <dbl> <dbl> <dbl> <chr>  <chr>                <dbl>            <dbl> <chr>  
-#>  1  2009     4    19 B14-01 B14-01_10             24.4             121. <NA>   
-#>  2  2009     6     7 B13-01 B13-01_06             24.5             121. <NA>   
-#>  3  2009     6    25 B13-01 B13-01_06             24.5             121. <NA>   
-#>  4  2009     5    26 B13-01 B13-01_05             24.5             121. <NA>   
-#>  5  2009     6     7 B13-01 B13-01_05             24.5             121. <NA>   
-#>  6  2009     5    26 B13-01 B13-01_03             24.5             121. <NA>   
-#>  7  2009     6     7 B13-01 B13-01_03             24.5             121. <NA>   
-#>  8  2009     6    25 B13-01 B13-01_01             24.5             121. <NA>   
-#>  9  2009     6     7 B13-01 B13-01_07             24.5             121. <NA>   
-#> 10  2009     5    29 B13-01 B13-01_08             24.5             121. <NA>   
-#> # ℹ 36,375 more rows
+#>  1  2009     3    10 A02-01 A02-01_01             25.1             122. <NA>   
+#>  2  2009     3    10 A02-01 A02-01_01             25.1             122. <NA>   
+#>  3  2009     4     5 A02-01 A02-01_01             25.1             122. <NA>   
+#>  4  2009     4    26 A02-01 A02-01_01             25.1             122. <NA>   
+#>  5  2009     3    10 A02-01 A02-01_01             25.1             122. <NA>   
+#>  6  2009     4    26 A02-01 A02-01_01             25.1             122. <NA>   
+#>  7  2009     4     5 A02-01 A02-01_01             25.1             122. <NA>   
+#>  8  2009     4    26 A02-01 A02-01_02             25.1             122. <NA>   
+#>  9  2009     3    10 A02-01 A02-01_02             25.1             122. <NA>   
+#> 10  2009     4     5 A02-01 A02-01_02             25.1             122. <NA>   
+#> # ℹ 92,465 more rows
 #> # ℹ 8 more variables: wind <chr>, habitat <chr>, scientificName <chr>,
 #> #   vernacularName <chr>, individualCount <dbl>, time_slot <chr>,
 #> #   distance <chr>, flock <chr>
+
+## Find the distribution/overlap of two species
+bbs_plotmap(c("白頭翁", "烏頭翁"))
 ```
 
-The function `bbs_fetch` can also take multiple species at the same
-time:
-
-``` r
-x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
-```
-
-4.  View the distribution of all the occurrence for the target species
-    within selected year range
-
-``` r
-bbs_plotmap(bbs_translate(c("烏頭翁", "白頭翁")))
-```
-
-<img src="man/figures/README-bbs_plotmap-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />

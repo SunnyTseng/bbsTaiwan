@@ -20,99 +20,61 @@ library(bbsTaiwan)
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/SunnyTseng/bbsTaiwan/actions/workflows/R-CMD-check.yaml) [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
 
-The goal of bbsTaiwan is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. ‘bbsTrim’ will also include the population trend modelling. Users can tailor species analysis, controlling data stratification, preparation, and modeling. The goal is to expand Taiwan BBS data access to the broader R-society in Taiwan.
+### Overview 📑
 
-## 📑 Background
+The goal of `bbsTaiwan` is to streamline Taiwan Breeding Birds Survey (BBS) data retrieval and analysis. It will support data retrieval from GBIF, where Taiwan BBS data are stored. This work was supported by [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with the main developer [Sunny Tseng](https://sunnytseng.ca/) and the mentor [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/).
 
-## 💻 Set up
+The first version of bbsTaiwan is using 2009 to 2016 GBIF data (version XXX) and we will updated once new dataset is published
 
-You can install and load the development version of bbsTaiwan from [GitHub](https://github.com/) with:
+-   General introduction of the functionalities
+
+-   Case study with the package
+
+### Installation 💻
+
+You can install and load the development version of `bbsTaiwan` from Github with:
 
 ```{r eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("SunnyTseng/bbsTaiwan")
+```
 
-# load the package
+### Main functions ⛺
+
+`bbsTaiwan` provides several intuitive imported datasets and data processing functions. For accessing the raw Taiwan BBS dataset on GBIF:
+
+-   `occurrence`: times and locations at which particular species have been recorded
+
+-   `event`: the protocols used, the sample size, and the location for each
+
+-   `measurementorfacts`: additional information relating to the events
+
+-   `extendedmeasurementorfact`: additional information relating to the taxon occurrences
+
+To perform basic data retrieval and visualization:
+
+-   `bbs_translate()` translate bird species' Chinese common name to scientific name
+
+-   `bbs_fetch()` fetch the cleaned version of Taiwan BBS cccurrence data by species
+
+-   `bbs_plotmap()` visualize species distribution across all BBS sites
+
+-   `bbs_history()` examine the number of BBS sites surveyed each year
+
+-   `bbs_sites()` return the coordinates of sll BBS sites
+
+### Usage 💡
+
+```{r}
 library(bbsTaiwan)
-```
 
-## ⛺ How to use
+## Get data for species of interest
+bbs_fetch(c("白頭翁", "烏頭翁"))
 
-### If you need raw Taiwan BBS dataset on GBIF:
-
-Taiwan BBS raw data can be accessed directly by typing the object name:
-
-```{r eval = FALSE}
-bbsTaiwan::occurrence
-bbsTaiwan::event
-bbsTaiwan::measurementorfacts
-bbsTaiwan::extendedmeasurementorfact
-```
-
-The complete Taiwan BBS dataset on GBIF is following the Darwin Core Archive (DwC - A) format:
-
--   Occurrence: lists a set of times and locations at which particular species have been recorded
-
--   Event: lists includes the protocols used, the sample size, and the location for each
-
--   Measurement or Facts: includes additional information relating to the events
-
--   Extended Measurement or Fact: includes additional information relating to the taxon occurrences
-
-### `bbsTaiwan` also provide a workflow to process Taiwan BBS data:
-
-This is a basic example which shows you how to use the package:
-
-1.  Check out the distribution of the BBS sites and the number of sites that have been surveyed throughout the years:
-
-```{r bbs_history}
-bbs_history(type = "plot")
-```
-
-```{r bbs_history_table}
-bbs_history(type = "table")
-```
-
-```{r bbs_plotmap_NULL}
-bbs_plotmap(NULL)
-```
-
-2.  Check all the sites that have been surveyed before
-
-```{r bbs_sites}
-bbs_sites()
-```
-
-2.  Look up the scientific name for species of interest
-
-```{r bbs_translate}
-bbs_translate(c("白頭翁", "烏頭翁", "台灣噪眉"))
-```
-
-3.  Fetch the data for the species of interest. If you need the dataset across all species, leave the argument `target_species` as `NULL`.
-
-```{r bbs_fetch}
-x <- bbs_fetch(target_species = bbs_translate("火冠戴菊鳥"))
-```
-
-The output from `bbs_fetch` is a list with two elements: `occurrence` and `site_info`. `occurrence` is a tibble, showing all the observations for the target species within selected year range
-
-```{r bbs_fetch_out1}
-x
-```
-
-The function `bbs_fetch` can also take multiple species at the same time:
-
-```{r bbs_fetch_out3}
-x <- bbs_fetch(bbs_translate(c("烏頭翁", "白頭翁")))
-```
-
-4.  View the distribution of all the occurrence for the target species within selected year range
-
-```{r bbs_plotmap}
-bbs_plotmap(bbs_translate(c("烏頭翁", "白頭翁")))
+## Find the distribution/overlap of two species
+bbs_plotmap(c("白頭翁", "烏頭翁"))
 ```

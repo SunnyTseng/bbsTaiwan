@@ -1,5 +1,6 @@
 ---
-title: "bbsTaiwan"
+title: "Hello World! Get started with bbsTaiwan"
+author: "Sunny Tseng"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{bbsTaiwan}
@@ -10,12 +11,89 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  out.width = "100%"
 )
 ```
 
-```{r setup}
+```{r setup, warning = FALSE, message = FALSE}
 library(bbsTaiwan)
 ```
 
-This is the vignettes page created by usethis::use_vignette("package_name"). It is the part we can write an article about the package!
+```{r setup_noshow, warning = FALSE, message = FALSE, echo = FALSE}
+library(tidyverse)
+library(patchwork)
+```
+
+### Introduction
+
+Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. Although the open-source data is available on GBIF, its complex arrangement in Darwin Core format can make it difficult to understand and utilize, requiring a certain level of data wrangling skills. The `bbsTaiwan` package is designed to make accessing and using Taiwan BBS data easier.
+
+In this article, we aim to demonstrate the general applications you can perform with this package. We will also provide a case study to show the types of research you can conduct using `bbsTaiwan()`. Enjoy coding with birdies!
+
+### Overview of BBS Surveying Effort
+
+Before diving into the bird occurrence data, it's helpful to first understand when and where the surveys were conducted. This includes knowing the number of sites, their locations, and the number of sites surveyed each year. The `bbsTaiwan` package provides several functions to help you get started with understanding the surveying effort.
+
+To see the number of sites surveyed each year, you can use the `bbs_history()` function. This function has a `type` argument with two options: `"plot"` and `"table"`. Selecting `"plot"` will display the results as a `ggplot` graph, while `"table"` will show the results in a `tibble`.
+
+Additionally, the `bbs_plotmap()` function can be used to visualize the distribution of a particular species. If you set the argument to `NULL`, it will display the locations of all sites that have been surveyed historically.
+
+```{r effort_figure, eval = FALSE}
+bbs_history(type = "plot") 
+bbs_plotmap(target_species = NULL)
+```
+
+```{r effort_figure_noshow, echo = FALSE}
+bbs_history(type = "plot") + bbs_plotmap(target_species = NULL)
+```
+
+If you prefer to work with tables and see the values directly, `bbsTaiwan` has you covered! You can use the `bbs_history()` function with the `"table"` option to view the number of sites surveyed each year in a tabular format. Additionally, you can use the `bbs_sites()` function to access a complete list of sites and plots along with their coordinates.
+
+```{r effort_table}
+bbs_history(type = "table")
+bbs_sites()
+```
+
+### Data Fetch for Target Species
+
+Now we come to the core function `bbs_fetch()`. This function retrieves bird occurrence data from GBIF and summarizes it in a more understandable format. The original data format on GBIF, which includes event and occurrence data, is designed to be machine-readable but can be difficult for humans to interpret. `bbs_fetch()` addresses this by performing the following key steps:
+
+1.  **Join**: Combines the event, occurrence, and measurement or facts datasheets from GBIF into a single cohesive dataset.
+
+2.  **Filter**: Retains only the observations for specified species using the `target_species` argument.
+
+3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a site or plot was visited during a particular year or trip but the target species was not observed, the dataset will show a value of 0 for that row.
+
+```{r fetch_species}
+bbs_fetch(target_species = "白頭翁")
+bbs_fetch(target_species = c("烏頭翁", "白頭翁"))
+```
+
+Finding it hard to choose a specific target species and want to access the entire dataset for all species? One of the great features of `bbs_fetch()` is that you can set `target_species = "全部"` to retrieve the entire unfiltered dataset.
+
+```{r fetch_all}
+bbs_fetch(target_species = "全部")
+```
+
+### Distribution of Target Species
+
+Viewing the distribution of species (i.e., the sites where certain species have been observed) is straightforward. Simply use the `bbs_plotmap()` function and specify the species you are interested in. This function can handle up to 10 species at a time to prevent the plot from becoming too cluttered.
+
+```{r plot}
+bbs_plotmap(target_species = c("烏頭翁", "白頭翁"))
+```
+
+### What's Next?
+
+Not satisfied with the default functionality provided by `bbsTaiwan`? There are a few additional steps you can take beyond what this package offers:
+
+If you need to summarize the data in a customized way and ready to dive into data wrangling, consider using the raw data available on the GBIF repository. Working directly with the raw data allows you to fully understand the data cleaning process and create a customized data structure tailored to your study objectives.
+
+The raw data in Darwin Core format can be accessed easily by using the names of the relevant spreadsheets. These data objects are automatically loaded when you install the package.
+
+```{r raw_data, eval = FALSE}
+occurrence
+event
+measurementorfacts
+```
