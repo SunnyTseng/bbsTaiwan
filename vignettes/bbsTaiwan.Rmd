@@ -1,5 +1,5 @@
 ---
-title: "Hello World! Get started with bbsTaiwan"
+title: "bbsTaiwan"
 author: "Sunny Tseng"
 output: rmarkdown::html_vignette
 vignette: >
@@ -21,7 +21,6 @@ library(bbsTaiwan)
 ```
 
 ```{r setup_noshow, warning = FALSE, message = FALSE, echo = FALSE}
-library(tidyverse)
 library(patchwork)
 ```
 
