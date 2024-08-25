@@ -4,9 +4,11 @@
 \name{bbsTaiwan-package}
 \alias{bbsTaiwan}
 \alias{bbsTaiwan-package}
-\title{bbsTaiwan: What the Package Does (One Line, Title Case)}
+\title{bbsTaiwan: Streamline Taiwan Breeding Birds Survey (BBS) Data Retrieval and Analysis}
 \description{
-What the package does (one paragraph).
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
+The goal of bbsTaiwan is to streamline the retrieval and analysis of Taiwan Breeding Bird Survey (BBS) data. This package facilitates data access from GBIF, where Taiwan BBS data are stored. While the data is openly available on GBIF, its complex arrangement in the Darwin Core format can make it challenging to understand and use, often requiring advanced data wrangling skills. The bbsTaiwan package is designed to simplify this process, making it easier to access and utilize Taiwan BBS data.
 }
 \seealso{
 Useful links:

@@ -24,13 +24,13 @@ library(bbsTaiwan)
 library(patchwork)
 ```
 
-### Introduction
+## Introduction
 
 Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. Although the open-source data is available on GBIF, its complex arrangement in Darwin Core format can make it difficult to understand and utilize, requiring a certain level of data wrangling skills. The `bbsTaiwan` package is designed to make accessing and using Taiwan BBS data easier.
 
 In this article, we aim to demonstrate the general applications you can perform with this package. We will also provide a case study to show the types of research you can conduct using `bbsTaiwan()`. Enjoy coding with birdies!
 
-### Overview of BBS Surveying Effort
+## Overview of BBS Surveying Effort
 
 Before diving into the bird occurrence data, it's helpful to first understand when and where the surveys were conducted. This includes knowing the number of sites, their locations, and the number of sites surveyed each year. The `bbsTaiwan` package provides several functions to help you get started with understanding the surveying effort.
 
@@ -54,7 +54,7 @@ bbs_history(type = "table")
 bbs_sites()
 ```
 
-### Data Fetch for Target Species
+## Data Fetch for Target Species
 
 Now we come to the core function `bbs_fetch()`. This function retrieves bird occurrence data from GBIF and summarizes it in a more understandable format. The original data format on GBIF, which includes event and occurrence data, is designed to be machine-readable but can be difficult for humans to interpret. `bbs_fetch()` addresses this by performing the following key steps:
 
@@ -75,7 +75,7 @@ Finding it hard to choose a specific target species and want to access the entir
 bbs_fetch(target_species = "全部")
 ```
 
-### Distribution of Target Species
+## Distribution of Target Species
 
 Viewing the distribution of species (i.e., the sites where certain species have been observed) is straightforward. Simply use the `bbs_plotmap()` function and specify the species you are interested in. This function can handle up to 10 species at a time to prevent the plot from becoming too cluttered.
 
@@ -83,7 +83,7 @@ Viewing the distribution of species (i.e., the sites where certain species have 
 bbs_plotmap(target_species = c("烏頭翁", "白頭翁"))
 ```
 
-### What's Next?
+## What's Next?
 
 Not satisfied with the default functionality provided by `bbsTaiwan`? There are a few additional steps you can take beyond what this package offers:
 
