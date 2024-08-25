@@ -36,7 +36,7 @@ This project was supported by the [rOpenSci Champions Program](https://ropensci.
 
 ## Version 🔖
 
-**`bbsTaiwan` v1.0.0 (Initial Release):** Developed based on the GBIF Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.
+**v1.0.0 (Initial Release):** Developed based on the GBIF Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.
 
 ## Installation 💻
 
