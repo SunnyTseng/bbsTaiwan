@@ -10,7 +10,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 
 <!-- badges: end -->
 
-### Overview 📑
+## Overview 📑
 
 The goal of `bbsTaiwan` is to streamline the retrieval and analysis of
 Taiwan Breeding Bird Survey (BBS) data. This package facilitates data
@@ -28,16 +28,16 @@ Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/)
 as the mentor.
 
 - [Get
-  Started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)
+  started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)
 
 - Black Bulbul case study
 
-### Version 🔖
+## Version 🔖
 
 **`bbsTaiwan` v1.0.0 (Initial Release):** Developed based on the GBIF
 Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.
 
-### Installation 💻
+## Installation 💻
 
 You can install and load the development version of `bbsTaiwan` from
 Github with:
@@ -47,23 +47,10 @@ Github with:
 devtools::install_github("SunnyTseng/bbsTaiwan")
 ```
 
-### Main functions ⛺
+## Main functions ⛺
 
 `bbsTaiwan` provides several intuitive imported datasets and data
-processing functions. For accessing the raw Taiwan BBS dataset on GBIF:
-
-- `occurrence`: times and locations at which particular species have
-  been recorded
-
-- `event`: the protocols used, the sample size, and the location for
-  each
-
-- `measurementorfacts`: additional information relating to the events
-
-- `extendedmeasurementorfact`: additional information relating to the
-  taxon occurrences
-
-To perform basic data retrieval and visualization:
+processing functions. To perform basic data retrieval and visualization:
 
 - `bbs_translate()` translate bird species’ Chinese common name to
   scientific name
@@ -77,7 +64,20 @@ To perform basic data retrieval and visualization:
 
 - `bbs_sites()` return the coordinates of sll BBS sites
 
-### Usage 💡
+For accessing the raw Taiwan BBS dataset on GBIF:
+
+- `occurrence`: times and locations at which particular species have
+  been recorded
+
+- `event`: the protocols used, the sample size, and the location for
+  each
+
+- `measurementorfacts`: additional information relating to the events
+
+- `extendedmeasurementorfact`: additional information relating to the
+  taxon occurrences
+
+## Usage 💡
 
 ``` r
 library(bbsTaiwan)
