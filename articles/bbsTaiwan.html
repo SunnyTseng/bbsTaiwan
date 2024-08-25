@@ -51,6 +51,8 @@
   <main id="main" class="col-md-9"><div class="page-header">
 
       <h1>bbsTaiwan</h1>
+                        <h4 data-toc-skip class="author">Sunny
+Tseng</h4>
             
       
       <small class="dont-index">Source: <a href="https://github.com/SunnyTseng/bbsTaiwan/blob/master/vignettes/bbsTaiwan.Rmd" class="external-link"><code>vignettes/bbsTaiwan.Rmd</code></a></small>
@@ -61,10 +63,197 @@
     
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://sunnytseng.github.io/bbsTaiwan/">bbsTaiwan</a></span><span class="op">)</span></span></code></pre></div>
-<p>This is the vignettes page created by
-usethis::use_vignette(“package_name”). It is the part we can write an
-article about the package!</p>
-  </main>
+<div class="section level3">
+<h3 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h3>
+<p>Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual
+surveys, providing a valuable systematic dataset for studying species
+trends. Although the open-source data is available on GBIF, its complex
+arrangement in Darwin Core format can make it difficult to understand
+and utilize, requiring a certain level of data wrangling skills. The
+<code>bbsTaiwan</code> package is designed to make accessing and using
+Taiwan BBS data easier.</p>
+<p>In this article, we aim to demonstrate the general applications you
+can perform with this package. We will also provide a case study to show
+the types of research you can conduct using <code><a href="../reference/bbsTaiwan-package.html">bbsTaiwan()</a></code>.
+Enjoy coding with birdies!</p>
+</div>
+<div class="section level3">
+<h3 id="overview-of-bbs-surveying-effort">Overview of BBS Surveying Effort<a class="anchor" aria-label="anchor" href="#overview-of-bbs-surveying-effort"></a>
+</h3>
+<p>Before diving into the bird occurrence data, it’s helpful to first
+understand when and where the surveys were conducted. This includes
+knowing the number of sites, their locations, and the number of sites
+surveyed each year. The <code>bbsTaiwan</code> package provides several
+functions to help you get started with understanding the surveying
+effort.</p>
+<p>To see the number of sites surveyed each year, you can use the
+<code><a href="../reference/bbs_history.html">bbs_history()</a></code> function. This function has a
+<code>type</code> argument with two options: <code>"plot"</code> and
+<code>"table"</code>. Selecting <code>"plot"</code> will display the
+results as a <code>ggplot</code> graph, while <code>"table"</code> will
+show the results in a <code>tibble</code>.</p>
+<p>Additionally, the <code><a href="../reference/bbs_plotmap.html">bbs_plotmap()</a></code> function can be used to
+visualize the distribution of a particular species. If you set the
+argument to <code>NULL</code>, it will display the locations of all
+sites that have been surveyed historically.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_history.html">bbs_history</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"plot"</span><span class="op">)</span> </span>
+<span><span class="fu"><a href="../reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span></span></code></pre></div>
+<p><img src="bbsTaiwan_files/figure-html/effort_figure_noshow-1.png" width="100%"></p>
+<p>If you prefer to work with tables and see the values directly,
+<code>bbsTaiwan</code> has you covered! You can use the
+<code><a href="../reference/bbs_history.html">bbs_history()</a></code> function with the <code>"table"</code> option
+to view the number of sites surveyed each year in a tabular format.
+Additionally, you can use the <code><a href="../reference/bbs_sites.html">bbs_sites()</a></code> function to
+access a complete list of sites and plots along with their
+coordinates.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_history.html">bbs_history</a></span><span class="op">(</span>type <span class="op">=</span> <span class="st">"table"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 8 × 6</span></span></span>
+<span><span class="co">#&gt;   year   East Mountain North  West Others</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;int&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;int&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> 2009     31       41    24    52      0</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> 2010     30       26    25    57      2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> 2011     24       37    55   134      3</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> 2012     31       47    88   142      3</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> 2013     28       43    80   138      2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> 2014     36       46    91   118      2</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">7</span> 2015     36       49   112   143     12</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">8</span> 2016     38       42    98   157      2</span></span>
+<span><span class="fu"><a href="../reference/bbs_sites.html">bbs_sites</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 4,160 × 6</span></span></span>
+<span><span class="co">#&gt;    site   plot  locationID locality   decimalLatitude decimalLongitude</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> A02-01 01    A02-01_01  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> A02-01 02    A02-01_02  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> A02-01 03    A02-01_03  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> A02-01 04    A02-01_04  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> A02-01 05    A02-01_05  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> A02-01 06    A02-01_06  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> A02-01 07    A02-01_07  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> A02-01 08    A02-01_08  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> A02-01 09    A02-01_09  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> A02-01 10    A02-01_10  台北縣瑞芳            25.1             122.</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 4,150 more rows</span></span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="data-fetch-for-target-species">Data Fetch for Target Species<a class="anchor" aria-label="anchor" href="#data-fetch-for-target-species"></a>
+</h3>
+<p>Now we come to the core function <code><a href="../reference/bbs_fetch.html">bbs_fetch()</a></code>. This
+function retrieves bird occurrence data from GBIF and summarizes it in a
+more understandable format. The original data format on GBIF, which
+includes event and occurrence data, is designed to be machine-readable
+but can be difficult for humans to interpret. <code><a href="../reference/bbs_fetch.html">bbs_fetch()</a></code>
+addresses this by performing the following key steps:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Join</strong>: Combines the event, occurrence, and
+measurement or facts datasheets from GBIF into a single cohesive
+dataset.</p></li>
+<li><p><strong>Filter</strong>: Retains only the observations for
+specified species using the <code>target_species</code>
+argument.</p></li>
+<li><p><strong>Zero Fill</strong>: Converts implicit missing values into
+explicit ones by filling in zeros for trips where the target species was
+not observed. Specifically, if a site or plot was visited during a
+particular year or trip but the target species was not observed, the
+dataset will show a value of 0 for that row.</p></li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="st">"白頭翁"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 53,874 × 16</span></span></span>
+<span><span class="co">#&gt;     year month   day site   locationID decimalLatitude decimalLongitude weather</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 53,864 more rows</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 8 more variables: wind &lt;chr&gt;, habitat &lt;chr&gt;, scientificName &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   vernacularName &lt;chr&gt;, individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></span>
+<span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 92,475 × 16</span></span></span>
+<span><span class="co">#&gt;     year month   day site   locationID decimalLatitude decimalLongitude weather</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_02             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 92,465 more rows</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 8 more variables: wind &lt;chr&gt;, habitat &lt;chr&gt;, scientificName &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   vernacularName &lt;chr&gt;, individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></span></code></pre></div>
+<p>Finding it hard to choose a specific target species and want to
+access the entire dataset for all species? One of the great features of
+<code><a href="../reference/bbs_fetch.html">bbs_fetch()</a></code> is that you can set
+<code>target_species = "全部"</code> to retrieve the entire unfiltered
+dataset.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="st">"全部"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 373,786 × 16</span></span></span>
+<span><span class="co">#&gt;     year month   day site   locationID decimalLatitude decimalLongitude weather</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span>  <span style="text-decoration: underline;">2</span>009     4     5 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span>  <span style="text-decoration: underline;">2</span>009     3    10 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span>  <span style="text-decoration: underline;">2</span>009     4    26 A02-01 A02-01_01             25.1             122. <span style="color: #BB0000;">NA</span>     </span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 373,776 more rows</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># ℹ 8 more variables: wind &lt;chr&gt;, habitat &lt;chr&gt;, scientificName &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   vernacularName &lt;chr&gt;, individualCount &lt;dbl&gt;, time_slot &lt;chr&gt;,</span></span></span>
+<span><span class="co">#&gt; <span style="color: #949494;">#   distance &lt;chr&gt;, flock &lt;chr&gt;</span></span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="distribution-of-target-species">Distribution of Target Species<a class="anchor" aria-label="anchor" href="#distribution-of-target-species"></a>
+</h3>
+<p>Viewing the distribution of species (i.e., the sites where certain
+species have been observed) is straightforward. Simply use the
+<code><a href="../reference/bbs_plotmap.html">bbs_plotmap()</a></code> function and specify the species you are
+interested in. This function can handle up to 10 species at a time to
+prevent the plot from becoming too cluttered.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="bbsTaiwan_files/figure-html/plot-1.png" width="100%"></p>
+</div>
+<div class="section level3">
+<h3 id="whats-next">What’s Next?<a class="anchor" aria-label="anchor" href="#whats-next"></a>
+</h3>
+<p>Not satisfied with the default functionality provided by
+<code>bbsTaiwan</code>? There are a few additional steps you can take
+beyond what this package offers:</p>
+<p>If you need to summarize the data in a customized way and ready to
+dive into data wrangling, consider using the raw data available on the
+GBIF repository. Working directly with the raw data allows you to fully
+understand the data cleaning process and create a customized data
+structure tailored to your study objectives.</p>
+<p>The raw data in Darwin Core format can be accessed easily by using
+the names of the relevant spreadsheets. These data objects are
+automatically loaded when you install the package.</p>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">occurrence</span></span>
+<span><span class="va">event</span></span>
+<span><span class="va">measurementorfacts</span></span></code></pre></div>
+</div>
+  </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
