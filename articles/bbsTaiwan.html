@@ -67,15 +67,10 @@ Tseng</h4>
 </h2>
 <p>Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual
 surveys, providing a valuable systematic dataset for studying species
-trends. Although the open-source data is available on GBIF, its complex
-arrangement in Darwin Core format can make it difficult to understand
-and utilize, requiring a certain level of data wrangling skills. The
-<code>bbsTaiwan</code> package is designed to make accessing and using
-Taiwan BBS data easier.</p>
-<p>In this article, we aim to demonstrate the general applications you
-can perform with this package. We will also provide a case study to show
-the types of research you can conduct using <code><a href="../reference/bbsTaiwan-package.html">bbsTaiwan()</a></code>.
-Enjoy coding with birdies!</p>
+trends. The <code>bbsTaiwan</code> package is designed to make accessing
+and using this precious Taiwan BBS data easier. In this article, we aim
+to demonstrate the general applications you can perform with this
+package. Enjoy coding with birdies!</p>
 </div>
 <div class="section level2">
 <h2 id="overview-of-bbs-surveying-effort">Overview of BBS Surveying Effort<a class="anchor" aria-label="anchor" href="#overview-of-bbs-surveying-effort"></a>
@@ -147,16 +142,16 @@ but can be difficult for humans to interpret. <code><a href="../reference/bbs_fe
 addresses this by performing the following key steps:</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Join</strong>: Combines the event, occurrence, and
-measurement or facts datasheets from GBIF into a single cohesive
+measurementorfacts datasheets from GBIF into a single cohesive
 dataset.</p></li>
 <li><p><strong>Filter</strong>: Retains only the observations for
 specified species using the <code>target_species</code>
 argument.</p></li>
 <li><p><strong>Zero Fill</strong>: Converts implicit missing values into
 explicit ones by filling in zeros for trips where the target species was
-not observed. Specifically, if a site or plot was visited during a
-particular year or trip but the target species was not observed, the
-dataset will show a value of 0 for that row.</p></li>
+not observed. Specifically, if a plot was visited during a particular
+year or trip but the target species was not observed, the species count
+will show a value of 0 for that row.</p></li>
 </ol>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="st">"白頭翁"</span><span class="op">)</span></span>
@@ -226,7 +221,7 @@ dataset.</p>
 <p>Viewing the distribution of species (i.e., the sites where certain
 species have been observed) is straightforward. Simply use the
 <code><a href="../reference/bbs_plotmap.html">bbs_plotmap()</a></code> function and specify the species you are
-interested in. This function can handle up to 10 species at a time to
+interested in. This function can handle up to 5 species at a time to
 prevent the plot from becoming too cluttered.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_plotmap.html">bbs_plotmap</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"烏頭翁"</span>, <span class="st">"白頭翁"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>

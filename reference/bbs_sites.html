@@ -64,7 +64,8 @@ to transform the table to spatial object.</p>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu">bbs_sites</span><span class="op">(</span><span class="op">)</span></span></span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="co"># Get the full list of BBS sites in a tibble</span></span></span>
+<span class="r-in"><span><span class="fu">bbs_sites</span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># A tibble: 4,160 × 6</span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    site   plot  locationID locality   decimalLatitude decimalLongitude</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>    <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span>
@@ -79,6 +80,20 @@ to transform the table to spatial object.</p>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> A02-01 09    A02-01_09  台北縣瑞芳            25.1             122.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> A02-01 10    A02-01_10  台北縣瑞芳            25.1             122.</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #949494;"># ℹ 4,150 more rows</span></span>
+<span class="r-in"><span></span></span>
+<span class="r-in"><span><span class="co"># Transform BBS sites into a spatial object using terra package</span></span></span>
+<span class="r-in"><span><span class="fu">bbs_sites</span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span></span></span>
+<span class="r-in"><span><span class="fu">terra</span><span class="fu">::</span><span class="fu"><a href="https://rspatial.github.io/terra/reference/vect.html" class="external-link">vect</a></span><span class="op">(</span>geom <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"decimalLatitude"</span>, <span class="st">"decimalLongitude"</span><span class="op">)</span>, crs <span class="op">=</span> <span class="st">"epsg:4326"</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  class       : SpatVector </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  geometry    : points </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  dimensions  : 4160, 4  (geometries, attributes)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  extent      : 21.94431, 25.27016, 120.0673, 121.9298  (xmin, xmax, ymin, ymax)</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  coord. ref. : lon/lat WGS 84 (EPSG:4326) </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  names       :   site  plot locationID   locality</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  type        :  &lt;chr&gt; &lt;chr&gt;      &lt;chr&gt;      &lt;chr&gt;</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  values      : A02-01    01  A02-01_01 台北縣瑞芳</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                A02-01    02  A02-01_02 台北縣瑞芳</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                A02-01    03  A02-01_03 台北縣瑞芳</span>
 </code></pre></div>
     </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
