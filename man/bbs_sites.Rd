@@ -20,5 +20,10 @@ to transform the table to spatial object.
 The source data comes from the event table in the GBIF dataset.
 }
 \examples{
+# Get the full list of BBS sites in a tibble
 bbs_sites()
+
+# Transform BBS sites into a spatial object using terra package
+bbs_sites() |>
+terra::vect(geom = c("decimalLatitude", "decimalLongitude"), crs = "epsg:4326")
 }

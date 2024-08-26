@@ -18,6 +18,7 @@ URL: https://sunnytseng.github.io/bbsTaiwan/, https://github.com/SunnyTseng/bbsT
 BugReports: https://github.com/SunnyTseng/bbsTaiwan/issues
 Suggests: 
     knitr,
+    patchwork,
     rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
@@ -32,7 +33,6 @@ Imports:
     dplyr,
     ggplot2,
     lifecycle,
-    patchwork,
     poptrend,
     purrr,
     stringr,

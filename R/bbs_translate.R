@@ -1,6 +1,6 @@
 #' Translate Bird Species' Chinese Common Name to Scientific Name
 #'
-#' This function is intended for use with [bbs_fetch] and [bbs_plotmap].
+#' This function is intended for use under [bbs_fetch] and [bbs_plotmap].
 #' This function helps users find the scientific names of birds from their
 #' Chinese common names for species found in Taiwan.
 #'
@@ -8,8 +8,7 @@
 #' representing species' names in Chinese.
 #'
 #' @return A vector of bird species' scientific names. If the input species name is not
-#' included in the bird list of Taiwan, `"The bird is not in the BBS list"` will be returned.
-#' Please check for any typos.
+#' included in the bird list of Taiwan, `NA` will be returned. Please check for any typos.
 #'
 #' @export
 #'
@@ -18,7 +17,7 @@
 #' bbs_translate("白頭翁")
 #'
 #' # For multiple species
-#' bbs_translate(target_species = c("烏頭翁", "白頭翁"))
+#' bbs_translate(target_species = c("烏頭翁", "白頭翁", "紅嘴黑鵯", "白耳畫眉"))
 bbs_translate <- function(target_species) {
 
   # sub function ----------------------------------------------------------

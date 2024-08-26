@@ -1,26 +1,39 @@
 #' Fetch BBS Occurrence Data by Species
 #'
-#' This function fetches occurrence data for a specified target species,
+#' This function fetches occurrence data for specified target species,
 #' utilizing both the event and occurrence tables from GBIF. The fetched dataset
-#' undergoes the following processing steps compared to the raw dataset:
-#' 1. Retains only observations for the specified target species.
-#' 2. Converts implicit missing values into explicit ones (e.g., filling in
-#' zeros for trips where the target species was not observed). Specifically,
-#' if a site/plot was visited in a specific year/trip, but without observing
-#' the target species, then the dataset will have a value of 0 for that row.
+#' undergoes the following processing steps:
+#' 1. **Join**: Combines the [event], [occurrence], and [measurementorfacts] datasheets
+#' from GBIF into a single cohesive dataset.
+#' 2. **Filter**: Retains only the observations for specified species using the
+#' `target_species` argument. The entered Chinese common name was linked to
+#' scientific name by [bbs_translate].
+#' 3. **Zero Fill**: Converts implicit missing values into explicit ones by
+#' filling in zeros for trips where the target species was not observed.
+#' Specifically, if a plot was visited during a particular year or trip
+#' but the target species was not observed, the species count will show a value of 0 for that row.
 #'
-#' @param target_species Character string specifying the scientific name of
+#' @param target_species Character string specifying the Chinese common name of
 #' the species of interest. It can accept a single character string, such as
-#' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
-#' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return all species. Use the [bbs_translate]
-#' function to help find the species' scientific names.
+#' `target_species = "紅嘴黑鵯"`, or a vector, such as
+#' `target_species = c("紅嘴黑鵯", "白耳畫眉")`.Use `"全部"` to return all species.
 #'
 #' @return A `tibble` containing the species occurrence data.
 #' @export
 #'
 #' @examples
-#' bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+#' # For single species data fetch
+#' bbs_fetch(target_species = "紅嘴黑鵯")
+#'
+#' # For multiple species data fetch
+#' bbs_fetch(target_species = c("紅嘴黑鵯", "白耳畫眉"))
+#'
+#' # To return data for all species
+#' bbs_fetch(target_species = "全部")
+#'
+#' # The function will return NULL if the target species is not found in the
+#' # BBS species list
+#' bbs_fetch(target_species = "隨機鳥")
 bbs_fetch <- function(target_species) {
 
   # argument check ----------------------------------------------------------
