@@ -7,28 +7,41 @@
 bbs_fetch(target_species)
 }
 \arguments{
-\item{target_species}{Character string specifying the scientific name of
+\item{target_species}{Character string specifying the Chinese common name of
 the species of interest. It can accept a single character string, such as
-\code{target_species = "Hypsipetes leucocephalus"}, or a vector, such as
-\code{target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")}.
-Leave undefined or use \code{NULL} to return all species. Use the \link{bbs_translate}
-function to help find the species' scientific names.}
+\code{target_species = "紅嘴黑鵯"}, or a vector, such as
+\code{target_species = c("紅嘴黑鵯", "白耳畫眉")}.Use \code{"全部"} to return all species.}
 }
 \value{
 A \code{tibble} containing the species occurrence data.
 }
 \description{
-This function fetches occurrence data for a specified target species,
+This function fetches occurrence data for specified target species,
 utilizing both the event and occurrence tables from GBIF. The fetched dataset
-undergoes the following processing steps compared to the raw dataset:
+undergoes the following processing steps:
 \enumerate{
-\item Retains only observations for the specified target species.
-\item Converts implicit missing values into explicit ones (e.g., filling in
-zeros for trips where the target species was not observed). Specifically,
-if a site/plot was visited in a specific year/trip, but without observing
-the target species, then the dataset will have a value of 0 for that row.
+\item \strong{Join}: Combines the \link{event}, \link{occurrence}, and \link{measurementorfacts} datasheets
+from GBIF into a single cohesive dataset.
+\item \strong{Filter}: Retains only the observations for specified species using the
+\code{target_species} argument. The entered Chinese common name was linked to
+scientific name by \link{bbs_translate}.
+\item \strong{Zero Fill}: Converts implicit missing values into explicit ones by
+filling in zeros for trips where the target species was not observed.
+Specifically, if a plot was visited during a particular year or trip
+but the target species was not observed, the species count will show a value of 0 for that row.
 }
 }
 \examples{
-bbs_fetch(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+# For single species data fetch
+bbs_fetch(target_species = "紅嘴黑鵯")
+
+# For multiple species data fetch
+bbs_fetch(target_species = c("紅嘴黑鵯", "白耳畫眉"))
+
+# To return data for all species
+bbs_fetch(target_species = "全部")
+
+# The function will return NULL if the target species is not found in the
+# BBS species list
+bbs_fetch(target_species = "隨機鳥")
 }

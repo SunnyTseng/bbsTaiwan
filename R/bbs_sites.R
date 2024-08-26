@@ -12,7 +12,12 @@
 #' @export
 #'
 #' @examples
+#' # Get the full list of BBS sites in a tibble
 #' bbs_sites()
+#'
+#' # Transform BBS sites into a spatial object using terra package
+#' bbs_sites() |>
+#' terra::vect(geom = c("decimalLatitude", "decimalLongitude"), crs = "epsg:4326")
 bbs_sites <- function() {
 
   year_location_trip <- event |>
