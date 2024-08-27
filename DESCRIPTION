@@ -32,8 +32,6 @@ Imports:
     cli,
     dplyr,
     ggplot2,
-    lifecycle,
-    poptrend,
     purrr,
     stringr,
     terra,
