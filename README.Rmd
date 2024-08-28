@@ -28,7 +28,7 @@ library(bbsTaiwan)
 
 The goal of `bbsTaiwan` is to streamline the retrieval and analysis of Taiwan Breeding Bird Survey (BBS) data. This package facilitates data access from GBIF, where Taiwan BBS data are stored. While the data is openly available on GBIF, its complex arrangement in the Darwin Core format can make it challenging to understand and use, often requiring advanced data wrangling skills. The `bbsTaiwan` package is designed to simplify this process, making it easier to access and utilize Taiwan BBS data.
 
-This project was supported by the [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with [Sunny Tseng](https://sunnytseng.ca/) as the main developer and [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/) as the mentor.
+This project was supported by the [rOpenSci Champions Program](https://ropensci.org/champions/) 2023-2024, with [Sunny Tseng](https://sunnytseng.ca/) as the main developer and [Eunseop Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/) as the mentor. [Jerome Ko](https://scholar.google.com/citations?user=XbUxScIAAAAJ&hl=zh-TW) kindly assisted in interpreting and accessing the Taiwan BBS data.
 
 -   [Get started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)
 

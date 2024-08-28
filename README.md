@@ -25,7 +25,9 @@ This project was supported by the [rOpenSci Champions
 Program](https://ropensci.org/champions/) 2023-2024, with [Sunny
 Tseng](https://sunnytseng.ca/) as the main developer and [Eunseop
 Kim](https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/)
-as the mentor.
+as the mentor. [Jerome
+Ko](https://scholar.google.com/citations?user=XbUxScIAAAAJ&hl=zh-TW)
+kindly assisted in interpreting and accessing the Taiwan BBS data.
 
 - [Get
   started](https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html)

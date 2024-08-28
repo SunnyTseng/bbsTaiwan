@@ -2,20 +2,26 @@
 #'
 #' This function visualizes the sites surveyed for breeding birds in Taiwan,
 #' highlighting the presence and absence of specific species. It is designed
-#' upon the function [bbs_fetch].
+#' upon the function [bbs_fetch] and [bbs_translate].
 #'
 #' @param target_species Character string specifying the scientific name of
 #' the species of interest. It can accept a single character string, such as
-#' `target_species = "Hypsipetes leucocephalus"`, or a vector, such as
-#' `target_species = c("Hypsipetes leucocephalus", "Heterophasia auricularis")`.
-#' Leave undefined or use `NULL` to return no species. Use the [bbs_translate]
-#' function to help find the species' scientific names.
+#' `target_species = "紅嘴黑鵯"`, or a vector, such as
+#' `target_species = c("紅嘴黑鵯", "白耳畫眉")`. The function can accept up to plotting
+#' 5 species in one figure. Use `NULL` to return a map of site distribution.
 #'
 #' @return A `ggplot` object showing the distribution map.
 #' @export
 #'
 #' @examples
-#' bbs_plotmap(target_species = c("Pycnonotus taivanus", "Pycnonotus sinensis"))
+#' # For single species distribution
+#' bbs_plotmap(target_species = "紅嘴黑鵯")
+#'
+#' # For multiple species distribution
+#' bbs_plotmap(target_species = c("紅嘴黑鵯", "白耳畫眉"))
+#'
+#' # Simply the distribution of the surveyed sites
+#' bbs_plotmap(target_species = NULL)
 bbs_plotmap <- function(target_species) {
 
   # prepare taiwan map and elevation ----------------------------------------
@@ -66,7 +72,7 @@ bbs_plotmap <- function(target_species) {
     checkmate::assert_character(
       target_species,
       min.len = 1,
-      max.len = 10
+      max.len = 5
     )
 
     # data preparation ------------------------------------------------------

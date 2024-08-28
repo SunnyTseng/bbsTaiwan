@@ -26,9 +26,7 @@ library(patchwork)
 
 ## Introduction
 
-Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. Although the open-source data is available on GBIF, its complex arrangement in Darwin Core format can make it difficult to understand and utilize, requiring a certain level of data wrangling skills. The `bbsTaiwan` package is designed to make accessing and using Taiwan BBS data easier.
-
-In this article, we aim to demonstrate the general applications you can perform with this package. We will also provide a case study to show the types of research you can conduct using `bbsTaiwan()`. Enjoy coding with birdies!
+Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. The `bbsTaiwan` package is designed to make accessing and using this precious Taiwan BBS data easier. In this article, we aim to demonstrate the general applications you can perform with this package. Enjoy coding with birdies!
 
 ## Overview of BBS Surveying Effort
 
@@ -58,11 +56,11 @@ bbs_sites()
 
 Now we come to the core function `bbs_fetch()`. This function retrieves bird occurrence data from GBIF and summarizes it in a more understandable format. The original data format on GBIF, which includes event and occurrence data, is designed to be machine-readable but can be difficult for humans to interpret. `bbs_fetch()` addresses this by performing the following key steps:
 
-1.  **Join**: Combines the event, occurrence, and measurement or facts datasheets from GBIF into a single cohesive dataset.
+1.  **Join**: Combines the event, occurrence, and measurementorfacts datasheets from GBIF into a single cohesive dataset.
 
 2.  **Filter**: Retains only the observations for specified species using the `target_species` argument.
 
-3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a site or plot was visited during a particular year or trip but the target species was not observed, the dataset will show a value of 0 for that row.
+3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a plot was visited during a particular year or trip but the target species was not observed, the species count will show a value of 0 for that row.
 
 ```{r fetch_species}
 bbs_fetch(target_species = "白頭翁")
@@ -77,7 +75,7 @@ bbs_fetch(target_species = "全部")
 
 ## Distribution of Target Species
 
-Viewing the distribution of species (i.e., the sites where certain species have been observed) is straightforward. Simply use the `bbs_plotmap()` function and specify the species you are interested in. This function can handle up to 10 species at a time to prevent the plot from becoming too cluttered.
+Viewing the distribution of species (i.e., the sites where certain species have been observed) is straightforward. Simply use the `bbs_plotmap()` function and specify the species you are interested in. This function can handle up to 5 species at a time to prevent the plot from becoming too cluttered.
 
 ```{r plot}
 bbs_plotmap(target_species = c("烏頭翁", "白頭翁"))

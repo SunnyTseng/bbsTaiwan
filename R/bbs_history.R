@@ -12,7 +12,11 @@
 #' @export
 #'
 #' @examples
+#' # Return the number of sites in a table
 #' bbs_history(type = "table")
+#'
+#' # Return the number of sites in a bar chart
+#' bbs_history(type = "plot")
 bbs_history <- function(type = "plot") {
 
   # get time (year, trip) and space (site, plot) info from event table ------
