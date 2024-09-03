@@ -104,7 +104,7 @@ bbs_fetch <- function(target_species) {
 
   # zero control for all the point counts sites & species observation -------
 
-  if (base::length(target_species) <= 10){
+  if (base::length(target_species) <= 40){
 
     occurrence_zero <- occurrence_filter |>
       # add zero for each point count and each target species

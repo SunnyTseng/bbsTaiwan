@@ -63,6 +63,10 @@ Now we come to the core function `bbs_fetch()`. This function retrieves bird occ
 3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a plot was visited during a particular year or trip but the target species was not observed, the species count will show a value of 0 for that row.
 
 ```{r fetch_species}
+# Here is a list of the 32 endemic bird species in Taiwan, where the species name can be used as the input of the function.
+# 
+# c("黑長尾雉", "白眉林鴝", "黃腹琉璃", "灰鷽", "小翼鶇", "白頭鶇", "赤腹山雀", "台灣竹雞", "繡眼畫眉", "台灣朱雀", "棕噪眉", "褐頭花翼", "台灣鷦眉", "小彎嘴", "大彎嘴", "台灣白喉噪眉", "台灣畫眉", "五色鳥", "台灣叢樹鶯", "火冠戴菊鳥", "烏頭翁", "台灣紫嘯鶇", "栗背林鴝", "黃山雀", "台灣藍鵲", "黃胸藪眉", "紋翼畫眉", "冠羽畫眉", "台灣噪眉", "白耳畫眉", "台灣山鷓鴣", "藍腹鷴")
+
 bbs_fetch(target_species = "白頭翁")
 bbs_fetch(target_species = c("烏頭翁", "白頭翁"))
 ```
