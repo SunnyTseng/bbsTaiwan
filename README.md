@@ -7,6 +7,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![codecov](https://codecov.io/github/SunnyTseng/bbsTaiwan/graph/badge.svg?token=HW0IBX5Y7B)](https://codecov.io/github/SunnyTseng/bbsTaiwan)
 
 <!-- badges: end -->
 
