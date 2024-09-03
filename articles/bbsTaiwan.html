@@ -154,7 +154,11 @@ year or trip but the target species was not observed, the species count
 will show a value of 0 for that row.</p></li>
 </ol>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="st">"白頭翁"</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="co"># Here is a list of the 32 endemic bird species in Taiwan, where the species name can be used as the input of the function.</span></span>
+<span><span class="co"># </span></span>
+<span><span class="co"># c("黑長尾雉", "白眉林鴝", "黃腹琉璃", "灰鷽", "小翼鶇", "白頭鶇", "赤腹山雀", "台灣竹雞", "繡眼畫眉", "台灣朱雀", "棕噪眉", "褐頭花翼", "台灣鷦眉", "小彎嘴", "大彎嘴", "台灣白喉噪眉", "台灣畫眉", "五色鳥", "台灣叢樹鶯", "火冠戴菊鳥", "烏頭翁", "台灣紫嘯鶇", "栗背林鴝", "黃山雀", "台灣藍鵲", "黃胸藪眉", "紋翼畫眉", "冠羽畫眉", "台灣噪眉", "白耳畫眉", "台灣山鷓鴣", "藍腹鷴")</span></span>
+<span></span>
+<span><span class="fu"><a href="../reference/bbs_fetch.html">bbs_fetch</a></span><span class="op">(</span>target_species <span class="op">=</span> <span class="st">"白頭翁"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 53,874 × 16</span></span></span>
 <span><span class="co">#&gt;     year month   day site   locationID decimalLatitude decimalLongitude weather</span></span>
 <span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>            <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
