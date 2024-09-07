@@ -1,6 +1,6 @@
 Package: bbsTaiwan
 Title: Streamline Taiwan Breeding Birds Survey (BBS) Data Retrieval and Analysis
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person("Sunny", "Tseng", , "sunnyyctseng@gmail.com", role = c("aut", "cre"))
 Description: The goal of bbsTaiwan is to streamline the retrieval and analysis of 
