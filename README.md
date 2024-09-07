@@ -5,10 +5,11 @@
 
 <!-- badges: start -->
 
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![codecov](https://codecov.io/github/SunnyTseng/bbsTaiwan/graph/badge.svg?token=HW0IBX5Y7B)](https://codecov.io/github/SunnyTseng/bbsTaiwan)
-
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Launch
+binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/SunnyTseng/bbsTaiwan/master?urlpath=rstudio)
 <!-- badges: end -->
 
 ## Overview 📑
