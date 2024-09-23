@@ -24,17 +24,25 @@ library(bbsTaiwan)
 library(patchwork)
 ```
 
-## Introduction
+## Introduction 簡介
 
 Hello, birder! The Taiwan Breeding Bird Survey (BBS) conducts annual surveys, providing a valuable systematic dataset for studying species trends. The `bbsTaiwan` package is designed to make accessing and using this precious Taiwan BBS data easier. In this article, we aim to demonstrate the general applications you can perform with this package. Enjoy coding with birdies!
 
-## Overview of BBS Surveying Effort
+嗨嗨大家！台灣繁殖鳥類大調查（BBS）每年在臺灣各地進行系統性的調查，提供了一個珍貴的資料集，可以用於研究物種族群趨勢及其他鳥類研究主題的資料依據。bbsTaiwan package 的主要目的是讓研究者能更輕鬆地取得和使用臺灣 BBS 資料。以下將示範基本的 bbsTaiwan 使用方式，Enjoy！
+
+## Overview of BBS Surveying Effort 努力量分析
 
 Before diving into the bird occurrence data, it's helpful to first understand when and where the surveys were conducted. This includes knowing the number of sites, their locations, and the number of sites surveyed each year. The `bbsTaiwan` package provides several functions to help you get started with understanding the surveying effort.
 
+在深入探索資料之前，先了解調查的時間和地點 (i.e., 調查努力量) 是很有幫助的。這包含了解每年調查樣點的數量、它們的地理位置等等。bbsTaiwan 套件提供了幾個功能，讓你更快了解這些努力量的資訊。
+
 To see the number of sites surveyed each year, you can use the `bbs_history()` function. This function has a `type` argument with two options: `"plot"` and `"table"`. Selecting `"plot"` will display the results as a `ggplot` graph, while `"table"` will show the results in a `tibble`.
 
+要查看每年調查的站點數量，你可以使用 `bbs_history()`這個 function， 該 function 有一個參數叫做 `type`，提供兩個選項：`"plot"` 和 `"table"`。選擇 `"plot"` 將以 `ggplot` 圖表顯示結果，而 `"table"` 則會以 tibble 格式顯示結果。
+
 Additionally, the `bbs_plotmap()` function can be used to visualize the distribution of a particular species. If you set the argument to `NULL`, it will display the locations of all sites that have been surveyed historically.
+
+除此之外，若想要將特定物種的出現紀錄視覺化，可以使用 `bbs_plotmap()` 這個 `function`，如果將 `target_species` 參數設為 `NULL`，可以顯示歷史上所有樣站的位置。
 
 ```{r effort_figure, eval = FALSE}
 bbs_history(type = "plot") 
@@ -47,20 +55,24 @@ bbs_history(type = "plot") + bbs_plotmap(target_species = NULL)
 
 If you prefer to work with tables and see the values directly, `bbsTaiwan` has you covered! You can use the `bbs_history()` function with the `"table"` option to view the number of sites surveyed each year in a tabular format. Additionally, you can use the `bbs_sites()` function to access a complete list of sites and plots along with their coordinates.
 
+如果你是視覺派，覺得看到圖不夠，想要獲得真實的樣點數據，`bbsTaiwan` 也能滿足你的需求！你可以使用 `bbs_history()`，選擇 `"table"` 選項，以表格格式查看每年調查的站點數量。此外，你還可以使用 `bbs_sites()` 來獲取完整的樣點清單及座標。
+
 ```{r effort_table}
 bbs_history(type = "table")
 bbs_sites()
 ```
 
-## Data Fetch for Target Species
+## Data Fetch for Target Species 物種出現紀錄
 
 Now we come to the core function `bbs_fetch()`. This function retrieves bird occurrence data from GBIF and summarizes it in a more understandable format. The original data format on GBIF, which includes event and occurrence data, is designed to be machine-readable but can be difficult for humans to interpret. `bbs_fetch()` addresses this by performing the following key steps:
 
-1.  **Join**: Combines the event, occurrence, and measurementorfacts datasheets from GBIF into a single cohesive dataset.
+現在我們來到核心功能 `bbs_fetch()`。該 function 將 GBIF 上面的資料總結成更易於理解的格式。GBIF 上的原始資料格式，包括事件和出現數據，是為機器可讀而設計，但對人類來說可能難以解釋。`bbs_fetch()` 通過以下步驟來讓資料更易於理解及分析：
 
-2.  **Filter**: Retains only the observations for specified species using the `target_species` argument.
+1.  **Join**: Combines the event, occurrence, and measurementorfacts datasheets from GBIF into a single cohesive dataset; 將鳥類出現的事件資料及樣點資訊和併成單一資料。
 
-3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a plot was visited during a particular year or trip but the target species was not observed, the species count will show a value of 0 for that row.
+2.  **Filter**: Retains only the observations for specified species using the `target_species` argument; 使用 `target_species` 參數保留指定物種的觀測資料。
+
+3.  **Zero Fill**: Converts implicit missing values into explicit ones by filling in zeros for trips where the target species was not observed. Specifically, if a plot was visited during a particular year or trip but the target species was not observed, the species count will show a value of 0 for that row; 將隱式缺失值轉換為明確的缺失值。用白話文來說，如果某個站點在特定年份及旅次有被調查，但沒有觀察到目標物種，則該行的物種計數將顯示為 0。
 
 ```{r fetch_species}
 # Here is a list of the 32 endemic bird species in Taiwan, where the species name can be used as the input of the function.
@@ -73,25 +85,35 @@ bbs_fetch(target_species = c("烏頭翁", "白頭翁"))
 
 Finding it hard to choose a specific target species and want to access the entire dataset for all species? One of the great features of `bbs_fetch()` is that you can set `target_species = "全部"` to retrieve the entire unfiltered dataset.
 
+想要取得所有物種的完整資料嗎？`bbs_fetch()` 有個特殊功能是，將 `target_species` 參數設置為 "全部"，就可以獲得包含所有調查過物種的資料。
+
 ```{r fetch_all}
 bbs_fetch(target_species = "全部")
 ```
 
-## Distribution of Target Species
+## Distribution of Target Species 物種分布
 
 Viewing the distribution of species (i.e., the sites where certain species have been observed) is straightforward. Simply use the `bbs_plotmap()` function and specify the species you are interested in. This function can handle up to 5 species at a time to prevent the plot from becoming too cluttered.
+
+視覺化物種分佈非常簡單。只需使用 `bbs_plotmap()` function 並指定你有興趣的物種。該 function 最多可以同時處理 5 種物種，以防止圖表變得過於雜亂。這裡示範白頭翁及烏頭翁的分布，可以看到兩物種分別佔據臺灣的西半部及東半部。
 
 ```{r plot}
 bbs_plotmap(target_species = c("烏頭翁", "白頭翁"))
 ```
 
-## What's Next?
+## What's Next? 下一步
 
 Not satisfied with the default functionality provided by `bbsTaiwan`? There are a few additional steps you can take beyond what this package offers:
 
+對 bbsTaiwan 提供的基礎功能不滿意嗎？如果你有更精確的研究目標，bbsTaiwan 還有其他方式可以滿足你：
+
 If you need to summarize the data in a customized way and ready to dive into data wrangling, consider using the raw data available on the GBIF repository. Working directly with the raw data allows you to fully understand the data cleaning process and create a customized data structure tailored to your study objectives.
 
+如果你需要以自己的方式來清理及統整資料，可以考慮使用 GBIF 的原始資料及。直接使用原始資料的好處是可以讓你全面理解資料清理的過程，並建造符合你研究目標的方法。
+
 The raw data in Darwin Core format can be accessed easily by using the names of the relevant spreadsheets. These data objects are automatically loaded when you install the package.
+
+你可以直接取得 GBIF 上以達爾文核心格式的資料，這些資料可以藉由以下 code 獲得(是不是超簡單)!
 
 ```{r raw_data, eval = FALSE}
 occurrence
