@@ -55,51 +55,58 @@
 </div>
 <!-- badges: start -->
 
+<!-- badges: end -->
 <div class="section level2">
-<h2 id="overview-">Overview 📑<a class="anchor" aria-label="anchor" href="#overview-"></a>
+<h2 id="overview-簡介-">Overview 簡介 📑<a class="anchor" aria-label="anchor" href="#overview-%E7%B0%A1%E4%BB%8B-"></a>
 </h2>
 <p>The goal of <code>bbsTaiwan</code> is to streamline the retrieval and analysis of Taiwan Breeding Bird Survey (BBS) data. This package facilitates data access from GBIF, where Taiwan BBS data are stored. While the data is openly available on GBIF, its complex arrangement in the Darwin Core format can make it challenging to understand and use, often requiring advanced data wrangling skills. The <code>bbsTaiwan</code> package is designed to simplify this process, making it easier to access and utilize Taiwan BBS data.</p>
+<p>bbsTaiwan package 的目的是簡化臺灣繁殖鳥類大調查（BBS）資料的檢索和分析。該 package 可以即時取得存放在 GBIF 平台上的 BBS 資料，bbsTaiwan package 旨在簡化 BBS 的取得以及基本的分析、資料視覺化，讓使用者能更容易地檢索和利用臺灣 BBS 資料。</p>
 <p>This project was supported by the <a href="https://ropensci.org/champions/" class="external-link">rOpenSci Champions Program</a> 2023-2024, with <a href="https://sunnytseng.ca/" class="external-link">Sunny Tseng</a> as the main developer and <a href="https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/" class="external-link">Eunseop Kim</a> as the mentor. <a href="https://scholar.google.com/citations?user=XbUxScIAAAAJ&amp;hl=zh-TW" class="external-link">Jerome Ko</a> kindly assisted in interpreting and accessing the Taiwan BBS data.</p>
-<ul>
-<li><p><a href="https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html">Get started</a></p></li>
-<li><p>Black Bulbul case study</p></li>
-</ul>
+<p>此計畫由 <a href="https://ropensci.org/champions/" class="external-link">rOpenSci Champions Program</a> 2023-2024 資助，主要開發者為 <a href="https://sunnytseng.ca/" class="external-link">Sunny Tseng</a>，<a href="https://ropensci.org/blog/2023/11/29/champions-program-mentors-2023/" class="external-link">Eunseop Kim</a> 協助開發，而 <a href="https://scholar.google.com/citations?user=XbUxScIAAAAJ&amp;hl=zh-TW" class="external-link">Jerome Ko</a> 則代表 Taiwan BBS 官方，協助資料的取得及詮釋。</p>
 </div>
 <div class="section level2">
-<h2 id="version-">Version 🔖<a class="anchor" aria-label="anchor" href="#version-"></a>
+<h2 id="version-版本">Version 版本🔖<a class="anchor" aria-label="anchor" href="#version-%E7%89%88%E6%9C%AC"></a>
 </h2>
 <p><strong>v1.0.0 (Initial Release):</strong> Developed based on the GBIF Taiwan BBS dataset v1.9, which covers data from 2009 to 2016.</p>
+<p>v1.0.0（初始版本）：基於 GBIF 臺灣 BBS 資料集 v1.9 開發，包含 2009 年至 2016 年的資料。</p>
 </div>
 <div class="section level2">
-<h2 id="installation-">Installation 💻<a class="anchor" aria-label="anchor" href="#installation-"></a>
+<h2 id="installation-安裝-">Installation 安裝 💻<a class="anchor" aria-label="anchor" href="#installation-%E5%AE%89%E8%A3%9D-"></a>
 </h2>
-<p>You can install and load the development version of <code>bbsTaiwan</code> from Github with:</p>
+<p>You can install the development version of <code>bbsTaiwan</code> from Github with:</p>
+<p>在 R 輸入以下指令，可從 Github 安裝 bbsTaiwan 的開發版本：</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"SunnyTseng/bbsTaiwan"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="main-functions-">Main functions ⛺<a class="anchor" aria-label="anchor" href="#main-functions-"></a>
+<h2 id="main-functions-主要功能-">Main functions 主要功能 ⛺<a class="anchor" aria-label="anchor" href="#main-functions-%E4%B8%BB%E8%A6%81%E5%8A%9F%E8%83%BD-"></a>
 </h2>
 <p><code>bbsTaiwan</code> provides several intuitive imported datasets and data processing functions. To perform basic data retrieval and visualization:</p>
+<p><code>bbsTaiwan</code> 提供了幾個直觀的資料集和數據處理功能：</p>
 <ul>
-<li><p><code><a href="reference/bbs_history.html">bbs_history()</a></code> examine the number of BBS sites surveyed each year</p></li>
-<li><p><code><a href="reference/bbs_sites.html">bbs_sites()</a></code> return the coordinates of all BBS sites</p></li>
-<li><p><code><a href="reference/bbs_fetch.html">bbs_fetch()</a></code> fetch the cleaned version of Taiwan BBS cccurrence data by species</p></li>
-<li><p><code><a href="reference/bbs_plotmap.html">bbs_plotmap()</a></code> visualize species distribution across all BBS sites</p></li>
-<li><p><code><a href="reference/bbs_translate.html">bbs_translate()</a></code> translate bird species’ Chinese common name to scientific name</p></li>
+<li><p><code><a href="reference/bbs_history.html">bbs_history()</a></code> examine the number of BBS sites surveyed each year; 顯示每年調查的 BBS 站點數量</p></li>
+<li><p><code><a href="reference/bbs_sites.html">bbs_sites()</a></code> return the coordinates of all BBS sites; 顯示所有 BBS 樣點坐標</p></li>
+<li><p><code><a href="reference/bbs_fetch.html">bbs_fetch()</a></code> fetch the cleaned version of Taiwan BBS cccurrence data by species; 取得經過清理的物種出現資料</p></li>
+<li><p><code><a href="reference/bbs_plotmap.html">bbs_plotmap()</a></code> visualize species distribution across all BBS sites; 視覺化物種分佈</p></li>
+<li><p><code><a href="reference/bbs_translate.html">bbs_translate()</a></code> translate bird species’ Chinese common name to scientific name; 將鳥類的中文俗名翻譯為學名</p></li>
 </ul>
 <p>For accessing the raw Taiwan BBS dataset on GBIF:</p>
+<p>直接取得在 GBIF 上的臺灣 BBS 資料集：</p>
 <ul>
-<li><p><code>occurrence</code>: times and locations at which particular species have been recorded</p></li>
-<li><p><code>event</code>: the protocols used, the sample size, and the location for each</p></li>
-<li><p><code>measurementorfacts</code>: additional information relating to the events</p></li>
-<li><p><code>extendedmeasurementorfact</code>: additional information relating to the taxon occurrences</p></li>
+<li><p><code>occurrence</code>: times and locations at which particular species have been recorded; 特定物種的出現時間和地點</p></li>
+<li><p><code>event</code>: the protocols used, the sample size, and the location for each; 使用的調查方法、樣本數量以及各站點位置</p></li>
+<li><p><code>measurementorfacts</code>: additional information relating to the events; 與事件相關的附加信息</p></li>
+<li><p><code>extendedmeasurementorfact</code>: additional information relating to the taxon occurrences; 與物種出現相關的附加信息</p></li>
 </ul>
 </div>
 <div class="section level2">
-<h2 id="usage-">Usage 💡<a class="anchor" aria-label="anchor" href="#usage-"></a>
+<h2 id="usage-使用方式-">Usage 使用方式 💡<a class="anchor" aria-label="anchor" href="#usage-%E4%BD%BF%E7%94%A8%E6%96%B9%E5%BC%8F-"></a>
 </h2>
+<ul>
+<li>
+<a href="https://sunnytseng.github.io/bbsTaiwan/articles/bbsTaiwan.html">Get started</a> 開始操作</li>
+</ul>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://sunnytseng.github.io/bbsTaiwan/">bbsTaiwan</a></span><span class="op">)</span></span>
 <span></span>
@@ -177,7 +184,7 @@
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
     </footer>
